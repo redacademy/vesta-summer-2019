@@ -1,14 +1,13 @@
 <?php get_header(); ?>
 
+<?php the_title(); ?>
+
 <?php
 if( have_posts() ) :   
-    // Start WP Loop
     while( have_posts() ) :   
     the_post(); ?>         
-<h2><?php the_title(); ?></h2>
 <?php the_content(); ?>
 
-    <!-- end of wp loop -->
     <?php endwhile; ?>
 
 <?php the_posts_navigation(); ?> 
