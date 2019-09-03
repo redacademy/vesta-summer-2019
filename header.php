@@ -11,9 +11,14 @@
 
 
 <header>
-    
+
+    <a href="<?php echo get_home_url(); ?>">
+    <img src="<?php echo get_template_directory_uri() . '/assets/Icons/VESTA_LOGO.png'; ?>" class="logo"/>
+    </a>
+
+
     <div class="headerNav">
-    <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
+        <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
     </div>
 
 </header>
