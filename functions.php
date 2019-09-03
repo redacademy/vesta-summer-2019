@@ -43,6 +43,20 @@ function vesta_custom_post() {
 
 add_action('init', 'vesta_custom_post');
 
+// Custom Taxonomies
+function vesta_register_taxonomies() {
+    register_taxonomy('faq_category', 'faqs', array(  
+        'show_in_rest' => true,
+        'hierarchical' => true,
+        'public' => true,
+        'labels' => array(
+            'name' => 'FAQ Categories',
+            'singular_name' => 'FAQ Category'
+        )
+    ));
+}
+add_action('init', 'vesta_register_taxonomies');
+
 
 
 
