@@ -9,11 +9,22 @@ function vesta_files() {
 
 add_action('wp_enqueue_scripts', 'vesta_files');
 
-// adds theme support, ex title and tag, featured img
+// Add theme support (ex: title and tag, featured img)
 function vesta_features() {
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
-};
+    register_nav_menus(array(
+        'primary' => 'Primary Menu',
+        'footer' => 'Footer Menu'
+    ));
+}
 
 add_action('after_setup_theme', 'vesta_features'); 
+
+
+
+
+
+
+
 ?>
