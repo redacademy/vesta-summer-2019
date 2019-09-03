@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('title'); ?></title>
 </head>
-<body <?php body_class(); ?>> 
-<h1>This is the Vesta Header</h1>
+<body <?php body_class(); ?>>
+<header>
+    
+</header>
 
