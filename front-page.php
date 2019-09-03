@@ -19,7 +19,7 @@ if( have_posts() ) :
 
 <!-- Main Content of Front Page -->
 <section class="home">
-<img src="./Assets/" alt="">
+        <img src="<?php echo get_template_directory_uri() . '/Assets/Logo/Vesta_LOGO_LETTERS.png';?>">
         <h1>Transforming the workplace</h1>
         <p>Eliminating sexual harassment in the workplace by providing
         a secure reporting platform for employees and employers.</p>
