@@ -9,7 +9,6 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-    <h1>header</h1>
     
 </header>
 

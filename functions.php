@@ -21,6 +21,28 @@ function vesta_features() {
 
 add_action('after_setup_theme', 'vesta_features'); 
 
+// Initialize Custom Post-Type: FAQs
+function vesta_custom_post() {
+    register_post_type('faqs', array(
+        'supports' => array('title', 'editor', 'author'),
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'labels' => array(
+            'name' => 'FAQs',
+            'add_new' => 'Add New FAQ',
+            'add_new_item' => 'FAQ',
+            'edit_item' => 'Edit FAQ',
+            'all_items' => 'All FAQs',
+            'singular_name' => 'FAQ'
+         ),
+         'menu_icon' => 'dashicons-editor-help'
+         
+    ));
+}
+
+add_action('init', 'vesta_custom_post');
+
 
 
 
