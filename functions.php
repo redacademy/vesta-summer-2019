@@ -15,7 +15,8 @@ function vesta_features() {
     add_theme_support('title-tag');
     register_nav_menus(array(
         'primary' => 'Primary Menu',
-        'footer' => 'Footer Menu'
+        'footer' => 'Footer Menu',
+        'sub_footer' => 'Sub-Footer Menu'
     ));
 }
 
