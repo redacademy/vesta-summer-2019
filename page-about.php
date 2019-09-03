@@ -2,14 +2,20 @@
 
 <section class="aboutUs">
 
-    <h1> About vesta</h1>
-    <p>Vesta Social Innovation Technologies was created in response to 
-    the??? global movement. We aim to do what some say is impossible: </p>
-    <h3>Eliminate Rape Culture</h3>
+        <div class="aboutInfo">
+            <h1> About vesta</h1>
+            <p>Vesta Social Innovation Technologies was created in response to the???  <!--??? needs to be edited-->
+            global movement. We aim to do what some say is impossible: </p>
+            <h3>Eliminate Rape Culture</h3>
+            <img src="<?php echo get_template_directory_uri() . '/images/About US/Img__AboutUs__Hero.jpg'; ?>" class="aboutUsImg"/>
+        </div>
 
-    <div class="vmContainer">
-        <div class="vision-mission">
-            <h2>Our Vision & Mission</h2>
+        <div class="ourVisionMission">
+            <div class="headerStyleContainer">
+                <hr class="headerLine">
+                <h2>Our Vision & Mission</h2>
+            </div>
+
             <h3> Provide a safe space for those who have experienced gender based 
             violence or harassment.</h3>
             <p>To give them a new level of control, connectivity and support. 
@@ -17,31 +23,65 @@
             support folks' individual pathways to justice and to healing.</p>
         </div>
 
-        <div class="ourApproach">
-            <h2>Our Approach</h2>
-                <h3>Vesta combines the expertise of clinical and legal experts with the 
-                knowledge of those with lived experiences and front line advocates.</h3>
+        <div class="vmContainer">
+
+            <div class="ourApproach">
                 
-                <p> Create??? a trauma-informed, survivor-centric process that provides 
-                individuals with a tool to document their experience, and create a 
-                reliable, time-stamped record of events.</p>
+                    <div class="headerStyleContainer">
+                        <hr class="headerLine">
+                        <h2>Our Approach</h2>
+                    </div>
+
+
+                    <h3>Vesta combines the expertise of clinical and legal experts with the 
+                    knowledge of those with lived experiences and front line advocates.</h3>
+                    
+                    <p> Create??? a trauma-informed, survivor-centric process that provides <!--??? needs to be edited-->
+                    individuals with a tool to document their experience, and create a 
+                    reliable, time-stamped record of events.</p>
+
+                    <img src="<?php echo get_template_directory_uri() . '/images/About US/img__AboutUss__OurApproach.jpg'; ?>" class="ourApproachImg"/>
+
+                    
+            </div>
+
+            <div class="whyVesta">
+                
+                <div class="headerStyleContainer">
+                    <hr class="headerLine">
+                    <h2>Why Vesta</h2>
+                </div>
+
+                <ul class="whyVestaList">
+                    <h3>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <p>Data Protection</p>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <p>Access to resources???</p><!--??? needs to be edited-->
+                        </li> 
+                        
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <p>Safe Space</p>
+                        </li>
+                    </h3>
+                </ul>
+
+                <img src="<?php echo get_template_directory_uri() . '/images/About US/img__AboutUS__WhyVesta.jpg'; ?>" class="ourWhyVestaImg"/>
+
+            </div>
         </div>
-    </div>
-
-    <div class="whyVesta">
-        <h2>Why Vesta</h2>
-            <ul class="whyVestaList">
-                <h3>
-                    <li>Data Protection </li>
-                    <li>Access to resources???</li>
-                    <li>Safe Space</li>
-                </h3>
-            </ul>
-    </div>
 
 
-    <h3>To learn how vest works, book a free information session</h3>
-    <p>Experience VESTA and how it works towards a safer work environment.</p>
+        <div class="learnMore-about">
+            <h3>To learn how vest works, book a free information session</h3>
+            <p>Experience VESTA and how it works towards a safer work environment.</p>
+            <button class="bookSessionBTN">Book an info session </buttion>
+        </div>
 
 </section>
 
