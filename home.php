@@ -15,24 +15,24 @@
               )); ?>  -->
 
 
-<!-- <?php 
+<?php 
 
-// $catt = get_categories();
-// echo '<pre>';
-// echo '<p>';
-// print_r($catt);
+$catt = get_categories();
+echo '<pre>';
+print_r($catt);
 
-?> -->
+?>
 
 <div class="community-videos">
     <h3> Videos </h3>
         <?php
         // Community Video
-        $cats = get_posts(array(
-            'category' => 'Video Community',
+        $cats = query_posts(array(
+            'category_name' => 'video-community',
             'posts_per_page' => 3,
             'post_status' => 'published', 
             'orderby' => 'date', 
+            
         ));
 
         foreach ($cats as $cat){
@@ -48,7 +48,7 @@
         <?php
         //Community Articles
         $cats = get_posts(array(
-            'category' => 'Article Community',
+            'category_name' => 'article-community',
             'posts_per_page' => 3,
             'post_status' => 'published', 
             'orderby' => 'date', 
@@ -67,7 +67,7 @@
         <?php 
         // Workplace Video
         $cats = get_posts(array(
-            'category' => 'Video Community',
+            'category_name' => 'video-workplace',
             'posts_per_page' => 3,
             'post_status' => 'published', 
             'orderby' => 'date', 
@@ -86,7 +86,7 @@
         <?php
         //Workplace Article
         $cats = get_posts(array(
-            'category' => 'Article Workplace',
+            'category_name' => 'article-workplace',
             'posts_per_page' => 3,
             'post_status' => 'published', 
             'orderby' => 'date', 
@@ -104,7 +104,8 @@
 
 
 
-<!-- <?php 
+<!-- 
+<?php 
 // echo '<pre>';
 // print_r($cats);
 ?> -->
