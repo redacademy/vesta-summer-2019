@@ -1,17 +1,15 @@
 <?php get_header(); ?>
 
 <?php
-if( have_posts() ) :   
-    // Start WP Loop
+if( have_posts() ) :  
     while( have_posts() ) :   
-    the_post(); ?>         
-<h2><?php the_title(); ?></h2>
-<?php the_content(); ?>
+    the_post(); ?> 
+    <section class="book-info-session">
+        <h2><?php the_title(); ?></h2>
+        <?php the_content(); ?>
+    </section>        
 
-    <!-- end of wp loop -->
     <?php endwhile; ?>
-
-<?php the_posts_navigation(); ?> 
 
 <?php else : ?>
         <p>No posts found</p>
