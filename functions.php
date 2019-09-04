@@ -59,6 +59,46 @@ function vesta_register_taxonomies() {
 }
 add_action('init', 'vesta_register_taxonomies');
 
+// Initalize Sidebars
+function vesta_sidebars_widgets() {
+    // Front Page - "The Problem"
+    register_sidebar( array(
+        'name' => esc_html('Front Page - The Problem'),
+        'id' => 'sidebar-the-prob',
+        'description' => 'Place content here for "The Problem" section on front page.',
+        'class' => 'frontpg-prob',
+        'before_widget' => '<section id="%1$s" class="%2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '',
+        'after_title' => ''
+    ));
+
+    // Front Page - "Customer Stories"
+    register_sidebar( array(
+        'name' => esc_html('Front Page - Customer Stories'),
+        'id' => 'sidebar-stories',
+        'description' => 'Drag a new text widget in here for a new customer story.',
+        'class' => 'frontpg-stories',
+        'before_widget' => '<section id="%1$s" class="%2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '',
+        'after_title' => ''
+    ));
+
+    // Contact Us - Contact Info
+    register_sidebar( array(
+        'name' => esc_html('Contact Us Page - Contact Info'),
+        'id' => 'sidebar-contact',
+        'description' => 'Edit contact information.',
+        'class' => 'contact-info-widget',
+        'before_widget' => '<aside id="%1$s" class="%2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+}
+add_action('widgets_init', 'vesta_sidebars_widgets');
 
 
 
