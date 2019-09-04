@@ -21,10 +21,10 @@ wp_footer();
     <div class="lower-footer">
         <div class="footer-nav-2"></div>
         <div class="socials-footer">
-            <img classs="twitter" src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconTwitter.svg';?>">
-            <img classs="facebook" src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconFacebook.svg';?>">
-            <img classs="instagram" src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconInstagram.svg';?>">
-            <img classs="linkedin" src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconLinkedIn.svg';?>">
+            <img classs="twitter" src="<?php echo get_template_directory_uri() . '/images/Icons/IconTwitter.svg';?>">
+            <img classs="facebook" src="<?php echo get_template_directory_uri() . '/images/Icons/IconFacebook.svg';?>">
+            <img classs="instagram" src="<?php echo get_template_directory_uri() . '/images/Icons/IconInstagram.svg';?>">
+            <img classs="linkedin" src="<?php echo get_template_directory_uri() . '/images/Icons/IconLinkedIn.svg';?>">
         </div>
     </div>
 
