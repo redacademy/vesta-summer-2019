@@ -82,13 +82,3 @@ table {
   src: url("./fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothic.woff2") format("woff2"), url("./fonts/CenturyGothic.woff") format("woff"), url("./fonts/CenturyGothic.ttf") format("truetype"), url("./fonts/CenturyGothic.svg#CenturyGothic") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-.fa-minus {
-  display: none; }
-
-.faq-answer {
-  display: none; }
-
-.toggle-answer:hover {
-  cursor: pointer;
-  color: #284683; }
