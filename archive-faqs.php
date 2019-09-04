@@ -23,9 +23,9 @@ foreach($terms as $term) : ?>
     while($faqs->have_posts() ) :   
         $faqs->the_post(); ?>
         <div class="faq-single">
-            <p><?php the_title(); ?></p><i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+            <p><?php the_title(); ?></p><i class="fas fa-plus toggle-answer"></i><i class="fas fa-minus toggle-answer"></i>
             <hr>
-            <p class="faq-answer"><?php the_content(); ?></p>
+            <div class="faq-answer"><?php the_content(); ?></div>
         </div>
         
 
