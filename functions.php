@@ -102,7 +102,4 @@ add_action('widgets_init', 'vesta_sidebars_widgets');
 
 
 
-
-
-
 ?>
