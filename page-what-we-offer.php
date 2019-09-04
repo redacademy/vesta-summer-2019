@@ -5,8 +5,7 @@ if( have_posts() ) :
     // Start WP Loop
     while( have_posts() ) :   
     the_post(); ?>         
-<!-- <h2><?php the_title(); ?></h2> -->
-<?php the_content(); ?>
+<h2><?php the_title(); ?></h2>
 
     <!-- end of wp loop -->
     <?php endwhile; ?>
@@ -19,12 +18,11 @@ if( have_posts() ) :
 
 <main class="what-we-offer">
     <section class="what-we-offer-inner">
-        <h1>What We Offer</h1>
         <p>Our mission is to eliminate sexual harassment in the workplace
         by providing educational resources and easy-to-use and secure
         reporting platform for employees and employers.</p> 
         <div class="what-we-offer-private">
-            <img src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconPrivate.svg';?>">
+            <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconPrivate.svg';?>">
             <div class="inner-private">
                 <h2>Private</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -32,7 +30,7 @@ if( have_posts() ) :
             </div>
         </div>
         <div class="what-we-offer-confidential">
-            <img src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconConfidential.svg';?>">
+            <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconConfidential.svg';?>">
             <div class="inner-confidential">
                 <h2>Confidential</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -40,7 +38,7 @@ if( have_posts() ) :
             </div>
         </div>
         <div class="what-we-offer-trustworthy">
-            <img src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconTrustworthy.svg';?>">
+            <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconTrustworthy.svg';?>">
             <div class="inner-trustworthy">
                 <h2>Trustworthy</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -48,14 +46,14 @@ if( have_posts() ) :
             </div>
         </div>
         <div class="what-we-offer-secure">
-            <img src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconSecure.svg';?>">
+            <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconSecure.svg';?>">
             <div class="inner-secure">
                 <h2>Secure</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do</p>
             </div>
         </div>
-        <input type="submit" class="more-resources-button" value="More Resources">
+        <button class="more-resources-button">More Resources</button>
     </section>
     <section class="how-it-works">
             <div class="header-style-container">
@@ -67,12 +65,12 @@ if( have_posts() ) :
             situations.</p>
             <div class="employee-employer-container">
                 <div class="employee">
-                    <img src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconEmployee.svg';?>">
+                    <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployee.svg';?>">
                     <h3 class="employee">Employee</h3>
                     <hr class="employee-employer-line">
                 </div>  
                 <div class="employer">
-                    <img src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconEmployer.svg';?>">
+                    <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployer.svg';?>">
                     <h3 class="employer">Employer</h3>
                     <hr class="employee-employer-line">
                 </div>
@@ -100,14 +98,14 @@ if( have_posts() ) :
                 </div>
             </div>
     </section>
-    <section class="book-a-demo">
+    <section class="book-info-session">
         <h2>Book a free info session with VESTA today</h2>
         <h3>What will you get?</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Nunc sed blandit libero volutpat sed cras ornare arcu dui. Rhoncus 
         dolor purus non enim praesent elementum facilisis leo. </p>
-        <input type="submit" class="book-info-session-button" value="Book Info Session">
+        <button class="book-info-session-button">Book Info Session</button>
     </section>
 </main>
 <?php get_footer(); ?>
