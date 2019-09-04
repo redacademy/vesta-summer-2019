@@ -17,9 +17,9 @@
 
 <?php 
 
-$catt = get_categories();
+// $catt = get_categories();
 echo '<pre>';
-print_r($catt);
+// print_r($catt);
 
 ?>
 
@@ -27,7 +27,7 @@ print_r($catt);
     <h3> Videos </h3>
         <?php
         // Community Video
-        $cats = query_posts(array(
+        $cats = get_posts(array(
             'category_name' => 'video-community',
             'posts_per_page' => 3,
             'post_status' => 'published', 
@@ -39,6 +39,7 @@ print_r($catt);
             echo '<p>';
             echo $cat->post_excerpt;  
             echo '</p>';  
+            echo get_the_post_thumbnail($cat);
         }?>
 </div>
 
@@ -58,6 +59,8 @@ print_r($catt);
             echo '<p>';
             echo $cat->post_excerpt;  
             echo '</p>';  
+            echo get_the_post_thumbnail($cat);
+
         }?>
 </div>
 
@@ -77,6 +80,7 @@ print_r($catt);
             echo '<p>';
             echo $cat->post_excerpt;  
             echo '</p>';  
+            echo get_the_post_thumbnail($cat);
         }?>
 </div>
 
@@ -96,6 +100,8 @@ print_r($catt);
             echo '<p>';
             echo $cat->post_excerpt;  
             echo '</p>';  
+            echo get_the_post_thumbnail($cat);
+
         }
         ?>
 </div>
@@ -104,11 +110,13 @@ print_r($catt);
 
 
 
-<!-- 
+
 <?php 
 // echo '<pre>';
 // print_r($cats);
-?> -->
+
+
+?> 
 
 
 
