@@ -68,10 +68,12 @@ if( have_posts() ) :
             <div class="employee-employer-container">
                 <div class="employee">
                     <img src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconEmployee.svg';?>">
+                    <h3 class="employee">Employee</h3>
                     <hr class="employee-employer-line">
                 </div>  
                 <div class="employer">
                     <img src="<?php echo get_template_directory_uri() . '/Assets/Icons/IconEmployer.svg';?>">
+                    <h3 class="employer">Employer</h3>
                     <hr class="employee-employer-line">
                 </div>
             </div>
