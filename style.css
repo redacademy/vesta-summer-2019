@@ -83,6 +83,9 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+.fa-minus {
+  display: none; }
+
 .faq-answer {
   display: none; }
 
