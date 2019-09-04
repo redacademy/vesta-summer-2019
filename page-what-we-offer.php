@@ -18,7 +18,7 @@ if( have_posts() ) :
 <?php endif; ?>
 
 <main class="what-we-offer">
-    <section class="what-er-offer-inner">
+    <section class="what-we-offer-inner">
         <h1>What We Offer</h1>
         <p>Our mission is to eliminate sexual harassment in the workplace
         by providing educational resources and easy-to-use and secure
