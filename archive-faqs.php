@@ -1,20 +1,33 @@
 <?php get_header(); ?>
 
-<?php 
-$faqs = new WP_Query( array('post-type' => 'faqs'));
-while($faqs->have_posts()) :
-    $faqs->the_post(); ?>
-    <?php $cats =  get_the_category(); 
-    echo '<pre>';
-    var_dump($cats); 
-    echo '</pre>'; ?>
-    <?php foreach((get_the_category()) as $category) : ?>
-    <div class="faq-category">
-        <h2><?php echo $category->cat_name ?></h2>
-    </div>
-<?php endforeach; ?>
+<?php
+// The WP Loop
+$faqs = new WP_Query(array('post_type' => 'faqs'));  
+    while($faqs->have_posts() ) :   
+        $faqs->the_post(); 
 
-<?php endwhile; ?>
+        // Custom query for categroies
+        foreach((get_terms('faq_category')) as $faq_term) : ?>
+        <h2><?php echo $faq_term->name; ?></h2>
+        <h2><?php the_title(); ?></h2>
+        <hr>
+
+
+
+   <?php endforeach;
+    
+    
+    
+    ?> 
+    
+
+    <!-- end of wp loop -->
+    <?php endwhile; ?>
+
+<?php the_posts_navigation(); ?> 
+
+
+
 
 
 
