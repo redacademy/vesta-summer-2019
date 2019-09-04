@@ -23,12 +23,14 @@
         ));
 
         foreach ($cats as $cat){
-            echo '<p>';
-            echo $cat->post_excerpt;  
-            echo '</p>'; 
+            
             $content = $cat->post_content;
             $media = get_media_embedded_in_content( $content );
             echo $media[0];
+
+            echo '<p>';
+            echo $cat->post_excerpt;  
+            echo '</p>'; 
 
         }?>
 
@@ -69,6 +71,10 @@
         ));
 
         foreach ($cats as $cat){
+            $content = $cat->post_content;
+            $media = get_media_embedded_in_content( $content );
+            echo $media[0];
+
             echo '<p>';
             echo $cat->post_excerpt;  
             echo '</p>';  
@@ -98,13 +104,14 @@
 </div>
 
 
+<p> Can't find what you're looking for? <a href=" " class="resources-book-now-link" >Book info session now.</a></p> 
 
 
 
-<?php 
-echo '<pre>';
-print_r($cats);
-?> 
+<!-- <?php 
+// echo '<pre>';
+// print_r($cats);
+?>  -->
 
 
 
