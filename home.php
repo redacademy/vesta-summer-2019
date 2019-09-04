@@ -9,19 +9,6 @@
 
     <div class="resources-content-container">
 
-    <!-- <?php wp_list_categories( array(
-                  'title_li'=> __( '' ),
-                  'orderby'=> 'name',
-              )); ?>  -->
-
-
-<?php 
-
-// $catt = get_categories();
-echo '<pre>';
-// print_r($catt);
-
-?>
 
 <div class="community-videos">
     <h3> Videos </h3>
@@ -38,9 +25,14 @@ echo '<pre>';
         foreach ($cats as $cat){
             echo '<p>';
             echo $cat->post_excerpt;  
-            echo '</p>';  
-            echo get_the_post_thumbnail($cat);
+            echo '</p>'; 
+            $content = $cat->post_content;
+            $media = get_media_embedded_in_content( $content );
+            echo $media[0];
+
         }?>
+
+        
 </div>
 
 
@@ -80,7 +72,6 @@ echo '<pre>';
             echo '<p>';
             echo $cat->post_excerpt;  
             echo '</p>';  
-            echo get_the_post_thumbnail($cat);
         }?>
 </div>
 
@@ -110,12 +101,9 @@ echo '<pre>';
 
 
 
-
 <?php 
-// echo '<pre>';
-// print_r($cats);
-
-
+echo '<pre>';
+print_r($cats);
 ?> 
 
 
