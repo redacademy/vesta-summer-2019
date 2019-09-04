@@ -1,28 +1,30 @@
 <?php get_header(); ?>
 
 <?php
-// The WP Loop
-$faqs = new WP_Query(array('post_type' => 'faqs'));  
+$terms = get_terms('faq_category');
+foreach($terms as $term) :
+    echo $term->name;
+    $faqs = new WP_Query(array(
+        'post_type' => 'faqs',
+        'order' => 'DESC',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'faq_category',
+                'field' => 'name',
+                'terms' => $term->name
+            ),
+        ),
+    ));
     while($faqs->have_posts() ) :   
         $faqs->the_post(); 
+        the_title();
+        the_content();
+        wp_reset_query()
+?>
 
-        // Custom query for categroies
-        foreach((get_terms('faq_category')) as $faq_term) : ?>
-        <h2><?php echo $faq_term->name; ?></h2>
-        <h2><?php the_title(); ?></h2>
-        <hr>
-
-
-
-   <?php endforeach;
-    
-    
-    
-    ?> 
-    
-
-    <!-- end of wp loop -->
     <?php endwhile; ?>
+    <hr>
+    <?php endforeach; ?>
 
 <?php the_posts_navigation(); ?> 
 
