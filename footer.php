@@ -10,9 +10,11 @@ wp_footer();
         </div>
 
         <div class="footer-subscribe">
-            <p> subscribe to get the latest updates about Vesta</p>
-            <textarea class="subscribe-email">johndoe@gmail.com</textarea>
-            <button class="subscribe-button"> Subscribe</button>
+        <form class="subscribe-form">
+            <label> subscribe to get the latest updates about Vesta</p>
+            <input type="text" class="subscribe-email" placeholder="johndoe@gmail.com">
+            <input type="submit" class="subscribe-button" value=" Subscribe">
+        </form>
         </div>
     </div>
 
