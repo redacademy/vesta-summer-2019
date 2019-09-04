@@ -9,40 +9,108 @@
 
     <div class="resources-content-container">
 
-    <?php wp_list_categories( array(
+    <!-- <?php wp_list_categories( array(
                   'title_li'=> __( '' ),
                   'orderby'=> 'name',
-              )); ?> 
+              )); ?>  -->
 
 
 <!-- <?php 
 
 // $catt = get_categories();
 // echo '<pre>';
+// echo '<p>';
 // print_r($catt);
 
 ?> -->
 
+<div class="community-videos">
+    <h3> Videos </h3>
+        <?php
+        // Community Video
+        $cats = get_posts(array(
+            'category' => 'Video Community',
+            'posts_per_page' => 3,
+            'post_status' => 'published', 
+            'orderby' => 'date', 
+        ));
+
+        foreach ($cats as $cat){
+            echo '<p>';
+            echo $cat->post_excerpt;  
+            echo '</p>';  
+        }?>
+</div>
 
 
-<?php
+<div class="community-articles">
+    <h3> Articles </h3>
+        <?php
+        //Community Articles
+        $cats = get_posts(array(
+            'category' => 'Article Community',
+            'posts_per_page' => 3,
+            'post_status' => 'published', 
+            'orderby' => 'date', 
+        ));
 
-$cats = get_posts(array(
-    'category' => 4,
-    'posts_per_page' => 3,
-    'post_status' => 'published', 
-    'orderby' => 'date', 
-));
+        foreach ($cats as $cat){
+            echo '<p>';
+            echo $cat->post_excerpt;  
+            echo '</p>';  
+        }?>
+</div>
 
-echo '<pre>';
+
+<div class="workplace-videos">
+    <h3> Videos </h3>
+        <?php 
+        // Workplace Video
+        $cats = get_posts(array(
+            'category' => 'Video Community',
+            'posts_per_page' => 3,
+            'post_status' => 'published', 
+            'orderby' => 'date', 
+        ));
+
+        foreach ($cats as $cat){
+            echo '<p>';
+            echo $cat->post_excerpt;  
+            echo '</p>';  
+        }?>
+</div>
+
+
+<div class="workplace-articles">
+    <h3> Articles </h3>
+        <?php
+        //Workplace Article
+        $cats = get_posts(array(
+            'category' => 'Article Workplace',
+            'posts_per_page' => 3,
+            'post_status' => 'published', 
+            'orderby' => 'date', 
+        ));
+
+        foreach ($cats as $cat){
+            echo '<p>';
+            echo $cat->post_excerpt;  
+            echo '</p>';  
+        }
+        ?>
+</div>
+
+
+
+
+
+<!-- <?php 
+// echo '<pre>';
 // print_r($cats);
+?> -->
 
-foreach ($cats as $cat){
-    echo '<pre>';
-    echo $cat->post_excerpt;    
-}
 
-?>
+
         <!-- <?php
         if( have_posts() ) :   
             while( have_posts() ) :   
