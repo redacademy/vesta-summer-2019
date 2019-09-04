@@ -25,7 +25,7 @@ foreach($terms as $term) : ?>
         <div class="faq-single">
             <p><?php the_title(); ?></p><i class="fas fa-plus"></i><i class="fas fa-minus"></i>
             <hr>
-            <p><?php the_content(); ?></p>
+            <p class="faq-answer"><?php the_content(); ?></p>
         </div>
         
 
