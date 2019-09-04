@@ -1,16 +1,49 @@
 <?php get_header(); ?>
 
 
-<section class="resources">
+<main class="resources">
 
     <div class="resources-title-container">
-        <h1><?php the_title(); ?></h1> <!--not working, need to fix-->
         <p> Educational resources and guides.</p>
     </div>
 
     <div class="resources-content-container">
 
-        <?php
+    <?php wp_list_categories( array(
+                  'title_li'=> __( '' ),
+                  'orderby'=> 'name',
+              )); ?> 
+
+
+<!-- <?php 
+
+// $catt = get_categories();
+// echo '<pre>';
+// print_r($catt);
+
+?> -->
+
+
+
+<?php
+
+$cats = get_posts(array(
+    'category' => 4,
+    'posts_per_page' => 3,
+    'post_status' => 'published', 
+    'orderby' => 'date', 
+));
+
+echo '<pre>';
+// print_r($cats);
+
+foreach ($cats as $cat){
+    echo '<pre>';
+    echo $cat->post_excerpt;    
+}
+
+?>
+        <!-- <?php
         if( have_posts() ) :   
             while( have_posts() ) :   
             the_post(); ?>         
@@ -20,10 +53,10 @@
         <?php else : ?>
                 <p>No posts found</p>
         <?php endif; ?>
-        
+         -->
     </div>
 
-</section>
+</main>
 
 <?php get_footer(); ?>
 
