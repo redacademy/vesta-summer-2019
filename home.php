@@ -101,31 +101,29 @@
 
         }
         ?>
+
+<?php the_posts_navigation(); ?> 
+
 </div>
 
 
-<p> Can't find what you're looking for? <a href=" " class="resources-book-now-link" >Book info session now.</a></p> 
+<h3> Can't find what you're looking for?</h3> 
 
+<form action="mailto:someone@example.com" method="post" class="resources-form">
+    <h3>Name:</h3>
+        <input type="text" name="resources-name-form" class="resources-name-form">
+    <br>
 
+    <h3>E-mail:</h3>
+        <input type="text" name="resources-email-form" class="resources-email-form">
+    <br>
 
-<!-- <?php 
-// echo '<pre>';
-// print_r($cats);
-?>  -->
+    <h3>Comment:</h3>
+        <textarea type="text" name="resources-textarea-form" clas="resources-textarea-form"></textarea>
+    <br>
+        <input type="submit" value="Send" class="resources-submit-BTN">
+</form>
 
-
-
-        <!-- <?php
-        if( have_posts() ) :   
-            while( have_posts() ) :   
-            the_post(); ?>         
-        <?php the_content(); ?>
-            <?php endwhile; ?>
-        <?php the_posts_navigation(); ?> 
-        <?php else : ?>
-                <p>No posts found</p>
-        <?php endif; ?>
-         -->
     </div>
 
 </main>
