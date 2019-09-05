@@ -1,7 +1,5 @@
 (function($) {
     const $faqIcon = $('.toggle-answer')
-    const $plusIcon = $('.fa-plus')
-    const $minusIcon = $('.fa-minus')
 
     // Toggle FAQ - allow multiple open
     $faqIcon.on('click', (e) => {

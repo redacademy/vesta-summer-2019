@@ -33,8 +33,6 @@ foreach($terms as $term) : ?>
     <?php wp_reset_query(); ?>
     <?php endforeach; ?>
 
-<!-- <?php the_posts_navigation(); ?>  -->
-
 
 <?php get_footer(); ?>
 

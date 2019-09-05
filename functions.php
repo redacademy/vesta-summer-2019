@@ -3,8 +3,8 @@
 
 // Add scripts and stylesheets
 function vesta_files() {
-    wp_enqueue_style('custom-fa', "https://use.fontawesome.com/releases/v5.8.2/css/all.css");
     wp_enqueue_style('vesta_workplace_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
+    wp_enqueue_style('custom-fa', "https://use.fontawesome.com/releases/v5.8.2/css/all.css");
     wp_enqueue_script('test_js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
 };
 
@@ -59,6 +59,7 @@ function vesta_register_taxonomies() {
 }
 add_action('init', 'vesta_register_taxonomies');
 
+
 // Initalize Sidebars
 function vesta_sidebars_widgets() {
     // Front Page - "The Problem"
@@ -72,7 +73,6 @@ function vesta_sidebars_widgets() {
         'before_title' => '',
         'after_title' => ''
     ));
-
     // Front Page - "Customer Stories"
     register_sidebar( array(
         'name' => esc_html('Front Page - Customer Stories'),
@@ -84,7 +84,6 @@ function vesta_sidebars_widgets() {
         'before_title' => '',
         'after_title' => ''
     ));
-
     // Contact Us - Contact Info
     register_sidebar( array(
         'name' => esc_html('Contact Us Page - Contact Info'),
@@ -96,11 +95,8 @@ function vesta_sidebars_widgets() {
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
-
 }
 add_action('widgets_init', 'vesta_sidebars_widgets');
-
-
 
 
 
