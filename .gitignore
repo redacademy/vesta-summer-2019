@@ -37,4 +37,3 @@ node_modules/
 # Ignore certain files/folders #
 # =============== #
 assets/
-gulpfile.js
