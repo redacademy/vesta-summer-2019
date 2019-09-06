@@ -33,12 +33,14 @@ if( have_posts() ) :
         </form>   
         
         <aside class="info-session-confirm">
+        <i class="fas fa-times-circle"></i>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icons/iconMessageSent.svg" >
                 <h1>Confirmed</h1>
                 <div class="personal-msg"></div>
                 <button>Return to home</button>
                 <p>Interested in Resources? <a href="<?php echo get_post_type_archive_link('post'); ?>">Learn More</a></p>
         </aside>
+        <div class="grey-overlay"></div>
 
     <?php endwhile; ?>
 

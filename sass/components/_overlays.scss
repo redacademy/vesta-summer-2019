@@ -1,0 +1,25 @@
+.grey-overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.64;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+//  Book Info Session Confirmation Box
+
+.info-session-confirm {
+    background-color: #fff;
+    border: 0px solid #fff;
+    border-radius: 17px;
+    width: 433px;
+    height: 352px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+}
