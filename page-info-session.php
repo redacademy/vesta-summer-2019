@@ -7,7 +7,32 @@ if( have_posts() ) :
     <section class="book-info-session">
         <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>
-    </section>        
+    </section>  
+    <form action="" method="POST" id="info-session-form">
+            <label for="book-session-user-name">Full Name</label>
+            <br>
+            <input type="text" id="book-session-user-name" name="full-name" placeholder="John Doe" required>
+            <br>
+
+            <label for="book-session-email">Work Email</label>
+            <br>
+            <input type="text" id="book-session-email" name="user-email" placeholder="johndoe@gmail.com" required>
+            <br>
+
+            <label for="book-session-company">Company Name</label>
+            <br>
+            <input type="text" id="book-session-company" name="company" placeholder="John's Industries">
+            <br>
+
+            <label for="book-session-message">Message (Optional)</label>
+            <br>
+            <textarea id="book-session-message" name="book-info-message" placeholder="Anything else you would like to tell us?"></textarea>
+            <br>
+
+            <input type="submit" class="book-info-session" value="Book info session">
+        </form>   
+        
+        <aside></aside>
 
     <?php endwhile; ?>
 
