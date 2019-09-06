@@ -7,11 +7,12 @@
     top: 0;
     left: 0;
     z-index: 20;
+    display: none;
 }
 
 //  Book Info Session Confirmation Box
 
-.info-session-confirm {
+.msg-overlay {
     background-color: #fff;
     border: 0px solid #fff;
     border-radius: 17px;
@@ -22,4 +23,5 @@
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 30;
+    display: none;
 }

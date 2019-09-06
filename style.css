@@ -89,12 +89,6 @@ i.fa-minus {
 .faq-answer {
   display: none; }
 
-.info-session-confirm {
-  border: 0px solid #fff;
-  border-radius: 17px;
-  width: 733px;
-  height: 652px; }
-
 .toggle-answer:hover {
   cursor: pointer;
   color: #284683; }
@@ -107,9 +101,10 @@ i.fa-minus {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20; }
+  z-index: 20;
+  display: none; }
 
-.info-session-confirm {
+.msg-overlay {
   background-color: #fff;
   border: 0px solid #fff;
   border-radius: 17px;
@@ -120,4 +115,5 @@ i.fa-minus {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 30; }
+  z-index: 30;
+  display: none; }
