@@ -1,4 +1,11 @@
+<?php get_header(); ?>
 
-<h1>You landed on a broken page</h1>
+<section class="404-page">
+    <img class="404-icon" src="">
+    <h2 class="404">404</h2>
+    <h1 class="404-page-not-found">Page Not Found</h1>
+    <p>The page are looking for doesn't exist.
+    Click <a href="<?php echo esc_url(home_url( '/' ));?>">here</a> to go to Home Page</p>
+</section>
 
 <?php get_footer(); ?>
