@@ -15,7 +15,7 @@
 
     const $bookSessionBtn = $('input.book-info-session')
     const $personalMsg = $('.personal-msg')
-    const $greyOverlay = $('.book-pg-dark-overlay')
+    const $greyOverlayBookPg = $('.book-pg-dark-overlay')
     const $bookMsgBox = $('.info-session-confirm')
 
     $bookSessionBtn.on('click', (e) => {
@@ -24,11 +24,15 @@
         $personalMsg.append(`<p>Thank you for booking an info session! <br>
         We have sent a confirmation to your email at ${$userEmail}</p>`);
 
-        ($greyOverlay).fadeIn();
+        ($greyOverlayBookPg).fadeIn();
         ($bookMsgBox).fadeIn();
+    })
 
+    const $closeBtn = $('.fa-times-circle')
 
-
+    $closeBtn.on('click', () => {
+        $bookMsgBox.hide()
+        $greyOverlayBookPg.fadeOut()
     })
     
 

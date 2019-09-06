@@ -93,6 +93,9 @@ i.fa-minus {
   cursor: pointer;
   color: #284683; }
 
+.fa-times-circle:hover {
+  cursor: pointer; }
+
 .grey-overlay {
   width: 100vw;
   height: 100vh;

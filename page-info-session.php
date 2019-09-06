@@ -37,7 +37,7 @@ if( have_posts() ) :
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icons/iconMessageSent.svg" >
                 <h1>Confirmed</h1>
                 <div class="personal-msg"></div>
-                <button>Return to home</button>
+                <a href="<?php echo home_url(); ?>">Return to home</a>
                 <p>Interested in Resources? <a href="<?php echo get_post_type_archive_link('post'); ?>">Learn More</a></p>
         </aside>
         <div class="book-pg-dark-overlay grey-overlay"></div>
