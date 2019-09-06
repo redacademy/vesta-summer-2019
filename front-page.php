@@ -21,9 +21,8 @@ if( have_posts() ) :
 <?php endif; ?>
 
 
-
-
 <main class="home">
+  
     <section class="home-transforming">
         <img src="<?php echo get_template_directory_uri() . '/images/Homepage/img__homepage__hero.png';?>" alt="Vesta Woman">
         <h1>Transforming the workplace</h1>
@@ -31,6 +30,7 @@ if( have_posts() ) :
         a secure reporting platform for employees and employers.</p>
         <div class="image-holder"></div>
     </section>
+  
     <section class="home-the-problem">
         <div class="problem-article">
             <div class="header-style-container">
@@ -45,6 +45,7 @@ if( have_posts() ) :
         <div class="problem-widget">
         </div>
     </section>
+  
     <section class="home-strength">
         <div class="header-style-container">
             <hr class="header-line">
@@ -66,6 +67,7 @@ if( have_posts() ) :
             coercion, or exclusion.</p>
         </div>
     </section>
+  
     <section class="home-solution">
         <img class="solution-image" src="<?php echo get_template_directory_uri() . '/images/Homepage/img__homepage__thesolution.png';?>" alt="Vesta on devices">
         <div class="inner-solution">
@@ -80,6 +82,7 @@ if( have_posts() ) :
                 <input type="submit" class="what-we-offer-button" value="What We Offer">
         </div>
     </section>
+  
     <section class="home-customer-stories">
         <div class="header-style-container">
                     <hr class="header-line">
@@ -92,17 +95,19 @@ if( have_posts() ) :
             </div>
         </div>
     </section>
+  
     <section class="trusted-partners">
         <div class="partners-list">
-            <img src="<?php echo get_template_directory_uri() . '/images/Partners/logo-canada.png';?>" alt="GOvernment of Canada">
-            <img src="<?php echo get_template_directory_uri() . '/images/Partners/legal-innovation-zone-logo.png';?>" alt="Legal Innovation Zone">
-            <img src="<?php echo get_template_directory_uri() . '/images/Partners/social-venture-zone-logo.jpg';?>" alt="Social Venture Zone">
+            <a href="https://cfc-swc.gc.ca/index-en.html" target="_blank"><img src="<?php echo get_template_directory_uri() . '/images/Partners/logo-canada.png';?>" alt="Government of Canada"></a>
+            <a href="http://www.legalinnovationzone.ca/startup/vesta-social-innovation-technologies/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/images/Partners/legal-innovation-zone-logo.png';?>" alt="Legal Innovation Zone"></a>
+            <a href="https://www.ryerson.ca/svz/projects/vesta/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/images/Partners/social-venture-zone-logo.jpg';?>" alt="Social Venture Zone"></a>
             <img src="<?php echo get_template_directory_uri() . '/images/Partners/unilever_edited.png';?>" alt="Unilever Impact">
         </div>
     </section>
+  
     <section class="home-subscribe">
-    <h2> Subscribe to get the latest updates</h2>
-    <form class="subscribe-form">
+      <h2> Subscribe to get the latest updates</h2>
+      <form class="subscribe-form">
             <label>Enter your Email address</p>
             <input type="text" class="subscribe-email" placeholder="johndoe@gmail.com">
             <input type="submit" class="subscribe-button" value="Subscribe">

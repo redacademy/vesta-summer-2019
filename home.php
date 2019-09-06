@@ -105,6 +105,7 @@
                         echo '</p>';  
                         echo get_the_post_thumbnail($cat);
                     }
+            
                     ?>
 
             <?php the_posts_navigation(); ?> 
