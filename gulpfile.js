@@ -72,7 +72,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8888/vesta'
+    proxy: 'localhost:8888/vesta-workplace'
   });
 
   gulp.watch(files).on('change', browserSync.stream);

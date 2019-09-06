@@ -84,8 +84,7 @@ table {
   font-style: normal; }
 
 i.fa-minus {
-  display: none;
-  color: red; }
+  display: none; }
 
 .faq-answer {
   display: none; }
@@ -93,3 +92,31 @@ i.fa-minus {
 .toggle-answer:hover {
   cursor: pointer;
   color: #284683; }
+
+.fa-times-circle:hover {
+  cursor: pointer; }
+
+.grey-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.64;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: none; }
+
+.msg-overlay {
+  background-color: #fff;
+  border: 0px solid #fff;
+  border-radius: 17px;
+  width: 433px;
+  height: 352px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 30;
+  display: none; }
