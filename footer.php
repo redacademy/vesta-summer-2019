@@ -5,7 +5,7 @@ wp_footer();
 <div class="footer">
     <div class="footer-inner-container">
         <div class="upper-footer">
-            <div class="footer-logo"><img src="<?php echo get_template_directory_uri(). '/images/Icons/IconInstagram.svg';?>"></div>
+            <div class="footer-logo"><img src="<?php echo get_template_directory_uri(). '/images/Homepage/';?>"></div>
             <div class="footer-nav"><?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>  </div>
         </div>
 
