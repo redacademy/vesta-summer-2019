@@ -32,7 +32,10 @@ if( have_posts() ) :
             <input type="submit" class="book-info-session" value="Book info session">
         </form>   
         
-        <aside></aside>
+        <aside class="info-session-confirm">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/iconMessageSent.svg" >
+                <h1>Confirmed</h1>
+        </aside>
 
     <?php endwhile; ?>
 
