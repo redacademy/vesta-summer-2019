@@ -96,9 +96,9 @@ if( have_posts() ) :
   
     <section class="trusted-partners">
         <div class="partners-list">
-            <img src="<?php echo get_template_directory_uri() . '/images/Partners/logo-canada.png';?>" alt="GOvernment of Canada">
-            <img src="<?php echo get_template_directory_uri() . '/images/Partners/legal-innovation-zone-logo.png';?>" alt="Legal Innovation Zone">
-            <img src="<?php echo get_template_directory_uri() . '/images/Partners/social-venture-zone-logo.jpg';?>" alt="Social Venture Zone">
+            <a href="https://cfc-swc.gc.ca/index-en.html" target="_blank"><img src="<?php echo get_template_directory_uri() . '/images/Partners/logo-canada.png';?>" alt="Government of Canada"></a>
+            <a href="http://www.legalinnovationzone.ca/startup/vesta-social-innovation-technologies/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/images/Partners/legal-innovation-zone-logo.png';?>" alt="Legal Innovation Zone"></a>
+            <a href="https://www.ryerson.ca/svz/projects/vesta/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/images/Partners/social-venture-zone-logo.jpg';?>" alt="Social Venture Zone"></a>
             <img src="<?php echo get_template_directory_uri() . '/images/Partners/unilever_edited.png';?>" alt="Unilever Impact">
         </div>
     </section>
