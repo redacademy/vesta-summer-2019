@@ -35,6 +35,9 @@ if( have_posts() ) :
         <aside class="info-session-confirm">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icons/iconMessageSent.svg" >
                 <h1>Confirmed</h1>
+                <div class="personal-msg"></div>
+                <button>Return to home</button>
+                <p>Interested in Resources? <a href="<?php echo get_post_type_archive_link('post'); ?>">Learn More</a></p>
         </aside>
 
     <?php endwhile; ?>

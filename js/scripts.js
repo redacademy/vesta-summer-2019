@@ -13,13 +13,12 @@
 
 //      Book Info Session Page
     const $bookSessionBtn = $('input.book-info-session')
-    const $sendConfirmBox = $('.info-session-confirm')
-    console.log($sendConfirmBox)
+    const $personalMsg = $('.personal-msg')
 
     $bookSessionBtn.on('click', (e) => {
         e.preventDefault()
         let $userEmail = $('#book-session-email').val()
-        $sendConfirmBox.append(`<p>Thank you for booking an info session! <br>
+        $personalMsg.append(`<p>Thank you for booking an info session! <br>
         We have sent a confirmation to your email at ${$userEmail}</p>`)
 
     })
