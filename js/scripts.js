@@ -37,29 +37,9 @@
         $greyOverlayBookPg.fadeOut()
     }
 
-    // Close on icon click
     const $closeBtn = $('.fa-times-circle')
     $closeBtn.on('click', closeModal)
-
-     // Close when user clicks outside of modal
-    if($bookMsgBox.is(':hidden')) {
-        console.log('box is none')
-    }
-
-     
-        // $(window).on('click', (e) => {
-        //     if($bookMsgBox.is(':hidden')) {
-        //         // do nothing
-        //     }
-        //     else {
-        //         closeModal();
-        //     }
-
-        //     // if(e.target !== $bookMsgBox) {
-        //     //     console.log(e.target)
-        //     //     closeModal();
-        //     //  }
-        // })
+    $greyOverlayBookPg.on('click', closeModal)
     
     
 
