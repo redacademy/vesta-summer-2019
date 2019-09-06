@@ -21,10 +21,10 @@ wp_footer();
     <div class="lower-footer">
         <div class="footer-nav-2"></div>
         <div class="socials-footer">
-            <img classs="twitter" src="<?php echo get_template_directory_uri() . '/images/Icons/IconTwitter.svg';?>">
-            <img classs="facebook" src="<?php echo get_template_directory_uri() . '/images/Icons/IconFacebook.svg';?>">
-            <img classs="instagram" src="<?php echo get_template_directory_uri() . '/images/Icons/IconInstagram.svg';?>">
-            <img classs="linkedin" src="<?php echo get_template_directory_uri() . '/images/Icons/IconLinkedIn.svg';?>">
+            <a href="https://twitter.com/vestasit" target="_blank"><img classs="twitter" src="<?php echo get_template_directory_uri() . '/images/Icons/IconTwitter.svg';?>"></a>
+            <a href="https://www.facebook.com/VestaSIT/" target="_blank"><img classs="facebook" src="<?php echo get_template_directory_uri() . '/images/Icons/IconFacebook.svg';?>"></a>
+            <a href="https://www.instagram.com/vesta.s.i.t/" target="_blank"><img classs="instagram" src="<?php echo get_template_directory_uri() . '/images/Icons/IconInstagram.svg';?>"></a>
+            <a href="https://www.linkedin.com/company/vesta-social-innovation-technologies/" target="_blank"><img classs="linkedin" src="<?php echo get_template_directory_uri() . '/images/Icons/IconLinkedIn.svg';?>"></a>
         </div>
     </div>
 
