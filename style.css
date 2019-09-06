@@ -84,7 +84,8 @@ table {
   font-style: normal; }
 
 i.fa-minus {
-  display: none; }
+  display: none;
+  color: red; }
 
 .faq-answer {
   display: none; }
