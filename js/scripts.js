@@ -19,16 +19,27 @@
     const $bookMsgBox = $('.info-session-confirm')
     const $closeBtn = $('.fa-times-circle')
     const bookForm = document.getElementById('wpcf7-f43-p32-o1')
-    const $bookSuccessAlert = $('#wpcf7-f43-p32-o1 .wpcf7-mail-sent-ok')
+    const $bookSuccessAlert = $('.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok.msg-overlay')
+    const templateUrl = vestaVariables.templateUrl
+    const homeUrl = vestaVariables.homeUrl
+    const resourcesUrl = vestaVariables.resourcesUrl
 
     // $bookSuccessAlert.append('<i class="fas fa-times-circle"></i>') // append as first child x icon and email icon
     // append as second child, 
 
     bookForm.addEventListener( 'wpcf7mailsent', function( event ) {
         console.log(event)
-        event.detail.apiResponse.message = '<i class="fas fa-times-circle"></i>'
-        console.log(event.detail.apiResponse.message)
-        // $('.wpcf7-response-output').addClass('msg-overlay info-session-confirm');
+        let $userEmail = $('#wpcf7-f43-p32-o1 .wpcf7-email').val()
+        event.detail.apiResponse.message = '<i class="fas fa-times-circle"></i>' + 
+         '<img src="' + templateUrl + '/images/icons/iconMessageSent.svg" >' +
+         '<h1>Confirmed</h1>' +
+         '<p>Thank you for booking an info session! <br>' +
+         'We have sent a confirmation to your email at ' + $userEmail + '</p>' +
+         '<a href="' + homeUrl + '" class="vesta-btn">Return to home</a>' +
+         '<p class="alert-footer">Interested in Resources? <a href="' + resourcesUrl + '">Learn More</a></p>';
+        // console.log(event.detail.apiResponse.message)
+        $('.wpcf7-response-output').addClass('msg-overlay');
+        ($greyOverlayBookPg).fadeIn();
         // $bookMsgBox.fadeIn()
 
     }, false );
@@ -53,7 +64,7 @@
     
     // Close modal...
     function closeModal() {
-        $bookMsgBox.hide()
+        $bookSuccessAlert.hide()
         $greyOverlayBookPg.fadeOut()
     }
 
