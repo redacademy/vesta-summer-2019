@@ -23,7 +23,7 @@
     $bookSessionBtn.on('click', (e) => {
         // e.preventDefault()
         $personalMsg.empty()
-        let $userEmail = $('#book-session-email').val()
+        let $userEmail = $('#wpcf7-f43-p32-o1 .wpcf7-email').val()
         $('.wpcf7-mail-sent-ok').css('display', 'none')
         $personalMsg.append(`<p>Thank you for booking an info session! <br>
         We have sent a confirmation to your email at ${$userEmail}</p>`);
