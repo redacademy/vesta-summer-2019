@@ -91,19 +91,22 @@ i.fa-minus {
   display: none; }
 
 .about-us {
-  text-align: center; }
+  text-align: center;
+  width: 1019px;
+  margin: 0 auto; }
   .about-us p {
     font-size: 24px;
     letter-spacing: -0.53px; }
   .about-us .about-info {
-    text-align: center;
-    width: 686px; }
+    text-align: center; }
     .about-us .about-info h1 {
       margin: 31px 0 23px 0; }
       .about-us .about-info h1 .uppercase {
         text-transform: uppercase; }
     .about-us .about-info p {
-      margin-bottom: 21px; }
+      margin-bottom: 21px;
+      width: 686px;
+      margin: 0 auto 20px auto; }
     .about-us .about-info .about-us-image {
       width: 818px;
       height: 379px;
@@ -111,7 +114,8 @@ i.fa-minus {
          object-fit: contain;
       margin: 28px 0 162px 0; }
   .about-us .our-vision-mission {
-    width: 620px; }
+    width: 620px;
+    margin: 0 auto; }
     .about-us .our-vision-mission .header-line {
       margin-left: 145px; }
     .about-us .our-vision-mission h2 {
@@ -174,7 +178,7 @@ i.fa-minus {
         padding-top: 9px; }
   .about-us .learn-more-about {
     width: 542px;
-    margin: 121px 0 89px 0; }
+    margin: 121px auto 89px auto; }
     .about-us .learn-more-about h3 {
       margin-bottom: 21px; }
     .about-us .learn-more-about p {
