@@ -136,7 +136,9 @@ i.fa-minus {
       width: 498px;
       height: 566px;
       text-align: left;
-      background-color: #3965ee; }
+      background: rgba(57, 101, 238, 0.44); }
+      .about-us .vm-container .our-approach .header-line, .about-us .vm-container .why-vesta .header-line {
+        margin-top: 59px; }
       .about-us .vm-container .our-approach h2, .about-us .vm-container .our-approach h3, .about-us .vm-container .why-vesta h2, .about-us .vm-container .why-vesta h3 {
         margin-bottom: 23px; }
     .about-us .vm-container img {
@@ -157,6 +159,8 @@ i.fa-minus {
         color: #5a1933;
         padding-right: 24px;
         font-size: 46px; }
+    .about-us .vm-container .why-vesta-list p {
+      padding-top: 9px; }
   .about-us .learn-more-about {
     width: 542px; }
     .about-us .learn-more-about h3 {
