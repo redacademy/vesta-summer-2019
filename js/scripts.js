@@ -13,7 +13,7 @@
 
 //      Book Info Session Page
 
-    const $bookSessionBtn = $('input.book-info-session')
+    const $bookSessionBtn = $('.wpcf7-submit')
     const $nameField = $('#book-session-user-name')
     const $personalMsg = $('.personal-msg')
     const $greyOverlayBookPg = $('.book-pg-dark-overlay')
@@ -22,7 +22,9 @@
     // Open modal
     $bookSessionBtn.on('click', (e) => {
         // e.preventDefault()
+        $personalMsg.empty()
         let $userEmail = $('#book-session-email').val()
+        $('.wpcf7-mail-sent-ok').css('display', 'none')
         $personalMsg.append(`<p>Thank you for booking an info session! <br>
         We have sent a confirmation to your email at ${$userEmail}</p>`);
 
