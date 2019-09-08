@@ -1,11 +1,9 @@
 .about-us{
     text-align: center;
     p{
-        height: 98px;
         font-size: 24px;
         letter-spacing: -0.53px;
     }
-
     .about-info{
         text-align: center;
         width: 686px;
@@ -15,15 +13,28 @@
                 text-transform: uppercase;
             }
         }
-        
+        p{
+            margin-bottom: 21px;
+        }
         .about-us-image{
             width: 818px;
             height: 379px;
             object-fit: contain;
+            margin: 28px 0 162px 0;
         }
     }
     .our-vision-mission{
         width: 620px;
+        h2{
+            letter-spacing: -0.8px;
+            margin-bottom: 21px;
+        }
+        h3{
+            margin-bottom: 21px;
+        }
+        p{
+            margin-bottom: 50px;
+        }
     }
 
     .vm-container{
@@ -38,6 +49,9 @@
             height: 566px; 
             text-align: left;
             background-color: $primary-color;
+            h2, h3{
+                margin-bottom: 23px;
+            }
         }
         img{
             width: 437px;
@@ -48,14 +62,22 @@
             li{
                 display: flex;
                 flex-direction: row;
-                .fa-check-circle{
-                    width: 46px;
-                    height: 46px;
+                padding-bottom: 32px;
+                .fa-check-circle:before{
                     color: $accent-button-color;
+                    padding-right: 24px;
+                    font-size: 46px;
                 }
             }
         }
-
     }
-
+    .learn-more-about{
+        width: 542px;
+        h3{
+            margin-bottom: 21px;
+        }
+        p{
+        margin-bottom: 35px;
+        }
+    }
 }
