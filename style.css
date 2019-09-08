@@ -89,6 +89,9 @@ i.fa-minus {
 .faq-answer {
   display: none; }
 
+div.wpcf7-mail-sent-ok {
+  border-color: #fff; }
+
 .toggle-answer:hover {
   cursor: pointer;
   color: #284683; }

@@ -14,23 +14,41 @@
 //      Book Info Session Page
 
     const $bookSessionBtn = $('.wpcf7-submit')
-    const $nameField = $('#book-session-user-name')
     const $personalMsg = $('.personal-msg')
     const $greyOverlayBookPg = $('.book-pg-dark-overlay')
     const $bookMsgBox = $('.info-session-confirm')
+    const $closeBtn = $('.fa-times-circle')
+    const bookForm = document.getElementById('wpcf7-f43-p32-o1')
+    const $bookSuccessAlert = $('#wpcf7-f43-p32-o1 .wpcf7-mail-sent-ok')
 
-    // Open modal
-    $bookSessionBtn.on('click', (e) => {
-        // e.preventDefault()
-        $personalMsg.empty()
-        let $userEmail = $('#wpcf7-f43-p32-o1 .wpcf7-email').val()
-        $('.wpcf7-mail-sent-ok').css('display', 'none')
-        $personalMsg.append(`<p>Thank you for booking an info session! <br>
-        We have sent a confirmation to your email at ${$userEmail}</p>`);
+    // $bookSuccessAlert.append('<i class="fas fa-times-circle"></i>') // append as first child x icon and email icon
+    // append as second child, 
 
-        ($greyOverlayBookPg).fadeIn();
-        ($bookMsgBox).fadeIn();
-    })
+    bookForm.addEventListener( 'wpcf7mailsent', function( event ) {
+        console.log(event)
+        event.detail.apiResponse.message = '<i class="fas fa-times-circle"></i>'
+        console.log(event.detail.apiResponse.message)
+        // $('.wpcf7-response-output').addClass('msg-overlay info-session-confirm');
+        // $bookMsgBox.fadeIn()
+
+    }, false );
+
+    
+
+
+    
+
+    // // Open modal
+    // $bookSessionBtn.on('click', (e) => {
+    //     // e.preventDefault()
+    //     $personalMsg.empty()
+    //     let $userEmail = $('#wpcf7-f43-p32-o1 .wpcf7-email').val()
+    //     $personalMsg.append(`<p>Thank you for booking an info session! <br>
+    //     We have sent a confirmation to your email at ${$userEmail}</p>`);
+
+    //     ($greyOverlayBookPg).fadeIn();
+    //     ($bookMsgBox).fadeIn();
+    // })
 
     
     // Close modal...
@@ -39,7 +57,6 @@
         $greyOverlayBookPg.fadeOut()
     }
 
-    const $closeBtn = $('.fa-times-circle')
     $closeBtn.on('click', closeModal)
     $greyOverlayBookPg.on('click', closeModal)
     
