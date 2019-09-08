@@ -25,6 +25,9 @@
     }
     .our-vision-mission{
         width: 620px;
+        .header-line{
+            margin-left: 145px;
+        }
         h2{
             letter-spacing: -0.8px;
             margin-bottom: 21px;
@@ -42,31 +45,43 @@
         flex-direction: row;
         justify-content: space-between;
         width: 1019px;
-        margin-bottom: 301px;
+        height: 725px;
 
-
-        .our-approach, .why-vesta{
+        .our-approach-container, .why-vesta-container{
             width: 498px;
             height: 566px; 
             text-align: left;
             background: rgba(57, 101, 238, 0.44);
+
+            .our-approach, .why-vesta{
+                margin: 0 38px 0 52px;
+            }
+
             .header-line{
                 margin-top: 59px;
             }
             h2, h3{
                 margin-bottom: 23px;
             }
+            p{
+                line-height: 1.29;
+                font-size: 21px;  
+                padding-bottom: 25px;
+            }
         }
         img{
             width: 437px;
             height: 291px;
             object-fit: contain;
+            margin-left: -25px;
         }
+
         .why-vesta-list{
+            margin-bottom: 42px;
             li{
                 display: flex;
                 flex-direction: row;
-                padding-bottom: 32px;
+                padding-bottom: 26px;
                 .fa-check-circle:before{
                     color: $accent-button-color;
                     padding-right: 24px;
@@ -76,11 +91,11 @@
             p{
                 padding-top: 9px;
             }
-  
         }
     }
     .learn-more-about{
         width: 542px;
+        margin-top: 121px;
         h3{
             margin-bottom: 21px;
         }

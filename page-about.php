@@ -24,9 +24,11 @@
         </div>
 
         <div class="vm-container">
+            <div class="our-approach-container">
 
-            <div class="our-approach">
-                
+                <div class="our-approach">
+                    
+                    
                     <div class="header-style-container">
                         <hr class="header-line">
                         <h2>Our Approach</h2>
@@ -35,44 +37,48 @@
 
                     <h3>Vesta combines the expertise of clinical and legal experts with the 
                     knowledge of those with lived experiences and front line advocates.</h3>
-                    
+                        
                     <p> Create??? a trauma-informed, survivor-centric process that provides <!--??? needs to be edited-->
                     individuals with a tool to document their experience, and create a 
                     reliable, time-stamped record of events.</p>
 
                     <img src="<?php echo get_template_directory_uri() . '/images/About US/img__AboutUss__OurApproach.jpg'; ?>" class="our-approach-image"/>
 
-                    
+                        
+                </div>
             </div>
 
-            <div class="why-vesta">
-                
-                <div class="header-style-container">
-                    <hr class="header-line">
-                    <h2>Why Vesta</h2>
+            <div class="why-vesta-container">
+
+                <div class="why-vesta">
+                    
+                    <div class="header-style-container">
+                        <hr class="header-line">
+                        <h2>Why Vesta</h2>
+                    </div>
+
+                    <ul class="why-vesta-list">
+                        <h3>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <p>Data Protection</p>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <p>Access to resources???</p><!--??? needs to be edited-->
+                            </li> 
+                            
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <p>Safe Space</p>
+                            </li>
+                        </h3>
+                    </ul>
+
+                    <img src="<?php echo get_template_directory_uri() . '/images/About US/img__AboutUS__WhyVesta.jpg'; ?>" class="our-why-vesta-image"/>
+
                 </div>
-
-                <ul class="why-vesta-list">
-                    <h3>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <p>Data Protection</p>
-                        </li>
-
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <p>Access to resources???</p><!--??? needs to be edited-->
-                        </li> 
-                        
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <p>Safe Space</p>
-                        </li>
-                    </h3>
-                </ul>
-
-                <img src="<?php echo get_template_directory_uri() . '/images/About US/img__AboutUS__WhyVesta.jpg'; ?>" class="our-why-vesta-image"/>
-
             </div>
         </div>
 
