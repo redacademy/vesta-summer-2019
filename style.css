@@ -99,7 +99,7 @@ i.fa-minus {
     text-align: center;
     width: 686px; }
     .about-us .about-info h1 {
-      padding-bottom: 23px; }
+      margin: 31px 0 23px 0; }
       .about-us .about-info h1 .uppercase {
         text-transform: uppercase; }
     .about-us .about-info p {
