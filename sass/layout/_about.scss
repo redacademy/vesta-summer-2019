@@ -48,10 +48,7 @@
         height: 725px;
 
         .our-approach-container, .why-vesta-container{
-            width: 498px;
-            height: 566px; 
-            text-align: left;
-            background: rgba(57, 101, 238, 0.44);
+            @include approach-vesta-container;
 
             .our-approach, .why-vesta{
                 margin: 0 38px 0 52px;

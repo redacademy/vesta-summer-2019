@@ -206,6 +206,11 @@ p {
   border: solid 1px #2e3438;
   margin-left: 0; }
 
+.book-session-BTN {
+  border-radius: 29px;
+  background-color: #3965ee;
+  color: #fff; }
+
 .toggle-answer:hover {
   cursor: pointer;
   color: #284683; }

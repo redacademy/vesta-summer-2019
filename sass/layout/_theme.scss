@@ -28,3 +28,8 @@ p{
     border: solid 1px $font-color;
     margin-left: 0;
 }
+
+.book-session-BTN{
+    @include book-btn;
+
+}

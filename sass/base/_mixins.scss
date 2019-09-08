@@ -3,3 +3,10 @@
     background-color: $primary-color;
     color: #fff;
 }
+
+@mixin approach-vesta-container{
+    width: 498px;
+    height: 566px; 
+    text-align: left;
+    background: rgba(57, 101, 238, 0.44);
+}
