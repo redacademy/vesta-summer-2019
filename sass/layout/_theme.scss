@@ -1,0 +1,29 @@
+h1{
+    font-family: 'Century Gothic Bold';
+    font-size: 48px;
+    color: $header-color;
+}
+
+h2{
+    font-family: 'Century Gothic Bold';
+    font-size: 36px;
+    color: $font-color;
+}
+
+h3{
+    font-family: 'Century Gothic Bold';
+    font-size: 24px;
+    color: $font-color;
+}
+
+p{
+    font-family: 'Century Gothic';
+}
+
+.header-line{
+    width: 113px;
+    height: 2px;
+    background-color: $font-color;
+    border: solid 1px $font-color;
+    margin-left: 0;
+}

@@ -1,0 +1,61 @@
+.about-us{
+    text-align: center;
+    p{
+        height: 98px;
+        font-size: 24px;
+        letter-spacing: -0.53px;
+    }
+
+    .about-info{
+        text-align: center;
+        width: 686px;
+        h1{
+            padding-bottom: 23px;
+            .uppercase{
+                text-transform: uppercase;
+            }
+        }
+        
+        .about-us-image{
+            width: 818px;
+            height: 379px;
+            object-fit: contain;
+        }
+    }
+    .our-vision-mission{
+        width: 620px;
+    }
+
+    .vm-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1019px;
+        margin-bottom: 301px;
+
+        .our-approach, .why-vesta{
+            width: 498px;
+            height: 566px; 
+            text-align: left;
+            background-color: $primary-color;
+        }
+        img{
+            width: 437px;
+            height: 291px;
+            object-fit: contain;
+        }
+        .why-vesta-list{
+            li{
+                display: flex;
+                flex-direction: row;
+                .fa-check-circle{
+                    width: 46px;
+                    height: 46px;
+                    color: $accent-button-color;
+                }
+            }
+        }
+
+    }
+
+}

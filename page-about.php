@@ -3,11 +3,11 @@
 <section class="about-us">
 
         <div class="about-info">
-            <h1> About vesta</h1>
+            <h1> About <span class="uppercase">vesta</span></h1>
             <p>Vesta Social Innovation Technologies was created in response to the???  <!--??? needs to be edited-->
             global movement. We aim to do what some say is impossible: </p>
             <h3>Eliminate Rape Culture</h3>
-            <img src="<?php echo get_template_directory_uri() . '/images/About US/Img__AboutUs__Hero.jpg'; ?>" class="about-us-image"/>
+            <img src="<?php echo get_template_directory_uri() . '/images/About US/Img__AboutUs__Hero.jpg'; ?>" class="about-us-image" alt="two-women-talking"/>
         </div>
 
         <div class="our-vision-mission">
