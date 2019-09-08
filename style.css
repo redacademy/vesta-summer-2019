@@ -209,7 +209,8 @@ p {
 .book-session-BTN {
   border-radius: 29px;
   background-color: #3965ee;
-  color: #fff; }
+  color: #fff;
+  padding: 19px 38px; }
 
 .toggle-answer:hover {
   cursor: pointer;
