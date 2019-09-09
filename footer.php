@@ -12,7 +12,7 @@ wp_footer();
 
         <div class="footer-subscribe">
         <form class="subscribe-form">
-            <label> Subscribe to get the latest updates about Vesta</p>
+            <label> Subscribe to get the latest updates about Vesta</label>
             <input type="text" class="subscribe-email" placeholder="johndoe@gmail.com">
             <input type="submit" class="subscribe-button" value=" Subscribe">
         </form>
@@ -20,7 +20,7 @@ wp_footer();
     </div>
 
     <div class="lower-footer">
-        <div class="footer-nav-2"></div>
+        <div class="footer-nav-2"><?php wp_nav_menu( array( 'theme_location' => 'sub-footer' ) ); ?></div>
         <div class="socials-footer">
             <a href="https://twitter.com/vestasit" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.facebook.com/VestaSIT/" target="_blank"><i class="fab fa-facebook-square"></i></a>

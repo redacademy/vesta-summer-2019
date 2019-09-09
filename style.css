@@ -110,7 +110,7 @@ table {
       .footer .footer-inner-container .upper-footer .footer-nav ul a {
         list-style-type: none;
         text-transform: capitalize;
-        font-family: 'Century Gothic';
+        font-family: 'Century Gothic Bold';
         text-decoration: none;
         font-size: 18px;
         color: #2e3438; }
@@ -126,16 +126,16 @@ table {
       padding-left: 200px; }
       .footer .footer-inner-container .footer-subscribe .subscribe-form label {
         font-size: 18px;
-        font-family: 'Century Gothic';
+        font-family: 'Century Gothic Bold';
         color: #2e3438; }
       .footer .footer-inner-container .footer-subscribe .subscribe-form .subscribe-email {
         height: 35px;
-        width: 360px;
+        width: 80%;
         position: relative;
         margin-top: 20px;
         font-size: 14px;
         font-family: 'Century Gothic';
-        padding-left: 10px;
+        padding-left: 20px;
         color: #2e3438; }
       .footer .footer-inner-container .footer-subscribe .subscribe-form .subscribe-button {
         position: absolute;
@@ -160,17 +160,25 @@ table {
           flex: 100%;
   background-color: #284683; }
   .footer .lower-footer .footer-nav-2 {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%; }
+    margin-left: 130px; }
+    .footer .lower-footer .footer-nav-2 ul a {
+      list-style-type: none;
+      text-transform: capitalize;
+      font-family: 'Century Gothic';
+      font-size: 14px;
+      color: white; }
+    .footer .lower-footer .footer-nav-2 li {
+      display: inline;
+      padding-right: 25px; }
   .footer .lower-footer .socials-footer {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
-    margin-left: 848px; }
+    margin-left: 658px; }
     .footer .lower-footer .socials-footer i {
       color: white;
       font-size: 30px;
       width: auto;
       max-width: 100%;
-      margin-right: 10px; }
+      margin-right: 10px;
+      margin-top: 10px; }
