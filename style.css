@@ -83,7 +83,76 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-.footer {
+.footer .footer-inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   background-color: #c3d0f9; }
-  .footer .lower-footer {
-    background-color: #284683; }
+  .footer .footer-inner-container .upper-footer {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%; }
+    .footer .footer-inner-container .upper-footer .footer-logo {
+      margin: 20px 0 0 130px; }
+      .footer .footer-inner-container .upper-footer .footer-logo .logo-black {
+        height: 70px;
+        width: auto; }
+      .footer .footer-inner-container .upper-footer .footer-logo .logo-letter {
+        height: 15px;
+        margin-bottom: 25px; }
+    .footer .footer-inner-container .upper-footer .footer-nav {
+      margin: 10px 0 30px 130px; }
+      .footer .footer-inner-container .upper-footer .footer-nav ul a {
+        list-style-type: none;
+        text-transform: capitalize;
+        font-family: 'Century Gothic';
+        text-decoration: none;
+        font-size: 18px;
+        color: #2e3438; }
+      .footer .footer-inner-container .upper-footer .footer-nav li {
+        display: inline;
+        padding-right: 25px; }
+  .footer .footer-inner-container .footer-subscribe {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%; }
+    .footer .footer-inner-container .footer-subscribe .subscribe-form {
+      margin-top: 42px;
+      padding-left: 200px; }
+      .footer .footer-inner-container .footer-subscribe .subscribe-form label {
+        font-size: 18px;
+        font-family: 'Century Gothic';
+        color: #2e3438; }
+      .footer .footer-inner-container .footer-subscribe .subscribe-form .subscribe-email {
+        height: 35px;
+        width: 360px;
+        position: relative;
+        margin-top: 20px;
+        font-size: 14px;
+        font-family: 'Century Gothic';
+        padding-left: 10px;
+        color: #2e3438; }
+      .footer .footer-inner-container .footer-subscribe .subscribe-form .subscribe-button {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: -135px;
+        height: 40px;
+        width: 135px;
+        background-color: #5a1933;
+        color: white;
+        font-size: 14px;
+        font-family: 'Century Gothic';
+        text-transform: uppercase; }
+
+.footer .lower-footer {
+  background-color: #284683; }
+  .footer .lower-footer img {
+    color: white;
+    height: 30px;
+    width: auto;
+    max-width: 100%; }

@@ -1,7 +1,85 @@
 .footer{
-background-color:#c3d0f9;
-.lower-footer{
-    background-color: $primary-dark;
+    .footer-inner-container{
+        display: flex;
+        flex: 100%;
+        flex-wrap: nowrap;
+        background-color:#c3d0f9;
+        .upper-footer{
+            flex:50%;
+            .footer-logo{
+                margin: 20px 0 0 130px;
+                .logo-black{
+                    height: 70px;
+                    width: auto;
+                }
+                .logo-letter{
+                    height: 15px;
+                    margin-bottom: 25px;
+                }
+            }
+            .footer-nav{
+                margin: 10px 0 30px 130px;
+                ul a{
+                    list-style-type: none;
+                    text-transform: capitalize;
+                    font-family: 'Century Gothic';
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: $font-color;
+                }
+                li{
+                    display: inline;
+                    padding-right: 25px;
+                }
+            }
+        }
+        .footer-subscribe{
+            flex:50%;
+            .subscribe-form{
+                margin-top: 42px;
+                padding-left: 200px;
+            
+                label{
+                    font-size: 18px;
+                    font-family: 'Century Gothic';
+                    color: $font-color;
+                    
+                }
+                .subscribe-email{
+                    height:35px;
+                    width:360px;
+                    position: relative;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    font-family: 'Century Gothic';
+                    padding-left:10px;
+                    color: $font-color;
+                }
+                .subscribe-button{
+                    position: absolute;
+                    margin-top: 20px;
+                    margin-left: -135px;
+                    height:40px;
+                    width:135px;
+                    background-color: $accent-button-color;
+                    color: white;
+                    font-size: 14px;
+                    font-family: 'Century Gothic';
+                    text-transform: uppercase;
+
+                }
+            }
+        }
 }
+
+    .lower-footer{
+        background-color: $primary-dark;
+        img{
+            color:white;
+            height: 30px;
+            width:auto;
+            max-width: 100%;
+        }
+    }
 
 }
