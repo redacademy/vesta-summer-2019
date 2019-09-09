@@ -1,12 +1,40 @@
 header{
     display: flex;
+    flex: 100%;
     flex-wrap: nowrap;
+    margin-left:130px;
     .header-logo{
         height:57px;
         width:auto;
         max-width: 100%;
+        margin: 20px 15px 0 0;
     }
     .header-logo-letter{
-        
+        height:15px;
+        width:auto;
+        max-width: 100%;
+        margin: 42px 0 0 0;
     }
+    .header-nav{
+        flex: 50%;
+        margin-left: 700px;
+        ul a{
+            list-style-type: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: 'Century Gothic';
+            font-size:18PX;
+        }
+        li{
+            display: inline;
+            padding-right: 25px;
+        }
+        .book-info-session{
+            font-family: 'Century Gothic';
+            font-size: 16px;
+            text-transform: uppercase;
+            @include book-btn; 
+        }
+    }
+    
 }

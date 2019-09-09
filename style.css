@@ -87,12 +87,44 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
+      flex-wrap: nowrap;
+  margin-left: 130px; }
   header .header-logo {
     height: 57px;
     width: auto;
-    max-width: 100%; }
+    max-width: 100%;
+    margin: 20px 15px 0 0; }
+  header .header-logo-letter {
+    height: 15px;
+    width: auto;
+    max-width: 100%;
+    margin: 42px 0 0 0; }
+  header .header-nav {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    margin-left: 700px; }
+    header .header-nav ul a {
+      list-style-type: none;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-family: 'Century Gothic';
+      font-size: 18PX; }
+    header .header-nav li {
+      display: inline;
+      padding-right: 25px; }
+    header .header-nav .book-info-session {
+      font-family: 'Century Gothic';
+      font-size: 16px;
+      text-transform: uppercase;
+      border-radius: 29px;
+      background-color: #3965ee;
+      color: #fff;
+      padding: 19px 38px; }
 
 i.fa-minus {
   display: none; }
