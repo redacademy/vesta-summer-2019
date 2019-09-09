@@ -4,3 +4,12 @@
         color: $primary-dark;
     }
 }
+
+.learn-more-about{
+    .book-session-BTN{
+        @include book-btn;
+        padding: 19px 38px;
+        font-size: 16px;
+    }
+}
+

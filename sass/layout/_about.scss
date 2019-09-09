@@ -1,10 +1,8 @@
 .about-us{
     text-align: center;
-    width: 1019px;
     margin: 0 auto;
 
     p{
-        font-size: 24px;
         letter-spacing: -0.53px;
     }
     .about-info{
@@ -22,7 +20,7 @@
 
         }
         .about-us-image{
-            width: 818px;
+            width: 100%;
             height: 379px;
             object-fit: contain;
             margin: 28px 0 162px 0;
@@ -31,6 +29,7 @@
     .our-vision-mission{
         width: 620px;
         margin: 0 auto;
+
         .header-line{
             margin-left: 145px;
         }
@@ -50,55 +49,61 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 1019px;
+        min-width: 875px;
+        max-width: 1019px;
         height: 725px;
+        margin: 0 auto;
 
         .our-approach-container, .why-vesta-container{
             @include approach-vesta-container;
 
             .our-approach, .why-vesta{
-                margin: 0 38px 0 52px;
-            }
+                padding: 0 45px 7.5% 45px;
+                height: 350px;
 
-            .header-line{
-                margin-top: 59px;
-            }
-            h2, h3{
-                margin-bottom: 23px;
-            }
-            p{
-                line-height: 1.29;
-                font-size: 21px;  
-                padding-bottom: 25px;
-            }
-        }
-        img{
-            width: 437px;
-            height: 291px;
-            object-fit: contain;
-            margin-left: -25px;
-        }
+                .header-line{
+                    margin-top: 59px;
+                }
+                h2, h3{
+                    margin-bottom: 23px;
+                }
+            } 
 
+            .vm-images{
+                width: 90%;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                } 
+            }
+            
+        }
+        
         .why-vesta-list{
-            margin-bottom: 42px;
+            
             li{
                 display: flex;
                 flex-direction: row;
-                padding-bottom: 26px;
+                margin-bottom: 2.5em;
+
                 .fa-check-circle:before{
                     color: $accent-button-color;
                     padding-right: 24px;
-                    font-size: 46px;
+                    font-size: 42px;
                 }
+                p{
+                    font-size: 1em;
+                }
+                
             }
-            p{
-                padding-top: 9px;
-            }
+            
         }
     }
     .learn-more-about{
-        width: 542px;
-        margin: 121px auto 89px auto;
+        margin: 0 auto;
+        padding-top: 120px;
         h3{
             margin-bottom: 21px;
         }

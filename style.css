@@ -83,6 +83,30 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+h1, h2, h3 {
+  font-family: 'Century Gothic Bold'; }
+
+h1 {
+  font-size: 48px;
+  color: #32393d; }
+
+h2 {
+  font-size: 36px;
+  color: #2e3438; }
+
+h3 {
+  font-size: 24px;
+  color: #2e3438; }
+
+p {
+  font-family: 'Century Gothic';
+  font-size: 18px;
+  color: #2e3438;
+  line-height: 1.5em; }
+
+.uppercase {
+  text-transform: uppercase; }
+
 i.fa-minus {
   display: none;
   color: red; }
@@ -92,10 +116,8 @@ i.fa-minus {
 
 .about-us {
   text-align: center;
-  width: 1019px;
   margin: 0 auto; }
   .about-us p {
-    font-size: 24px;
     letter-spacing: -0.53px; }
   .about-us .about-info {
     text-align: center; }
@@ -108,7 +130,7 @@ i.fa-minus {
       width: 686px;
       margin: 0 auto 20px auto; }
     .about-us .about-info .about-us-image {
-      width: 818px;
+      width: 100%;
       height: 379px;
       -o-object-fit: contain;
          object-fit: contain;
@@ -136,72 +158,53 @@ i.fa-minus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 1019px;
-    height: 725px; }
+    min-width: 875px;
+    max-width: 1019px;
+    height: 725px;
+    margin: 0 auto; }
     .about-us .vm-container .our-approach-container, .about-us .vm-container .why-vesta-container {
-      width: 498px;
-      height: 566px;
+      width: 49%;
+      height: 565px;
       text-align: left;
-      background: rgba(57, 101, 238, 0.44); }
+      background: rgba(57, 101, 238, 0.44);
+      margin: 0 auto; }
       .about-us .vm-container .our-approach-container .our-approach, .about-us .vm-container .our-approach-container .why-vesta, .about-us .vm-container .why-vesta-container .our-approach, .about-us .vm-container .why-vesta-container .why-vesta {
-        margin: 0 38px 0 52px; }
-      .about-us .vm-container .our-approach-container .header-line, .about-us .vm-container .why-vesta-container .header-line {
-        margin-top: 59px; }
-      .about-us .vm-container .our-approach-container h2, .about-us .vm-container .our-approach-container h3, .about-us .vm-container .why-vesta-container h2, .about-us .vm-container .why-vesta-container h3 {
-        margin-bottom: 23px; }
-      .about-us .vm-container .our-approach-container p, .about-us .vm-container .why-vesta-container p {
-        line-height: 1.29;
-        font-size: 21px;
-        padding-bottom: 25px; }
-    .about-us .vm-container img {
-      width: 437px;
-      height: 291px;
-      -o-object-fit: contain;
-         object-fit: contain;
-      margin-left: -25px; }
-    .about-us .vm-container .why-vesta-list {
-      margin-bottom: 42px; }
-      .about-us .vm-container .why-vesta-list li {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        padding-bottom: 26px; }
-        .about-us .vm-container .why-vesta-list li .fa-check-circle:before {
-          color: #5a1933;
-          padding-right: 24px;
-          font-size: 46px; }
-      .about-us .vm-container .why-vesta-list p {
-        padding-top: 9px; }
+        padding: 0 45px 7.5% 45px;
+        height: 350px; }
+        .about-us .vm-container .our-approach-container .our-approach .header-line, .about-us .vm-container .our-approach-container .why-vesta .header-line, .about-us .vm-container .why-vesta-container .our-approach .header-line, .about-us .vm-container .why-vesta-container .why-vesta .header-line {
+          margin-top: 59px; }
+        .about-us .vm-container .our-approach-container .our-approach h2, .about-us .vm-container .our-approach-container .our-approach h3, .about-us .vm-container .our-approach-container .why-vesta h2, .about-us .vm-container .our-approach-container .why-vesta h3, .about-us .vm-container .why-vesta-container .our-approach h2, .about-us .vm-container .why-vesta-container .our-approach h3, .about-us .vm-container .why-vesta-container .why-vesta h2, .about-us .vm-container .why-vesta-container .why-vesta h3 {
+          margin-bottom: 23px; }
+      .about-us .vm-container .our-approach-container .vm-images, .about-us .vm-container .why-vesta-container .vm-images {
+        width: 90%;
+        margin: 0 auto; }
+        .about-us .vm-container .our-approach-container .vm-images img, .about-us .vm-container .why-vesta-container .vm-images img {
+          width: 100%;
+          height: auto;
+          -o-object-fit: contain;
+             object-fit: contain; }
+    .about-us .vm-container .why-vesta-list li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin-bottom: 2.5em; }
+      .about-us .vm-container .why-vesta-list li .fa-check-circle:before {
+        color: #5a1933;
+        padding-right: 24px;
+        font-size: 42px; }
+      .about-us .vm-container .why-vesta-list li p {
+        font-size: 1em; }
   .about-us .learn-more-about {
-    width: 542px;
-    margin: 121px auto 89px auto; }
+    margin: 0 auto;
+    padding-top: 120px; }
     .about-us .learn-more-about h3 {
       margin-bottom: 21px; }
     .about-us .learn-more-about p {
       margin-bottom: 35px; }
-
-h1 {
-  font-family: 'Century Gothic Bold';
-  font-size: 48px;
-  color: #32393d; }
-
-h2 {
-  font-family: 'Century Gothic Bold';
-  font-size: 36px;
-  color: #2e3438; }
-
-h3 {
-  font-family: 'Century Gothic Bold';
-  font-size: 24px;
-  color: #2e3438; }
-
-p {
-  font-family: 'Century Gothic';
-  color: #2e3438; }
 
 .header-line {
   width: 113px;
@@ -210,12 +213,14 @@ p {
   border: solid 1px #2e3438;
   margin-left: 0; }
 
-.book-session-BTN {
-  border-radius: 29px;
-  background-color: #3965ee;
-  color: #fff;
-  padding: 19px 38px; }
-
 .toggle-answer:hover {
   cursor: pointer;
   color: #284683; }
+
+.learn-more-about .book-session-BTN {
+  border-radius: 29px;
+  background-color: #3965ee;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 19px 38px;
+  font-size: 16px; }

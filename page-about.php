@@ -3,7 +3,7 @@
 <section class="about-us">
 
         <div class="about-info">
-            <h1> About vesta</h1>
+            <h1> About <span class="uppercase">vesta</span></h1>
             <p>Vesta Social Innovation Technologies was created in response to the???  <!--??? needs to be edited-->
             global movement. We aim to do what some say is impossible: </p>
             <h3>Eliminate Rape Culture</h3>
@@ -42,9 +42,11 @@
                     individuals with a tool to document their experience, and create a 
                     reliable, time-stamped record of events.</p>
 
-                    <img src="<?php echo get_template_directory_uri() . '/images/About US/img__AboutUss__OurApproach.jpg'; ?>" class="our-approach-image"/>
-
-                        
+     
+                </div>
+                
+                <div class="vm-images">
+                <img src="<?php echo get_template_directory_uri() . '/images/About US/img__AboutUss__OurApproach.jpg'; ?>" class="our-approach-image"/>
                 </div>
             </div>
 
@@ -76,8 +78,10 @@
                         </h3>
                     </ul>
 
-                    <img src="<?php echo get_template_directory_uri() . '/images/About US/img__AboutUS__WhyVesta.jpg'; ?>" class="our-why-vesta-image"/>
 
+                </div>
+                <div class="vm-images">
+                <img src="<?php echo get_template_directory_uri() . '/images/About US/img__AboutUS__WhyVesta.jpg'; ?>" class="our-why-vesta-image"/>
                 </div>
             </div>
         </div>

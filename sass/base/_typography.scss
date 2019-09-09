@@ -47,3 +47,32 @@
 }
 
 
+h1, h2, h3 {
+    font-family: 'Century Gothic Bold';
+}
+
+h1{
+    font-size: 48px;
+    color: $header-color;
+}
+
+h2{
+    font-size: 36px;
+    color: $font-color;
+}
+
+h3{
+    font-size: 24px;
+    color: $font-color;
+}
+
+p{
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    color: $font-color;
+    line-height: 1.5em;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
