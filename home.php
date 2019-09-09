@@ -51,10 +51,10 @@
                     ));
 
                     foreach ($cats as $cat){
+                        echo get_the_post_thumbnail($cat);
                         echo '<p>';
                         echo $cat->post_excerpt;  
                         echo '</p>';  
-                        echo get_the_post_thumbnail($cat);
                     }?>
             </div>
         </section>
@@ -101,10 +101,10 @@
                     ));
 
                     foreach ($cats as $cat){
+                        echo get_the_post_thumbnail($cat);
                         echo '<p>';
                         echo $cat->post_excerpt;  
                         echo '</p>';  
-                        echo get_the_post_thumbnail($cat);
                     }
             
                     ?>
