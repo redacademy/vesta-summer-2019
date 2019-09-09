@@ -11,22 +11,23 @@
         $(e.target).siblings('div.faq-answer').slideToggle(); 
     })
 
+    
 
-//      Book Info Session Page
+    // BOOK INFO SESSION & CONTACT US Pages
 
+    // Book Info Session Variables
     const $greyOverlayBookPg = $('.book-pg-dark-overlay')
     const $bookInfoWrapper = $('.book-info-session ')
-    // const bookForm = document.getElementById('wpcf7-f43-p32-o1')
     const bookForm = document.querySelector('.book-info-session .wpcf7')
     
+    // Global Vesta Variables
     const templateUrl = vestaVariables.templateUrl
     const homeUrl = vestaVariables.homeUrl
     const resourcesUrl = vestaVariables.resourcesUrl
     const $wpcf7Btn = $('.wpcf7-submit')
 
-
+    // Contact Us Variables
     const $greyOverlayContactPg = $('.contact-pg-dark-overlay')
-    // const contactForm = document.getElementById('wpcf7-f71-p17-o1')
     const contactForm = document.querySelector('.contact-us-form .wpcf7')
     const $contactUsWrapper = $('.contact-us-form')
 
@@ -37,7 +38,7 @@
         $('.wpcf7-response-output').removeClass('msg-overlay');
     });
 
-    // Open modal on successful book info form submission
+    // OPEN modal on successful book info form submission
     if(bookForm) {
         bookForm.addEventListener( 'wpcf7mailsent', function( event ) {
             let $userEmail = $('#wpcf7-f43-p32-o1 .wpcf7-email').val()
@@ -55,8 +56,7 @@
     }
     
 
-
-    // Opens on successful Contact form submission
+    // OPEN modal on successful contact form submission
     if(contactForm) {
         contactForm.addEventListener( 'wpcf7mailsent', function( event ) {
             event.detail.apiResponse.message = `<i class="fas fa-times-circle"></i>
@@ -69,12 +69,8 @@
         }, false );
     }
     
-
-
-
-
     
-    // Close modals (Booking and Contact Pg)
+    // CLOSE modals (Booking and Contact Pg)
     function closeModal() {
         $('.wpcf7-mail-sent-ok').hide()
         $greyOverlayBookPg.fadeOut()
