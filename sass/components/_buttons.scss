@@ -4,3 +4,10 @@
         color: $primary-dark;
     }
 }
+
+// Close pop-up button
+.fa-times-circle {
+    &:hover {
+        cursor: pointer;
+    }
+}
