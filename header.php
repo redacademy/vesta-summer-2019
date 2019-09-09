@@ -12,7 +12,7 @@
 
 <header>
     <a href="<?php echo get_home_url(); ?>">
-    <img src="<?php echo get_template_directory_uri() . '/images/Icons/VESTA_LOGO.png'; ?>" class="header-logo"/>
+    <img src="<?php echo get_template_directory_uri() . '/images/Icons/vest_logo.png'; ?>" class="header-logo"/>
     </a>
 
     <div class="header-nav">
