@@ -83,15 +83,155 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-left: 130px; }
+  header .header-logo {
+    height: 57px;
+    width: auto;
+    max-width: 100%;
+    margin: 20px 15px 0 0; }
+  header .header-logo-letter {
+    height: 15px;
+    width: auto;
+    max-width: 100%;
+    margin: 42px 0 0 0; }
+  header .header-nav {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    margin-left: 700px; }
+    header .header-nav ul a {
+      list-style-type: none;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-family: 'Century Gothic';
+      font-size: 18PX; }
+    header .header-nav li {
+      display: inline;
+      padding-right: 25px; }
+    header .header-nav .book-info-session {
+      font-family: 'Century Gothic';
+      font-size: 16px;
+      text-transform: uppercase;
+      border-radius: 29px;
+      background-color: #3965ee;
+      color: #fff;
+      padding: 19px 38px; }
+
+.footer-inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #c3d0f9; }
+  .footer-inner-container .upper-footer {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%; }
+    .footer-inner-container .upper-footer .footer-logo {
+      margin: 20px 0 0 130px; }
+      .footer-inner-container .upper-footer .footer-logo .logo-black {
+        height: 70px;
+        width: auto; }
+      .footer-inner-container .upper-footer .footer-logo .logo-letter {
+        height: 15px;
+        margin-bottom: 25px; }
+    .footer-inner-container .upper-footer .footer-nav {
+      margin: 10px 0 30px 130px; }
+      .footer-inner-container .upper-footer .footer-nav ul a {
+        list-style-type: none;
+        text-transform: capitalize;
+        font-family: 'Century Gothic Bold';
+        text-decoration: none;
+        font-size: 18px;
+        color: #2e3438; }
+      .footer-inner-container .upper-footer .footer-nav li {
+        display: inline;
+        padding-right: 25px; }
+  .footer-inner-container .footer-subscribe {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%; }
+    .footer-inner-container .footer-subscribe .subscribe-form {
+      margin-top: 42px;
+      padding-left: 200px; }
+      .footer-inner-container .footer-subscribe .subscribe-form label {
+        font-size: 18px;
+        font-family: 'Century Gothic Bold';
+        color: #2e3438; }
+      .footer-inner-container .footer-subscribe .subscribe-form .subscribe-email {
+        height: 35px;
+        width: 80%;
+        position: relative;
+        margin-top: 20px;
+        font-size: 14px;
+        font-family: 'Century Gothic';
+        padding-left: 20px;
+        color: #2e3438; }
+      .footer-inner-container .footer-subscribe .subscribe-form .subscribe-button {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: -135px;
+        height: 40px;
+        width: 135px;
+        background-color: #5a1933;
+        color: white;
+        font-size: 14px;
+        font-family: 'Century Gothic';
+        text-transform: uppercase; }
+
+.lower-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  background-color: #284683; }
+  .lower-footer .footer-nav-2 {
+    margin-left: 130px; }
+    .lower-footer .footer-nav-2 ul a {
+      list-style-type: none;
+      text-transform: capitalize;
+      font-family: 'Century Gothic';
+      font-size: 14px;
+      color: white; }
+    .lower-footer .footer-nav-2 li {
+      display: inline;
+      padding-right: 25px; }
+  .lower-footer .socials-footer {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    margin-left: 658px; }
+    .lower-footer .socials-footer i {
+      color: white;
+      font-size: 30px;
+      width: auto;
+      max-width: 100%;
+      margin-right: 10px;
+      margin-top: 10px; }
+
 i.fa-minus {
   display: none; }
 
 .faq-answer {
   display: none; }
 
-
-div.wpcf7-mail-sent-ok {
-  border-color: #fff; }
 .about-us {
   text-align: center;
   width: 1019px;
@@ -218,7 +358,8 @@ p {
   color: #fff;
   padding: 19px 38px; }
 
-/* Book Info Session */
+div.wpcf7-mail-sent-ok {
+  border-color: #fff; }
 
 .toggle-answer:hover {
   cursor: pointer;
