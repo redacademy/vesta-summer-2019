@@ -69,7 +69,7 @@ if( have_posts() ) :
     </section>
   
     <section class="home-solution">
-        <img class="solution-image" src="<?php echo get_template_directory_uri() . '/images/Homepage/img__homepage__thesolution.png';?>" alt="Vesta on devices">
+        <img class="solution-image" src="<?php echo get_template_directory_uri() . '/images/homepage/img_homepage_thesolution.png';?>" alt="Vesta on devices">
         <div class="inner-solution">
             <div class="header-style-container">
                 <hr class="header-line">
