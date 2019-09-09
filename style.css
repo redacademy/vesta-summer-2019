@@ -127,7 +127,8 @@ i.fa-minus {
         text-transform: uppercase; }
     .about-us .about-info p {
       margin-bottom: 21px;
-      width: 686px;
+      width: 80%;
+      max-width: 686px;
       margin: 0 auto 20px auto; }
     .about-us .about-info .about-us-image {
       width: 100%;
@@ -136,7 +137,8 @@ i.fa-minus {
          object-fit: contain;
       margin: 28px 0 162px 0; }
   .about-us .our-vision-mission {
-    width: 620px;
+    width: 80%;
+    max-width: 620px;
     margin: 0 auto; }
     .about-us .our-vision-mission .header-line {
       margin-left: 145px; }
