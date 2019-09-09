@@ -78,12 +78,7 @@ table {
 
 @font-face {
   font-family: 'Century Gothic';
-  src: url("./fonts/CenturyGothic.eot");
-  src: url("./fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothic.woff2") format("woff2"), url("./fonts/CenturyGothic.woff") format("woff"), url("./fonts/CenturyGothic.ttf") format("truetype"), url("./fonts/CenturyGothic.svg#CenturyGothic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 
-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +86,6 @@ header {
       -ms-flex: 100%;
           flex: 100%;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   margin-left: 130px; }
   header .header-logo {
     height: 57px;
@@ -276,19 +270,18 @@ div.wpcf7-mail-sent-ok {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
-  display: none; }
 
-.msg-overlay {
-  background-color: #fff;
-  border: 0px solid #fff;
-  border-radius: 17px;
-  width: 433px;
-  height: 352px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 30;
-  display: none; }
+  background-color: #c3d0f9; }
+  .footer-inner-container .upper-footer {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%; }
+    .footer-inner-container .upper-footer .footer-logo {
+      margin: 20px 0 0 130px; }
+      .footer-inner-container .upper-footer .footer-logo .logo-black {
+        height: 70px;
+        width: auto; }
+      .footer-inner-container .upper-footer .footer-logo .logo-letter {
+        height: 15px;
+
+
