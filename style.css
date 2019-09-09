@@ -89,6 +89,9 @@ i.fa-minus {
 .faq-answer {
   display: none; }
 
+
+div.wpcf7-mail-sent-ok {
+  border-color: #fff; }
 .about-us {
   text-align: center;
   width: 1019px;
@@ -214,6 +217,8 @@ p {
   background-color: #3965ee;
   color: #fff;
   padding: 19px 38px; }
+
+/* Book Info Session */
 
 .toggle-answer:hover {
   cursor: pointer;

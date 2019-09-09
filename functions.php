@@ -5,7 +5,12 @@
 function vesta_files() {
     wp_enqueue_style('vesta_workplace_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
     wp_enqueue_style('custom-fa', "https://use.fontawesome.com/releases/v5.8.2/css/all.css");
-    wp_enqueue_script('test_js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
+    wp_enqueue_script('vesta_scripts_js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
+    wp_localize_script('vesta_scripts_js', 'vestaVariables', array(
+        'templateUrl' => get_template_directory_uri(),
+        'homeUrl' => get_home_url(),
+        'resourcesUrl' => get_post_type_archive_link('post'),
+    ));
 };
 
 add_action('wp_enqueue_scripts', 'vesta_files');

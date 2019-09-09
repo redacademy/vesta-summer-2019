@@ -13,32 +13,36 @@
 
 //      Book Info Session Page
 
-    const $bookSessionBtn = $('input.book-info-session')
-    const $nameField = $('#book-session-user-name')
-    const $personalMsg = $('.personal-msg')
     const $greyOverlayBookPg = $('.book-pg-dark-overlay')
-    const $bookMsgBox = $('.info-session-confirm')
+    const $bookInfoWrapper = $('.book-info-session')
+    const bookForm = document.getElementById('wpcf7-f43-p32-o1')
+    const templateUrl = vestaVariables.templateUrl
+    const homeUrl = vestaVariables.homeUrl
+    const resourcesUrl = vestaVariables.resourcesUrl
 
-    // Open modal
-    $bookSessionBtn.on('click', (e) => {
-        // e.preventDefault()
-        let $userEmail = $('#book-session-email').val()
-        $personalMsg.append(`<p>Thank you for booking an info session! <br>
-        We have sent a confirmation to your email at ${$userEmail}</p>`);
-
+    // Open modal on successful form submission
+    bookForm.addEventListener( 'wpcf7mailsent', function( event ) {
+        let $userEmail = $('#wpcf7-f43-p32-o1 .wpcf7-email').val()
+        event.detail.apiResponse.message = '<i class="fas fa-times-circle"></i>' + 
+         '<img src="' + templateUrl + '/images/icons/iconMessageSent.svg" >' +
+         '<h1>Confirmed</h1>' +
+         '<p>Thank you for booking an info session! <br>' +
+         'We have sent a confirmation to your email at ' + $userEmail + '</p>' +
+         '<a href="' + homeUrl + '" class="vesta-btn">Return to home</a>' +
+         '<p class="alert-footer">Interested in Resources? <a href="' + resourcesUrl + '">Learn More</a></p>';
+        $('.wpcf7-mail-sent-ok').addClass('msg-overlay');
         ($greyOverlayBookPg).fadeIn();
-        ($bookMsgBox).fadeIn();
-    })
+
+    }, false );
 
     
     // Close modal...
     function closeModal() {
-        $bookMsgBox.hide()
+        $('.wpcf7-mail-sent-ok').hide()
         $greyOverlayBookPg.fadeOut()
     }
 
-    const $closeBtn = $('.fa-times-circle')
-    $closeBtn.on('click', closeModal)
+    $bookInfoWrapper.on('click', '.fa-times-circle', closeModal)
     $greyOverlayBookPg.on('click', closeModal)
     
     
