@@ -27,14 +27,15 @@
                     foreach ($cats as $cat){
                         $content = $cat->post_content;
                         $media = get_media_embedded_in_content( $content );
-                        echo '<div class="media-community>';
+                        echo '<div class="media-community">';
                         echo $media[0];
-                        echo '<div>';
+                        echo '</div>';
 
                         echo '<p>';
                         echo $cat->post_excerpt;  
                         echo '</p>'; 
-                    }?>
+                    }
+                    ?>
             </div>
 
 
@@ -74,7 +75,7 @@
                     foreach ($cats as $cat){
                         $content = $cat->post_content;
                         $media = get_media_embedded_in_content( $content );
-                        echo '<div class="media-workplace>';
+                        echo '<div class="media-workplace">';
                         echo $media[0];
                         echo '</div>';
 
@@ -108,7 +109,6 @@
             
                     ?>
 
-            <?php the_posts_navigation(); ?> 
 
             </div>
 
