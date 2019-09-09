@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="141px" height="141px" viewBox="0 0 141 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>circle_strenght_90</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Hi-Fis" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-HiFI" transform="translate(-275.000000, -1349.000000)" stroke="#5A1933">
+            <g id="Section__Statistics" transform="translate(-706.000000, 761.000000)">
+                <g id="Number__homepage__statistics__left" transform="translate(984.000000, 591.000000)">
+                    <g id="circle_strenght_90" transform="translate(0.844371, 0.844371)">
+                        <circle id="oval_thin_95" stroke-width="1.5" cx="66.6556291" cy="66.6556291" r="66.5"></circle>
+                        <path d="M66.6556291,133.311258 C103.468517,133.311258 133.311258,103.468517 133.311258,66.6556291 C133.311258,29.8427417 103.468517,7.10542736e-14 66.6556291,7.10542736e-14 C29.8427417,7.10542736e-14 -4.26325641e-14,29.8427417 -4.26325641e-14,66.6556291 C-4.26325641e-14,103.468517 29.8427417,133.311258 66.6556291,133.311258 Z" id="oval_bold_95" stroke-width="7.5" stroke-dasharray="397" transform="translate(66.655629, 66.655629) rotate(90.000000) translate(-66.655629, -66.655629) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
