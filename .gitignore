@@ -38,3 +38,5 @@ node_modules/
 # =============== #
 assets/
 gulpfile.js
+build/
+*.yaml

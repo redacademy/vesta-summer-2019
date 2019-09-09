@@ -79,10 +79,7 @@ table {
 @font-face {
   font-family: 'Century Gothic';
   src: url("./fonts/CenturyGothic.eot");
-  src: url("./fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothic.woff2") format("woff2"), url("./fonts/CenturyGothic.woff") format("woff"), url("./fonts/CenturyGothic.ttf") format("truetype"), url("./fonts/CenturyGothic.svg#CenturyGothic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
+  src: url("./fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothic.woff2") format("woff2"), url("./fonts/CenturyGothic.woff") format("woff"), url("./fonts/CenturyGothic.ttf") format("truetype"), url("./fonts/CenturyGothic.svg#CenturyGothic") format("sv
 .footer-inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,77 +105,4 @@ table {
     .footer-inner-container .upper-footer .footer-nav {
       margin: 10px 0 30px 130px; }
       .footer-inner-container .upper-footer .footer-nav ul a {
-        list-style-type: none;
-        text-transform: capitalize;
-        font-family: 'Century Gothic Bold';
-        text-decoration: none;
-        font-size: 18px;
-        color: #2e3438; }
-      .footer-inner-container .upper-footer .footer-nav li {
-        display: inline;
-        padding-right: 25px; }
-  .footer-inner-container .footer-subscribe {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%; }
-    .footer-inner-container .footer-subscribe .subscribe-form {
-      margin-top: 42px;
-      padding-left: 200px; }
-      .footer-inner-container .footer-subscribe .subscribe-form label {
-        font-size: 18px;
-        font-family: 'Century Gothic Bold';
-        color: #2e3438; }
-      .footer-inner-container .footer-subscribe .subscribe-form .subscribe-email {
-        height: 35px;
-        width: 80%;
-        position: relative;
-        margin-top: 20px;
-        font-size: 14px;
-        font-family: 'Century Gothic';
-        padding-left: 20px;
-        color: #2e3438; }
-      .footer-inner-container .footer-subscribe .subscribe-form .subscribe-button {
-        position: absolute;
-        margin-top: 20px;
-        margin-left: -135px;
-        height: 40px;
-        width: 135px;
-        background-color: #5a1933;
-        color: white;
-        font-size: 14px;
-        font-family: 'Century Gothic';
-        text-transform: uppercase; }
 
-.lower-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
-  background-color: #284683; }
-  .lower-footer .footer-nav-2 {
-    margin-left: 130px; }
-    .lower-footer .footer-nav-2 ul a {
-      list-style-type: none;
-      text-transform: capitalize;
-      font-family: 'Century Gothic';
-      font-size: 14px;
-      color: white; }
-    .lower-footer .footer-nav-2 li {
-      display: inline;
-      padding-right: 25px; }
-  .lower-footer .socials-footer {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    margin-left: 658px; }
-    .lower-footer .socials-footer i {
-      color: white;
-      font-size: 30px;
-      width: auto;
-      max-width: 100%;
-      margin-right: 10px;
-      margin-top: 10px; }
