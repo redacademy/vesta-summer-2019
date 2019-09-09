@@ -83,15 +83,23 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  header .header-logo {
+    height: 57px;
+    width: auto;
+    max-width: 100%; }
+
 i.fa-minus {
   display: none; }
 
 .faq-answer {
   display: none; }
 
-
-div.wpcf7-mail-sent-ok {
-  border-color: #fff; }
 .about-us {
   text-align: center;
   width: 1019px;
@@ -218,7 +226,8 @@ p {
   color: #fff;
   padding: 19px 38px; }
 
-/* Book Info Session */
+div.wpcf7-mail-sent-ok {
+  border-color: #fff; }
 
 .toggle-answer:hover {
   cursor: pointer;
