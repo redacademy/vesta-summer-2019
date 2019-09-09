@@ -8,7 +8,7 @@ if( have_posts() ) :
         <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>
     </section>  
-    <form action="" method="POST" id="info-session-form">
+    <!-- <form action="" method="POST" id="info-session-form">
             <label for="book-session-user-name">Full Name</label>
             <br>
             <input type="text" id="book-session-user-name" name="full-name" placeholder="John Doe" required>
@@ -30,16 +30,16 @@ if( have_posts() ) :
             <br>
 
             <input type="submit" class="book-info-session" value="Book info session">
-        </form>   
+        </form>    -->
         
-        <aside class="msg-overlay info-session-confirm">
+        <!-- <div class="msg-overlay info-session-confirm wpcf7-mail-sent-ok">
                 <i class="fas fa-times-circle"></i>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icons/iconMessageSent.svg" >
                 <h1>Confirmed</h1>
                 <div class="personal-msg"></div>
                 <a href="<?php echo home_url(); ?>">Return to home</a>
                 <p>Interested in Resources? <a href="<?php echo get_post_type_archive_link('post'); ?>">Learn More</a></p>
-        </aside>
+    </div> -->
         <div class="book-pg-dark-overlay grey-overlay"></div>
 
     <?php endwhile; ?>
