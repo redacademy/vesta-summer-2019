@@ -10,7 +10,6 @@ if( have_posts() ) :
 
     <!-- end of wp loop -->
     <?php endwhile; ?>
-
 <?php the_posts_navigation(); ?> 
 
 <?php else : ?>

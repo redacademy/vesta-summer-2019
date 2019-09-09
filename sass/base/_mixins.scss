@@ -2,4 +2,13 @@
     border-radius: 29px;
     background-color: $primary-color;
     color: #fff;
+    padding: 19px 38px;
+
+}
+
+@mixin approach-vesta-container{
+    width: 498px;
+    height: 566px; 
+    text-align: left;
+    background: rgba(57, 101, 238, 0.44);
 }

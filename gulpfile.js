@@ -8,7 +8,15 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
+const clean = require('gulp-clean');
 
+
+
+gulp.task('clean', function() {
+  return gulp
+    .src(['./build/**/*.css', './*.css', './build/**/*.map', './build/**/*.js'])
+    .pipe(clean());
+});
 
 gulp.task('sass', function() {
   return gulp
@@ -64,7 +72,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8888/vesta'
+    proxy: 'localhost:8888/vesta-workplace'
   });
 
   gulp.watch(files).on('change', browserSync.stream);
@@ -76,5 +84,7 @@ gulp.task('watch', function(done) {
   gulp.watch('sass/**/*.scss', gulp.series('sass'));
   done()
 });
+
+gulp.task('reset', gulp.series('clean', 'sass', 'scripts'))
 
 gulp.task('default', gulp.parallel('browser-sync', 'watch'));

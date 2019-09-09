@@ -11,7 +11,15 @@
     <title><?php bloginfo('title'); ?></title>
 </head>
 <body <?php body_class(); ?>>
+
+
 <header>
-    
+    <a href="<?php echo get_home_url(); ?>">
+    <img src="<?php echo get_template_directory_uri() . '/images/Icons/VESTA_LOGO.png'; ?>" class="header-logo"/>
+    </a>
+
+    <div class="header-nav">
+        <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
+    </div>
 </header>
 

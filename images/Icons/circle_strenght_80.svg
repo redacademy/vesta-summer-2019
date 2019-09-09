@@ -1,18 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="142px" height="142px" viewBox="0 0 142 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>circle_strenght_80</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Hi-Fis" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Homepage-HiFI" transform="translate(-666.000000, -1348.000000)" stroke="#5A1933">
-            <g id="Section__Statistics" transform="translate(-706.000000, 761.000000)">
-                <g id="Number__homepage__statistics__center" transform="translate(1374.000000, 589.000000)">
-                    <g id="circle_strenght_80" transform="translate(0.000000, 0.000000)">
-                        <circle id="Oval_thin_80" stroke-width="1.5" cx="68.6556291" cy="68.6556291" r="66.5"></circle>
-                        <path d="M68.6556291,135.311258 C105.468517,135.311258 135.311258,105.468517 135.311258,68.6556291 C135.311258,31.8427417 105.468517,2 68.6556291,2 C31.8427417,2 2,31.8427417 2,68.6556291 C2,105.468517 31.8427417,135.311258 68.6556291,135.311258 Z" id="Oval_bold_80" stroke-width="7.5" stroke-dasharray="334.7999877929688,83" transform="translate(68.655629, 68.655629) rotate(89.000000) translate(-68.655629, -68.655629) "></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 142 142" style="enable-background:new 0 0 142 142;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#5A1933;stroke-width:1.5;}
+	.st1{fill:none;stroke:#5A1933;stroke-width:7.5;stroke-dasharray:334.8,83;}
+	.st2{fill:#5A1933;}
+	.st3{font-family:'CenturyGothic-Bold';}
+	.st4{font-size:34.8047px;}
+</style>
+<title>circle_strenght_80</title>
+<desc>Created with Sketch.</desc>
+<g id="Hi-Fis">
+	<g id="Homepage-HiFI" transform="translate(-666.000000, -1348.000000)">
+		<g id="Section__Statistics" transform="translate(-706.000000, 761.000000)">
+			<g id="Number__homepage__statistics__center" transform="translate(1374.000000, 589.000000)">
+				<g id="circle_strenght_80" transform="translate(0.000000, 0.000000)">
+					<circle id="Oval_thin_80" class="st0" cx="68.7" cy="68.7" r="66.5"/>
+					<path id="Oval_bold_80" class="st1" d="M2,69.8c0.6,36.8,31,66.1,67.8,65.5s66.1-31,65.5-67.8c-0.6-36.8-31-66.1-67.8-65.5
+						S1.4,33,2,69.8z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1.1309 0 0 1 32.4551 85.8745)" class="st2 st3 st4">80%</text>
 </svg>
+

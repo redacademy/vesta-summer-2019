@@ -1,21 +1,140 @@
 <?php get_header(); ?>
 
-<?php
-if( have_posts() ) :   
-    // Start WP Loop
-    while( have_posts() ) :   
-    the_post(); ?>         
-<h2><?php the_title(); ?></h2>
-<?php the_content(); ?>
 
-    <!-- end of wp loop -->
-    <?php endwhile; ?>
+<main class="resources">
 
-<?php the_posts_navigation(); ?> 
+    <div class="resources-title-container">
+        <p> Educational resources and guides.</p>
+    </div>
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif; ?>
+
+    <div class="resources-content-container">
+
+        <section class="community-resources">
+
+            <div class="community-videos">
+                <h3> Videos </h3>
+                    <?php
+                    // Community Video
+                    $cats = get_posts(array(
+                        'category_name' => 'video-community',
+                        'posts_per_page' => 3,
+                        'post_status' => 'published', 
+                        'orderby' => 'date', 
+                        
+                    ));
+
+                    foreach ($cats as $cat){
+                        $content = $cat->post_content;
+                        $media = get_media_embedded_in_content( $content );
+                        echo '<div class="media-community">';
+                        echo $media[0];
+                        echo '</div>';
+
+                        echo '<p>';
+                        echo $cat->post_excerpt;  
+                        echo '</p>'; 
+                    }
+                    ?>
+            </div>
+
+
+            <div class="community-articles">
+                <h3> Articles </h3>
+                    <?php
+                    //Community Articles
+                    $cats = get_posts(array(
+                        'category_name' => 'article-community',
+                        'posts_per_page' => 3,
+                        'post_status' => 'published', 
+                        'orderby' => 'date', 
+                    ));
+
+                    foreach ($cats as $cat){
+                        echo '<p>';
+                        echo $cat->post_excerpt;  
+                        echo '</p>';  
+                        echo get_the_post_thumbnail($cat);
+                    }?>
+            </div>
+        </section>
+
+        <section class="workplace-resources">
+
+            <div class="workplace-videos">
+                <h3> Videos </h3>
+                    <?php 
+                    // Workplace Video
+                    $cats = get_posts(array(
+                        'category_name' => 'video-workplace',
+                        'posts_per_page' => 3,
+                        'post_status' => 'published', 
+                        'orderby' => 'date', 
+                    ));
+
+                    foreach ($cats as $cat){
+                        $content = $cat->post_content;
+                        $media = get_media_embedded_in_content( $content );
+                        echo '<div class="media-workplace">';
+                        echo $media[0];
+                        echo '</div>';
+
+
+                        echo '<p>';
+                        echo $cat->post_excerpt;  
+                        echo '</p>';  
+                    }?>
+            </div>
+
+
+            <div class="workplace-articles">
+                <h3> Articles </h3>
+
+
+                    <?php
+                    //Workplace Article
+                    $cats = get_posts(array(
+                        'category_name' => 'article-workplace',
+                        'posts_per_page' => 3,
+                        'post_status' => 'published', 
+                        'orderby' => 'date', 
+                    ));
+
+                    foreach ($cats as $cat){
+                        echo '<p>';
+                        echo $cat->post_excerpt;  
+                        echo '</p>';  
+                        echo get_the_post_thumbnail($cat);
+                    }
+            
+                    ?>
+
+
+            </div>
+
+        </section>
+
+
+    <h3> Can't find what you're looking for?</h3> 
+
+        <form action="mailto:someone@example.com" method="post" class="resources-form">
+            <h3>Name:</h3>
+                <input type="text" name="resources-name-form" class="resources-name-form">
+            <br>
+
+            <h3>E-mail:</h3>
+                <input type="text" name="resources-email-form" class="resources-email-form">
+            <br>
+
+            <h3>Comment:</h3>
+                <textarea type="text" name="resources-textarea-form" clas="resources-textarea-form"></textarea>
+            <br>
+                <input type="submit" value="Send" class="resources-submit-BTN">
+        </form>
+
+    </div>
+
+</main>
 
 <?php get_footer(); ?>
 
