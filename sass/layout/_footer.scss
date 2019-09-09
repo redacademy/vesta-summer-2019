@@ -73,13 +73,26 @@
 }
 
     .lower-footer{
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 100%;
         background-color: $primary-dark;
-        img{
-            color:white;
-            height: 30px;
-            width:auto;
-            max-width: 100%;
+        .footer-nav-2{
+            flex:50%;
         }
+        .socials-footer{
+            flex:50%;
+            margin-left: 848px;
+            
+            i{
+                color:white;
+                font-size: 30px;
+                width:auto;
+                max-width: 100%;
+                margin-right: 10px;
+            }
+        }
+        
     }
 
 }

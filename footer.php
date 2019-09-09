@@ -22,10 +22,10 @@ wp_footer();
     <div class="lower-footer">
         <div class="footer-nav-2"></div>
         <div class="socials-footer">
-            <a href="https://twitter.com/vestasit" target="_blank"><img classs="twitter" src="<?php echo get_template_directory_uri() . '/images/Icons/IconTwitter.svg';?>" alt="Twitter Icon"></a>
-            <a href="https://www.facebook.com/VestaSIT/" target="_blank"><img classs="facebook" src="<?php echo get_template_directory_uri() . '/images/Icons/IconFacebook.svg';?>" alt="Facebook Icon"></a>
-            <a href="https://www.instagram.com/vesta.s.i.t/" target="_blank"><img classs="instagram" src="<?php echo get_template_directory_uri() . '/images/Icons/IconInstagram.svg';?>" alt="Instagram Icon"></a>
-            <a href="https://www.linkedin.com/company/vesta-social-innovation-technologies/" target="_blank"><img classs="linkedin" src="<?php echo get_template_directory_uri() . '/images/Icons/IconLinkedIn.svg';?>" alt="LinkedIn Icon"></a>
+            <a href="https://twitter.com/vestasit" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/VestaSIT/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/vesta.s.i.t/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/vesta-social-innovation-technologies/" target="_blank"><i class="fab fa-linkedin" alt="Linkedin"></i></a>
         </div>
     </div>
 

@@ -150,9 +150,27 @@ table {
         text-transform: uppercase; }
 
 .footer .lower-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
   background-color: #284683; }
-  .footer .lower-footer img {
-    color: white;
-    height: 30px;
-    width: auto;
-    max-width: 100%; }
+  .footer .lower-footer .footer-nav-2 {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%; }
+  .footer .lower-footer .socials-footer {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    margin-left: 848px; }
+    .footer .lower-footer .socials-footer i {
+      color: white;
+      font-size: 30px;
+      width: auto;
+      max-width: 100%;
+      margin-right: 10px; }
