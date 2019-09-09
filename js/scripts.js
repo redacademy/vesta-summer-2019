@@ -13,22 +13,15 @@
 
 //      Book Info Session Page
 
-    const $bookSessionBtn = $('.wpcf7-submit')
-    const $personalMsg = $('.personal-msg')
     const $greyOverlayBookPg = $('.book-pg-dark-overlay')
-    const $bookMsgBox = $('.info-session-confirm')
-    const $closeBtn = $('.fa-times-circle')
+    const $bookInfoWrapper = $('.book-info-session')
     const bookForm = document.getElementById('wpcf7-f43-p32-o1')
-    const $bookSuccessAlert = $('.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok.msg-overlay')
     const templateUrl = vestaVariables.templateUrl
     const homeUrl = vestaVariables.homeUrl
     const resourcesUrl = vestaVariables.resourcesUrl
 
-    // $bookSuccessAlert.append('<i class="fas fa-times-circle"></i>') // append as first child x icon and email icon
-    // append as second child, 
-
+    // Open modal on successful form submission
     bookForm.addEventListener( 'wpcf7mailsent', function( event ) {
-        console.log(event)
         let $userEmail = $('#wpcf7-f43-p32-o1 .wpcf7-email').val()
         event.detail.apiResponse.message = '<i class="fas fa-times-circle"></i>' + 
          '<img src="' + templateUrl + '/images/icons/iconMessageSent.svg" >' +
@@ -37,38 +30,19 @@
          'We have sent a confirmation to your email at ' + $userEmail + '</p>' +
          '<a href="' + homeUrl + '" class="vesta-btn">Return to home</a>' +
          '<p class="alert-footer">Interested in Resources? <a href="' + resourcesUrl + '">Learn More</a></p>';
-        // console.log(event.detail.apiResponse.message)
-        $('.wpcf7-response-output').addClass('msg-overlay');
+        $('.wpcf7-mail-sent-ok').addClass('msg-overlay');
         ($greyOverlayBookPg).fadeIn();
-        // $bookMsgBox.fadeIn()
 
     }, false );
 
     
-
-
-    
-
-    // // Open modal
-    // $bookSessionBtn.on('click', (e) => {
-    //     // e.preventDefault()
-    //     $personalMsg.empty()
-    //     let $userEmail = $('#wpcf7-f43-p32-o1 .wpcf7-email').val()
-    //     $personalMsg.append(`<p>Thank you for booking an info session! <br>
-    //     We have sent a confirmation to your email at ${$userEmail}</p>`);
-
-    //     ($greyOverlayBookPg).fadeIn();
-    //     ($bookMsgBox).fadeIn();
-    // })
-
-    
     // Close modal...
     function closeModal() {
-        $bookSuccessAlert.hide()
+        $('.wpcf7-mail-sent-ok').hide()
         $greyOverlayBookPg.fadeOut()
     }
 
-    $closeBtn.on('click', closeModal)
+    $bookInfoWrapper.on('click', '.fa-times-circle', closeModal)
     $greyOverlayBookPg.on('click', closeModal)
     
     
