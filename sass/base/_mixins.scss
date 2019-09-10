@@ -3,6 +3,7 @@
     background-color: $primary-color;
     color: #fff;
     text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
     @content;
 }
 

@@ -19,7 +19,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 form.wpcf7-form{
-    width: 544px;
+    width: 555px;
     margin: 62px auto 0 auto;
     p{
         text-align: left;
@@ -32,7 +32,8 @@ form.wpcf7-form{
         @include form-border;
         width: 544px;
         margin-top: 9px;
-        padding-left: 8px;
+        font-size: 1em;
+        padding-left: 19px;
 
     }
     input.wpcf7-text{
@@ -41,13 +42,20 @@ form.wpcf7-form{
     }
     textarea{
         height: 160px;
+        padding-top: 15px;
     }
+    
+}
+.form-button-container{
+    width: 585px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 41px 0 138px 0;
+
     input.wpcf7-submit{
         @include book-btn;
         width: 230px;
         height: 60px;
-        font-size: 0.75em;
+        font-size: 1em;
     }
 }
-
-
