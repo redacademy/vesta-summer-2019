@@ -65,7 +65,7 @@ function vesta_register_taxonomies() {
 add_action('init', 'vesta_register_taxonomies');
 
 
-// Initalize Sidebars
+// Initialize Sidebars
 function vesta_sidebars_widgets() {
     // Front Page - "The Problem"
     register_sidebar( array(
@@ -91,7 +91,7 @@ function vesta_sidebars_widgets() {
     ));
     // Contact Us - Contact Info
     register_sidebar( array(
-        'name' => esc_html('Contact Us Page - Contact Info'),
+        'name' => esc_html('Contact'),
         'id' => 'sidebar-contact',
         'description' => 'Edit contact information.',
         'class' => 'contact-info-widget',
@@ -102,6 +102,13 @@ function vesta_sidebars_widgets() {
     ));
 }
 add_action('widgets_init', 'vesta_sidebars_widgets');
+
+// Allow .svg uploads
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+  }
+  add_filter('upload_mimes', 'cc_mime_types');
 
 
 
