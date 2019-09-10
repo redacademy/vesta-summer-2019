@@ -1,4 +1,13 @@
 (function($) {
+//      Front Page FLICKITY
+    $('.customer-stories-carousel').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true
+    });
+
+
+
 
 //      FAQ Page
 

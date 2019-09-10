@@ -414,6 +414,12 @@ div.wpcf7-mail-sent-ok {
 .fa-times-circle:hover {
   cursor: pointer; }
 
+.customer-story-box {
+  width: 400px;
+  height: 200px;
+  background-color: lightblue;
+  color: #fff; }
+
 .grey-overlay {
   width: 100vw;
   height: 100vh;
