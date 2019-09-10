@@ -414,7 +414,7 @@ div.wpcf7-mail-sent-ok {
     font-size: 1.25em; }
 
 form.wpcf7-form {
-  width: 555px;
+  width: 544px;
   margin: 62px auto 0 auto; }
   form.wpcf7-form p {
     text-align: left;
@@ -425,7 +425,7 @@ form.wpcf7-form {
   form.wpcf7-form input, form.wpcf7-form textarea {
     border: solid 0.5px #979797;
     background-color: #ffffff;
-    width: 544px;
+    width: 525px;
     margin-top: 9px;
     font-size: 1em;
     padding-left: 19px; }
@@ -437,7 +437,7 @@ form.wpcf7-form {
     padding-top: 15px; }
 
 .form-button-container {
-  width: 585px;
+  width: 565px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
