@@ -444,7 +444,7 @@ form.wpcf7-form {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 41px 0 138px 0; }
+  margin-top: 41px; }
   .form-button-container input.wpcf7-submit {
     border-radius: 29px;
     background-color: #3965ee;
