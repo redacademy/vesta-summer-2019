@@ -414,11 +414,20 @@ div.wpcf7-mail-sent-ok {
 .fa-times-circle:hover {
   cursor: pointer; }
 
+div.flickity-viewport {
+  height: 250px; }
+
 .customer-story-box {
   width: 400px;
-  height: 200px;
+  height: 250px;
   background-color: lightblue;
-  color: #fff; }
+  color: #fff;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85); }
+
+.customer-story-box.is-selected {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
 
 .grey-overlay {
   width: 100vw;

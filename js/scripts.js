@@ -3,7 +3,8 @@
     $('.customer-stories-carousel').flickity({
         // options
         cellAlign: 'center',
-        contain: true
+        contain: true,
+        wrapAround: true
     });
 
 
