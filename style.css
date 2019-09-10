@@ -251,6 +251,48 @@ header {
       margin-right: 10px;
       margin-top: 10px; }
 
+form.wpcf7-form {
+  width: 546px;
+  margin: 62px auto 0 auto; }
+  form.wpcf7-form p {
+    text-align: left;
+    color: #284683;
+    font-family: 'Century Gothic Bold';
+    font-size: 1.25em;
+    margin: 0; }
+  form.wpcf7-form input, form.wpcf7-form textarea {
+    border: solid 0.5px #979797;
+    background-color: #ffffff;
+    width: 525px;
+    margin-top: 9px;
+    font-size: 1em;
+    padding-left: 19px; }
+  form.wpcf7-form input.wpcf7-text {
+    margin-bottom: 34px;
+    height: 58px; }
+  form.wpcf7-form textarea {
+    height: 160px;
+    padding-top: 15px; }
+
+.form-button-container {
+  width: 565px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 41px; }
+  .form-button-container input.wpcf7-submit {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    width: 230px;
+    height: 60px;
+    font-size: 1em; }
+
 i.fa-minus {
   display: none; }
 
@@ -412,48 +454,6 @@ div.wpcf7-mail-sent-ok {
     text-align: center;
     margin: 0 auto;
     font-size: 1.25em; }
-
-form.wpcf7-form {
-  width: 544px;
-  margin: 62px auto 0 auto; }
-  form.wpcf7-form p {
-    text-align: left;
-    color: #284683;
-    font-family: 'Century Gothic Bold';
-    font-size: 1.25em;
-    margin: 0; }
-  form.wpcf7-form input, form.wpcf7-form textarea {
-    border: solid 0.5px #979797;
-    background-color: #ffffff;
-    width: 525px;
-    margin-top: 9px;
-    font-size: 1em;
-    padding-left: 19px; }
-  form.wpcf7-form input.wpcf7-text {
-    margin-bottom: 34px;
-    height: 58px; }
-  form.wpcf7-form textarea {
-    height: 160px;
-    padding-top: 15px; }
-
-.form-button-container {
-  width: 565px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 41px; }
-  .form-button-container input.wpcf7-submit {
-    border-radius: 29px;
-    background-color: #3965ee;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Century Gothic Bold';
-    width: 230px;
-    height: 60px;
-    font-size: 1em; }
 
 .toggle-answer:hover {
   cursor: pointer;
