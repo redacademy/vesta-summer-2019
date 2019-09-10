@@ -106,6 +106,7 @@ p {
 
 .uppercase {
   text-transform: uppercase; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +148,7 @@ header {
       border-radius: 29px;
       background-color: #3965ee;
       color: #fff;
-      padding: 19px 38px; }
+      text-transform: uppercase; }
 
 .footer-inner-container {
   display: -webkit-box;
@@ -306,11 +307,11 @@ i.fa-minus {
     height: 725px;
     margin: 0 auto; }
     .about-us .vm-container .our-approach-container, .about-us .vm-container .why-vesta-container {
+      background: rgba(57, 101, 238, 0.44);
+      margin: 0 auto;
       width: 49%;
       height: 565px;
-      text-align: left;
-      background: rgba(57, 101, 238, 0.44);
-      margin: 0 auto; }
+      text-align: left; }
       .about-us .vm-container .our-approach-container .our-approach, .about-us .vm-container .our-approach-container .why-vesta, .about-us .vm-container .why-vesta-container .our-approach, .about-us .vm-container .why-vesta-container .why-vesta {
         padding: 0 45px 7.5% 45px;
         height: 350px; }
@@ -355,12 +356,6 @@ i.fa-minus {
   background-color: #2e3438;
   border: solid 1px #2e3438;
   margin-left: 0; }
-
-.book-session-BTN {
-  border-radius: 29px;
-  background-color: #3965ee;
-  color: #fff;
-  padding: 19px 38px; }
 
 div.wpcf7-mail-sent-ok {
   border-color: #fff; }

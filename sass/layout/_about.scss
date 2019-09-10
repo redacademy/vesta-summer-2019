@@ -57,7 +57,10 @@
         margin: 0 auto;
 
         .our-approach-container, .why-vesta-container{
-            @include approach-vesta-container;
+            @include about-offer-container;
+            width: 49%;
+            height: 565px; 
+            text-align: left;
 
             .our-approach, .why-vesta{
                 padding: 0 45px 7.5% 45px;
