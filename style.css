@@ -455,6 +455,29 @@ div.wpcf7-mail-sent-ok {
     margin: 0 auto;
     font-size: 1.25em; }
 
+.contact-title {
+  text-align: center; }
+  .contact-title h1 {
+    text-transform: uppercase; }
+  .contact-title p {
+    min-width: 400px;
+    max-width: 28%;
+    margin: 0 auto; }
+
+.contact-pg-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 75%;
+  margin: 0 auto; }
+
 .toggle-answer:hover {
   cursor: pointer;
   color: #284683; }

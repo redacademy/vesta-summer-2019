@@ -1,0 +1,19 @@
+.contact-title{
+    text-align: center;
+    h1{
+        text-transform: uppercase;
+    }
+    p{
+        min-width: 400px;
+        max-width: 28%;
+        margin: 0 auto;
+    }
+}
+
+.contact-pg-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 0 auto;
+}
