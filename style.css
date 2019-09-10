@@ -455,33 +455,6 @@ form.wpcf7-form {
     height: 60px;
     font-size: 1em; }
 
-.confirmed-msg-container {
-  text-align: center;
-  margin: auto; }
-  .confirmed-msg-container h1 {
-    text-transform: uppercase;
-    margin: 1em 0; }
-  .confirmed-msg-container .confirmed-msg, .confirmed-msg-container .alert-footer {
-    text-align: center;
-    font-family: 'Century Gothic';
-    width: 400px;
-    margin: 0 auto;
-    color: #2e3438; }
-  .confirmed-msg-container a.vesta-btn {
-    border-radius: 29px;
-    background-color: #3965ee;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Century Gothic Bold';
-    padding: 15px 30px;
-    text-decoration: none;
-    margin: 63px 0 60px 0; }
-  .confirmed-msg-container .confirmed-msg {
-    margin-bottom: 60px; }
-  .confirmed-msg-container .alert-footer {
-    font-size: 1em;
-    margin-top: 60px; }
-
 .toggle-answer:hover {
   cursor: pointer;
   color: #284683; }
@@ -530,3 +503,34 @@ form.wpcf7-form {
   z-index: 30;
   display: none;
   text-align: right; }
+
+.confirmed-msg-container {
+  text-align: center;
+  margin-top: 15px; }
+  .confirmed-msg-container h1 {
+    text-transform: uppercase;
+    margin: 0.6em 0 1em 0;
+    font-size: 2.5em; }
+  .confirmed-msg-container .confirmed-msg, .confirmed-msg-container .alert-footer {
+    text-align: center;
+    font-family: 'Century Gothic';
+    width: 100%;
+    margin: 0 auto;
+    color: #2e3438; }
+  .confirmed-msg-container a.vesta-btn {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 63px 0 60px 0; }
+  .confirmed-msg-container .confirmed-msg {
+    margin-bottom: 60px; }
+  .confirmed-msg-container .alert-footer {
+    font-size: 1em;
+    margin-top: 60px; }
+    .confirmed-msg-container .alert-footer a {
+      font-family: 'Century Gothic Bold';
+      color: #284683; }
