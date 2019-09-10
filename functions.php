@@ -95,8 +95,8 @@ function vesta_sidebars_widgets() {
         'id' => 'sidebar-contact',
         'description' => 'Edit contact information.',
         'class' => 'contact-info-widget',
-        'before_widget' => '<aside id="%1$s" class="%2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));

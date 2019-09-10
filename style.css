@@ -399,6 +399,9 @@ i.fa-minus {
 div.wpcf7-mail-sent-ok {
   border-color: #fff; }
 
+.vesta-contact-info img {
+  width: 50px; }
+
 .toggle-answer:hover {
   cursor: pointer;
   color: #284683; }
