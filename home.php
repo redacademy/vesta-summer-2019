@@ -12,10 +12,31 @@
 
         <section class="community-resources">
 
+        <?php 
+        
+        $query = new WP_Query( array( 
+            // 'category_name' => 'community',
+            'category__and' => array( 'video-community', 'article-community' ),
+            'posts_per_page' => 6,
+            'post_status' => 'publish', 
+            'orderby' => 'date', 
+            ));
+          
+
+        echo '<pre>';
+        print_r($query->posts);
+
+       
+
+
+        ?>
+         <?php echo paginate_links(array(
+      'total' => $query->max_num_pages
+    ));?>
+
             <div class="community-videos">
                 <h3> Videos </h3>
                     <?php
-                    // Community Video
                     $cats = get_posts(array(
                         'category_name' => 'video-community',
                         'posts_per_page' => 3,
@@ -42,7 +63,6 @@
             <div class="community-articles">
                 <h3> Articles </h3>
                     <?php
-                    //Community Articles
                     $cats = get_posts(array(
                         'category_name' => 'article-community',
                         'posts_per_page' => 3,
@@ -55,8 +75,15 @@
                         echo $cat->post_excerpt;  
                         echo '</p>';  
                         echo get_the_post_thumbnail($cat);
-                    }?>
+                    }
+                    
+                    
+                    ?>
             </div>
+
+
+           
+
         </section>
 
         <section class="workplace-resources">
@@ -64,7 +91,6 @@
             <div class="workplace-videos">
                 <h3> Videos </h3>
                     <?php 
-                    // Workplace Video
                     $cats = get_posts(array(
                         'category_name' => 'video-workplace',
                         'posts_per_page' => 3,
@@ -92,7 +118,6 @@
 
 
                     <?php
-                    //Workplace Article
                     $cats = get_posts(array(
                         'category_name' => 'article-workplace',
                         'posts_per_page' => 3,
@@ -108,8 +133,6 @@
                     }
             
                     ?>
-
-
             </div>
 
         </section>
