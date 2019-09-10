@@ -106,6 +106,7 @@ p {
 
 .uppercase {
   text-transform: uppercase; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +148,7 @@ header {
       border-radius: 29px;
       background-color: #3965ee;
       color: #fff;
-      padding: 19px 38px; }
+      text-transform: uppercase; }
 
 .footer-inner-container {
   display: -webkit-box;
@@ -356,14 +357,50 @@ i.fa-minus {
   border: solid 1px #2e3438;
   margin-left: 0; }
 
-.book-session-BTN {
-  border-radius: 29px;
-  background-color: #3965ee;
-  color: #fff;
-  padding: 19px 38px; }
-
 div.wpcf7-mail-sent-ok {
   border-color: #fff; }
+
+.book-info-session {
+  width: 100%; }
+  .book-info-session h2 {
+    text-align: center;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    font-size: 2.5em; }
+  .book-info-session p {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.25em; }
+
+form.wpcf7-form {
+  width: 544px;
+  margin: 62px auto 0 auto; }
+  form.wpcf7-form p {
+    text-align: left;
+    color: #284683;
+    font-family: 'Century Gothic Bold';
+    font-size: 1em;
+    margin: 0; }
+  form.wpcf7-form input, form.wpcf7-form textarea {
+    border: solid 0.5px #979797;
+    background-color: #ffffff;
+    width: 544px;
+    margin-top: 9px;
+    padding-left: 8px; }
+  form.wpcf7-form input.wpcf7-text {
+    margin-bottom: 34px;
+    height: 58px; }
+  form.wpcf7-form textarea {
+    height: 160px; }
+  form.wpcf7-form input.wpcf7-submit {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    width: 230px;
+    height: 60px;
+    font-size: 0.75em; }
 
 .toggle-answer:hover {
   cursor: pointer;

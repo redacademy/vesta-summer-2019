@@ -2,3 +2,52 @@ div.wpcf7-mail-sent-ok {
     border-color: #fff;
 }
 
+.book-info-session{
+    width: 100%;
+    h2{
+        text-align: center;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        font-size: 2.5em;
+    }
+    p{
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.25em;
+    }
+}
+
+form.wpcf7-form{
+    width: 544px;
+    margin: 62px auto 0 auto;
+    p{
+        text-align: left;
+        color: $primary-dark;
+        font-family: 'Century Gothic Bold';
+        font-size: 1em;
+        margin: 0;
+    }
+    input, textarea{
+        @include form-border;
+        width: 544px;
+        margin-top: 9px;
+        padding-left: 8px;
+
+    }
+    input.wpcf7-text{
+        margin-bottom: 34px;
+        height: 58px;
+    }
+    textarea{
+        height: 160px;
+    }
+    input.wpcf7-submit{
+        @include book-btn;
+        width: 230px;
+        height: 60px;
+        font-size: 0.75em;
+    }
+}
+
+
