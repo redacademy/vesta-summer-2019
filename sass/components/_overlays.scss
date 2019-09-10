@@ -16,12 +16,15 @@
     background-color: #fff;
     border: 0px solid #fff;
     border-radius: 17px;
-    width: 433px;
-    height: 352px;
+    width: 50%;
+    max-width: 583px;
+    min-width: 400px;
+    height: 500px;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 30;
     display: none;
+    text-align: right;
 }

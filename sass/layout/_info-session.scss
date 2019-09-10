@@ -58,3 +58,34 @@ form.wpcf7-form{
         font-size: 1em;
     }
 }
+
+.confirmed-msg-container{
+    text-align: center;
+    margin: auto;
+    h1{ 
+        text-transform: uppercase;
+        margin: 1em 0;
+    }
+    .confirmed-msg, .alert-footer{
+        text-align: center;
+        font-family: 'Century Gothic';
+        width: 400px;
+        margin: 0 auto;
+        color: $font-color;
+    }
+    a.vesta-btn{
+        @include book-btn;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 63px 0 60px 0;
+    }
+    .confirmed-msg{
+        margin-bottom: 60px;
+    }
+    
+    .alert-footer{
+        font-size: 1em;
+        margin-top: 60px;
+    }
+}
+
