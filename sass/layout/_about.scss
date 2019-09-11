@@ -18,99 +18,97 @@
             width: 80%;
             max-width: 686px;
             margin: 0 auto 20px auto;
-
-        }
-        .about-us-image{
-            width: 100%;
-            height: 379px;
-            object-fit: contain;
-            margin: 28px 0 162px 0;
         }
     }
-    .our-vision-mission{
-        width: 80%;
-        max-width: 620px;
-        margin: 0 auto;
-
-        .header-line{
-            margin-left: 145px;
-        }
-        h2{
-            letter-spacing: -0.8px;
-            margin-bottom: 21px;
-        }
-        h3{
-            margin-bottom: 21px;
-        }
-        p{
-            margin-bottom: 50px;
-        }
+    .about-us-image{
+        width: 100%;
+        height: 379px;
+        object-fit: contain;
+        margin: 28px 0 162px 0;
     }
+}
+.our-vision-mission{
+    width: 80%;
+    max-width: 620px;        
+    margin: 0 auto;
 
-    .vm-container{
+    .header-line{
+        margin-left: 145px;
+    }
+    h2{
+        letter-spacing: -0.8px;
+        margin-bottom: 21px;
+    }
+    h3{
+        margin-bottom: 21px;
+        }
+    p{
+    margin-bottom: 50px;
+    }
+}
+
+.vm-container{
+    display: flex;
+    flex-direction: row;        
+    justify-content: space-between;
+    min-width: 875px;
+    max-width: 1019px;
+    height: 725px;
+    margin: 0 auto;
+
+    .our-approach-container, .why-vesta-container{
+        @include about-offer-container;
+        width: 49%;
+        height: 565px; 
+        text-align: left;
+    }
+}
+.our-approach, .why-vesta{
+    padding: 0 45px 7.5% 45px;
+    height: 350px;
+
+    .header-line{
+        margin-top: 59px;
+    }
+    h2, h3{
+        margin-bottom: 23px;
+    }
+} 
+
+.vm-images{
+    width: 90%;
+    margin: 0 auto;
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    } 
+}
+
+.why-vesta-list{ 
+    li{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        min-width: 875px;
-        max-width: 1019px;
-        height: 725px;
-        margin: 0 auto;
+        margin-bottom: 2.5em;
 
-        .our-approach-container, .why-vesta-container{
-            @include approach-vesta-container;
-
-            .our-approach, .why-vesta{
-                padding: 0 45px 7.5% 45px;
-                height: 350px;
-
-                .header-line{
-                    margin-top: 59px;
-                }
-                h2, h3{
-                    margin-bottom: 23px;
-                }
-            } 
-
-            .vm-images{
-                width: 90%;
-                margin: 0 auto;
-                img{
-                    width: 100%;
-                    height: auto;
-                    object-fit: contain;
-                } 
-            }
-            
+        .fa-check-circle:before{
+            color: $accent-button-color;
+            padding-right: 24px;
+            font-size: 42px;
         }
-        
-        .why-vesta-list{
-            
-            li{
-                display: flex;
-                flex-direction: row;
-                margin-bottom: 2.5em;
-
-                .fa-check-circle:before{
-                    color: $accent-button-color;
-                    padding-right: 24px;
-                    font-size: 42px;
-                }
-                p{
-                    font-size: 1em;
-                }
-                
-            }
-            
-        }
-    }
-    .learn-more-about{
-        margin: 0 auto;
-        padding-top: 120px;
+        p{
+            font-size: 1em;
+        }      
+    }    
+}
+.learn-more-about{
+    margin: 0 auto;
+    padding-top: 120px;
         h3{
             margin-bottom: 21px;
         }
         p{
         margin-bottom: 35px;
         }
-    }
 }
+
