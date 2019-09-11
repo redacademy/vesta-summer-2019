@@ -14,37 +14,54 @@
 
             <?php 
             $space = get_category_by_slug( 'community' );
-            echo 'Community Cat';
-            echo '<pre>';
-            print_r($space);
-            echo '</pre>';
+            // echo 'Community Cat';
+            // echo '<pre>';
+            // print_r($space);
+            // echo '</pre>';
 
 
-            echo 'sub categories';
             $sub_cats = get_categories(array(
                 'child_of' => $space->term_id,
             ));
-            echo '<pre>';
-            print_r($sub_cats);
-            echo '</pre>';
+            // echo '<pre>';
+            // print_r($sub_cats);
+            // echo '</pre>';
 
 
             foreach($sub_cats as $sub_cat) : ?>
-            <?php var_dump($sub_cat); ?>
+            <?php 
+            echo '<pre>';
+            var_dump($sub_cat); 
+            echo '</pre>';
+            ?>
 
                 <?php
-                $posts = get_posts(array(
-                        'category_name' => $sub_cat->name,
-                        'post_type' => 'post',
-                        'post_status' => 'published', 
-                        'orderby' => 'date', 
-                    ));
-                    echo 'posts';
-                    echo '<pre>';
-                    print_r($posts);
-                    echo '</pre>';
+                $args = array(
+                    'category_name' => $sub_cat->name,
+                    'post_type' => 'post',
+                    'post_status' => 'published', 
+                    'orderby' => 'date',
+                );
 
-                    ?>
+                $posts = new WP_Query($args);
+                while($posts->have_posts()) :
+                    $posts->the_post(); ?>
+                    <div class="">
+
+                    <!-- use if statements to check sub cat name and then get either audio, video or article -->
+                    <!-- OR just check if content exists then get specific content -->
+                        <?php if($sub_cat->name === "Video Community") : ?>
+                            <div class="video">
+                                <!-- get video -->
+                            </div>
+                        <?php endif; ?>
+                        <div><?php the_excerpt(); ?></div>
+                    </div>
+                   
+
+                   
+
+               <?php endwhile;  ?>
                     
                     
                 <!-- </div> -->
