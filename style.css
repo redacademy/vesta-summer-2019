@@ -259,8 +259,7 @@ form.wpcf7-form {
     color: #284683;
     font-family: 'Century Gothic Bold';
     font-size: 1.25em;
-    margin: 0;
-    width: 100%; }
+    margin: 0; }
   form.wpcf7-form input, form.wpcf7-form textarea {
     border: solid 0.5px #979797;
     background-color: #ffffff;
@@ -508,7 +507,7 @@ div.wpcf7-mail-sent-ok {
   font-family: 'Century Gothic Bold';
   padding: 15px 30px;
   text-decoration: none;
-  margin: 63px 0 60px 0;
+  margin: 63px 0 60px 300px;
   width: 250px; }
 
 .vesta-btn {
