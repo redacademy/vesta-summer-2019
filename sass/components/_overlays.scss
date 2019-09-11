@@ -40,15 +40,16 @@
     height: 425px;
     width: 70%;
     min-width: 375px;
-    margin: 0 auto;
+    margin: auto;
 
     .icon-message-sent{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
   
     }
     h1{ 
         text-transform: uppercase;
         font-size: 2.5em;
+        margin-bottom: 20px;
     }
     .confirmed-msg, .alert-footer{
         text-align: center;
@@ -57,13 +58,9 @@
         margin: 0 auto;
         color: $font-color;
     }
-    .confirmed-msg{
-        margin-bottom: 60px;
-    }
     
     .alert-footer{
         font-size: 1em;
-        margin-top: 60px;
         a{
             font-family: 'Century Gothic Bold';
             color: $primary-dark;

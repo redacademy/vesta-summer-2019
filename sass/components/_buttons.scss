@@ -41,10 +41,10 @@
 // Overlay msg BTN
 .vesta-btn{
     @include book-btn;
-    margin-top: 25px;
-    padding: 17px 25px;
+    padding: 18px 23px;
     text-decoration: none;
-    width: 175px;
+    width: 150px;
+    margin: 50px auto;
 }
 
 // .form-button-container{

@@ -516,10 +516,10 @@ div.wpcf7-mail-sent-ok {
   color: #fff;
   text-transform: uppercase;
   font-family: 'Century Gothic Bold';
-  margin-top: 25px;
-  padding: 17px 25px;
+  padding: 18px 23px;
   text-decoration: none;
-  width: 175px; }
+  width: 150px;
+  margin: 50px auto; }
 
 .grey-overlay {
   width: 100vw;
@@ -567,23 +567,21 @@ div.wpcf7-mail-sent-ok {
   height: 425px;
   width: 70%;
   min-width: 375px;
-  margin: 0 auto; }
+  margin: auto; }
   .confirmed-msg-container .icon-message-sent {
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .confirmed-msg-container h1 {
     text-transform: uppercase;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    margin-bottom: 20px; }
   .confirmed-msg-container .confirmed-msg, .confirmed-msg-container .alert-footer {
     text-align: center;
     font-family: 'Century Gothic';
     width: 100%;
     margin: 0 auto;
     color: #2e3438; }
-  .confirmed-msg-container .confirmed-msg {
-    margin-bottom: 60px; }
   .confirmed-msg-container .alert-footer {
-    font-size: 1em;
-    margin-top: 60px; }
+    font-size: 1em; }
     .confirmed-msg-container .alert-footer a {
       font-family: 'Century Gothic Bold';
       color: #284683; }
