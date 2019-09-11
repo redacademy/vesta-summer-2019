@@ -49,7 +49,7 @@
              <p class="confirmed-msg">Thank you for booking an info session! <br>
              We have sent a confirmation to your email at ${$userEmail} </p>
              <a href="${homeUrl}" class="vesta-btn">Return to home</a>
-             <p class="alert-footer">Interested in Resources? <a href="${resourcesUrl}">Learn More</a></p>
+             <p class="alert-footer">Interested in Resources? <a href="${resourcesUrl}" class="overlay-btn">Learn More</a></p>
              </div>`;
             $('.wpcf7-mail-sent-ok').addClass('msg-overlay');
             ($greyOverlayBookPg).fadeIn();
@@ -66,6 +66,7 @@
             <img src="${templateUrl}/images/icons/iconMessageSent.svg" class="icon-message-sent" >
             <p class="confirmed-msg">Thank you for sending us a message. <br>
             A representative will get back to you within 48 hours!</p>
+            <a href="${homeUrl}" class="vesta-btn">Return to home</a>
             </div>`;
             $('.wpcf7-mail-sent-ok').addClass('msg-overlay');
             ($greyOverlayContactPg).fadeIn();

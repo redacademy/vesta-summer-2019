@@ -274,24 +274,8 @@ form.wpcf7-form {
     height: 160px;
     padding-top: 15px; }
 
-.form-button-container {
-  width: 565px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 41px; }
-  .form-button-container input.wpcf7-submit {
-    border-radius: 29px;
-    background-color: #3965ee;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Century Gothic Bold';
-    width: 230px;
-    height: 60px;
-    font-size: 1em; }
+.wpcf7-not-valid-tip {
+  margin: -25px 0 25px 0; }
 
 i.fa-minus {
   display: none; }
@@ -526,6 +510,17 @@ div.wpcf7-mail-sent-ok {
   margin: 63px 0 60px 0;
   width: 250px; }
 
+.vesta-btn {
+  border-radius: 29px;
+  background-color: #3965ee;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Century Gothic Bold';
+  margin-top: 25px;
+  padding: 17px 25px;
+  text-decoration: none;
+  width: 175px; }
+
 .grey-overlay {
   width: 100vw;
   height: 100vh;
@@ -555,6 +550,7 @@ div.wpcf7-mail-sent-ok {
   text-align: right; }
 
 .confirmed-msg-container {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,11 +558,16 @@ div.wpcf7-mail-sent-ok {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  margin-top: 15px; }
+  height: 425px;
+  width: 70%;
+  min-width: 375px;
+  margin: 0 auto; }
   .confirmed-msg-container .icon-message-sent {
     margin-bottom: 30px; }
   .confirmed-msg-container h1 {

@@ -32,11 +32,16 @@
 
 
 .confirmed-msg-container{
+    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-top: 15px;
+    height: 425px;
+    width: 70%;
+    min-width: 375px;
+    margin: 0 auto;
+
     .icon-message-sent{
         margin-bottom: 30px;
   

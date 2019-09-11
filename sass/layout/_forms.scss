@@ -27,16 +27,8 @@ form.wpcf7-form{
     }
     
 }
-.form-button-container{
-    width: 565px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 41px;
 
-    input.wpcf7-submit{
-        @include book-btn;
-        width: 230px;
-        height: 60px;
-        font-size: 1em;
-    }
+// Field Required Message
+.wpcf7-not-valid-tip{
+    margin: -25px 0 25px 0;
 }
