@@ -252,7 +252,7 @@ header {
       margin-top: 10px; }
 
 form.wpcf7-form {
-  width: 546px;
+  width: 496px;
   margin: 0 auto; }
   form.wpcf7-form p {
     text-align: left;
@@ -263,7 +263,7 @@ form.wpcf7-form {
   form.wpcf7-form input, form.wpcf7-form textarea {
     border: solid 0.5px #979797;
     background-color: #ffffff;
-    width: 525px;
+    width: 475px;
     margin-top: 9px;
     font-size: 1em;
     padding-left: 19px; }
@@ -462,7 +462,8 @@ div.wpcf7-mail-sent-ok {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 80%;
+  width: 60%;
+  min-width: 900px;
   margin: 0 auto; }
 
 .vesta-contact-info {
@@ -507,7 +508,7 @@ div.wpcf7-mail-sent-ok {
   font-family: 'Century Gothic Bold';
   padding: 15px 30px;
   text-decoration: none;
-  margin: 63px 0 60px 300px;
+  margin: 63px 0 60px 250px;
   width: 250px; }
 
 .vesta-btn {
