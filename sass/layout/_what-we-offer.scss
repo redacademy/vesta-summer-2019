@@ -1,0 +1,169 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.what-we-offer{
+    p{
+        margin: 25px 480px 0 480px;
+        text-align: center;
+        line-height: 20px;
+    }
+}
+.what-we-offer-inner{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto auto;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.what-we-offer-private, .what-we-offer-confidential, .what-we-offer-trustworthy, .what-we-offer-secure{
+    display:flex;
+    flex-wrap: nowrap;
+    margin-left: 150px;
+    margin-top: 20px;
+    img{
+        margin-right: 30px;
+    }
+    
+}
+.inner-private, .inner-confidential, .inner-trustworthy, .inner-secure{
+    p{
+        margin: 10px 0 0 0;
+        text-align: left;
+    }
+} 
+ 
+.more-resources-button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    button{
+        @include book-btn;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        display: block;
+    }
+}
+.how-it-works{
+    width: 1182px;
+    height: 980px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 50px 43px rgba(68, 75, 79, 0.04);
+    margin-top: 150px;
+    margin: 200px auto;
+    margin-bottom: 100px;
+    p{
+        margin: 20px 300px 30px 300px;
+    }
+}
+.header-style-container{
+    margin: 100px 0 0 480px;
+    padding-top: 60px;
+    
+}
+
+.book-info-session-container{
+    @include mixin about-offer-container;
+    // background: rgba(57, 101, 238, 0.44);
+    margin: 0 auto;
+    width: 750px;
+    height: 250px;
+    margin-bottom: 100px;
+    padding-top:60px;
+    h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    p{
+        margin:0;
+        text-align: center;
+        padding: 0 120px 0 120px;
+    }
+    .book-info-session-button{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 60px;
+        button{
+            @include book-btn; 
+        
+            text-transform: uppercase;
+            font-family: "Century Gothic";
+            font-size: 14px;
+            border: none;
+            display: block;
+        }
+    
+    
+}
+}
+// Employee/Employer Tab
+.employee-employer-container{
+    li{
+        float: left;
+        width: 50%;
+        
+    }
+    .tab-1{
+        margin-left:150px;
+        margin-bottom:30px;
+        
+      }
+    .tab-2{
+        margin-right:150px;
+      }
+      a {
+        color: #0087cc;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+        
+      }
+      .tab-active a {
+        background: #fff;
+        border-bottom-color: transparent;
+        color: #2db34a;
+        cursor: default;
+        .employee-employer-line{
+            width: 355px;
+            height: 10px;
+            border: solid 1px $primary-color:;
+            background-color: $primary-color:;
+          }
+          h2{
+              font-weight: normal;
+          }
+          
+      }
+}
+
+
+  .steps-container {
+    // border: 1px solid #cecfd5;
+    // border-radius: 0 0 6px 6px;
+    border-top: 0;
+    clear: both;
+    padding: 24px 30px;
+    position: relative;
+    top: -1px;
+
+    h3{
+        text-align: center;
+    }
+    iframe{
+        margin: 0 auto;
+        margin-left:230px;
+    }
+  }
+  
+.employee-employer-line{
+  width: 355px;
+  height: 10px;
+  border: solid 1px #cbcbcb;
+  background-color: #cbcbcb;
+}
