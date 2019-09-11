@@ -62,9 +62,11 @@
     if(contactForm) {
         contactForm.addEventListener( 'wpcf7mailsent', function( event ) {
             event.detail.apiResponse.message = `<i class="fas fa-times-circle"></i>
-            <img src="${templateUrl}/images/icons/iconMessageSent.svg" >
-            <p>Thank you for sending us a message. <br>
-            A representative will get back to you within 48 hours!</p>`;
+            <div class="confirmed-msg-container">            
+            <img src="${templateUrl}/images/icons/iconMessageSent.svg" class="icon-message-sent" >
+            <p class="confirmed-msg">Thank you for sending us a message. <br>
+            A representative will get back to you within 48 hours!</p>
+            </div>`;
             $('.wpcf7-mail-sent-ok').addClass('msg-overlay');
             ($greyOverlayContactPg).fadeIn();
     
