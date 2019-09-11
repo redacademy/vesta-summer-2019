@@ -3,6 +3,7 @@
     background-color: $primary-color;
     color: #fff;
     text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
     @content;
 }
 
@@ -12,4 +13,10 @@
     text-align: left;
     background: rgba(57, 101, 238, 0.44);
     margin: 0 auto;
+}
+
+@mixin form-border{
+    border: solid 0.5px #979797;
+    background-color: #ffffff;
+    @content;
 }
