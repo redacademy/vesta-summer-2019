@@ -259,7 +259,8 @@ form.wpcf7-form {
     color: #284683;
     font-family: 'Century Gothic Bold';
     font-size: 1.25em;
-    margin: 0; }
+    margin: 0;
+    width: 100%; }
   form.wpcf7-form input, form.wpcf7-form textarea {
     border: solid 0.5px #979797;
     background-color: #ffffff;
@@ -558,22 +559,17 @@ div.wpcf7-mail-sent-ok {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 425px;
   width: 70%;
   min-width: 375px;
   margin: auto; }
-  .confirmed-msg-container .icon-message-sent {
-    margin-bottom: 20px; }
   .confirmed-msg-container h1 {
     text-transform: uppercase;
     font-size: 2.5em;
-    margin-bottom: 20px; }
+    margin: 20px 0; }
   .confirmed-msg-container .confirmed-msg, .confirmed-msg-container .alert-footer {
     text-align: center;
     font-family: 'Century Gothic';
