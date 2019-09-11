@@ -106,6 +106,7 @@ p {
 
 .uppercase {
   text-transform: uppercase; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +148,8 @@ header {
       border-radius: 29px;
       background-color: #3965ee;
       color: #fff;
-      padding: 19px 38px; }
+      text-transform: uppercase; }
+
 
 .footer-inner-container {
   display: -webkit-box;
@@ -247,7 +249,94 @@ header {
       width: auto;
       max-width: 100%;
       margin-right: 10px;
-      margin-top: 10px; }
+
+form.wpcf7-form {
+  width: 546px;
+  margin: 62px auto 0 auto; }
+  form.wpcf7-form p {
+    text-align: left;
+    color: #284683;
+    font-family: 'Century Gothic Bold';
+    font-size: 1.25em;
+    margin: 0; }
+  form.wpcf7-form input, form.wpcf7-form textarea {
+    border: solid 0.5px #979797;
+    background-color: #ffffff;
+    width: 525px;
+    margin-top: 9px;
+    font-size: 1em;
+    padding-left: 19px; }
+  form.wpcf7-form input.wpcf7-text {
+    margin-bottom: 34px;
+    height: 58px; }
+  form.wpcf7-form textarea {
+    height: 160px;
+    padding-top: 15px; }
+
+.form-button-container {
+  width: 565px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 41px; }
+  .form-button-container input.wpcf7-submit {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    width: 230px;
+    height: 60px;
+    font-size: 1em; }
+
+
+i.fa-minus {
+  display: none; }
+
+.faq-answer {
+  display: none; }
+
+.faq-header {
+  text-align: center; }
+
+.faq-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-auto-rows: auto;
+  margin-bottom: 50px; }
+
+.faq-category {
+  margin-left: 130px;
+  margin-top: 70px; }
+  .faq-category h3 {
+    margin-bottom: 30px; }
+
+.faq-header-line {
+  border-bottom: 3px solid #3965ee;
+  width: 276px;
+  margin-left: 0; }
+
+.faq-list {
+  margin: 70px 0 0 50px; }
+
+.faq-single {
+  margin-top: 10px; }
+
+.fa-plus, .fa-minus {
+  margin-left: 550px; }
+
+.faq-single-line {
+  border-bottom: 0.1px solid #3965ee;
+  width: 560px;
+  margin-left: 0px; }
+
+.faq-answer {
+  margin: 20px 0 40px 0;
+  padding-right: 300px;
+  line-height: 20px; }
 
 .about-us {
   text-align: center;
@@ -265,83 +354,89 @@ header {
       width: 80%;
       max-width: 686px;
       margin: 0 auto 20px auto; }
-    .about-us .about-info .about-us-image {
-      width: 100%;
-      height: 379px;
-      -o-object-fit: contain;
-         object-fit: contain;
-      margin: 28px 0 162px 0; }
-  .about-us .our-vision-mission {
-    width: 80%;
-    max-width: 620px;
-    margin: 0 auto; }
-    .about-us .our-vision-mission .header-line {
-      margin-left: 145px; }
-    .about-us .our-vision-mission h2 {
-      letter-spacing: -0.8px;
-      margin-bottom: 21px; }
-    .about-us .our-vision-mission h3 {
-      margin-bottom: 21px; }
-    .about-us .our-vision-mission p {
-      margin-bottom: 50px; }
-  .about-us .vm-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    min-width: 875px;
-    max-width: 1019px;
-    height: 725px;
-    margin: 0 auto; }
-    .about-us .vm-container .our-approach-container, .about-us .vm-container .why-vesta-container {
-      width: 49%;
-      height: 565px;
-      text-align: left;
-      background: rgba(57, 101, 238, 0.44);
-      margin: 0 auto; }
-      .about-us .vm-container .our-approach-container .our-approach, .about-us .vm-container .our-approach-container .why-vesta, .about-us .vm-container .why-vesta-container .our-approach, .about-us .vm-container .why-vesta-container .why-vesta {
-        padding: 0 45px 7.5% 45px;
-        height: 350px; }
-        .about-us .vm-container .our-approach-container .our-approach .header-line, .about-us .vm-container .our-approach-container .why-vesta .header-line, .about-us .vm-container .why-vesta-container .our-approach .header-line, .about-us .vm-container .why-vesta-container .why-vesta .header-line {
-          margin-top: 59px; }
-        .about-us .vm-container .our-approach-container .our-approach h2, .about-us .vm-container .our-approach-container .our-approach h3, .about-us .vm-container .our-approach-container .why-vesta h2, .about-us .vm-container .our-approach-container .why-vesta h3, .about-us .vm-container .why-vesta-container .our-approach h2, .about-us .vm-container .why-vesta-container .our-approach h3, .about-us .vm-container .why-vesta-container .why-vesta h2, .about-us .vm-container .why-vesta-container .why-vesta h3 {
-          margin-bottom: 23px; }
-      .about-us .vm-container .our-approach-container .vm-images, .about-us .vm-container .why-vesta-container .vm-images {
-        width: 90%;
-        margin: 0 auto; }
-        .about-us .vm-container .our-approach-container .vm-images img, .about-us .vm-container .why-vesta-container .vm-images img {
-          width: 100%;
-          height: auto;
-          -o-object-fit: contain;
-             object-fit: contain; }
-    .about-us .vm-container .why-vesta-list li {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      margin-bottom: 2.5em; }
-      .about-us .vm-container .why-vesta-list li .fa-check-circle:before {
-        color: #5a1933;
-        padding-right: 24px;
-        font-size: 42px; }
-      .about-us .vm-container .why-vesta-list li p {
-        font-size: 1em; }
-  .about-us .learn-more-about {
+  .about-us .about-us-image {
+    width: 100%;
+    height: 379px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 28px 0 162px 0; }
+
+.our-vision-mission {
+  width: 80%;
+  max-width: 620px;
+  margin: 0 auto; }
+  .our-vision-mission .header-line {
+    margin-left: 145px; }
+  .our-vision-mission h2 {
+    letter-spacing: -0.8px;
+    margin-bottom: 21px; }
+  .our-vision-mission h3 {
+    margin-bottom: 21px; }
+  .our-vision-mission p {
+    margin-bottom: 50px; }
+
+.vm-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 875px;
+  max-width: 1019px;
+  height: 725px;
+  margin: 0 auto; }
+  .vm-container .our-approach-container, .vm-container .why-vesta-container {
+    background: rgba(57, 101, 238, 0.44);
     margin: 0 auto;
-    padding-top: 120px; }
-    .about-us .learn-more-about h3 {
-      margin-bottom: 21px; }
-    .about-us .learn-more-about p {
-      margin-bottom: 35px; }
+    width: 49%;
+    height: 565px;
+    text-align: left; }
+
+.our-approach, .why-vesta {
+  padding: 0 45px 7.5% 45px;
+  height: 350px; }
+  .our-approach .header-line, .why-vesta .header-line {
+    margin-top: 59px; }
+  .our-approach h2, .our-approach h3, .why-vesta h2, .why-vesta h3 {
+    margin-bottom: 23px; }
+
+.vm-images {
+  width: 90%;
+  margin: 0 auto; }
+  .vm-images img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.why-vesta-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2.5em; }
+  .why-vesta-list li .fa-check-circle:before {
+    color: #5a1933;
+    padding-right: 24px;
+    font-size: 42px; }
+  .why-vesta-list li p {
+    font-size: 1em; }
+
+.learn-more-about {
+  margin: 0 auto;
+  padding-top: 120px; }
+  .learn-more-about h3 {
+    margin-bottom: 21px; }
+  .learn-more-about p {
+    margin-bottom: 35px; }
 
 .header-line {
   width: 113px;
@@ -350,14 +445,21 @@ header {
   border: solid 1px #2e3438;
   margin-left: 0; }
 
-.book-session-BTN {
-  border-radius: 29px;
-  background-color: #3965ee;
-  color: #fff;
-  padding: 19px 38px; }
-
 div.wpcf7-mail-sent-ok {
   border-color: #fff; }
+
+.book-info-session {
+  width: 100%; }
+  .book-info-session h2 {
+    text-align: center;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    font-size: 2.5em; }
+  .book-info-session p {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.25em; }
 
 .toggle-answer:hover {
   cursor: pointer;
@@ -368,11 +470,28 @@ div.wpcf7-mail-sent-ok {
   background-color: #3965ee;
   color: #fff;
   text-transform: uppercase;
+  font-family: 'Century Gothic Bold';
   padding: 19px 38px;
   font-size: 16px; }
 
 .fa-times-circle:hover {
   cursor: pointer; }
+
+
+div.flickity-viewport {
+  height: 250px; }
+
+.customer-story-box {
+  width: 400px;
+  height: 250px;
+  background-color: lightblue;
+  color: #fff;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85); }
+
+.customer-story-box.is-selected {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
 
 .grey-overlay {
   width: 100vw;
@@ -389,12 +508,46 @@ div.wpcf7-mail-sent-ok {
   background-color: #fff;
   border: 0px solid #fff;
   border-radius: 17px;
-  width: 433px;
-  height: 352px;
+  width: 50%;
+  max-width: 583px;
+  min-width: 400px;
+  height: 500px;
   position: fixed;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 30;
-  display: none; }
+  display: none;
+  text-align: right; }
+
+.confirmed-msg-container {
+  text-align: center;
+  margin-top: 15px; }
+  .confirmed-msg-container h1 {
+    text-transform: uppercase;
+    margin: 0.6em 0 1em 0;
+    font-size: 2.5em; }
+  .confirmed-msg-container .confirmed-msg, .confirmed-msg-container .alert-footer {
+    text-align: center;
+    font-family: 'Century Gothic';
+    width: 100%;
+    margin: 0 auto;
+    color: #2e3438; }
+  .confirmed-msg-container a.vesta-btn {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 63px 0 60px 0; }
+  .confirmed-msg-container .confirmed-msg {
+    margin-bottom: 60px; }
+  .confirmed-msg-container .alert-footer {
+    font-size: 1em;
+    margin-top: 60px; }
+    .confirmed-msg-container .alert-footer a {
+      font-family: 'Century Gothic Bold';
+      color: #284683; }
