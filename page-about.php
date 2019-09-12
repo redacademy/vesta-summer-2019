@@ -93,7 +93,7 @@
         <div class="learn-more-about">
             <h3>To learn how vest works, book a free information session</h3>
             <p>Experience VESTA and how it works towards a safer work environment.</p>
-            <button class="book-session-BTN">Book an info session </button>
+            <button class="book-session-BTN">Info session </button>
         </div>
 
 
