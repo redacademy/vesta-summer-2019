@@ -116,40 +116,48 @@ header {
           flex: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-left: 130px; }
+  margin: 0 0 30px 130px; }
   header .header-logo {
     height: 57px;
-    width: auto;
-    max-width: 100%;
-    margin: 20px 15px 0 0; }
+    width: 50px; }
   header .header-logo-letter {
     height: 15px;
-    width: auto;
-    max-width: 100%;
-    margin: 42px 0 0 0; }
-  header .header-nav {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    margin-left: 700px; }
-    header .header-nav ul a {
-      list-style-type: none;
-      text-decoration: none;
-      text-transform: capitalize;
-      font-family: 'Century Gothic';
-      font-size: 18PX; }
-    header .header-nav li {
-      display: inline;
-      padding-right: 25px; }
-    header .header-nav .book-info-session {
-      font-family: 'Century Gothic';
-      font-size: 16px;
-      text-transform: uppercase;
-      border-radius: 29px;
-      background-color: #3965ee;
-      color: #fff;
-      text-transform: uppercase;
-      font-family: 'Century Gothic Bold'; }
+    margin: 0 0 20px 5px; }
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header-nav .book-info-session {
+    font-family: 'Century Gothic';
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold'; }
+
+.menu-header-nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .menu-header-nav-container ul a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Century Gothic Bold';
+    font-size: 1em;
+    color: #284683; }
 
 .footer-inner-container {
   display: -webkit-box;
