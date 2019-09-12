@@ -37,16 +37,24 @@
 
                 <?php
                 $args = array(
-                    'category_name' => $sub_cat->name,
                     'post_type' => 'post',
-                    'post_status' => 'published', 
+                    'post_status' => 'publish', 
                     'orderby' => 'date',
-                );
+                    'posts_per_page' => 3,
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'category',
+                            'field' => 'name',
+                            'terms' => $sub_cat->name
+                        )
+                        )
+                    );
 
                 $posts = new WP_Query($args);
                 while($posts->have_posts()) :
                     $posts->the_post(); ?>
-                    <div class="">
+                    <div class="stuff">
+                        <h1><?php the_title(); ?></h1>
 
                     <!-- use if statements to check sub cat name and then get either audio, video or article -->
                     <!-- OR just check if content exists then get specific content -->
@@ -62,6 +70,7 @@
                    
 
                <?php endwhile;  ?>
+               <?php wp_reset_query(); ?>
                     
                     
                 <!-- </div> -->
