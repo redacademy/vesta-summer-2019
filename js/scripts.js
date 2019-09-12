@@ -1,4 +1,14 @@
 (function($) {
+//      Front Page FLICKITY
+    $('.customer-stories-carousel').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true,
+        wrapAround: true
+    });
+
+
+
 
 //      FAQ Page
 
@@ -94,6 +104,23 @@
 
 
     
+
+
+
+
+    //What We Offer Page Tab
+        $('.steps-container ul').hide();
+        $('.steps-container ul:first-child').show();
+        $('.employee-employer-nav li:first').addClass('tab-active');
+
+        // Change tab class and display content
+        $('.employee-employer-nav a').on('click', function(event){
+            event.preventDefault();
+        $('.employee-employer-nav li').removeClass('tab-active');
+        $(this).parent().addClass('tab-active');
+        $('.steps-container ul').hide();
+        $($(this).attr('href')).show();
+        });
     
 
 })(jQuery);
