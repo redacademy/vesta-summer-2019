@@ -1,109 +1,116 @@
 .about-us{
     text-align: center;
-    width: 1019px;
     margin: 0 auto;
 
     p{
-        font-size: 24px;
         letter-spacing: -0.53px;
     }
-    .about-info{
-        text-align: center;
-        h1{
-            margin: 31px 0 23px 0;
-            .uppercase{
-                text-transform: uppercase;
-            }
-        }
-        p{
-            margin-bottom: 21px;
-            width: 686px;
-            margin: 0 auto 20px auto;
+}
 
-        }
-        .about-us-image{
-            width: 818px;
-            height: 379px;
-            object-fit: contain;
-            margin: 28px 0 162px 0;
+.about-info{
+    text-align: center;
+    h1{
+        margin: 31px 0 23px 0;
+        .uppercase{
+            text-transform: uppercase;
         }
     }
-    .our-vision-mission{
-        width: 620px;
-        margin: 0 auto;
-        .header-line{
-            margin-left: 145px;
-        }
-        h2{
-            letter-spacing: -0.8px;
-            margin-bottom: 21px;
-        }
-        h3{
-            margin-bottom: 21px;
-        }
-        p{
-            margin-bottom: 50px;
-        }
+    p{
+        margin-bottom: 21px;
+        width: 80%;
+        max-width: 686px;
+        margin: 0 auto 20px auto;
+    }  
+}
+.about-us-image{
+    width: 100%;
+    height: 379px;
+    object-fit: contain;
+    margin: 28px 0 162px 0;
+}
+.our-vision-mission{
+    width: 80%;
+    max-width: 620px;
+    margin: 0 auto;
+
+    .header-line{
+        margin-left: 145px;
     }
-
-    .vm-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 1019px;
-        height: 725px;
-
-        .our-approach-container, .why-vesta-container{
-            @include approach-vesta-container;
-
-            .our-approach, .why-vesta{
-                margin: 0 38px 0 52px;
-            }
-
-            .header-line{
-                margin-top: 59px;
-            }
-            h2, h3{
-                margin-bottom: 23px;
-            }
-            p{
-                line-height: 1.29;
-                font-size: 21px;  
-                padding-bottom: 25px;
-            }
-        }
-        img{
-            width: 437px;
-            height: 291px;
-            object-fit: contain;
-            margin-left: -25px;
-        }
-
-        .why-vesta-list{
-            margin-bottom: 42px;
-            li{
-                display: flex;
-                flex-direction: row;
-                padding-bottom: 26px;
-                .fa-check-circle:before{
-                    color: $accent-button-color;
-                    padding-right: 24px;
-                    font-size: 46px;
-                }
-            }
-            p{
-                padding-top: 9px;
-            }
-        }
+    h2{
+        letter-spacing: -0.8px;
+        margin-bottom: 21px;
     }
-    .learn-more-about{
-        width: 542px;
-        margin: 121px auto 89px auto;
-        h3{
-            margin-bottom: 21px;
-        }
-        p{
-        margin-bottom: 35px;
-        }
+    h3{
+        margin-bottom: 21px;
+    }
+    p{
+        margin-bottom: 50px;
     }
 }
+
+.vm-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 875px;
+    max-width: 1019px;
+    height: 725px;
+    margin: 0 auto;
+
+    .our-approach-container, .why-vesta-container{
+        @include about-offer-container;
+        width: 49%;
+        height: 565px; 
+        text-align: left;
+    }
+}
+.our-approach, .why-vesta{
+    padding: 0 45px 7.5% 45px;
+    height: 350px;
+
+    .header-line{
+        margin-top: 59px;
+    }
+    h2, h3{
+        margin-bottom: 23px;
+    }
+} 
+
+.vm-images{
+    width: 90%;
+    margin: 0 auto;
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    } 
+}
+
+.why-vesta-list{
+    li{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.4em;
+
+        .fa-check-circle:before{
+            color: $accent-button-color;
+            padding-right: 24px;
+            font-size: 42px;
+        }
+        p{
+            font-size: 1em;
+        }      
+    }    
+} 
+
+.learn-more-about{
+    margin: 0 auto;
+    padding-top: 120px;
+    h3{
+        margin-bottom: 21px;
+    }
+    p{
+    margin-bottom: 35px;
+    }
+}
+

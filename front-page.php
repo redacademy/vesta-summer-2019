@@ -25,9 +25,9 @@ if( have_posts() ) :
   
     <section class="home-transforming">
         <img src="<?php echo get_template_directory_uri() . '/images/Homepage/img__homepage__hero.png';?>" alt="Vesta Woman">
-        <h1>Transforming the workplace</h1>
-        <p>Eliminating sexual harassment in the workplace by providing
-        a secure reporting platform for employees and employers.</p>
+        <h1>Transforming society</h1>
+        <p>Eliminating sexual harassment and assault by providing
+        a secure reporting platform for individuals.</p>
         <div class="image-holder"></div>
     </section>
   
@@ -37,10 +37,10 @@ if( have_posts() ) :
                 <hr class="header-line">
                 <h2>The Problem</h2>
             </div>
-            <p>One credible complaint can decrease stock prices by as
-            much as 30%. Small and medium sized companies do not have 
-            the resources needed to mitigate the cost, risks and impact 
-            that a complaint or viral tweet can have to thier reputation.
+            <p>Sexual assault and harassment are so pervasive that 
+                they have become commonplace. The personal and professional 
+                consequences of reporting are so high that incidences are 
+                rarely reported. </p>
         </div>
         <div class="problem-widget">
         </div>
@@ -49,19 +49,25 @@ if( have_posts() ) :
     <section class="home-strength">
         <div class="header-style-container">
             <hr class="header-line">
+
             <h2>Strength in Numbers</h2>
         </div>
         <div class="strength-number-95">
             <hr class="strength-line">
+        <img class="strength-numbers-image" src="<?php echo get_template_directory_uri() . '/images/Icons/circle_strenght_90.svg';?>" alt="95% icon">
             <p>Of those who are sexually assaulted do not report.</p>
         </div>
         <div class="strength-number-80">
             <hr class="strength-line">
+        <img class="strength-numbers-image" src="<?php echo get_template_directory_uri() . '/images/Icons/circle_strenght_80.svg';?>" alt="80% icon">
+
             <p>Of those who have unwanted experiences in the workplace 
             do not report them.</p>
         </div>
         <div class="strength-number-85">
             <hr class="strength-line">
+        <img class="strength-numbers-image" src="<?php echo get_template_directory_uri() . '/images/Icons/circle_strenght_85.svg';?>" alt="85% icon">
+
             <p>Of survivors disclose thier experience informally but 
             not officially for fear of retaliation, judgement,
             coercion, or exclusion.</p>
@@ -69,16 +75,16 @@ if( have_posts() ) :
     </section>
   
     <section class="home-solution">
-        <img class="solution-image" src="<?php echo get_template_directory_uri() . '/images/Homepage/img__homepage__thesolution.png';?>" alt="Vesta on devices">
+        <img class="solution-image" src="<?php echo get_template_directory_uri() . '/images/homepage/img_homepage_thesolution.png';?>" alt="Vesta on devices">
         <div class="inner-solution">
             <div class="header-style-container">
                 <hr class="header-line">
                 <h2>The Solution</h2>
             </div>
-                <p> Vesta interacts with the individual to help them share 
-                thier experience and actively participate in thier own case,
-                should they choose to. We provide an easy to use and safe 
-                online platform.</p>
+                <p> A web and mobile enabled platform that provides individuals with pathways 
+                    to resources, to justice and to reporting while protecting their privacy. 
+                    Vesta Community works in partnership with Sexual Assault Centres 
+                    and soon Vesta Workplace will help Employers create safe, productive workplaces.</p>
                 <input type="submit" class="what-we-offer-button" value="What We Offer">
         </div>
     </section>
@@ -86,14 +92,12 @@ if( have_posts() ) :
     <section class="home-customer-stories">
         <div class="header-style-container">
                     <hr class="header-line">
-                    <h2>Our Customer Stories</h2>
+                    <h2>What others are saying</h2>
         </div>
-        <div class="inner-customer-stories">
-            <div class="customer-stories-title">
-            </div>
-            <div class="customer-stories-content">
-            </div>
+        <div class="customer-stories-carousel">
+            <?php dynamic_sidebar('sidebar-stories'); ?>
         </div>
+        
     </section>
   
     <section class="trusted-partners">

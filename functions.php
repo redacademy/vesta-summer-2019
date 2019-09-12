@@ -11,6 +11,9 @@ function vesta_files() {
         'homeUrl' => get_home_url(),
         'resourcesUrl' => get_post_type_archive_link('post'),
     ));
+    // Flickity
+    wp_enqueue_style('flickity_styles', "https://unpkg.com/flickity@2/dist/flickity.min.css");
+    wp_enqueue_script('flickity_scripts', "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js");
 };
 
 add_action('wp_enqueue_scripts', 'vesta_files');
@@ -65,7 +68,7 @@ function vesta_register_taxonomies() {
 add_action('init', 'vesta_register_taxonomies');
 
 
-// Initalize Sidebars
+// Initialize Sidebars
 function vesta_sidebars_widgets() {
     // Front Page - "The Problem"
     register_sidebar( array(
@@ -84,14 +87,14 @@ function vesta_sidebars_widgets() {
         'id' => 'sidebar-stories',
         'description' => 'Drag a new text widget in here for a new customer story.',
         'class' => 'frontpg-stories',
-        'before_widget' => '<section id="%1$s" class="%2$s">',
-        'after_widget' => '</section>',
+        'before_widget' => '<aside id="%1$s" class="%2$s customer-story-box">',
+        'after_widget' => '</aside>',
         'before_title' => '',
         'after_title' => ''
     ));
     // Contact Us - Contact Info
     register_sidebar( array(
-        'name' => esc_html('Contact Us Page - Contact Info'),
+        'name' => esc_html('Contact'),
         'id' => 'sidebar-contact',
         'description' => 'Edit contact information.',
         'class' => 'contact-info-widget',
@@ -102,6 +105,13 @@ function vesta_sidebars_widgets() {
     ));
 }
 add_action('widgets_init', 'vesta_sidebars_widgets');
+
+// Allow .svg uploads
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+  }
+  add_filter('upload_mimes', 'cc_mime_types');
 
 
 
