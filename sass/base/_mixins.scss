@@ -2,13 +2,18 @@
     border-radius: 29px;
     background-color: $primary-color;
     color: #fff;
-    padding: 19px 38px;
-
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    @content;
 }
 
-@mixin approach-vesta-container{
-    width: 498px;
-    height: 566px; 
-    text-align: left;
+@mixin about-offer-container{
     background: rgba(57, 101, 238, 0.44);
+    margin: 0 auto;
+}
+
+@mixin form-border{
+    border: solid 0.5px #979797;
+    background-color: #ffffff;
+    @content;
 }

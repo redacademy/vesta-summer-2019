@@ -3,8 +3,8 @@
 <section class="about-us">
 
         <div class="about-info">
-            <h1> About vesta</h1>
-            <p>Vesta Social Innovation Technologies was created in response to the???  <!--??? needs to be edited-->
+            <h1> About <span class="uppercase">vesta</span></h1>
+            <p>Vesta Social Innovation Technologies was created in response to a 
             global movement. We aim to do what some say is impossible: </p>
             <h3>Eliminate Rape Culture</h3>
             <img src="<?php echo get_template_directory_uri() . '/images/about-us/img__aboutUs__hero.jpg'; ?>" class="about-us-image" alt="Two women talking"/>
@@ -38,14 +38,17 @@
                     <h3>Vesta combines the expertise of clinical and legal experts with the 
                     knowledge of those with lived experiences and front line advocates.</h3>
                         
-                    <p> Create??? a trauma-informed, survivor-centric process that provides <!--??? needs to be edited-->
+                    <p> To create a trauma-informed, survivor-centric process that provides <!--??? needs to be edited-->
                     individuals with a tool to document their experience, and create a 
                     reliable, time-stamped record of events.</p>
 
-                    <img src="<?php echo get_template_directory_uri() . '/images/about-us/img__aboutUs__ourApproach.jpg'; ?>" class="our-approach-image" alt="lady standing"/>
-
-                        
+     
                 </div>
+                
+                <div class="vm-images">
+                <img src="<?php echo get_template_directory_uri() . '/images/about-us/img__aboutUs__ourApproach.jpg'; ?>" class="our-approach-image" alt="lady standing"/>
+
+       </div>
             </div>
 
             <div class="why-vesta-container">
@@ -66,8 +69,12 @@
 
                             <li>
                                 <i class="fas fa-check-circle"></i>
-                                <p>Access to resources???</p><!--??? needs to be edited-->
+                                <p>Access to actionable resources</p><!--??? needs to be edited-->
                             </li> 
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <p>Reporting Options</p>
+                            </li>
                             
                             <li>
                                 <i class="fas fa-check-circle"></i>
@@ -75,9 +82,9 @@
                             </li>
                         </h3>
                     </ul>
-
-                    <img src="<?php echo get_template_directory_uri() . '/images/about-us/img__aboutUS__whyVesta.jpg'; ?>" class="our-why-vesta-image" alt="man sitting"/>
-
+                </div>
+                <div class="vm-images">
+                <img src="<?php echo get_template_directory_uri() . '/images/about-us/img__aboutUS__whyVesta.jpg'; ?>" class="our-why-vesta-image" alt="man sitting"/>
                 </div>
             </div>
         </div>
@@ -86,7 +93,7 @@
         <div class="learn-more-about">
             <h3>To learn how vest works, book a free information session</h3>
             <p>Experience VESTA and how it works towards a safer work environment.</p>
-            <button class="book-session-BTN">Book an info session </button>
+            <button class="book-session-BTN">Info session </button>
         </div>
 
 
