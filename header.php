@@ -19,7 +19,7 @@
 
     <div class="header-nav">
         <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
-        <button class="book-info-session">Info Session</button>
+        <a href="<?php get_home_url()?>/vesta/info-session"><button class="book-info-session">Info Session</button></a>
     </div>
 </header>
 
