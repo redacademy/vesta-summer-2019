@@ -21,5 +21,6 @@
         <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
         <button class="book-info-session">Info Session</button>
     </div>
+    <div class="exit-button"><a href="https://www.cp24.com/"><button>Exit Site</button></a></div>
 </header>
 

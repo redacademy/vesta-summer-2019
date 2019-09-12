@@ -23,7 +23,7 @@ header{
             text-decoration: none;
             text-transform: capitalize;
             font-family: 'Century Gothic';
-            font-size:18PX;
+            font-size:18px;
         }
         li{
             display: inline;
@@ -36,5 +36,21 @@ header{
             @include book-btn; 
         }
     }
-    
+    .exit-button{
+        position: fixed;
+        button{
+            margin-top: 350px;
+            background-color: $accent-button-color;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            display: block;
+            height:50px;
+            width: 120px;
+            margin-left: 1150px;
+            // margin: 0 auto;
+            font-family: 'Century Gothic';
+        }
+       
+    }
 }
