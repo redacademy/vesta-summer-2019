@@ -53,14 +53,22 @@
                 $posts = new WP_Query($args);
                 while($posts->have_posts()) :
                     $posts->the_post(); ?>
-                    <div class="stuff">
-                        <h1><?php the_title(); ?></h1>
-
-                    <!-- use if statements to check sub cat name and then get either audio, video or article -->
-                    <!-- OR just check if content exists then get specific content -->
-                        <?php if($sub_cat->name === "Video Community") : ?>
-                            <div class="video">
+                    <div class="community-resource">
+                        <?php if($sub_cat->name === "Videos") : ?>
+                            <div class="video resource-media">
+                                <?php echo 'this is where a video will appear'; ?>
                                 <!-- get video -->
+                            </div>
+
+                        <?php elseif($sub_cat->name === "Audio") : ?>
+                            <div class="audio resource-media">
+                                <?php echo 'this is where an audio image will appear'; ?>
+                                <!-- get audio clip -->
+                            </div>
+
+                        <?php else : ?>
+                            <div class="resource-media">
+                                <?php the_post_thumbnail(); ?>
                             </div>
                         <?php endif; ?>
                         <div><?php the_excerpt(); ?></div>
