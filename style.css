@@ -116,7 +116,7 @@ header {
           flex: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-left: 130px; }
+  margin: 0 0 30px 130px; }
   header .header-logo {
     height: 57px;
     width: auto;
