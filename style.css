@@ -250,6 +250,9 @@ header {
       margin-right: 10px;
       margin-top: 10px; }
 
+.resource-media {
+  max-width: 300px; }
+
 i.fa-minus {
   display: none; }
 
