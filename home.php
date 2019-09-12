@@ -11,29 +11,17 @@
     <div class="resources-content-container">
 
         <section class="community-resources">
+            <h2>Community Resources</h2>
 
             <?php 
             $space = get_category_by_slug( 'community' );
-            // echo 'Community Cat';
-            // echo '<pre>';
-            // print_r($space);
-            // echo '</pre>';
-
 
             $sub_cats = get_categories(array(
                 'child_of' => $space->term_id,
             ));
-            // echo '<pre>';
-            // print_r($sub_cats);
-            // echo '</pre>';
-
 
             foreach($sub_cats as $sub_cat) : ?>
-            <?php 
-            echo '<pre>';
-            var_dump($sub_cat); 
-            echo '</pre>';
-            ?>
+            <h3><?php echo $sub_cat->name; ?></h3>
 
                 <?php
                 $args = array(
@@ -51,9 +39,18 @@
                     );
 
                 $posts = new WP_Query($args);
+                if($posts->have_posts()) :
                 while($posts->have_posts()) :
-                    $posts->the_post(); ?>
+                    $posts->the_post(); 
+                    $post_ID = get_the_ID();
+                    // $post_meta = get_post_meta($post_ID);
+                    // echo '<pre>';
+                    // var_dump($post_meta);
+                    // echo '</pre>';
+                    ?>
                     <div class="community-resource">
+                        
+                    
                         <?php if($sub_cat->name === "Videos") : ?>
                             <div class="video resource-media">
                                 <?php echo 'this is where a video will appear'; ?>
@@ -76,13 +73,22 @@
                    
 
                    
-
+                    
                <?php endwhile;  ?>
+               
+               <?php the_posts_navigation(); ?>
                <?php wp_reset_query(); ?>
+
+               <?php else : ?>
+               <p>No content found.</p>
+                <?php endif; ?>
+               
+               
                     
                     
                 <!-- </div> -->
             <?php endforeach; ?>
+             
 
             
           
