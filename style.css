@@ -83,6 +83,8 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+<<<<<<< HEAD
+=======
 h1, h2, h3 {
   font-family: 'Century Gothic Bold'; }
 
@@ -151,6 +153,7 @@ header {
       text-transform: uppercase;
       font-family: 'Century Gothic Bold'; }
 
+>>>>>>> dev
 .footer-inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,6 +254,8 @@ header {
       margin-right: 10px;
       margin-top: 10px; }
 
+<<<<<<< HEAD
+=======
 form.wpcf7-form {
   width: 496px;
   margin: 0 auto; }
@@ -277,12 +282,162 @@ form.wpcf7-form {
 .wpcf7-not-valid-tip {
   margin: -25px 0 25px 0; }
 
+>>>>>>> dev
 i.fa-minus {
   display: none; }
 
 .faq-answer {
   display: none; }
 
+<<<<<<< HEAD
+.about-us {
+  text-align: center;
+  width: 1019px;
+  margin: 0 auto; }
+  .about-us p {
+    font-size: 24px;
+    letter-spacing: -0.53px; }
+  .about-us .about-info {
+    text-align: center; }
+    .about-us .about-info h1 {
+      margin: 31px 0 23px 0; }
+      .about-us .about-info h1 .uppercase {
+        text-transform: uppercase; }
+    .about-us .about-info p {
+      margin-bottom: 21px;
+      width: 686px;
+      margin: 0 auto 20px auto; }
+    .about-us .about-info .about-us-image {
+      width: 818px;
+      height: 379px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      margin: 28px 0 162px 0; }
+  .about-us .our-vision-mission {
+    width: 620px;
+    margin: 0 auto; }
+    .about-us .our-vision-mission .header-line {
+      margin-left: 145px; }
+    .about-us .our-vision-mission h2 {
+      letter-spacing: -0.8px;
+      margin-bottom: 21px; }
+    .about-us .our-vision-mission h3 {
+      margin-bottom: 21px; }
+    .about-us .our-vision-mission p {
+      margin-bottom: 50px; }
+  .about-us .vm-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1019px;
+    height: 725px; }
+    .about-us .vm-container .our-approach-container, .about-us .vm-container .why-vesta-container {
+      width: 498px;
+      height: 566px;
+      text-align: left;
+      background: rgba(57, 101, 238, 0.44); }
+      .about-us .vm-container .our-approach-container .our-approach, .about-us .vm-container .our-approach-container .why-vesta, .about-us .vm-container .why-vesta-container .our-approach, .about-us .vm-container .why-vesta-container .why-vesta {
+        margin: 0 38px 0 52px; }
+      .about-us .vm-container .our-approach-container .header-line, .about-us .vm-container .why-vesta-container .header-line {
+        margin-top: 59px; }
+      .about-us .vm-container .our-approach-container h2, .about-us .vm-container .our-approach-container h3, .about-us .vm-container .why-vesta-container h2, .about-us .vm-container .why-vesta-container h3 {
+        margin-bottom: 23px; }
+      .about-us .vm-container .our-approach-container p, .about-us .vm-container .why-vesta-container p {
+        line-height: 1.29;
+        font-size: 21px;
+        padding-bottom: 25px; }
+    .about-us .vm-container img {
+      width: 437px;
+      height: 291px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      margin-left: -25px; }
+    .about-us .vm-container .why-vesta-list {
+      margin-bottom: 42px; }
+      .about-us .vm-container .why-vesta-list li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        padding-bottom: 26px; }
+        .about-us .vm-container .why-vesta-list li .fa-check-circle:before {
+          color: #5a1933;
+          padding-right: 24px;
+          font-size: 46px; }
+      .about-us .vm-container .why-vesta-list p {
+        padding-top: 9px; }
+  .about-us .learn-more-about {
+    width: 542px;
+    margin: 121px auto 89px auto; }
+    .about-us .learn-more-about h3 {
+      margin-bottom: 21px; }
+    .about-us .learn-more-about p {
+      margin-bottom: 35px; }
+
+h1 {
+  font-family: 'Century Gothic Bold';
+  font-size: 48px;
+  color: #32393d; }
+
+h2 {
+  font-family: 'Century Gothic Bold';
+  font-size: 36px;
+  color: #2e3438; }
+
+h3 {
+  font-family: 'Century Gothic Bold';
+  font-size: 24px;
+  color: #2e3438; }
+
+p {
+  font-family: 'Century Gothic';
+  color: #2e3438; }
+
+.header-line {
+  width: 113px;
+  height: 2px;
+  background-color: #2e3438;
+  border: solid 1px #2e3438;
+  margin-left: 0; }
+
+.book-session-BTN {
+  border-radius: 29px;
+  background-color: #3965ee;
+  color: #fff;
+  padding: 19px 38px; }
+
+div.wpcf7-mail-sent-ok {
+  border-color: #fff; }
+
+.toggle-answer:hover {
+  cursor: pointer;
+  color: #284683; }
+
+.fa-times-circle:hover {
+  cursor: pointer; }
+
+.grey-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.64;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: none; }
+
+=======
 .faq-header {
   text-align: center; }
 
@@ -576,20 +731,29 @@ div.flickity-viewport {
   z-index: 20;
   display: none; }
 
+>>>>>>> dev
 .msg-overlay {
   background-color: #fff;
   border: 0px solid #fff;
   border-radius: 17px;
+<<<<<<< HEAD
+  width: 433px;
+  height: 352px;
+=======
   width: 50%;
   max-width: 583px;
   min-width: 400px;
   height: 500px;
+>>>>>>> dev
   position: fixed;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 30;
+<<<<<<< HEAD
+  display: none; }
+=======
   display: none;
   text-align: right; }
 
@@ -624,3 +788,4 @@ div.flickity-viewport {
     .confirmed-msg-container .alert-footer a {
       font-family: 'Century Gothic Bold';
       color: #284683; }
+>>>>>>> dev
