@@ -26,7 +26,7 @@ wp_footer();
             <a href="https://www.facebook.com/VestaSIT/" target="_blank"><i class="fab fa-facebook-square"></i></a>
             <a href="https://www.instagram.com/vesta.s.i.t/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/company/vesta-social-innovation-technologies/" target="_blank"><i class="fab fa-linkedin" alt="Linkedin"></i></a>
-            <a href="" target="_blank"><i class="fab fa-medium-m"></i></a>
+            <a href="https://medium.com/@lucrezia_11722" target="_blank"><i class="fab fa-medium-m"></i></a>
         </div>
     </div>
 
