@@ -84,7 +84,7 @@
                     </ul>
                 </div>
                 <div class="vm-images">
-                <img src="<?php echo get_template_directory_uri() . '/images/about-us/img__AboutUS__WhyVesta.jpg'; ?>" class="our-why-vesta-image" alt="man sitting"/>
+                <img src="<?php echo get_template_directory_uri() . '/images/about-us/img__aboutUS__whyVesta.jpg'; ?>" class="our-why-vesta-image" alt="man sitting"/>
                 </div>
             </div>
         </div>

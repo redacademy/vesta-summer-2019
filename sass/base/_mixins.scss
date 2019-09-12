@@ -7,10 +7,7 @@
     @content;
 }
 
-@mixin approach-vesta-container{
-    width: 49%;
-    height: 565px; 
-    text-align: left;
+@mixin about-offer-container{
     background: rgba(57, 101, 238, 0.44);
     margin: 0 auto;
 }

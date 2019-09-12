@@ -94,12 +94,10 @@ if( have_posts() ) :
                     <hr class="header-line">
                     <h2>What others are saying</h2>
         </div>
-        <div class="inner-customer-stories">
-            <div class="customer-stories-title">
-            </div>
-            <div class="customer-stories-content">
-            </div>
+        <div class="customer-stories-carousel">
+            <?php dynamic_sidebar('sidebar-stories'); ?>
         </div>
+        
     </section>
   
     <section class="trusted-partners">

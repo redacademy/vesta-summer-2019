@@ -55,27 +55,30 @@
     min-width: 875px;
     max-width: 1019px;
     height: 725px;
-    margin: 0 auto;  
-}
-.our-approach-container, .why-vesta-container{
-    @include approach-vesta-container;
+    margin: 0 auto;
 
-    .our-approach, .why-vesta{
-        padding: 0 45px 7.5% 45px;
-        height: 350px;
-
-        .header-line{
-            margin-top: 59px;
-        }
-        h2, h3{
-            margin-bottom: 23px;
-        }
-    }  
+    .our-approach-container, .why-vesta-container{
+        @include about-offer-container;
+        width: 49%;
+        height: 565px; 
+        text-align: left;
+    }
 }
+.our-approach, .why-vesta{
+    padding: 0 45px 7.5% 45px;
+    height: 350px;
+
+    .header-line{
+        margin-top: 59px;
+    }
+    h2, h3{
+        margin-bottom: 23px;
+    }
+} 
 
 .vm-images{
     width: 90%;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     img{
         width: 100%;
         height: auto;
@@ -96,9 +99,10 @@
         }
         p{
             font-size: 1em;
-        }
-    }  
-}
+        }      
+    }    
+} 
+
 .learn-more-about{
     margin: 0 auto;
     padding-top: 120px;
@@ -109,3 +113,4 @@
     margin-bottom: 35px;
     }
 }
+
