@@ -59,14 +59,14 @@ if( have_posts() ) :
         </div>
         <div class="strength-number-80">
             <hr class="strength-line">
-        <img class="strength-numbers-image" src="<?php echo get_template_directory_uri() . '/images/Icons/circle_strenght_80.svg';?>" alt="95% icon">
+        <img class="strength-numbers-image" src="<?php echo get_template_directory_uri() . '/images/Icons/circle_strenght_80.svg';?>" alt="80% icon">
 
             <p>Of those who have unwanted experiences in the workplace 
             do not report them.</p>
         </div>
         <div class="strength-number-85">
             <hr class="strength-line">
-        <img class="strength-numbers-image" src="<?php echo get_template_directory_uri() . '/images/Icons/circle_strenght_85.svg';?>" alt="95% icon">
+        <img class="strength-numbers-image" src="<?php echo get_template_directory_uri() . '/images/Icons/circle_strenght_85.svg';?>" alt="85% icon">
 
             <p>Of survivors disclose thier experience informally but 
             not officially for fear of retaliation, judgement,
