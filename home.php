@@ -50,29 +50,31 @@
                         // echo '</pre>';
                         ?>
                         <div class="single-community-resource">
+                            <a href="<?php the_permalink(); ?>">
                             
                         
-                            <?php if($sub_cat->name === "Videos") : ?>
-                                <div class="video resource-media">
-                                    <?php 
-                                    $content = get_the_content();
-                                    $media = get_media_embedded_in_content( $content ); 
-                                    echo $media[0];
-                                    ?>
-                                </div>
+                                <?php if($sub_cat->name === "Videos") : ?>
+                                    <div class="video resource-media">
+                                            <?php 
+                                            $content = get_the_content();
+                                            $media = get_media_embedded_in_content( $content ); ?>
+                                            <?php echo $media[0]; ?>
+                                    </div>
 
-                            <?php elseif($sub_cat->name === "Audio") : ?>
-                                <div class="audio resource-media">
-                                    <?php echo 'this is where an audio image will appear'; ?>
-                                    <!-- get audio clip -->
-                                </div>
+                                <?php elseif($sub_cat->name === "Audio") : ?>
+                                    <div class="audio resource-media">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/resources/audio-1293262_1280.png" alt="sound waves">
+                                        <?php echo 'this is where an audio image will appear'; ?>
+                                        <!-- get audio clip -->
+                                    </div>
 
-                            <?php else : ?>
-                                <div class="resource-media">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
-                            <?php endif; ?>
-                            <div><?php the_excerpt(); ?></div>
+                                <?php else : ?>
+                                    <div class="resource-media">
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <div><?php the_excerpt(); ?></div>
+                             </a>
                         </div>
                     
 
