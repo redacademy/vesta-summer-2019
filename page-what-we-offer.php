@@ -61,10 +61,13 @@ if( have_posts() ) :
     </section>
     
     <section class="how-it-works">
-            <div class="header-style-container">
-                <hr class="header-line">
-                <h2>How it works</h2>
-            </div>
+            <div class="how-it-works-hr-container">
+                <div class="header-style-container">
+                    <hr class="header-line">
+                    <h2>How it works</h2>
+                </div>
+             </div>
+
             <p> Vesta makes it safer for individuals to speak up and 
             easier for organizations to take action and prevent future 
             situations.</p>
