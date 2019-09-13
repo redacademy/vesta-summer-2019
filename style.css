@@ -291,7 +291,13 @@ form.wpcf7-form {
   margin: -25px 0 25px 0; }
 
 i.fa-minus {
-  display: none; }
+  display: none;
+  color: #5a1933;
+  font-size: 1.5em; }
+
+i.fa-plus {
+  color: #3965ee;
+  font-size: 1.5em; }
 
 .faq-answer {
   display: none; }
@@ -327,7 +333,7 @@ i.fa-minus {
 
 .faq-single-line {
   border-bottom: 0.1px solid #3965ee;
-  width: 560px;
+  width: 575px;
   margin-left: 0px; }
 
 .faq-answer {
