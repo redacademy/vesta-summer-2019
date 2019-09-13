@@ -13,8 +13,7 @@ h1{
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: auto auto;
-    margin-top: 30px;
-    margin-left: 120px;
+    margin: 30px auto 0 auto;
 }
 .what-we-offer-private, .what-we-offer-confidential, .what-we-offer-trustworthy, .what-we-offer-secure{
     display:flex;
@@ -60,10 +59,8 @@ h1{
         margin: 20px 300px 30px 300px;
     }
 }
-.header-style-container{
-    margin: 100px 0 0 480px;
-    padding-top: 60px;
-    
+.how-it-works-hr-container{
+    margin: 0 auto; // need to fix
 }
 
 .book-info-session-container{

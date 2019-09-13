@@ -59,3 +59,13 @@
 //         font-size: 1em;
 //     }
 // }
+
+header{
+    .book-info-session{
+        font-family: 'Century Gothic';
+        font-size: 1em;
+        text-transform: uppercase;
+        @include book-btn; 
+        padding: 10px 25px;
+    }
+}
