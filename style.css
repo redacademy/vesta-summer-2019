@@ -711,31 +711,22 @@ h1 {
   width: 150px;
   margin: 50px auto; }
 
-header .book-info-session {
-  font-family: 'Century Gothic';
-  font-size: 1em;
-  text-transform: uppercase;
-  border-radius: 29px;
-  background-color: #3965ee;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: 'Century Gothic Bold';
-  padding: 10px 25px; }
-
-div.flickity-viewport {
-  height: 250px; }
-
-.customer-story-box {
-  width: 400px;
-  height: 250px;
-  background-color: lightblue;
-  color: #fff;
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85); }
-
-.customer-story-box.is-selected {
+.story-padding.is-selected {
   -webkit-transform: scale(1);
           transform: scale(1); }
+  .story-padding.is-selected .customer-story-box {
+    opacity: 1.0;
+    -webkit-box-shadow: 10px 5px 27px 0 rgba(0, 0, 0, 0.13);
+            box-shadow: 10px 5px 27px 0 rgba(0, 0, 0, 0.13); }
+
+.quote-icon {
+  position: absolute;
+  left: 4%;
+  top: 15%;
+  height: 3.4rem; }
+
+.flickity-page-dots .dot.is-selected {
+  background: #5a1933; }
 
 .grey-overlay {
   width: 100vw;
