@@ -22,8 +22,14 @@ h1{
     margin-top: 20px;
     img{
         margin-right: 30px;
+        width: 150px;
+    }
+    .secure-icon{
+        min-width: 150px;
+        width: 150px;
     }
 }
+
 .inner-private, .inner-confidential, .inner-trustworthy, .inner-secure{
     p{
         margin: 10px 0 0 0;

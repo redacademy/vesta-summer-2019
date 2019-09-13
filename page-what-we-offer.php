@@ -23,7 +23,7 @@ if( have_posts() ) :
     <section class="what-we-offer-container">
        <div class="what-we-offer-inner">
             <div class="what-we-offer-private">
-                <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconPrivate.svg';?>">
+                <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconPrivate.svg';?>" class="private-icon">
                 <div class="inner-private">
                     <h2>Private</h2>
                     <p>Available 24/7 from any device. No personal or identifying
@@ -33,7 +33,7 @@ if( have_posts() ) :
                 </div>
             </div>
             <div class="what-we-offer-confidential">
-                <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconConfidential.svg';?>">
+                <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconConfidential.svg';?>" class="confidential-icon">
                 <div class="inner-confidential">
                     <h2>Trustworthy</h2>
                     <p>Clear and concise consent language ensures there are no surprises
@@ -41,7 +41,7 @@ if( have_posts() ) :
                 </div>
             </div>
             <div class="what-we-offer-trustworthy">
-                <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconTrustworthy.svg';?>">
+                <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconTrustworthy.svg';?>" class="trustworthy-icon">
                 <div class="inner-trustworthy">
                     <h2>Confidential</h2>
                     <p>No identifying information or data will be collected or disclosed
@@ -49,7 +49,7 @@ if( have_posts() ) :
                 </div>
             </div>
             <div class="what-we-offer-secure">
-                <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconSecure.svg';?>">
+                <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconSecure.svg';?>" class="secure-icon">
                 <div class="inner-secure">
                     <h2>Secure</h2>
                     <p>Comprehensive and robust security measures protect user content

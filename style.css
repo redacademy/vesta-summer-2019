@@ -550,7 +550,11 @@ h1 {
   margin-left: 150px;
   margin-top: 20px; }
   .what-we-offer-private img, .what-we-offer-confidential img, .what-we-offer-trustworthy img, .what-we-offer-secure img {
-    margin-right: 30px; }
+    margin-right: 30px;
+    width: 150px; }
+  .what-we-offer-private .secure-icon, .what-we-offer-confidential .secure-icon, .what-we-offer-trustworthy .secure-icon, .what-we-offer-secure .secure-icon {
+    min-width: 150px;
+    width: 150px; }
 
 .inner-private p, .inner-confidential p, .inner-trustworthy p, .inner-secure p {
   margin: 10px 0 0 0;
