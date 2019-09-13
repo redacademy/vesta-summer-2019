@@ -59,3 +59,46 @@
 //         font-size: 1em;
 //     }
 // }
+
+header{
+    .book-info-session{
+        font-family: 'Century Gothic';
+        font-size: 1em;
+        text-transform: uppercase;
+        @include book-btn; 
+        padding: 10px 25px;
+    }
+}
+
+.book-info-session-button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
+    button{
+        @include book-btn; 
+        text-transform: uppercase;
+        font-family: "Century Gothic Bold";
+        font-size: 14px;
+        border: none;
+        display: block;
+        padding: 15px 20px;
+    }
+}
+
+.more-resources-button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    button{
+        @include book-btn;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: "Century Gothic Bold";
+        font-size: 14px;
+        display: block;
+        padding: 15px 20px;
+
+    }
+}

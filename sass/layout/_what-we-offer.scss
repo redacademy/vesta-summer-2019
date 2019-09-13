@@ -13,8 +13,7 @@ h1{
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: auto auto;
-    margin-top: 30px;
-    margin-left: 120px;
+    margin: 30px auto 0 auto;
 }
 .what-we-offer-private, .what-we-offer-confidential, .what-we-offer-trustworthy, .what-we-offer-secure{
     display:flex;
@@ -23,9 +22,14 @@ h1{
     margin-top: 20px;
     img{
         margin-right: 30px;
+        width: 150px;
     }
-    
+    .secure-icon{
+        min-width: 150px;
+        width: 150px;
+    }
 }
+
 .inner-private, .inner-confidential, .inner-trustworthy, .inner-secure{
     p{
         margin: 10px 0 0 0;
@@ -33,20 +37,6 @@ h1{
     }
 } 
  
-.more-resources-button{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 100px;
-    button{
-        @include book-btn;
-        align-items: center;
-        text-transform: uppercase;
-        font-family: "Century Gothic";
-        font-size: 14px;
-        display: block;
-    }
-}
 .how-it-works{
     width: 1182px;
     height: 980px;
@@ -60,10 +50,11 @@ h1{
         margin: 20px 300px 30px 300px;
     }
 }
-.header-style-container{
-    margin: 100px 0 0 480px;
-    padding-top: 60px;
-    
+.how-it-works-hr-container{
+    text-align: center;
+    .header-line{
+        margin-left: 485px;
+    }
 }
 
 .book-info-session-container{
@@ -83,23 +74,7 @@ h1{
         text-align: center;
         padding: 0 120px 0 120px;
     }
-    .book-info-session-button{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 60px;
-        button{
-            @include book-btn; 
-        
-            text-transform: uppercase;
-            font-family: "Century Gothic";
-            font-size: 14px;
-            border: none;
-            display: block;
-        }
-    
-    
-}
+ 
 }
 // Employee/Employer Tab
 .employee-employer-container{
