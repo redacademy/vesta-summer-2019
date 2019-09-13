@@ -550,26 +550,6 @@ h1 {
   margin: 10px 0 0 0;
   text-align: left; }
 
-.more-resources-button {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin-top: 100px; }
-  .more-resources-button button {
-    border-radius: 29px;
-    background-color: #3965ee;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Century Gothic Bold';
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-transform: uppercase;
-    font-family: "Century Gothic";
-    font-size: 14px;
-    display: block; }
-
 .how-it-works {
   width: 1182px;
   height: 980px;
@@ -584,7 +564,9 @@ h1 {
     margin: 20px 300px 30px 300px; }
 
 .how-it-works-hr-container {
-  margin: 0 auto; }
+  text-align: center; }
+  .how-it-works-hr-container .header-line {
+    margin-left: 485px; }
 
 .book-info-session-container {
   background: rgba(57, 101, 238, 0.44);
@@ -601,23 +583,6 @@ h1 {
     margin: 0;
     text-align: center;
     padding: 0 120px 0 120px; }
-  .book-info-session-container .book-info-session-button {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin-top: 60px; }
-    .book-info-session-container .book-info-session-button button {
-      border-radius: 29px;
-      background-color: #3965ee;
-      color: #fff;
-      text-transform: uppercase;
-      font-family: 'Century Gothic Bold';
-      text-transform: uppercase;
-      font-family: "Century Gothic";
-      font-size: 14px;
-      border: none;
-      display: block; }
 
 .employee-employer-container li {
   float: left;
@@ -721,6 +686,46 @@ header .book-info-session {
   text-transform: uppercase;
   font-family: 'Century Gothic Bold';
   padding: 10px 25px; }
+
+.book-info-session-button {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 60px; }
+  .book-info-session-button button {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    text-transform: uppercase;
+    font-family: "Century Gothic Bold";
+    font-size: 14px;
+    border: none;
+    display: block;
+    padding: 15px 20px; }
+
+.more-resources-button {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 100px; }
+  .more-resources-button button {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    font-family: "Century Gothic Bold";
+    font-size: 14px;
+    display: block;
+    padding: 15px 20px; }
 
 div.flickity-viewport {
   height: 250px; }
