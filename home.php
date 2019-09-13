@@ -10,6 +10,7 @@
     <div class="resources-content-container">
 
         <section class="community-resources">
+            <img src="<?php echo get_template_directory_uri();?>/images/icons/iconEmployee.svg" alt="community icon">
             <h2>Community Resources</h2>
 
             <?php 
@@ -21,7 +22,6 @@
 
             foreach($sub_cats as $sub_cat) : ?>
                 <h3><?php echo $sub_cat->name; ?></h3>
-                <?php var_dump($sub_cat); ?>
 
                 <?php
                 $args = array(
@@ -42,16 +42,10 @@
                     $posts = new WP_Query($args);
                     if ( $posts->have_posts() ) :?>
                     <?php while($posts->have_posts()) :
-                        $posts->the_post(); 
-                        // $post_ID = get_the_ID();
-                        // $post_meta = get_post_meta($post_ID);
-                        // echo '<pre>';
-                        // var_dump($post_meta);
-                        // echo '</pre>';
-                        ?>
+                        $posts->the_post(); ?>
+
                         <div class="single-community-resource">
                             <a href="<?php the_permalink(); ?>">
-                            
                         
                                 <?php if($sub_cat->name === "Videos") : ?>
                                     <div class="video resource-media">
@@ -64,8 +58,6 @@
                                 <?php elseif($sub_cat->name === "Audio") : ?>
                                     <div class="audio resource-media">
                                         <img src="<?php echo get_template_directory_uri(); ?>/images/resources/audio-1293262_1280.png" alt="sound waves">
-                                        <?php echo 'this is where an audio image will appear'; ?>
-                                        <!-- get audio clip -->
                                     </div>
 
                                 <?php else : ?>
@@ -78,7 +70,7 @@
                         </div>
                     
 
-                <?php endwhile; ?> 
+                    <?php endwhile; ?> 
                     
                 <?php wp_reset_postdata(); ?>
                 <a href="<?php echo get_category_link($sub_cat->term_id); ?>" class="more-resources-btn">View All <?php echo $sub_cat->name ?></a>
