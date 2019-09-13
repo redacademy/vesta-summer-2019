@@ -700,49 +700,54 @@ h1 {
   width: 150px;
   margin: 50px auto; }
 
-div.flickity-viewport {
-  height: 250px; }
+div.customer-story-box {
+  top: 12%; }
 
-.customer-story-box {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 33%;
-  height: 250px;
-  margin: 0 6%;
-  background-color: #3965ee;
-  opacity: 0.7;
-  -webkit-box-shadow: 8px 4px 22px 0 rgba(0, 0, 0, 0.13);
-          box-shadow: 8px 4px 22px 0 rgba(0, 0, 0, 0.13);
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
-  position: relative; }
-  .customer-story-box h2 {
-    background-color: #284683;
-    color: #fff;
-    position: absolute;
-    left: -3%;
-    top: -3%;
-    border-radius: 50%;
-    font-size: 3.33rem;
-    height: 7.5rem;
-    width: 7.5rem;
-    text-align: center; }
-  .customer-story-box p {
-    color: #fff;
-    padding: 11% 11% 11% 22%;
-    font-size: 0.89rem; }
+.story-padding {
+  width: 36%;
+  height: 275px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  margin: 0 6%; }
+  .story-padding .customer-story-box {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 240px;
+    background-color: #3965ee;
+    opacity: 0.7;
+    -webkit-box-shadow: 8px 4px 22px 0 rgba(0, 0, 0, 0.13);
+            box-shadow: 8px 4px 22px 0 rgba(0, 0, 0, 0.13);
+    position: relative; }
+    .story-padding .customer-story-box h2 {
+      background-color: #284683;
+      color: #fff;
+      position: absolute;
+      left: -17%;
+      top: -13%;
+      border-radius: 50%;
+      font-size: 3.33rem;
+      line-height: 2.1;
+      height: 7.5rem;
+      width: 7.5rem;
+      text-align: center; }
+    .story-padding .customer-story-box p {
+      color: #fff;
+      padding: 11% 11% 11% 22%;
+      font-size: 0.89rem; }
+
+.story-padding.is-selected {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+  .story-padding.is-selected .customer-story-box {
+    opacity: 1.0;
+    -webkit-box-shadow: 10px 5px 27px 0 rgba(0, 0, 0, 0.13);
+            box-shadow: 10px 5px 27px 0 rgba(0, 0, 0, 0.13); }
 
 .quote-icon {
   position: absolute;
   left: 10%;
   top: 11%; }
-
-.customer-story-box.is-selected {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1.0;
-  -webkit-box-shadow: 10px 5px 27px 0 rgba(0, 0, 0, 0.13);
-          box-shadow: 10px 5px 27px 0 rgba(0, 0, 0, 0.13); }
 
 .grey-overlay {
   width: 100vw;
