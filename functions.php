@@ -87,10 +87,10 @@ function vesta_sidebars_widgets() {
         'id' => 'sidebar-stories',
         'description' => 'Drag a new text widget in here for a new customer story.',
         'class' => 'frontpg-stories',
-        'before_widget' => '<aside id="%1$s" class="%2$s customer-story-box">',
-        'after_widget' => '</aside>',
-        'before_title' => '',
-        'after_title' => ''
+        'before_widget' => '<aside class="story-padding"><div id="%1$s" class="%2$s customer-story-box">',
+        'after_widget' => '</div></aside>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2><img class="quote-icon" src="' . get_template_directory_uri() . '/images/icons/iconQuote.svg" alt="quote icon">'
     ));
     // Contact Us - Contact Info
     register_sidebar( array(
