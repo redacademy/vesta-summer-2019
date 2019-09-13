@@ -21,6 +21,7 @@
 
             foreach($sub_cats as $sub_cat) : ?>
                 <h3><?php echo $sub_cat->name; ?></h3>
+                <?php var_dump($sub_cat); ?>
 
                 <?php
                 $args = array(
@@ -42,7 +43,7 @@
                     if ( $posts->have_posts() ) :?>
                     <?php while($posts->have_posts()) :
                         $posts->the_post(); 
-                    //     $post_ID = get_the_ID();
+                        // $post_ID = get_the_ID();
                         // $post_meta = get_post_meta($post_ID);
                         // echo '<pre>';
                         // var_dump($post_meta);
@@ -78,6 +79,7 @@
                 <?php endwhile; ?> 
                     
                 <?php wp_reset_postdata(); ?>
+                <a href="<?php echo get_category_link($sub_cat->term_id); ?>" class="more-resources-btn">View All <?php echo $sub_cat->name ?></a>
 
                 <?php endif; ?>
             
