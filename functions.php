@@ -103,6 +103,28 @@ function vesta_sidebars_widgets() {
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+    //How it works - Community Sidebar
+    register_sidebar( array(
+        'name' => esc_html('How it Works - Community'),
+        'id' => 'sidebar-community',
+        'description' => 'Video and information about Community.',
+        'class' => 'community-widget',
+        'before_widget' => '<div class="steps-container">  ',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    //How it works - Workplace Sidebar
+    register_sidebar( array(
+        'name' => esc_html('How it Works - Workplace'),
+        'id' => 'sidebar-workplace',
+        'description' => 'Video and information about Workplace.',
+        'class' => 'workplace-widget',
+        'before_widget' => '<div class="steps-container">  ',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
 }
 add_action('widgets_init', 'vesta_sidebars_widgets');
 
