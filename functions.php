@@ -137,6 +137,41 @@ function cc_mime_types($mimes) {
 
 
 
+//   Pagination Offset
+
+function pre_query_resource_offset(&$query) {
+
+    // only continue if this is the main query on the homepage
+    if ( !$query->is_home() || !$query->is_main_query() ) 
+        return;
+
+    $posts_to_skip = 1;  // the number of most recent posts to skip
+    $posts_per_page = get_option('posts_per_page'); // get posts per page from WP settings
+
+   //Detect and handle pagination...
+     if ( !$query->is_paged ) // if we're on the first page...
+        $offset = $posts_to_skip; //...just offset by the number of posts to skip
+    else 
+        // Calculate the page offset if we are not on the first page
+        $offset = $posts_to_skip + ( ($query->query_vars['paged']-1) * $posts_per_page );
+
+    $query->set('offset',$offset);  // set the offset for the query
+}
+add_action('pre_get_posts', 'pre_query_resource_offset', 1 );
+
+add_filter('found_posts', 'adjust_homepage_offset_pagination', 1, 2 );
+function adjust_homepage_offset_pagination($found_posts, $query) {
+
+    // return the actual value if this isn't the main query on the homepage
+    if ( !$query->is_home() || !$query->is_main_query() ) 
+        return $found_posts;
+
+    $posts_to_skip = 1; // the number of posts to skip
+    return $found_posts - $posts_to_skip;
+}
+
+
+
 
 
 

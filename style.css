@@ -264,6 +264,13 @@ header {
       margin-right: 10px;
       margin-top: 10px; }
 
+.resource-media img {
+  width: 100%;
+  height: auto; }
+
+.resource-media {
+  max-width: 300px; }
+
 form.wpcf7-form {
   width: 496px;
   margin: 0 auto; }
