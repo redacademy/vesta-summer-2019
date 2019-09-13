@@ -1,6 +1,10 @@
-// .customer-stories-carousel div.flickity-viewport {
-//     height: 275px;
-// }
+.customer-stories-carousel {
+    margin-top: 30px;
+    .flickity-page-dots .dot {
+        background: #d8d8d8;
+        opacity: 1;
+    }
+}
 
 div.customer-story-box {
     top: 12%;
@@ -40,6 +44,7 @@ div.customer-story-box {
             color: #fff;
             padding: 11% 11% 11% 22%;
             font-size: 0.89rem;
+            line-height: 1.19;
         }
     }
 }
@@ -58,3 +63,7 @@ div.customer-story-box {
     top: 15%;
     height: 3.4rem;
 }
+
+.flickity-page-dots .dot.is-selected {
+    background: $accent-button-color;
+  }

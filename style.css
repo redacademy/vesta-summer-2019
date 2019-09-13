@@ -700,6 +700,12 @@ h1 {
   width: 150px;
   margin: 50px auto; }
 
+.customer-stories-carousel {
+  margin-top: 30px; }
+  .customer-stories-carousel .flickity-page-dots .dot {
+    background: #d8d8d8;
+    opacity: 1; }
+
 div.customer-story-box {
   top: 12%; }
 
@@ -744,7 +750,8 @@ div.customer-story-box {
     .story-padding .customer-story-box p {
       color: #fff;
       padding: 11% 11% 11% 22%;
-      font-size: 0.89rem; }
+      font-size: 0.89rem;
+      line-height: 1.19; }
 
 .story-padding.is-selected {
   -webkit-transform: scale(1);
@@ -759,6 +766,9 @@ div.customer-story-box {
   left: 4%;
   top: 15%;
   height: 3.4rem; }
+
+.flickity-page-dots .dot.is-selected {
+  background: #5a1933; }
 
 .grey-overlay {
   width: 100vw;
