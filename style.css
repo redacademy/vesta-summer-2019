@@ -415,7 +415,7 @@ form.wpcf7-form {
   margin-left: 200px;
   margin: 100px; }
   .trusted-partners img {
-    margin-right: 20px; }
+    margin-right: 40px; }
   .trusted-partners .govt-canada {
     width: 19%;
     height: auto;
@@ -423,11 +423,13 @@ form.wpcf7-form {
   .trusted-partners .legal-innovation {
     width: 14%;
     height: auto;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-bottom: 25px; }
   .trusted-partners .social-venture {
     width: 20%;
     height: auto;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-bottom: 25px; }
   .trusted-partners .unilever {
     width: 20%;
     height: auto;
