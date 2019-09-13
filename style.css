@@ -153,16 +153,23 @@ header {
   header .exit-button {
     position: fixed; }
     header .exit-button button {
-      margin-top: 350px;
+      border-radius: 29px;
       background-color: #5a1933;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Century Gothic Bold';
+      margin-top: 450px;
+      -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border: none;
       color: white;
-      font-size: 20px;
+      font-size: 16px;
       position: absolute;
       display: block;
       height: 50px;
       width: 120px;
       margin-left: 1150px;
-      font-family: 'Century Gothic'; }
+      cursor: pointer; }
 
 .footer-inner-container {
   display: -webkit-box;
