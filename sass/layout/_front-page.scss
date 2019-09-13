@@ -1,0 +1,148 @@
+.home{
+    h2, p{
+        margin-bottom: 15px;  
+    }
+}
+.home-transforming{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+    flex:100%;
+    img{
+       
+        height:auto;
+        width:29%;
+        max-width:100%;
+        margin-right: 150px;
+    }
+    
+    .vesta-transforming-workplace{
+        
+        margin-top: 150px;
+        margin-left: 200px;
+        img{
+            height:auto;
+            width:65%;
+            max-width:100%;
+            margin-bottom: 30px;  
+            
+        }
+        h2, p{
+            margin-bottom: 15px;  
+        }
+        p{
+            padding-right: 250px;
+        }
+    }
+    
+}
+
+.home-the-problem{
+    display: flex;
+    flex-wrap: nowrap;
+    flex:100%;
+    margin-left: 200px;
+    margin-top: 90px;
+   
+}
+    .problem-article{
+        flex:70%;
+        // margin-right: 100px;
+        p{
+            padding-right: 170px;
+        }
+    }
+    .problem-widget{
+        img{
+            width: 70%;
+            height:auto;
+            max-width: 100%;
+            // margin-right: 250px;
+        }
+    }
+    
+.home-strength{
+    margin-left: 200px;
+    margin-top: 90px;
+}
+.strength-numbers{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+    flex:100%;
+    .strength-number-80,.strength-number-85, .strength-number-95{
+        flex:30%;
+        margin-top: 20px;
+        // margin-left: -50px;
+        img{
+            width: 35%;
+            height:auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    hr{
+        width: 155px;
+        border: solid 0.5px $font-color;
+        margin: 20px auto;
+        // margin-left: 10px;
+        
+    }
+    p{
+        padding-left:100px;
+        padding-right:100px;
+        text-align: center;
+    }
+}
+.home-solution{
+    display: flex;
+    flex:100%;
+    flex-wrap: nowrap;
+    margin-left: 130px;
+    img{
+        width: 53%;
+        height:auto;
+        max-width: 100%;
+    }
+    .inner-solution{
+        margin-left: 50px;
+        p{
+            padding-right:180px;
+        }
+        button{
+            @include book-btn;
+            font-size: 16px;
+            width:30%;
+            height:15%;
+            margin-top: 10px;
+        }
+    }
+}
+.trusted-partners{
+    margin-left: 200px;
+    margin:100px;
+    img{
+        margin-right: 20px;
+    }
+    .govt-canada{
+        width: 19%;
+        height:auto;
+        max-width: 100%;
+    }
+    .legal-innovation{
+        width: 14%;
+        height:auto;
+        max-width: 100%;
+    }
+    .social-venture{
+        width: 20%;
+        height:auto;
+        max-width: 100%;
+    }
+    .unilever{
+        width: 20%;
+        height:auto;
+        max-width: 100%;
+    }
+}

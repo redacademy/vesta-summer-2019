@@ -148,8 +148,8 @@ header {
       border-radius: 29px;
       background-color: #3965ee;
       color: #fff;
-      text-transform: uppercase; }
-
+      text-transform: uppercase;
+      font-family: 'Century Gothic Bold'; }
 
 .footer-inner-container {
   display: -webkit-box;
@@ -249,6 +249,7 @@ header {
       width: auto;
       max-width: 100%;
       margin-right: 10px;
+      margin-top: 10px; }
 
 form.wpcf7-form {
   width: 546px;
@@ -292,6 +293,145 @@ form.wpcf7-form {
     height: 60px;
     font-size: 1em; }
 
+.home h2, .home p {
+  margin-bottom: 15px; }
+
+.home-transforming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 40px;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%; }
+  .home-transforming img {
+    height: auto;
+    width: 29%;
+    max-width: 100%;
+    margin-right: 150px; }
+  .home-transforming .vesta-transforming-workplace {
+    margin-top: 150px;
+    margin-left: 200px; }
+    .home-transforming .vesta-transforming-workplace img {
+      height: auto;
+      width: 65%;
+      max-width: 100%;
+      margin-bottom: 30px; }
+    .home-transforming .vesta-transforming-workplace h2, .home-transforming .vesta-transforming-workplace p {
+      margin-bottom: 15px; }
+    .home-transforming .vesta-transforming-workplace p {
+      padding-right: 250px; }
+
+.home-the-problem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  margin-left: 200px;
+  margin-top: 90px; }
+
+.problem-article {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%; }
+  .problem-article p {
+    padding-right: 170px; }
+
+.problem-widget img {
+  width: 70%;
+  height: auto;
+  max-width: 100%; }
+
+.home-strength {
+  margin-left: 200px;
+  margin-top: 90px; }
+
+.strength-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 100px;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%; }
+  .strength-numbers .strength-number-80, .strength-numbers .strength-number-85, .strength-numbers .strength-number-95 {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+    margin-top: 20px; }
+    .strength-numbers .strength-number-80 img, .strength-numbers .strength-number-85 img, .strength-numbers .strength-number-95 img {
+      width: 35%;
+      height: auto;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto; }
+  .strength-numbers hr {
+    width: 155px;
+    border: solid 0.5px #2e3438;
+    margin: 20px auto; }
+  .strength-numbers p {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center; }
+
+.home-solution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-left: 130px; }
+  .home-solution img {
+    width: 53%;
+    height: auto;
+    max-width: 100%; }
+  .home-solution .inner-solution {
+    margin-left: 50px; }
+    .home-solution .inner-solution p {
+      padding-right: 180px; }
+    .home-solution .inner-solution button {
+      border-radius: 29px;
+      background-color: #3965ee;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Century Gothic Bold';
+      font-size: 16px;
+      width: 30%;
+      height: 15%;
+      margin-top: 10px; }
+
+.trusted-partners {
+  margin-left: 200px;
+  margin: 100px; }
+  .trusted-partners img {
+    margin-right: 20px; }
+  .trusted-partners .govt-canada {
+    width: 19%;
+    height: auto;
+    max-width: 100%; }
+  .trusted-partners .legal-innovation {
+    width: 14%;
+    height: auto;
+    max-width: 100%; }
+  .trusted-partners .social-venture {
+    width: 20%;
+    height: auto;
+    max-width: 100%; }
+  .trusted-partners .unilever {
+    width: 20%;
+    height: auto;
+    max-width: 100%; }
 
 i.fa-minus {
   display: none; }
@@ -477,6 +617,10 @@ div.wpcf7-mail-sent-ok {
 .fa-times-circle:hover {
   cursor: pointer; }
 
+.fa-times-circle {
+  font-size: 2.5em;
+  padding-top: 10px;
+  color: #afafaf; }
 
 div.flickity-viewport {
   height: 250px; }
