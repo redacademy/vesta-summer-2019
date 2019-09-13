@@ -299,10 +299,11 @@ form.wpcf7-form {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-top: 40px;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
-          flex: 100%; }
+          flex: 100%;
+  margin-top: 40px;
+  margin-bottom: 150px; }
   .home-transforming img {
     height: auto;
     width: 29%;
@@ -331,7 +332,8 @@ form.wpcf7-form {
       -ms-flex: 100%;
           flex: 100%;
   margin-left: 200px;
-  margin-top: 90px; }
+  margin-top: 90px;
+  margin-bottom: 150px; }
 
 .problem-article {
   -webkit-box-flex: 70%;
@@ -388,7 +390,8 @@ form.wpcf7-form {
           flex: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-left: 130px; }
+  margin-left: 130px;
+  margin-bottom: 150px; }
   .home-solution img {
     width: 53%;
     height: auto;
@@ -408,32 +411,89 @@ form.wpcf7-form {
       height: 15%;
       margin-top: 10px; }
 
+.home-customer-stories {
+  margin-bottom: 150px; }
+  .home-customer-stories .header-style-container {
+    margin-left: 200px;
+    margin-bottom: 80px; }
+
 .trusted-partners {
-  margin-left: 200px;
-  margin: 100px; }
-  .trusted-partners img {
-    margin-right: 40px; }
-  .trusted-partners .govt-canada {
-    width: 19%;
+  margin: 50px 0 150px 200px; }
+  .trusted-partners .header-style-container {
+    margin-bottom: 50px; }
+
+.partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  .partners-list img {
+    margin-right: 50px; }
+  .partners-list .govt-canada {
+    width: 80%;
     height: auto;
     max-width: 100%; }
-  .trusted-partners .legal-innovation {
-    width: 14%;
+  .partners-list .legal-innovation {
+    width: 60%;
     height: auto;
     max-width: 100%;
-    margin-bottom: 25px; }
-  .trusted-partners .social-venture {
-    width: 20%;
+    margin-top: 30px; }
+  .partners-list .social-venture {
+    width: 80%;
     height: auto;
     max-width: 100%;
-    margin-bottom: 25px; }
-  .trusted-partners .unilever {
-    width: 20%;
+    margin-top: 40px; }
+  .partners-list .unilever {
+    width: 70%;
     height: auto;
     max-width: 100%; }
 
+.home-subscribe {
+  margin: 50px 0 0 0; }
+  .home-subscribe h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 100px; }
+  .home-subscribe .subscribe-form {
+    margin: 42px 0 80px 250px;
+    padding-left: 200px; }
+    .home-subscribe .subscribe-form label {
+      font-size: 16px;
+      font-family: 'Century Gothic Bold';
+      color: #284683; }
+    .home-subscribe .subscribe-form .subscribe-email {
+      height: 35px;
+      width: 50%;
+      position: relative;
+      margin-top: 20px;
+      font-size: 14px;
+      font-family: 'Century Gothic';
+      padding-left: 20px;
+      color: #2e3438; }
+    .home-subscribe .subscribe-form .subscribe-button {
+      position: absolute;
+      margin-top: 20px;
+      margin-left: -135px;
+      height: 40px;
+      width: 135px;
+      background-color: #5a1933;
+      color: white;
+      font-size: 14px;
+      font-family: 'Century Gothic';
+      text-transform: uppercase; }
+
 i.fa-minus {
-  display: none; }
+  display: none;
+  color: #5a1933;
+  font-size: 1.5em; }
+
+i.fa-plus {
+  color: #3965ee;
+  font-size: 1.5em; }
 
 .faq-answer {
   display: none; }
@@ -469,7 +529,7 @@ i.fa-minus {
 
 .faq-single-line {
   border-bottom: 0.1px solid #3965ee;
-  width: 560px;
+  width: 575px;
   margin-left: 0px; }
 
 .faq-answer {
@@ -686,31 +746,15 @@ h1 {
   margin-left: 150px;
   margin-top: 20px; }
   .what-we-offer-private img, .what-we-offer-confidential img, .what-we-offer-trustworthy img, .what-we-offer-secure img {
-    margin-right: 30px; }
+    margin-right: 30px;
+    width: 150px; }
+  .what-we-offer-private .secure-icon, .what-we-offer-confidential .secure-icon, .what-we-offer-trustworthy .secure-icon, .what-we-offer-secure .secure-icon {
+    min-width: 150px;
+    width: 150px; }
 
 .inner-private p, .inner-confidential p, .inner-trustworthy p, .inner-secure p {
   margin: 10px 0 0 0;
   text-align: left; }
-
-.more-resources-button {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin-top: 100px; }
-  .more-resources-button button {
-    border-radius: 29px;
-    background-color: #3965ee;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Century Gothic Bold';
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-transform: uppercase;
-    font-family: "Century Gothic";
-    font-size: 14px;
-    display: block; }
 
 .how-it-works {
   width: 1182px;
@@ -726,7 +770,9 @@ h1 {
     margin: 20px 300px 30px 300px; }
 
 .how-it-works-hr-container {
-  margin: 0 auto; }
+  text-align: center; }
+  .how-it-works-hr-container .header-line {
+    margin-left: 485px; }
 
 .book-info-session-container {
   background: rgba(57, 101, 238, 0.44);
@@ -743,23 +789,6 @@ h1 {
     margin: 0;
     text-align: center;
     padding: 0 120px 0 120px; }
-  .book-info-session-container .book-info-session-button {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin-top: 60px; }
-    .book-info-session-container .book-info-session-button button {
-      border-radius: 29px;
-      background-color: #3965ee;
-      color: #fff;
-      text-transform: uppercase;
-      font-family: 'Century Gothic Bold';
-      text-transform: uppercase;
-      font-family: "Century Gothic";
-      font-size: 14px;
-      border: none;
-      display: block; }
 
 .employee-employer-container li {
   float: left;
@@ -863,6 +892,46 @@ header .book-info-session {
   text-transform: uppercase;
   font-family: 'Century Gothic Bold';
   padding: 10px 25px; }
+
+.book-info-session-button {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 60px; }
+  .book-info-session-button button {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    text-transform: uppercase;
+    font-family: "Century Gothic Bold";
+    font-size: 14px;
+    border: none;
+    display: block;
+    padding: 15px 20px; }
+
+.more-resources-button {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 100px; }
+  .more-resources-button button {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    font-family: "Century Gothic Bold";
+    font-size: 14px;
+    display: block;
+    padding: 15px 20px; }
 
 .customer-stories-carousel {
   margin-top: 30px; }
