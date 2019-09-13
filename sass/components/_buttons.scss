@@ -25,3 +25,47 @@
     padding-top: 10px;
     color: #afafaf;
 }
+
+//form submit button  -- contact and info session btn
+
+.wpcf7-form{
+    .wpcf7-submit{
+            @include book-btn;
+            padding: 15px 30px;
+            text-decoration: none;
+            margin: 63px 0 60px 250px;
+            width: 250px;
+    }
+}
+// Overlay msg BTN
+.vesta-btn{
+    @include book-btn;
+    padding: 18px 23px;
+    text-decoration: none;
+    width: 150px;
+    margin: 50px auto;
+}
+
+// .form-button-container{
+//     width: 565px;
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-top: 41px;
+
+//     input.wpcf7-submit{
+//         @include book-btn;
+//         width: 230px;
+//         height: 60px;
+//         font-size: 1em;
+//     }
+// }
+
+header{
+    .book-info-session{
+        font-family: 'Century Gothic';
+        font-size: 1em;
+        text-transform: uppercase;
+        @include book-btn; 
+        padding: 10px 25px;
+    }
+}

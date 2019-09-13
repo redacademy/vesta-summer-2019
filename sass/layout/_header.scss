@@ -1,40 +1,44 @@
 header{
     display: flex;
-    flex: 100%;
-    flex-wrap: nowrap;
-    margin-left:130px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10%;
+}
+.header-logo-container{
+    display: flex;
+    align-items: center;
+
     .header-logo{
         height:57px;
-        width:auto;
-        max-width: 100%;
-        margin: 20px 15px 0 0;
+        width: 50px;
     }
     .header-logo-letter{
-        height:15px;
-        width:auto;
-        max-width: 100%;
-        margin: 42px 0 0 0;
+        height: 15px;
+        margin: 0 5px;
     }
-    .header-nav{
-        flex: 50%;
-        margin-left: 700px;
-        ul a{
-            list-style-type: none;
+
+}
+.header-nav{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-header-nav-container{
+    margin-right: 45px;
+    width: 55%;
+    max-width: 450px;
+    min-width: 370px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        a{
             text-decoration: none;
             text-transform: capitalize;
-            font-family: 'Century Gothic';
-            font-size:18PX;
-        }
-        li{
-            display: inline;
-            padding-right: 25px;
-        }
-        .book-info-session{
-            font-family: 'Century Gothic';
-            font-size: 16px;
-            text-transform: uppercase;
-            @include book-btn; 
-        }
+            font-family: 'Century Gothic Bold';
+            font-size: 1.1em;
+            color: $nav-color;
+            }
     }
-    
 }
