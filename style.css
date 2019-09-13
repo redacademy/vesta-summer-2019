@@ -704,16 +704,45 @@ div.flickity-viewport {
   height: 250px; }
 
 .customer-story-box {
-  width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 33%;
   height: 250px;
-  background-color: lightblue;
-  color: #fff;
+  margin: 0 6%;
+  background-color: #3965ee;
+  opacity: 0.7;
+  -webkit-box-shadow: 8px 4px 22px 0 rgba(0, 0, 0, 0.13);
+          box-shadow: 8px 4px 22px 0 rgba(0, 0, 0, 0.13);
   -webkit-transform: scale(0.85);
-          transform: scale(0.85); }
+          transform: scale(0.85);
+  position: relative; }
+  .customer-story-box h2 {
+    background-color: #284683;
+    color: #fff;
+    position: absolute;
+    left: -3%;
+    top: -3%;
+    border-radius: 50%;
+    font-size: 3.33rem;
+    height: 7.5rem;
+    width: 7.5rem;
+    text-align: center; }
+  .customer-story-box p {
+    color: #fff;
+    padding: 11% 11% 11% 22%;
+    font-size: 0.89rem; }
+
+.quote-icon {
+  position: absolute;
+  left: 10%;
+  top: 11%; }
 
 .customer-story-box.is-selected {
   -webkit-transform: scale(1);
-          transform: scale(1); }
+          transform: scale(1);
+  opacity: 1.0;
+  -webkit-box-shadow: 10px 5px 27px 0 rgba(0, 0, 0, 0.13);
+          box-shadow: 10px 5px 27px 0 rgba(0, 0, 0, 0.13); }
 
 .grey-overlay {
   width: 100vw;

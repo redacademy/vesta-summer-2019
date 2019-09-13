@@ -89,8 +89,8 @@ function vesta_sidebars_widgets() {
         'class' => 'frontpg-stories',
         'before_widget' => '<aside id="%1$s" class="%2$s customer-story-box">',
         'after_widget' => '</aside>',
-        'before_title' => '',
-        'after_title' => ''
+        'before_title' => '<h2>',
+        'after_title' => '</h2><img class="quote-icon" src="' . get_template_directory_uri() . '/images/icons/iconQuote.svg" alt="quote icon">'
     ));
     // Contact Us - Contact Info
     register_sidebar( array(

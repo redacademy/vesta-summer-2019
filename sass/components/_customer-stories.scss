@@ -3,13 +3,43 @@ div.flickity-viewport {
 }
 
 .customer-story-box {
-    width: 400px;
+    box-sizing: border-box;
+    width: 33%;
     height: 250px;
-    background-color: lightblue;
-    color: #fff;
+    margin: 0 6%;
+    background-color: $primary-color;
+    opacity: 0.7;
+    box-shadow: 8px 4px 22px 0 rgba(0, 0, 0, 0.13);
     transform: scale(0.85);
+    position: relative;
+
+    h2 {
+        background-color: $primary-dark;
+        color: #fff;
+        position: absolute;
+        left: -3%;
+        top: -3%;
+        border-radius: 50%;
+        font-size: 3.33rem;
+        height: 7.5rem;
+        width: 7.5rem;
+        text-align: center;
+        // padding: 2rem;
+    }
+    p {
+        color: #fff;
+        padding: 11% 11% 11% 22%;
+        font-size: 0.89rem;
+    }
+}
+.quote-icon {
+    position: absolute;
+    left: 10%;
+    top: 11%;
 }
 
 .customer-story-box.is-selected {
     transform: scale(1);
+    opacity: 1.0;
+    box-shadow: 10px 5px 27px 0 rgba(0, 0, 0, 0.13);
   }
