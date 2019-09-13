@@ -705,11 +705,21 @@ div.customer-story-box {
 
 .story-padding {
   width: 36%;
-  height: 275px;
+  height: 300px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   margin: 0 6%; }
   .story-padding .customer-story-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
@@ -746,8 +756,9 @@ div.customer-story-box {
 
 .quote-icon {
   position: absolute;
-  left: 10%;
-  top: 11%; }
+  left: 4%;
+  top: 15%;
+  height: 3.4rem; }
 
 .grey-overlay {
   width: 100vw;
