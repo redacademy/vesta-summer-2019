@@ -2,6 +2,11 @@
 
 <div class="category-container">
     <div class="category-title-wrapper">
+        <?php 
+        $cat = get_the_category();
+        $parentCatName = get_cat_name($cat[0]->parent);
+        echo '<h1>' .  $parentCatName . '</h1>';
+        ?>
         <h2><?php echo single_cat_title() ?></h2>
         
     </div>

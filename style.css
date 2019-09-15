@@ -896,8 +896,8 @@ h1 {
   margin: 0 auto;
   text-align: left; }
   .category-container h2 {
-    margin-bottom: 30px;
-    text-align: left; }
+    margin: 25px 0;
+    text-align: center; }
   .category-container p, .category-container li {
     font-family: 'Century Gothic';
     font-size: 1.2em;
