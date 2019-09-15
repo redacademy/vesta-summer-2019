@@ -12,12 +12,14 @@
         <div class="resource-headers">
             <div class="resource-header">
                 <img src="<?php echo get_template_directory_uri();?>/images/icons/iconEmployer.svg" alt="community icon">
-                <h2>Workplace Resources</h2>
+                <h3>Workplace Resources</h3>
+                <hr>
             </div>
 
             <div class="resource-header">
                 <img src="<?php echo get_template_directory_uri();?>/images/icons/iconEmployee.svg" alt="community icon">
-                <h2>Community Resources</h2>
+                <h3>Community Resources</h3>
+                <hr>
             </div>
         </div>
 
@@ -36,7 +38,7 @@
             ));
 
             foreach($sub_cats as $sub_cat) : ?>
-                <h3><?php echo $sub_cat->name; ?></h3>
+                <h3 class="sub-cat-name"><?php echo $sub_cat->name; ?></h3>
                     <div class="resource-sub-cat-wrapper">
                         <?php
                         $args = array(
@@ -59,7 +61,7 @@
                         <?php while($posts->have_posts()) :
                             $posts->the_post(); ?>
 
-                            <div class="single-community-resource">
+                            <div class="single-resource">
                                 <a href="<?php the_permalink(); ?>">
                             
                                     <?php if($sub_cat->name === "Videos") : ?>

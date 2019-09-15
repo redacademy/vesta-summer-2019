@@ -267,18 +267,32 @@ header {
 .resources-content-container {
   width: 79%;
   margin: 0 auto;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 0 7%;
+  border: 1px solid blue; }
 
 .resource-headers {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.sub-cat-name {
+  margin: 2rem 0; }
 
 .resource-sub-cat-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%; }
+  max-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.single-resource {
+  width: 30%; }
 
 .resource-media img {
   width: 100%;

@@ -2,15 +2,27 @@
     width: 79%;
     margin: 0 auto;
     background-color: #fff;
+    padding: 0 7%;
+    border: 1px solid blue;
 }
 
 .resource-headers {
     display: flex;
+    justify-content: center;
+}
+
+.sub-cat-name {
+    margin: 2rem 0;
 }
 
 .resource-sub-cat-wrapper {
     display: flex;
     max-width: 100%;
+    justify-content: space-between;
+}
+
+.single-resource {
+    width: 30%;
 }
 
 
