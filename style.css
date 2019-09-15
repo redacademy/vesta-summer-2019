@@ -864,6 +864,7 @@ h1 {
 
 .single-content-container {
   width: 65%;
+  min-width: 900px;
   margin: 0 auto;
   text-align: center;
   color: #2e3438; }
@@ -944,6 +945,7 @@ h1 {
 
 .page-content-container {
   width: 65%;
+  min-width: 900px;
   margin: 0 auto;
   text-align: left;
   color: #2e3438; }
