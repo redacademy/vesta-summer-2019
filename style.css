@@ -1017,6 +1017,9 @@ h1 {
   width: 150px;
   margin: 50px auto; }
 
+.contact-us-form .vesta-btn {
+  margin-top: 0; }
+
 header .book-info-session {
   font-family: 'Century Gothic';
   font-size: 1em;
@@ -1197,3 +1200,7 @@ div.customer-story-box {
     .confirmed-msg-container .alert-footer a {
       font-family: 'Century Gothic Bold';
       color: #284683; }
+
+.contact-us-form .wpcf7-mail-sent-ok {
+  width: 477px;
+  height: 450px; }
