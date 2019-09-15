@@ -7,6 +7,17 @@
         $parentCatName = get_cat_name($cat[0]->parent);
         echo '<h1>' .  $parentCatName . '</h1>';
         ?>
+
+        <?php 
+        foreach((get_the_category()) as $category)
+            echo '<pre>';
+            // print_r($category);
+            if ($category->parent == 0){
+                echo $category->name;
+            }
+        ?>
+
+
         <h2><?php echo single_cat_title() ?></h2>
         
     </div>
