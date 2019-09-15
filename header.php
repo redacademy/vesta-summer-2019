@@ -19,7 +19,7 @@
 
     <div class="header-nav">
         <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
-        <a href="<?php get_home_url()?>/<?php bloginfo('title'); ?>/book-information-session"><button class="book-info-session">Info Session</button></a>
+        <a href="<?php get_home_url()?>/<?php bloginfo('title'); ?>/info-session"><button class="book-info-session">Info Session</button></a>
     </div>
 </header>
 
