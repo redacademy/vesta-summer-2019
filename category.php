@@ -7,14 +7,17 @@
     </div>
 
     <div class="category-content-container">
-        <?php
+        <?php 
         if( have_posts() ) :   
             while( have_posts() ) :   
             the_post(); ?>    
         <div class="category-content-wrapper">
             <div class="category-content">
                 <a href="<?php the_permalink(); ?>">
-
+                    <?php 
+                    $content = get_the_content();
+                    $media = get_media_embedded_in_content( $content ); 
+                    echo $media[0];?>
                     <div class="post-thumbnail"?><?php the_post_thumbnail('full'); ?></div>
                     <h3><?php the_title(); ?></h3>
                     <?php the_excerpt(); ?>
