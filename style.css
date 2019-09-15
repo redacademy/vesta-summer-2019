@@ -264,6 +264,22 @@ header {
       margin-right: 10px;
       margin-top: 10px; }
 
+.resources-content-container {
+  width: 79%;
+  margin: 0 auto;
+  background-color: #fff; }
+
+.resource-headers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.resource-sub-cat-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%; }
+
 .resource-media img {
   width: 100%;
   height: auto; }
