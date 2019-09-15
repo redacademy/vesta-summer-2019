@@ -90,6 +90,7 @@ if( have_posts() ) :
                     <li class="step1">
                         <h3>Community Title Placeholder</h3>
                         <p>Community Text Placeholder</p>
+                        
                         <iframe width="700" height="400" src="https://www.youtube.com/embed/pOmu0LtcI6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </li>
                 </ul>
