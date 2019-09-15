@@ -1,0 +1,214 @@
+.home{
+    h2, p{
+        margin-bottom: 15px;  
+    }
+}
+.home-transforming{
+    display: flex;
+    flex-wrap: nowrap;
+    flex:100%;
+    margin-top: 40px;
+    margin-bottom: 150px;
+    
+    img{
+       
+        height:auto;
+        width:29%;
+        max-width:100%;
+        margin-right: 150px;
+    }
+    
+    .vesta-transforming-workplace{
+        
+        margin-top: 150px;
+        margin-left: 200px;
+        img{
+            height:auto;
+            width:65%;
+            max-width:100%;
+            margin-bottom: 30px;  
+            
+        }
+        h2, p{
+            margin-bottom: 15px;  
+        }
+        p{
+            padding-right: 250px;
+        }
+    }
+    
+}
+
+.home-the-problem{
+    display: flex;
+    flex-wrap: nowrap;
+    flex:100%;
+    margin-left: 200px;
+    margin-top: 90px;
+   margin-bottom: 150px;
+}
+    .problem-article{
+        flex:70%;
+        // margin-right: 100px;
+        p{
+            padding-right: 170px;
+        }
+    }
+    .problem-widget{
+        img{
+            width: 70%;
+            height:auto;
+            max-width: 100%;
+            // margin-right: 250px;
+        }
+    }
+    
+.home-strength{
+    margin-left: 200px;
+    margin-top: 90px;
+    
+}
+.strength-numbers{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+    flex:100%;
+    .strength-number-80,.strength-number-85, .strength-number-95{
+        flex:30%;
+        margin-top: 20px;
+        // margin-left: -50px;
+        img{
+            width: 35%;
+            height:auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    hr{
+        width: 155px;
+        border: solid 0.5px $font-color;
+        margin: 20px auto;
+        // margin-left: 10px;
+        
+    }
+    p{
+        padding-left:100px;
+        padding-right:100px;
+        text-align: center;
+    }
+}
+.home-solution{
+    display: flex;
+    flex:100%;
+    flex-wrap: nowrap;
+    margin-left: 130px;
+    margin-bottom: 150px;
+    img{
+        width: 53%;
+        height:auto;
+        max-width: 100%;
+    }
+   
+    .inner-solution{
+        margin-left: 50px;
+        
+        p{
+            padding-right:180px;
+        }
+        button{
+            @include book-btn;
+            font-size: 16px;
+            width:30%;
+            height:15%;
+            margin-top: 10px;
+        }
+    }
+}
+.home-customer-stories{
+    margin-bottom: 150px;
+    .header-style-container{
+        margin-left: 200px;
+        margin-bottom: 80px;
+    }
+
+}
+.trusted-partners{
+    margin: 50px 0 150px 200px;
+    .header-style-container{
+        margin-bottom: 50px;
+    }
+    
+}
+.partners-list{
+    display: flex;
+   justify-content: center;
+   flex-wrap: nowrap;
+    img{
+        margin-right: 50px;
+    }
+    .govt-canada{
+        width: 80%;
+        height:auto;
+        max-width: 100%;
+    }
+    .legal-innovation{
+        width: 60%;
+        height:auto;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .social-venture{
+        width: 80%;
+        height:auto;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .unilever{
+        width: 70%;
+        height:auto;
+        max-width: 100%;
+    }
+}
+   .home-subscribe{
+    margin: 50px 0 0 0;
+    h2{
+        font-size: 28px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .subscribe-form{
+        margin: 42px 0 80px 250px;
+        padding-left: 200px;
+    
+        label{
+            font-size: 16px;
+            font-family: 'Century Gothic Bold';
+            color: $nav-color; 
+        }
+        .subscribe-email{
+            height:35px;
+            width:50%;
+            position: relative;
+            margin-top: 20px;
+            font-size: 14px;
+            font-family: 'Century Gothic';
+            padding-left:20px;
+            color: $font-color;
+        }
+        .subscribe-button{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: -135px;
+            height:40px;
+            width:135px;
+            background-color: $accent-button-color;
+            color: white;
+            font-size: 14px;
+            font-family: 'Century Gothic';
+            text-transform: uppercase;
+
+        }
+    }
+   }
+

@@ -87,10 +87,10 @@ function vesta_sidebars_widgets() {
         'id' => 'sidebar-stories',
         'description' => 'Drag a new text widget in here for a new customer story.',
         'class' => 'frontpg-stories',
-        'before_widget' => '<aside id="%1$s" class="%2$s customer-story-box">',
-        'after_widget' => '</aside>',
-        'before_title' => '',
-        'after_title' => ''
+        'before_widget' => '<aside class="story-padding"><div id="%1$s" class="%2$s customer-story-box">',
+        'after_widget' => '</div></aside>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2><img class="quote-icon" src="' . get_template_directory_uri() . '/images/icons/iconQuote.svg" alt="quote icon">'
     ));
     // Contact Us - Contact Info
     register_sidebar( array(
@@ -103,6 +103,28 @@ function vesta_sidebars_widgets() {
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+    //How it works - Community Sidebar
+    register_sidebar( array(
+        'name' => esc_html('How it Works - Community'),
+        'id' => 'sidebar-community',
+        'description' => 'Video and information about Community.',
+        'class' => 'community-widget',
+        'before_widget' => '<div class="steps-container">  ',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    //How it works - Workplace Sidebar
+    register_sidebar( array(
+        'name' => esc_html('How it Works - Workplace'),
+        'id' => 'sidebar-workplace',
+        'description' => 'Video and information about Workplace.',
+        'class' => 'workplace-widget',
+        'before_widget' => '<div class="steps-container">  ',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
 }
 add_action('widgets_init', 'vesta_sidebars_widgets');
 
@@ -112,6 +134,41 @@ function cc_mime_types($mimes) {
     return $mimes;
   }
   add_filter('upload_mimes', 'cc_mime_types');
+
+
+
+//   Pagination Offset
+
+function pre_query_resource_offset(&$query) {
+
+    // only continue if this is the main query on the homepage
+    if ( !$query->is_home() || !$query->is_main_query() ) 
+        return;
+
+    $posts_to_skip = 1;  // the number of most recent posts to skip
+    $posts_per_page = get_option('posts_per_page'); // get posts per page from WP settings
+
+   //Detect and handle pagination...
+     if ( !$query->is_paged ) // if we're on the first page...
+        $offset = $posts_to_skip; //...just offset by the number of posts to skip
+    else 
+        // Calculate the page offset if we are not on the first page
+        $offset = $posts_to_skip + ( ($query->query_vars['paged']-1) * $posts_per_page );
+
+    $query->set('offset',$offset);  // set the offset for the query
+}
+add_action('pre_get_posts', 'pre_query_resource_offset', 1 );
+
+add_filter('found_posts', 'adjust_homepage_offset_pagination', 1, 2 );
+function adjust_homepage_offset_pagination($found_posts, $query) {
+
+    // return the actual value if this isn't the main query on the homepage
+    if ( !$query->is_home() || !$query->is_main_query() ) 
+        return $found_posts;
+
+    $posts_to_skip = 1; // the number of posts to skip
+    return $found_posts - $posts_to_skip;
+}
 
 
 

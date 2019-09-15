@@ -1,12 +1,19 @@
 <?php get_header(); ?>
+<div class="contact-title-container">
+    <h1><?php the_title(); ?></h1>
+    <p> For further informatio, you may either submit your query on this page,
+        or use our following contacts to get in touch. </p>
+</div>
+
+
 
 <section class="contact-pg-wrapper">
+    
     <?php
     if( have_posts() ) :  
         while( have_posts() ) :   
         the_post(); ?> 
         <section class="contact-us-form">
-            <h2><?php the_title(); ?></h2>
             <?php the_content(); ?>
             <?php endwhile; ?>
 

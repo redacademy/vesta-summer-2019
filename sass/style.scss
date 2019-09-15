@@ -20,12 +20,19 @@ Text Domain: vesta
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/home';
 @import 'layout/sidebar';
 @import 'layout/forms';
+@import 'layout/front-page';
 @import 'layout/faq';
 @import 'layout/about';
 @import 'layout/theme';
 @import 'layout/info-session';
+@import 'layout/contact-us';
+@import 'layout/what-we-offer';
+@import 'layout/404';
+
+
 
 @import 'components/buttons';
 @import 'components/customer-stories';
