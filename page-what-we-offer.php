@@ -88,18 +88,17 @@ if( have_posts() ) :
             <div class="steps-container">  
                 <ul id="tab-1">
                     <li class="step1">
-                        <h3>Community Title Placeholder</h3>
-                        <p>Community Text Placeholder</p>
                         
-                        <iframe width="700" height="400" src="https://www.youtube.com/embed/pOmu0LtcI6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <p>Community Text Placeholder</p> -->
+                        <?php dynamic_sidebar('sidebar-community'); ?>
+                        <!-- <iframe width="700" height="400" src="https://www.youtube.com/embed/pOmu0LtcI6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     </li>
                 </ul>
                 <ul id="tab-2">
                     <li class="step1">
                         <!-- Insert number 1 Icon -->
-                        <h3>Workplace Title Placeholder</h3>
-                        <p>Workplace Text Placeholder</p>
-                        <iframe width="700" height="400" src="https://www.youtube.com/embed/YuwxJB-TOyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <?php dynamic_sidebar('sidebar-workplace'); ?>
+                        <!-- <iframe width="700" height="400" src="https://www.youtube.com/embed/YuwxJB-TOyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     </li>
                 </ul>
             </div>
