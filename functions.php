@@ -109,7 +109,7 @@ function vesta_sidebars_widgets() {
         'id' => 'sidebar-community',
         'description' => 'Video and information about Community.',
         'class' => 'community-widget',
-        'before_widget' => '<div class="steps-container">  ',
+        'before_widget' => '<div class="video-info-container">  ',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
@@ -120,10 +120,21 @@ function vesta_sidebars_widgets() {
         'id' => 'sidebar-workplace',
         'description' => 'Video and information about Workplace.',
         'class' => 'workplace-widget',
-        'before_widget' => '<div class="steps-container">  ',
+        'before_widget' => '<div class="video-info-container">  ',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
+    ));
+
+    //Resource Page - Suggestion Form
+    register_sidebar( array(
+        'name' => esc_html('Suggest a Resource'),
+        'id' => 'sidebar-resource-suggest',
+        'description' => 'Add a Contact Form for suggestions',
+        'before_widget' => '<div class="resources-suggest">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
     ));
 }
 add_action('widgets_init', 'vesta_sidebars_widgets');
@@ -136,39 +147,10 @@ function cc_mime_types($mimes) {
   add_filter('upload_mimes', 'cc_mime_types');
 
 
-
-//   Pagination Offset
-
-function pre_query_resource_offset(&$query) {
-
-    // only continue if this is the main query on the homepage
-    if ( !$query->is_home() || !$query->is_main_query() ) 
-        return;
-
-    $posts_to_skip = 1;  // the number of most recent posts to skip
-    $posts_per_page = get_option('posts_per_page'); // get posts per page from WP settings
-
-   //Detect and handle pagination...
-     if ( !$query->is_paged ) // if we're on the first page...
-        $offset = $posts_to_skip; //...just offset by the number of posts to skip
-    else 
-        // Calculate the page offset if we are not on the first page
-        $offset = $posts_to_skip + ( ($query->query_vars['paged']-1) * $posts_per_page );
-
-    $query->set('offset',$offset);  // set the offset for the query
+function vesta_custom_excerpt_length( $length ) {
+    return 15;
 }
-add_action('pre_get_posts', 'pre_query_resource_offset', 1 );
-
-add_filter('found_posts', 'adjust_homepage_offset_pagination', 1, 2 );
-function adjust_homepage_offset_pagination($found_posts, $query) {
-
-    // return the actual value if this isn't the main query on the homepage
-    if ( !$query->is_home() || !$query->is_main_query() ) 
-        return $found_posts;
-
-    $posts_to_skip = 1; // the number of posts to skip
-    return $found_posts - $posts_to_skip;
-}
+add_filter( 'excerpt_length', 'vesta_custom_excerpt_length', 999 );
 
 
 

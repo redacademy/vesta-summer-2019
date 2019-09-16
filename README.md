@@ -1,0 +1,6 @@
+- Need to add excerpt to each post (10-20 words).
+- Need to check category AND subcategory boxes for each post.
+- Can add new categories and subcategories
+- Can add new categories to FAQs
+- Ideally, add a Featured Image to each post as this will be the media that appears on the Resources Page if no other media is found in the content.
+- for Resources, be sure to follow naming convention for category slugs: [parent category]-[sub category].

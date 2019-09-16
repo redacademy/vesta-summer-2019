@@ -28,15 +28,13 @@
 
 //form submit button  -- contact and info session btn
 
-.wpcf7-form{
-    .wpcf7-submit{
-            @include book-btn;
-            padding: 15px 30px;
-            text-decoration: none;
-            margin: 63px 0 60px 250px;
-            width: 250px;
+.contact-us-form, .book-info-session {
+    .wpcf7-submit {
+        @include book-btn;
+        @include form-submit-btn;
     }
 }
+
 // Overlay msg BTN
 .vesta-btn{
     @include book-btn;

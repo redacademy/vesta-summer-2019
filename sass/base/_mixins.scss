@@ -15,6 +15,14 @@
     @content;
 }
 
+@mixin form-submit-btn {
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 63px 0 60px 250px;
+    width: 250px;
+    @content;
+}
+
 @mixin about-offer-container{
     background: rgba(57, 101, 238, 0.44);
     margin: 0 auto;
@@ -23,5 +31,19 @@
 @mixin form-border{
     border: solid 0.5px #979797;
     background-color: #ffffff;
+    @content;
+}
+
+@mixin thick-bar {
+    height: 8px;
+    border: solid 1px #cbcbcb;
+    background-color: #cbcbcb;
+    margin-bottom: 0;
+    @content;
+}
+
+@mixin thick-bar-selected {
+    border: solid 1px $primary-color;
+    background-color: $primary-color;
     @content;
 }
