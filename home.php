@@ -45,8 +45,8 @@
                                         'tax_query' => array(
                                             array(
                                                 'taxonomy' => 'category',
-                                                'field' => 'name',
-                                                'terms' => $sub_cat->name
+                                                'field' => 'slug',
+                                                'terms' => $sub_cat->slug
                                             ))
                                     );
 
@@ -91,11 +91,8 @@
             </div>
                 
 
-            </section>
+        </section>
 
-        
-
-        
 
         <section class="community-resources parent-cat-container">
         <div class="parent-cat-container">
@@ -123,7 +120,6 @@
                                 ))
                         );
 
-                        
 
                         $posts = new WP_Query($args);
                         if ( $posts->have_posts() ) :?>
@@ -154,12 +150,9 @@
                                     <div><?php the_excerpt(); ?></div>
                                 </a>
                             </div>
-                        
 
                         <?php endwhile; ?> 
                     </div>
-
-                
                     
                     <?php wp_reset_postdata(); ?>
                     <a href="<?php echo get_category_link($sub_cat->term_id); ?>" class="more-resources-btn">View All <?php echo $sub_cat->name ?></a>
@@ -172,14 +165,10 @@
             </div>
             </section>
 
-
             <section class="suggest-a-resource">
                 <h4 class="suggestion-header"> Can't find what you're looking for?</h4> 
                 <?php dynamic_sidebar('sidebar-resource-suggest'); ?>
             </section>
-
-
-        
 
     </div>
 
