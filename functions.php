@@ -147,15 +147,6 @@ function cc_mime_types($mimes) {
   add_filter('upload_mimes', 'cc_mime_types');
 
 
-
-// Modify Excerpt
-// function vesta_resource_excerpt($more) {
-//     global $post;
-//     return ' [...]<a class="read-more-link" href="' . get_permalink($post->ID) . '" >Read More</a>';
-// }
-
-// add_filter('excerpt_more', 'vesta_resource_excerpt');
-
 function vesta_custom_excerpt_length( $length ) {
     return 15;
 }

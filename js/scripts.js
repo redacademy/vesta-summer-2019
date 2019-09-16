@@ -10,17 +10,24 @@
 
 //      RESOURCES Page
 
-    const $workplaceCategory = $('.resource-workplace-header')
-    const $communityCategory = $('.resource-community-header')
+    const $workplaceCatHeader = $('.resource-workplace-header')
+    const $communityCatHeader = $('.resource-community-header')
+    const $workplaceResources = $('.workplace-resources')
+    const $communityResources = $('.community-resources')
 
-    $communityCategory.on('click', function(e) {
-        $workplaceCategory.removeClass('resource-header-selected')
-        $communityCategory.addClass('resource-header-selected')
+    $communityCatHeader.on('click', function(e) {
+        $workplaceCatHeader.removeClass('resource-header-selected')
+        $communityCatHeader.addClass('resource-header-selected')
+        $workplaceResources.hide()
+        $communityResources.show()
+
     }) 
     
-    $workplaceCategory.on('click', function(e) {
-        $communityCategory.removeClass('resource-header-selected')
-        $workplaceCategory.addClass('resource-header-selected')
+    $workplaceCatHeader.on('click', function(e) {
+        $communityCatHeader.removeClass('resource-header-selected')
+        $workplaceCatHeader.addClass('resource-header-selected')
+        $communityResources.hide()
+        $workplaceResources.show()
     }) 
 
 
