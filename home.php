@@ -10,16 +10,16 @@
     <div class="resources-content-container">
 
         <div class="resource-headers">
-            <div class="resource-header">
-                <img src="<?php echo get_template_directory_uri();?>/images/icons/iconEmployer.svg" alt="community icon">
+            <div class="resource-header workplace-header">
+                <img src="<?php echo get_template_directory_uri();?>/images/icons/iconEmployer.svg" alt="workplace icon">
                 <h3>Workplace</h3>
-                <hr>
+                <hr class="highlight-bar">
             </div>
 
-            <div class="resource-header">
+            <div class="resource-header community-header">
                 <img src="<?php echo get_template_directory_uri();?>/images/icons/iconEmployee.svg" alt="community icon">
                 <h3>Community</h3>
-                <hr>
+                <hr class="highlight-bar">
             </div>
         </div>
 

@@ -17,3 +17,17 @@
     background-color: #ffffff;
     @content;
 }
+
+@mixin thick-bar {
+    height: 8px;
+    border: solid 1px #cbcbcb;
+    background-color: #cbcbcb;
+    margin-bottom: 0;
+    @content;
+}
+
+@mixin thick-bar-selected {
+    border: solid 1px $primary-color;
+    background-color: $primary-color;
+    @content;
+}

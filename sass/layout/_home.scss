@@ -10,6 +10,37 @@
 .resource-headers {
     display: flex;
     justify-content: center;
+    margin: 50px 0 25px 0;
+}
+
+
+.resource-header {
+    display: grid;
+    grid-template: 50px 1.9rem 23px / 1fr;
+    width: 35%;
+    text-align: center;
+    margin: 0 5px;
+    h3 {
+        font-family: 'Century Gothic';
+    }
+    img {
+        height: 50px;
+        margin: 0 auto;
+    }
+}
+
+.highlight-bar {
+    @include thick-bar;
+    width: 100%;
+}
+
+.resource-header-selected {
+    h3 {
+        font-family: 'unset';
+    }
+    .highlight-bar {
+        @include thick-bar-selected;
+    }
 }
 
 .parent-cat-container {
