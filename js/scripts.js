@@ -8,6 +8,22 @@
     });
 
 
+//      RESOURCES Page
+
+    const $workplaceCategory = $('.resource-workplace-header')
+    const $communityCategory = $('.resource-community-header')
+
+    $communityCategory.on('click', function(e) {
+        $workplaceCategory.removeClass('resource-header-selected')
+        $communityCategory.addClass('resource-header-selected')
+    }) 
+    
+    $workplaceCategory.on('click', function(e) {
+        $communityCategory.removeClass('resource-header-selected')
+        $workplaceCategory.addClass('resource-header-selected')
+    }) 
+
+
 
 
 //      FAQ Page

@@ -125,6 +125,17 @@ function vesta_sidebars_widgets() {
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+
+    //Resource Page - Suggestion Form
+    register_sidebar( array(
+        'name' => esc_html('Suggest a Resource'),
+        'id' => 'sidebar-resource-suggest',
+        'description' => 'Add a Contact Form for suggestions',
+        'before_widget' => '<div class="resources-suggest">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
+    ));
 }
 add_action('widgets_init', 'vesta_sidebars_widgets');
 

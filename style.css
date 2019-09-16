@@ -89,7 +89,7 @@ body {
   line-height: 1.5em;
   color: #2e3438; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Century Gothic Bold'; }
 
 h1 {
@@ -101,6 +101,9 @@ h2 {
 
 h3 {
   font-size: 1.33rem; }
+
+h4 {
+  font-size: 1.17rem; }
 
 a {
   text-decoration: none; }
@@ -294,6 +297,8 @@ header {
   .resource-header img {
     height: 50px;
     margin: 0 auto; }
+  .resource-header:hover {
+    cursor: pointer; }
 
 .highlight-bar {
   height: 8px;
@@ -303,11 +308,14 @@ header {
   width: 100%; }
 
 .resource-header-selected h3 {
-  font-family: 'unset'; }
+  font-family: 'Century Gothic Bold'; }
 
 .resource-header-selected .highlight-bar {
   border: solid 1px #3965ee;
   background-color: #3965ee; }
+
+.resource-header-selected:hover {
+  cursor: unset; }
 
 .parent-cat-container {
   display: -webkit-box;
@@ -353,6 +361,33 @@ header {
   margin: 15px auto; }
   .more-resources-btn:hover {
     background: #3965ee; }
+
+.suggest-a-resource {
+  margin: 50px 0; }
+
+.suggestion-header {
+  font-size: 1.17rem; }
+
+.resources-suggest label {
+  font-size: 1rem;
+  font-family: 'Century Gothic'; }
+
+.resources-suggest form.wpcf7-form {
+  margin: 0; }
+
+.resources-suggest form.wpcf7-form textarea {
+  height: 50px; }
+
+.resources-suggest .wpcf7-submit {
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 63px 0 60px 250px;
+  width: 250px;
+  color: #fff;
+  background: #5a1933;
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase; }
 
 form.wpcf7-form {
   width: 496px;
@@ -966,7 +1001,7 @@ h1 {
   padding-top: 10px;
   color: #afafaf; }
 
-.wpcf7-form .wpcf7-submit {
+.contact-us-form .wpcf7-submit, .book-info-session .wpcf7-submit {
   border-radius: 29px;
   background-color: #3965ee;
   color: #fff;

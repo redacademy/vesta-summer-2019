@@ -27,6 +27,9 @@
         height: 50px;
         margin: 0 auto;
     }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .highlight-bar {
@@ -36,10 +39,13 @@
 
 .resource-header-selected {
     h3 {
-        font-family: 'unset';
+        font-family: 'Century Gothic Bold';
     }
     .highlight-bar {
         @include thick-bar-selected;
+    }
+    &:hover {
+        cursor: unset;
     }
 }
 
@@ -88,6 +94,37 @@
     margin: 15px auto;
     &:hover {
         background: $primary-color;
+    }
+}
+
+// Suggestion Form
+.suggest-a-resource {
+    margin: 50px 0;
+}
+
+.suggestion-header {
+    font-size: 1.17rem;
+}
+
+.resources-suggest {
+    label {
+        font-size: 1rem;
+        font-family: 'Century Gothic';
+    }
+    form.wpcf7-form {
+        margin: 0;
+    }
+    form.wpcf7-form textarea {
+        height: 50px;
+    }
+    .wpcf7-submit {
+        @include form-submit-btn;
+        color: #fff;
+        background: $accent-button-color;
+        margin: 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+
     }
 }
 
