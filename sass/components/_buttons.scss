@@ -44,19 +44,11 @@
     margin: 50px auto;
 }
 
-// .form-button-container{
-//     width: 565px;
-//     display: flex;
-//     justify-content: flex-end;
-//     margin-top: 41px;
-
-//     input.wpcf7-submit{
-//         @include book-btn;
-//         width: 230px;
-//         height: 60px;
-//         font-size: 1em;
-//     }
-// }
+.contact-us-form{
+    .vesta-btn{
+        margin-top: 0;
+    }
+}
 
 header{
     .book-info-session{
