@@ -119,22 +119,26 @@ h1{
 
 
   .steps-container {
-    // border: 1px solid #cecfd5;
-    // border-radius: 0 0 6px 6px;
+
     border-top: 0;
     clear: both;
     padding: 24px 30px;
     position: relative;
     top: -1px;
-
     h3{
         text-align: center;
     }
     iframe{
+        width:50%;
         margin: 0 auto;
         margin-left:230px;
     }
+   
   }
+  body .steps-container .video-info-container .wp-video{
+    width:50%;
+    height:50%;
+}
   
 .employee-employer-line{
   width: 355px;

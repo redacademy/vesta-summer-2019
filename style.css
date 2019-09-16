@@ -837,8 +837,13 @@ h1 {
   .steps-container h3 {
     text-align: center; }
   .steps-container iframe {
+    width: 50%;
     margin: 0 auto;
     margin-left: 230px; }
+
+body .steps-container .video-info-container .wp-video {
+  width: 50%;
+  height: 50%; }
 
 .employee-employer-line {
   width: 355px;
