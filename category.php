@@ -4,7 +4,8 @@
     <div class="category-title-wrapper">
 
 
-        <h2><?php $term = get_queried_object();
+        <h2><?php 
+        $term = get_queried_object();
         echo $term->slug;
         ?></h2>
         
@@ -19,15 +20,28 @@
             <div class="category-content">
                 <a href="<?php the_permalink(); ?>">
                     <?php 
-                    $content = get_the_content();
-                    $media = get_media_embedded_in_content( $content ); 
-                    echo $media[0];?>
-                    <div class="post-thumbnail"?><?php the_post_thumbnail('full'); ?></div>
+                        $content = get_the_content();
+                        $media = get_media_embedded_in_content( $content ); 
+                        if ($media){
+                        echo $media[0];
+                        }elseif ($term->name === "Audio") {
+                            echo  '<img src="';
+                            echo get_template_directory_uri(); 
+                            echo '/images/resources/audio-1293262_1280.png" alt="sound waves" class="category-audio-icon"> ';
+                            
+
+                        }else {
+                        echo '<div class="post-thumbnail"?>';
+                        echo $postThumb = the_post_thumbnail('full'); 
+                        echo '</div>';
+                        }
+                    ?>
                     <h3><?php the_title(); ?></h3>
                     <?php the_excerpt(); ?>
                 </a>
             </div>
         </div>
+        
         
 
         <?php endwhile; ?>
