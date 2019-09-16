@@ -4,7 +4,8 @@
 <main class="resources">
 
     <div class="resources-title-container">
-        <p> Educational resources and guides.</p>
+        <h1>Resources</h1>
+        <p> Educational resources and guides for the workplace and the community.</p>
     </div>
 
     <div class="resources-content-container">
