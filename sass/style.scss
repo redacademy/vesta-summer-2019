@@ -15,6 +15,8 @@ Text Domain: vesta
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/typography';
+@import 'base/theme';
+
 
 @import 'layout/navigation';
 @import 'layout/grid';
@@ -26,11 +28,15 @@ Text Domain: vesta
 @import 'layout/front-page';
 @import 'layout/faq';
 @import 'layout/about';
-@import 'layout/theme';
 @import 'layout/info-session';
 @import 'layout/contact-us';
 @import 'layout/what-we-offer';
 @import 'layout/404';
+@import 'layout/single';
+@import 'layout/category';
+@import 'layout/page';
+
+
 
 
 

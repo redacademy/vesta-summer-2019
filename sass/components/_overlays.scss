@@ -30,7 +30,6 @@
 }
 
 
-
 .confirmed-msg-container{
     text-align: center;
     display: flex;
@@ -63,3 +62,11 @@
     }
 }
 
+//contact us modal alert
+
+.contact-us-form{
+    .wpcf7-mail-sent-ok{
+        width: 477px;
+        height: 450px;
+    }
+}

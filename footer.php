@@ -1,3 +1,6 @@
+ <!-- close all page wrappers -->
+</div>
+
 <?php
 wp_footer();
 ?>

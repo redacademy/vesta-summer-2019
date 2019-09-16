@@ -1,22 +1,67 @@
 <?php get_header(); ?>
 
-<?php
-if( have_posts() ) :   
-    // Start WP Loop
-    while( have_posts() ) :   
-    the_post(); ?>         
-<h2><?php the_title(); ?></h2>
-<?php the_content(); ?>
+<div class="category-container">
+    <div class="category-title-wrapper">
 
-    <!-- end of wp loop -->
-    <?php endwhile; ?>
 
-<?php the_posts_navigation(); ?> 
+        <h2><?php 
+        $term = get_queried_object();
+        echo $term->slug;
+        ?></h2>
+        
+    </div>
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif; ?>
+    <div class="category-content-container">
+        <?php 
+        if( have_posts() ) :   
+            while( have_posts() ) :   
+            the_post(); ?>    
+        <div class="category-content-wrapper">
+            <div class="category-content">
+                <a href="<?php the_permalink(); ?>">
+                    <?php 
+                        $content = get_the_content();
+                        $media = get_media_embedded_in_content( $content ); 
+                        if ($media){
+                        echo $media[0];
+                        }elseif ($term->name === "Audio") {
+                            echo  '<img src="';
+                            echo get_template_directory_uri(); 
+                            echo '/images/resources/audio-1293262_1280.png" alt="sound waves" class="category-audio-icon"> ';
+                            
+
+                        }else {
+                        echo '<div class="post-thumbnail"?>';
+                        echo $postThumb = the_post_thumbnail('full'); 
+                        echo '</div>';
+                        }
+                    ?>
+                    <h3><?php the_title(); ?></h3>
+                    <?php the_excerpt(); ?>
+                </a>
+            </div>
+        </div>
+        
+        
+
+        <?php endwhile; ?>
+        
+
+        </div>
+</div>
+        <?php else : ?>
+                <h3>No posts found</h3>
+
+        <?php endif; ?>
+        <div class="category-nav">
+        <?php the_posts_pagination( array(
+        'mid_size' => 2,
+        'prev_text' => __( 'Previous Posts', 'textdomain' ),
+        'next_text' => __( 'Next Posts', 'textdomain' ),
+        )); ?>
+
+
+        </div>
+
 
 <?php get_footer(); ?>
-
-                        
