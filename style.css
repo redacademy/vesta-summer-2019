@@ -407,6 +407,10 @@ header {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.logo-placeholder img {
+  width: auto;
+  height: 100%; }
+
 .more-resources-btn {
   background: #284683;
   color: #fff;
