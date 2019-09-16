@@ -24,3 +24,5 @@
     <div class="exit-button"><a href="https://www.cp24.com/"><button>Exit Site</button></a></div>
 </header>
 
+<div class="all-page-wrapper">
+
