@@ -117,7 +117,6 @@ h1{
       }
 }
 
-
   .steps-container {
 
     border-top: 0;
@@ -128,18 +127,22 @@ h1{
     h3{
         text-align: center;
     }
+    
+  }
+
+  .video-info-container .custom-html-widget{
     iframe{
-        width:50%;
-        margin: 0 auto;
-        margin-left:230px;
+        width:70%;
+        height:450px;
+        max-width: 100%;
+        object-fit: contain;
+        position: absolute; 
+        top: 600px; right: 0; 
+        bottom: 0; left: 0;
+        margin: auto;
     }
    
   }
-  body .steps-container .video-info-container .wp-video{
-    width:50%;
-    height:50%;
-}
-  
 .employee-employer-line{
   width: 355px;
   height: 10px;
