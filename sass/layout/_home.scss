@@ -1,5 +1,6 @@
 .resources-content-container {
-    width: 79%;
+    box-sizing: border-box;
+    width: 78%;
     margin: 0 auto;
     background-color: #fff;
     padding: 0 7%;
@@ -11,29 +12,37 @@
     justify-content: center;
 }
 
+.community-resources {
+    border: 1px solid blue;
+}
+
 .sub-cat-name {
     margin: 2rem 0;
 }
 
 .resource-sub-cat-wrapper {
-    display: flex;
-    max-width: 100%;
-    justify-content: space-between;
+    display: grid;
+    grid-template: auto / 25% 25% 25%;
+    grid-column-gap: 12.5%;
+    width: 100%;
 }
 
 .single-resource {
-    width: 30%;
-}
-
-
-
-
-
-
-.resource-media img {
     width: 100%;
-    height: auto;
+    text-align: center;
+    a {
+        text-decoration: none;
+    }
 }
+
 .resource-media {
-    max-width: 300px;
+    width: 100%;
+    height: 155px;
+    margin-bottom: 0.75rem;
+    img, iframe {
+        width: 100%;
+        height: 155px;
+        object-fit: cover;
+    }
 }
+

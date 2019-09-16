@@ -12,13 +12,13 @@
         <div class="resource-headers">
             <div class="resource-header">
                 <img src="<?php echo get_template_directory_uri();?>/images/icons/iconEmployer.svg" alt="community icon">
-                <h3>Workplace Resources</h3>
+                <h3>Workplace</h3>
                 <hr>
             </div>
 
             <div class="resource-header">
                 <img src="<?php echo get_template_directory_uri();?>/images/icons/iconEmployee.svg" alt="community icon">
-                <h3>Community Resources</h3>
+                <h3>Community</h3>
                 <hr>
             </div>
         </div>
