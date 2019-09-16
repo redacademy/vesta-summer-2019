@@ -6,47 +6,47 @@
 .home-transforming{
     display: flex;
     flex-wrap: nowrap;
-    flex:100%;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
-    margin-bottom: 150px;
-    
+    margin-bottom: 150px;  
+}
+
+.vesta-transforming-workplace{ 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
     img{
-       
         height:auto;
-        width:29%;
+        width:65%;
         max-width:100%;
-        margin-right: 150px;
+        margin-bottom: 30px;     
     }
-    
-    
-    .vesta-transforming-workplace{
-        
-        margin-top: 150px;
-        margin-left: 200px;
-        img{
-            height:auto;
-            width:65%;
-            max-width:100%;
-            margin-bottom: 30px;  
-            
-        }
-        h2, p{
-            margin-bottom: 15px;  
-        }
-        p{
-            padding-right: 250px;
-        }
+    h2{
+        margin-bottom: 15px;  
     }
-    
+
+
+}
+
+.lady-wrapper{
+    width: 100%;
+    height: auto;
+
+    img{
+        width: 100%;
+        max-width: 415px;
+        min-width: 312px;
+    }
 }
 
 .home-the-problem{
     display: flex;
     flex-wrap: nowrap;
     flex:100%;
-    margin-left: 200px;
     margin-top: 90px;
-   margin-bottom: 150px;
+    margin-bottom: 150px;
 }
     .problem-article{
         flex:70%;
@@ -65,7 +65,6 @@
     }
     
 .home-strength{
-    margin-left: 200px;
     margin-top: 90px;
     
 }
@@ -103,7 +102,6 @@
     display: flex;
     flex:100%;
     flex-wrap: nowrap;
-    margin-left: 130px;
     margin-bottom: 150px;
     img{
         width: 53%;
@@ -135,7 +133,7 @@
 
 }
 .trusted-partners{
-    margin: 50px 0 150px 200px;
+    margin: 50px 0 150px 0;
     .header-style-container{
         margin-bottom: 50px;
     }

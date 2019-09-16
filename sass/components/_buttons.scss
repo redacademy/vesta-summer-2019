@@ -44,20 +44,6 @@
     margin: 50px auto;
 }
 
-// .form-button-container{
-//     width: 565px;
-//     display: flex;
-//     justify-content: flex-end;
-//     margin-top: 41px;
-
-//     input.wpcf7-submit{
-//         @include book-btn;
-//         width: 230px;
-//         height: 60px;
-//         font-size: 1em;
-//     }
-// }
-
 header{
     .book-info-session{
         font-family: 'Century Gothic';
@@ -65,6 +51,7 @@ header{
         text-transform: uppercase;
         @include book-btn; 
         padding: 10px 25px;
+        white-space: nowrap;
     }
 }
 
