@@ -8,6 +8,29 @@
     });
 
 
+//      RESOURCES Page
+
+    const $workplaceCatHeader = $('.resource-workplace-header')
+    const $communityCatHeader = $('.resource-community-header')
+    const $workplaceResources = $('.workplace-resources')
+    const $communityResources = $('.community-resources')
+
+    $communityCatHeader.on('click', function(e) {
+        $workplaceCatHeader.removeClass('resource-header-selected')
+        $communityCatHeader.addClass('resource-header-selected')
+        $workplaceResources.hide()
+        $communityResources.show()
+
+    }) 
+    
+    $workplaceCatHeader.on('click', function(e) {
+        $communityCatHeader.removeClass('resource-header-selected')
+        $workplaceCatHeader.addClass('resource-header-selected')
+        $communityResources.hide()
+        $workplaceResources.show()
+    }) 
+
+
 
 
 //      FAQ Page
