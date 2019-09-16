@@ -75,12 +75,12 @@ if( have_posts() ) :
                     <ul class="employee-employer-nav">
                         <li><a href="#tab-1" class="tab-1">
                             <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployee.svg';?>">
-                            <h3 class="employee">Community</h3>
+                            <h3 class="community">Community</h3>
                             <hr class="employee-employer-line"></a>
                         </li>
                         <li><a href="#tab-2"  class="tab-2">
                             <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployer.svg';?>">
-                            <h3 class="employer">Workplace</h3>
+                            <h3 class="workplace">Workplace</h3>
                             <hr class="employee-employer-line"></a>
                         </li>
                     </ul> 
