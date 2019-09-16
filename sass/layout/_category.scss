@@ -16,9 +16,11 @@
 }
 
 .category-title-wrapper{
+
     h2{
         color: $font-color;
         margin-bottom: 40px;
+        text-transform: capitalize;
     }
 }
 .category-content-container{

@@ -905,7 +905,8 @@ h1 {
 
 .category-title-wrapper h2 {
   color: #2e3438;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-transform: capitalize; }
 
 .category-content-container {
   width: 100%;
