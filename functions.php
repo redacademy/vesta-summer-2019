@@ -109,7 +109,7 @@ function vesta_sidebars_widgets() {
         'id' => 'sidebar-community',
         'description' => 'Video and information about Community.',
         'class' => 'community-widget',
-        'before_widget' => '<div class="steps-container">  ',
+        'before_widget' => '<div class="video-info-container">  ',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
@@ -120,7 +120,7 @@ function vesta_sidebars_widgets() {
         'id' => 'sidebar-workplace',
         'description' => 'Video and information about Workplace.',
         'class' => 'workplace-widget',
-        'before_widget' => '<div class="steps-container">  ',
+        'before_widget' => '<div class="video-info-container">  ',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
