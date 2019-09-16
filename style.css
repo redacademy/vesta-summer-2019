@@ -119,6 +119,82 @@ header {
           justify-content: space-between;
   margin: 20px 10%; }
 
+.header-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header-logo-container .header-logo {
+    height: 57px;
+    width: 50px; }
+  .header-logo-container .header-logo-letter {
+    height: 15px;
+    margin: 0 5px; }
+
+.header-nav {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.menu-header-nav-container {
+  margin-right: 45px;
+  width: 55%;
+  max-width: 450px;
+  min-width: 370px; }
+  .menu-header-nav-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .menu-header-nav-container ul a {
+      text-decoration: none;
+      text-transform: capitalize;
+      font-family: 'Century Gothic';
+      font-size: 18px; }
+    .menu-header-nav-container ul li {
+      display: inline;
+      padding-right: 25px; }
+    .menu-header-nav-container ul .book-info-session {
+      font-family: 'Century Gothic';
+      font-size: 16px;
+      text-transform: uppercase;
+      border-radius: 29px;
+      background-color: #3965ee;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Century Gothic Bold'; }
+
+.exit-button {
+  position: fixed; }
+  .exit-button button {
+    border-radius: 29px;
+    background-color: #5a1933;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    margin-top: 390px;
+    -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    display: block;
+    height: 50px;
+    width: 120px;
+    margin-left: 1150px;
+    cursor: pointer; }
 
 .footer-inner-container {
   display: -webkit-box;
@@ -220,6 +296,13 @@ header {
       margin-right: 10px;
       margin-top: 10px; }
 
+.resource-media img {
+  width: 100%;
+  height: auto; }
+
+.resource-media {
+  max-width: 300px; }
+
 form.wpcf7-form {
   width: 496px;
   margin: 0 auto; }
@@ -298,6 +381,149 @@ form.wpcf7-form {
   .problem-article p {
     padding-right: 170px; }
 
+.problem-widget img {
+  width: 70%;
+  height: auto;
+  max-width: 100%; }
+
+.home-strength {
+  margin-left: 200px;
+  margin-top: 90px; }
+
+.strength-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 100px;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%; }
+  .strength-numbers .strength-number-80, .strength-numbers .strength-number-85, .strength-numbers .strength-number-95 {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+    margin-top: 20px; }
+    .strength-numbers .strength-number-80 img, .strength-numbers .strength-number-85 img, .strength-numbers .strength-number-95 img {
+      width: 35%;
+      height: auto;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto; }
+  .strength-numbers hr {
+    width: 155px;
+    border: solid 0.5px #2e3438;
+    margin: 20px auto; }
+  .strength-numbers p {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center; }
+
+.home-solution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-left: 130px;
+  margin-bottom: 150px; }
+  .home-solution img {
+    width: 53%;
+    height: auto;
+    max-width: 100%; }
+  .home-solution .inner-solution {
+    margin-left: 50px; }
+    .home-solution .inner-solution p {
+      padding-right: 180px; }
+    .home-solution .inner-solution button {
+      border-radius: 29px;
+      background-color: #3965ee;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Century Gothic Bold';
+      font-size: 16px;
+      width: 30%;
+      height: 15%;
+      margin-top: 10px; }
+
+.home-customer-stories {
+  margin-bottom: 150px; }
+  .home-customer-stories .header-style-container {
+    margin-left: 200px;
+    margin-bottom: 80px; }
+
+.trusted-partners {
+  margin: 50px 0 150px 200px; }
+  .trusted-partners .header-style-container {
+    margin-bottom: 50px; }
+
+.partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  .partners-list img {
+    margin-right: 50px; }
+  .partners-list .govt-canada {
+    width: 80%;
+    height: auto;
+    max-width: 100%; }
+  .partners-list .legal-innovation {
+    width: 60%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 30px; }
+  .partners-list .social-venture {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 40px; }
+  .partners-list .unilever {
+    width: 70%;
+    height: auto;
+    max-width: 100%; }
+
+.home-subscribe {
+  margin: 50px 0 0 0; }
+  .home-subscribe h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 100px; }
+  .home-subscribe .subscribe-form {
+    margin: 42px 0 80px 250px;
+    padding-left: 200px; }
+    .home-subscribe .subscribe-form label {
+      font-size: 16px;
+      font-family: 'Century Gothic Bold';
+      color: #284683; }
+    .home-subscribe .subscribe-form .subscribe-email {
+      height: 35px;
+      width: 50%;
+      position: relative;
+      margin-top: 20px;
+      font-size: 14px;
+      font-family: 'Century Gothic';
+      padding-left: 20px;
+      color: #2e3438; }
+    .home-subscribe .subscribe-form .subscribe-button {
+      position: absolute;
+      margin-top: 20px;
+      margin-left: -135px;
+      height: 40px;
+      width: 135px;
+      background-color: #5a1933;
+      color: white;
+      font-size: 14px;
+      font-family: 'Century Gothic';
+      text-transform: uppercase; }
 
 i.fa-minus {
   display: none;
