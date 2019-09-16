@@ -28,15 +28,26 @@
                 </a>
             </div>
         </div>
+        
 
+        <?php endwhile; ?>
+        
 
-            <?php endwhile; ?>
-        <?php the_posts_navigation(); ?> 
-
-        <?php else : ?>
-                <p>No posts found</p>
-        <?php endif; ?>
-            </div>
+        </div>
 </div>
+        <?php else : ?>
+                <h3>No posts found</h3>
+
+        <?php endif; ?>
+        <div class="category-nav">
+        <?php the_posts_pagination( array(
+        'mid_size' => 2,
+        'prev_text' => __( 'Previous Posts', 'textdomain' ),
+        'next_text' => __( 'Next Posts', 'textdomain' ),
+        )); ?>
+
+
+        </div>
+
 
 <?php get_footer(); ?>

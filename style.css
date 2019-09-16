@@ -902,6 +902,9 @@ h1 {
     font-family: 'Century Gothic';
     font-size: 1.2em;
     color: #2e3438; }
+  .category-container h3 {
+    text-align: center;
+    text-transform: capitalize; }
 
 .category-title-wrapper h2 {
   color: #2e3438;
@@ -945,6 +948,34 @@ h1 {
        object-fit: cover;
     -o-object-position: center;
        object-position: center; }
+
+.category-nav {
+  text-align: right;
+  margin: 50px 0; }
+  .category-nav h2 {
+    display: none; }
+  .category-nav a {
+    text-decoration: none;
+    color: #2e3438;
+    font-size: 1em;
+    font-family: 'Century Gothic Bold'; }
+  .category-nav .current {
+    color: #284683; }
+  .category-nav .pagination {
+    width: 65%;
+    min-width: 900px;
+    margin: 0 auto; }
+
+.page-numbers {
+  display: inline-block;
+  padding: 5px 10px;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 600; }
+
+.page-numbers.current, a.page-numbers:hover {
+  color: #3965ee; }
 
 .page-content-container {
   width: 65%;
