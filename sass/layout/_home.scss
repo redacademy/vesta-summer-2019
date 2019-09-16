@@ -12,7 +12,9 @@
     justify-content: center;
 }
 
-.community-resources {
+.parent-cat-container {
+    display: flex;
+    flex-direction: column;
     border: 1px solid blue;
 }
 
@@ -43,6 +45,18 @@
         width: 100%;
         height: 155px;
         object-fit: cover;
+    }
+}
+
+.more-resources-btn {
+    background: $primary-dark;
+    color: #fff;
+    padding: 0.6rem 0.7rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 15px auto;
+    &:hover {
+        background: $primary-color;
     }
 }
 

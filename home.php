@@ -27,7 +27,7 @@
 
         
 
-        <section class="community-resources">
+        <section class="community-resources parent-cat-container">
             
 
             <?php 

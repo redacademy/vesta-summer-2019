@@ -83,26 +83,27 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  font-family: 'Century Gothic';
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #2e3438; }
+
 h1, h2, h3 {
   font-family: 'Century Gothic Bold'; }
 
 h1 {
-  font-size: 48px;
+  font-size: 2.66rem;
   color: #32393d; }
 
 h2 {
-  font-size: 36px;
-  color: #2e3438; }
+  font-size: 2rem; }
 
 h3 {
-  font-size: 24px;
-  color: #2e3438; }
+  font-size: 1.33rem; }
 
-p {
-  font-family: 'Century Gothic';
-  font-size: 18px;
-  color: #2e3438;
-  line-height: 1.5em; }
+a {
+  text-decoration: none; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -281,7 +282,14 @@ header {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.community-resources {
+.parent-cat-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 1px solid blue; }
 
 .sub-cat-name {
@@ -308,6 +316,16 @@ header {
     height: 155px;
     -o-object-fit: cover;
        object-fit: cover; }
+
+.more-resources-btn {
+  background: #284683;
+  color: #fff;
+  padding: 0.6rem 0.7rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 15px auto; }
+  .more-resources-btn:hover {
+    background: #3965ee; }
 
 form.wpcf7-form {
   width: 496px;
