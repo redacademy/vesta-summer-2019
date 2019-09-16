@@ -156,6 +156,11 @@ function cc_mime_types($mimes) {
 
 // add_filter('excerpt_more', 'vesta_resource_excerpt');
 
+function vesta_custom_excerpt_length( $length ) {
+    return 15;
+}
+add_filter( 'excerpt_length', 'vesta_custom_excerpt_length', 999 );
+
 
 
 
