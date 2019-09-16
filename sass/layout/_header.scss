@@ -36,9 +36,35 @@ header{
         a{
             text-decoration: none;
             text-transform: capitalize;
-            font-family: 'Century Gothic Bold';
-            font-size: 1.1em;
-            color: $nav-color;
-            }
+            font-family: 'Century Gothic';
+            font-size:18px;
+        }
+        li{
+            display: inline;
+            padding-right: 25px;
+        }
+        .book-info-session{
+            font-family: 'Century Gothic';
+            font-size: 16px;
+            text-transform: uppercase;
+            @include book-btn; 
+        }
     }
+    .exit-button{
+        position: fixed;
+        button{
+            @include exit-btn;
+            margin-top: 450px;
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border: none;
+            color: white;
+            font-size: 16px;
+            position: absolute;
+            display: block;
+            height:50px;
+            width: 120px;
+            margin-left: 1150px;
+            cursor: pointer;
+        }
+  }
 }
