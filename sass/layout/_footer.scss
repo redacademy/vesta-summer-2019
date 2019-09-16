@@ -78,12 +78,17 @@
         background-color: $primary-dark;
         .footer-nav-2{
             margin-left: 130px;
+            flex:60%;
             ul a{
                 list-style-type: none;
                 text-transform: capitalize;
                 font-family: 'Century Gothic';
                 font-size: 14px;
                 color: white;
+                
+            }
+            ul{
+                margin-top: 13px;
             }
             li{
                 display: inline;
@@ -91,12 +96,12 @@
             }
         }
         .socials-footer{
-            flex:50%;
-            margin-left: 658px;
+           
+            margin-right: 70px;
             
             i{
                 color:white;
-                font-size: 30px;
+                font-size: 25px;
                 width:auto;
                 max-width: 100%;
                 margin-right: 10px;
