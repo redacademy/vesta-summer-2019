@@ -6,6 +6,14 @@
     font-family: 'Century Gothic Bold';
     @content;
 }
+@mixin exit-btn {
+    border-radius: 29px;
+    background-color: $accent-button-color;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    @content;
+}
 
 @mixin about-offer-container{
     background: rgba(57, 101, 238, 0.44);
