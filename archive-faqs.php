@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <h1 class="faq-header"> FAQ </h1>
 <div class="faq-container">
     
