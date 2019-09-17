@@ -164,7 +164,7 @@ header {
 
 .menu-header-nav-container {
   margin-right: 45px;
-  width: 55%;
+  width: 70%;
   max-width: 450px;
   min-width: 370px; }
   .menu-header-nav-container ul {
@@ -177,20 +177,11 @@ header {
     .menu-header-nav-container ul a {
       text-decoration: none;
       text-transform: capitalize;
-      font-family: 'Century Gothic';
-      font-size: 18px; }
+      font-family: 'Century Gothic Bold';
+      font-size: 1em;
+      color: #284683; }
     .menu-header-nav-container ul li {
-      display: inline;
-      padding-right: 25px; }
-    .menu-header-nav-container ul .book-info-session {
-      font-family: 'Century Gothic';
-      font-size: 16px;
-      text-transform: uppercase;
-      border-radius: 29px;
-      background-color: #3965ee;
-      color: #fff;
-      text-transform: uppercase;
-      font-family: 'Century Gothic Bold'; }
+      display: inline; }
 
 footer {
   position: relative; }
@@ -460,6 +451,9 @@ form.wpcf7-form {
 .home h2, .home p {
   margin-bottom: 15px; }
 
+.home p {
+  font-size: 1.1em; }
+
 .home-transforming {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,14 +477,15 @@ form.wpcf7-form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%; }
+  width: 100%;
+  padding-right: 100px; }
   .vesta-transforming-workplace img {
     height: auto;
-    width: 65%;
-    max-width: 100%;
+    width: 80%;
+    min-width: 375px;
     margin-bottom: 30px; }
   .vesta-transforming-workplace h2 {
-    margin-bottom: 15px; }
+    margin: 35px 0 15px 0; }
 
 .lady-wrapper {
   width: 100%;
@@ -501,28 +496,26 @@ form.wpcf7-form {
     min-width: 312px; }
 
 .home-the-problem {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
   margin-top: 90px;
   margin-bottom: 150px; }
 
 .problem-article {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%; }
+  width: 50%;
+  max-height: 160px; }
   .problem-article p {
-    padding-right: 170px; }
+    padding-right: 60px;
+    max-width: 450px; }
 
-.problem-widget img {
-  width: 70%;
-  height: auto;
-  max-width: 100%; }
+.problem-widget {
+  width: 50%; }
+  .problem-widget img {
+    width: 100%;
+    height: auto;
+    min-width: 350px; }
 
 .home-strength {
   margin-top: 90px; }
@@ -533,17 +526,18 @@ form.wpcf7-form {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 100px;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%; }
   .strength-numbers .strength-number-80, .strength-numbers .strength-number-85, .strength-numbers .strength-number-95 {
-    -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
-    margin-top: 20px; }
+    width: 30%;
+    margin-top: 50px; }
     .strength-numbers .strength-number-80 img, .strength-numbers .strength-number-85 img, .strength-numbers .strength-number-95 img {
-      width: 35%;
+      width: 45%;
       height: auto;
       max-width: 100%;
       display: block;
@@ -551,45 +545,46 @@ form.wpcf7-form {
   .strength-numbers hr {
     width: 155px;
     border: solid 0.5px #2e3438;
-    margin: 20px auto; }
+    margin: 20px auto 5px auto; }
   .strength-numbers p {
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: center; }
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto; }
 
 .home-solution {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-bottom: 150px; }
-  .home-solution img {
-    width: 53%;
-    height: auto;
-    max-width: 100%; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 150px -16.5%; }
   .home-solution .inner-solution {
-    margin-left: 50px; }
-    .home-solution .inner-solution p {
-      padding-right: 180px; }
+    min-width: 350px;
+    margin-left: 40px; }
     .home-solution .inner-solution button {
       border-radius: 29px;
       background-color: #3965ee;
       color: #fff;
       text-transform: uppercase;
       font-family: 'Century Gothic Bold';
-      font-size: 16px;
-      width: 30%;
-      height: 15%;
+      font-size: 0.95rem;
+      padding: 15px 18px;
       margin-top: 10px; }
+    .home-solution .inner-solution p {
+      font-size: 1em; }
+
+.solution-image-container .solution-image {
+  width: 100%;
+  height: auto;
+  min-width: 675px;
+  min-height: 375px; }
 
 .home-customer-stories {
   margin-bottom: 150px; }
   .home-customer-stories .header-style-container {
-    margin-left: 200px;
     margin-bottom: 80px; }
 
 .trusted-partners {
@@ -598,34 +593,28 @@ form.wpcf7-form {
     margin-bottom: 50px; }
 
 .partners-list {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-  .partners-list img {
-    margin-right: 50px; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
   .partners-list .govt-canada {
-    width: 80%;
-    height: auto;
-    max-width: 100%; }
+    width: 100%;
+    height: auto; }
   .partners-list .legal-innovation {
-    width: 60%;
+    width: 90%;
     height: auto;
-    max-width: 100%;
     margin-top: 30px; }
   .partners-list .social-venture {
-    width: 80%;
+    width: 90%;
     height: auto;
-    max-width: 100%;
     margin-top: 40px; }
   .partners-list .unilever {
-    width: 70%;
-    height: auto;
-    max-width: 100%; }
+    width: 90%;
+    height: auto; }
 
 .home-subscribe {
   margin: 50px 0 0 0; }
@@ -633,33 +622,42 @@ form.wpcf7-form {
     font-size: 28px;
     text-align: center;
     margin-top: 100px; }
-  .home-subscribe .subscribe-form {
-    margin: 42px 0 80px 250px;
-    padding-left: 200px; }
-    .home-subscribe .subscribe-form label {
-      font-size: 16px;
-      font-family: 'Century Gothic Bold';
-      color: #284683; }
-    .home-subscribe .subscribe-form .subscribe-email {
-      height: 35px;
-      width: 50%;
-      position: relative;
-      margin-top: 20px;
-      font-size: 14px;
-      font-family: 'Century Gothic';
-      padding-left: 20px;
-      color: #2e3438; }
-    .home-subscribe .subscribe-form .subscribe-button {
-      position: absolute;
-      margin-top: 20px;
-      margin-left: -135px;
-      height: 40px;
-      width: 135px;
-      background-color: #5a1933;
-      color: white;
-      font-size: 14px;
-      font-family: 'Century Gothic';
-      text-transform: uppercase; }
+
+.subscribe-form-container {
+  width: 100%; }
+
+.subscribe-form {
+  width: 75%;
+  max-width: 560px;
+  text-align: left;
+  margin: 30px auto 0 auto; }
+  .subscribe-form h3 {
+    font-size: 1.1em;
+    font-family: 'Century Gothic Bold';
+    color: #284683;
+    text-align: left; }
+
+.subscribe-email {
+  height: 47px;
+  min-width: 400px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: 'Century Gothic';
+  padding-left: 20px;
+  color: #2e3438;
+  border: 1px solid #2e3438; }
+
+.subscribe-button {
+  margin: 20px 0 0 -10px;
+  padding: 13px 15px 16px 15px;
+  width: 25%;
+  max-width: 175px;
+  background-color: #5a1933;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-family: 'Century Gothic';
+  text-transform: uppercase; }
 
 i.fa-minus {
   display: none;
@@ -1177,28 +1175,6 @@ h1 {
   min-width: 550px;
   margin: 40px auto; }
 
-.exit-button {
-  border-radius: 29px;
-  background-color: #3965ee;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: 'Century Gothic Bold';
-  z-index: 100;
-  background-color: rgba(90, 25, 51, 0.7);
-  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: none;
-  color: white;
-  font-size: 0.9rem;
-  text-align: center;
-  line-height: 2.7;
-  display: block;
-  height: 2.5rem;
-  width: 100px;
-  cursor: pointer;
-  position: fixed;
-  right: 5%;
-  bottom: 50px; }
 
 .toggle-answer:hover {
   cursor: pointer;
@@ -1248,7 +1224,7 @@ h1 {
 
 header .book-info-session {
   font-family: 'Century Gothic';
-  font-size: 1em;
+  font-size: 0.89em;
   text-transform: uppercase;
   border-radius: 29px;
   background-color: #3965ee;
@@ -1327,6 +1303,8 @@ div.customer-story-box {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
+    min-width: 400px;
+    max-width: 600px;
     height: 240px;
     background-color: #3965ee;
     opacity: 0.7;
@@ -1348,7 +1326,7 @@ div.customer-story-box {
     .story-padding .customer-story-box p {
       color: #fff;
       padding: 11% 11% 11% 22%;
-      font-size: 0.89rem;
+      font-size: 0.95rem;
       line-height: 1.19; }
 
 .story-padding.is-selected {
