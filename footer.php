@@ -7,7 +7,7 @@
     <a class="exit-button" href="https://www.cp24.com/">Exit Site</a>
     <div class="footer-inner-container">
         <div class="upper-footer">
-            <div class="footer-logo"><img class="logo-black" src="<?php echo get_template_directory_uri(). '/images/Icons/Vesta_Horizontal_Black.png';?>">
+            <div class="footer-logo"><img class="logo-black" src="<?php echo get_template_directory_uri(). '/images/Icons/vesta_logo_black.svg';?>">
                                      <img class="logo-letter" src="<?php echo get_template_directory_uri(). '/images/Icons/Vesta_LOGO_LETTERS.png';?>"></div>
             <div class="footer-nav"><?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>  </div>
         </div>

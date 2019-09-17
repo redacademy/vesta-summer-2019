@@ -1075,6 +1075,7 @@ h1 {
 
 .category-content-container {
   width: 100%;
+  height: auto;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1095,7 +1096,7 @@ h1 {
     text-align: center;
     padding-bottom: 15px;
     font-size: 1em; }
-  .category-content iframe, .category-content .category-audio-icon {
+  .category-content iframe, .category-content .category-audio-icon, .category-content .single-logo-placeholder {
     width: 100%;
     height: 275px;
     -o-object-fit: contain;
