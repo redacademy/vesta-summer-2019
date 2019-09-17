@@ -1195,14 +1195,16 @@ h1 {
   cursor: pointer;
   color: #284683; }
 
-.learn-more-about .book-session-BTN {
-  border-radius: 29px;
-  background-color: #3965ee;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: 'Century Gothic Bold';
-  padding: 19px 38px;
-  font-size: 16px; }
+.learn-more-about {
+  margin-bottom: 90px; }
+  .learn-more-about .book-session-BTN {
+    border-radius: 29px;
+    background-color: #3965ee;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Century Gothic Bold';
+    padding: 19px 38px;
+    font-size: 16px; }
 
 .fa-times-circle:hover {
   cursor: pointer; }
