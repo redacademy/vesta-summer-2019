@@ -1200,8 +1200,7 @@ button:hover {
   width: 100px;
   cursor: pointer;
   position: fixed;
-  right: 5%;
-  bottom: 50px; }
+  right: 5%; }
 
 .toggle-answer:hover {
   cursor: pointer;

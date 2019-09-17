@@ -12,30 +12,32 @@
 
     let $windowHeight = $(window).height()
     // console.log('win height', $windowHeight)
-    let $docHeight = $(document).height()
-    console.log('doc height', $docHeight)
+    // let $docHeight = $(document).height()
+    // console.log('doc height', $docHeight)
 
     let $footHeight = $('footer').height()
-    console.log('foot height', $footHeight)
+    // console.log('foot height', $footHeight)
     
-    let $footPosition = $('footer').offset();
-    console.log('foot', $footPosition)
+    // let $footPosition = $('footer').offset().top
+    // console.log('foot', $footPosition)
 
     const $exitButton = $('.exit-button')
+    $exitButton.css('top', $windowHeight - 50)
+
 
     $(document).on('scroll', function() {
-        let $distFromTop = $(window).scrollTop()
-        // console.log('scrollTop', fromTop)
-        let scrollPosition = $distFromTop + $windowHeight
-        console.log('scroll position', scrollPosition)
-        // console.log('doc - foot', ($docHeight - $footHeight))
-        if(scrollPosition > $docHeight - $footHeight - 50) {
-            // console.log('condition met');
-            $exitButton.css({'top': $windowHeight - $footHeight - 50,
-                                'position': 'absolute'})
+        const $footPosition = $('footer').offset().top - 50;
+    console.log('foot', $footPosition)
+        let $btnPosition = $exitButton.offset().top
+        console.log('btnPos', $btnPosition)
+        if($btnPosition >= $footPosition) {
+            console.log('absolute')
+            $exitButton.css({'position': 'absolute',
+                'top': '$footPosition'})
         }
         else {
-            $exitButton.css({'bottom': 50,
+            console.log('sticky')
+            $exitButton.css({'top': $windowHeight - 50,
             'position': 'fixed'})
         }
     })
