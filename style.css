@@ -188,6 +188,7 @@ header {
     .menu-header-nav-container ul li {
       display: inline; }
 
+
 .footer-inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,13 +198,17 @@ header {
           flex: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #c3d0f9; }
   .footer-inner-container .upper-footer {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
-            flex: 50%; }
+            flex: 50%;
+    margin-left: 8%; }
     .footer-inner-container .upper-footer .footer-logo {
-      margin: 20px 0 0 130px; }
+      margin-top: 20px; }
       .footer-inner-container .upper-footer .footer-logo .logo-black {
         height: 70px;
         width: auto; }
@@ -211,7 +216,7 @@ header {
         height: 15px;
         margin-bottom: 25px; }
     .footer-inner-container .upper-footer .footer-nav {
-      margin: 10px 0 30px 130px; }
+      margin: 10px 0 30px 0; }
       .footer-inner-container .upper-footer .footer-nav ul a {
         list-style-type: none;
         text-transform: capitalize;
@@ -219,10 +224,13 @@ header {
         text-decoration: none;
         font-size: 18px;
         color: #2e3438; }
+      .footer-inner-container .upper-footer .footer-nav ul {
+        width: 500px; }
       .footer-inner-container .upper-footer .footer-nav li {
         display: inline;
-        padding-right: 25px; }
+        padding-right: 10px; }
   .footer-inner-container .footer-subscribe {
+
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%; }
@@ -259,15 +267,13 @@ header {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #284683; }
   .lower-footer .footer-nav-2 {
-    margin-left: 130px;
-    -webkit-box-flex: 60%;
-        -ms-flex: 60%;
-            flex: 60%; }
+    margin-left: 8%;
+    width: 600px; }
     .lower-footer .footer-nav-2 ul a {
       list-style-type: none;
       text-transform: capitalize;
@@ -278,9 +284,9 @@ header {
       margin-top: 13px; }
     .lower-footer .footer-nav-2 li {
       display: inline;
-      padding-right: 25px; }
+      padding-right: 15px; }
   .lower-footer .socials-footer {
-    margin-right: 70px; }
+    margin-right: 8%; }
     .lower-footer .socials-footer i {
       color: white;
       font-size: 25px;
@@ -623,6 +629,26 @@ form.wpcf7-form {
     font-size: 28px;
     text-align: center;
     margin-top: 100px; }
+  .home-subscribe .subscribe-email {
+    height: 47px;
+    min-width: 400px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    padding-left: 20px;
+    color: #2e3438;
+    border: 1px solid #2e3438; }
+  .home-subscribe .subscribe-button {
+    margin: 20px 0 0 -10px;
+    padding: 13px 15px 16px 15px;
+    width: 25%;
+    max-width: 175px;
+    background-color: #5a1933;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Century Gothic';
+    text-transform: uppercase; }
 
 .subscribe-form-container {
   width: 100%;
@@ -638,28 +664,6 @@ form.wpcf7-form {
     font-family: 'Century Gothic Bold';
     color: #284683;
     text-align: left; }
-
-.subscribe-email {
-  height: 47px;
-  min-width: 400px;
-  margin-top: 20px;
-  font-size: 14px;
-  font-family: 'Century Gothic';
-  padding-left: 20px;
-  color: #2e3438;
-  border: 1px solid #2e3438; }
-
-.subscribe-button {
-  margin: 20px 0 0 -10px;
-  padding: 13px 15px 16px 15px;
-  width: 25%;
-  max-width: 175px;
-  background-color: #5a1933;
-  border: none;
-  color: white;
-  font-size: 1em;
-  font-family: 'Century Gothic';
-  text-transform: uppercase; }
 
 i.fa-minus {
   display: none;
@@ -1188,12 +1192,6 @@ h1 {
        object-fit: contain;
     margin: 30px auto; }
 
-.page-content-title-wrapper {
-  width: 60%;
-  min-width: 550px;
-  margin: 40px auto; }
-
-.exit-button {
 
   border-radius: 29px;
   background-color: #3965ee;
