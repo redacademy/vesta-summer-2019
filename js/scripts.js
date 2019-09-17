@@ -1,59 +1,28 @@
 (function($) {
     //  Exit Site Button
-    // $(window).scroll(function(){
-    //     let num = $(this).scrollTop() - $(window).height() - $('footer').height() + 150
-    //     console.log('num', num)
-    //     $('.exit-button').css("bottom", Math.max(50, num))
-    // });
-
-
-
-
 
     let $windowHeight = $(window).height()
-    // console.log('win height', $windowHeight)
-    // let $docHeight = $(document).height()
-    // console.log('doc height', $docHeight)
-
-    let $footHeight = $('footer').height()
-    // console.log('foot height', $footHeight)
-    
-    // let $footPosition = $('footer').offset().top
-    // console.log('foot', $footPosition)
-
     const $exitButton = $('.exit-button')
     $exitButton.css('top', $windowHeight - 50)
 
-
     $(document).on('scroll', function() {
         const $footPosition = $('footer').offset().top - 50;
-        console.log('foot', $footPosition)
         let $btnPosition = $exitButton.offset().top
-        console.log('btnPos', $btnPosition)
-
         let $scrollPos = $(document).scrollTop() + $windowHeight
-        console.log('scroll pos + win h', $scrollPos)
 
         if($exitButton.css('position') === 'fixed') {
             if($btnPosition >= $footPosition) {
-                console.log('absolute')
                 $exitButton.css({'position': 'absolute',
                     'top': $footPosition})
             }
         }
         else if($exitButton.css('position') === 'absolute') {
-            console.log('its absolute')
             if($scrollPos - 50 <= $btnPosition) {
-                console.log('sticky')
                 $exitButton.css({'position': 'fixed',
                 'top': $windowHeight - 50})
             }
     }
 })
-
-
-   
-
 
 
     //      Front Page FLICKITY
