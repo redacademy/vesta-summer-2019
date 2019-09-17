@@ -27,7 +27,7 @@ header{
 
 .menu-header-nav-container{
     margin-right: 45px;
-    width: 55%;
+    width: 70%;
     max-width: 450px;
     min-width: 370px;
     ul{
@@ -36,12 +36,12 @@ header{
         a{
             text-decoration: none;
             text-transform: capitalize;
-            font-family: 'Century Gothic';
-            font-size:18px;
+            font-family: 'Century Gothic Bold';
+            font-size: 1em;
+            color: $primary-dark;
         }
         li{
             display: inline;
-            padding-right: 25px;
         }
         .book-info-session{
             font-family: 'Century Gothic';

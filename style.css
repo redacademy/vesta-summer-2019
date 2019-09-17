@@ -164,7 +164,7 @@ header {
 
 .menu-header-nav-container {
   margin-right: 45px;
-  width: 55%;
+  width: 70%;
   max-width: 450px;
   min-width: 370px; }
   .menu-header-nav-container ul {
@@ -177,11 +177,11 @@ header {
     .menu-header-nav-container ul a {
       text-decoration: none;
       text-transform: capitalize;
-      font-family: 'Century Gothic';
-      font-size: 18px; }
+      font-family: 'Century Gothic Bold';
+      font-size: 1em;
+      color: #284683; }
     .menu-header-nav-container ul li {
-      display: inline;
-      padding-right: 25px; }
+      display: inline; }
     .menu-header-nav-container ul .book-info-session {
       font-family: 'Century Gothic';
       font-size: 16px;
