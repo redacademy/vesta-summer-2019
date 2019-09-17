@@ -109,6 +109,7 @@
  
     .inner-solution{
         min-width: 350px;
+        margin-left: 40px;
 
         button{
             @include book-btn;

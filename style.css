@@ -584,7 +584,8 @@ form.wpcf7-form {
           justify-content: space-between;
   margin: 0 0 150px -16.5%; }
   .home-solution .inner-solution {
-    min-width: 350px; }
+    min-width: 350px;
+    margin-left: 40px; }
     .home-solution .inner-solution button {
       border-radius: 29px;
       background-color: #3965ee;
