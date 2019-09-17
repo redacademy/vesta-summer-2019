@@ -15,21 +15,28 @@
     @content;
 }
 
-.sticky-exit {
+.exit-button {
     @include exit-btn;
     position: fixed;
-    bottom: 5%;
     right: 5%;
+    bottom: 50px;
+}
+
+// .sticky-exit {
+//     @include exit-btn;
+//     position: fixed;
+//     bottom: 5%;
+//     right: 5%;
     
-}
+// }
 
 
-.freeze-exit {
-    @include exit-btn;
-    position: absolute;
-    bottom: 250px;
-    right: 5%;
-}
+// .freeze-exit {
+//     @include exit-btn;
+//     position: absolute;
+//     bottom: 250px;
+//     right: 5%;
+// }
 
 
 .toggle-answer {

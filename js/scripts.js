@@ -13,10 +13,10 @@
     let $windowHeight = $(window).height()
     // console.log('win height', $windowHeight)
     let $docHeight = $(document).height()
-    // console.log('doc height', $docHeight)
+    console.log('doc height', $docHeight)
 
     let $footHeight = $('footer').height()
-    // console.log('foot height', $footHeight)
+    console.log('foot height', $footHeight)
     
     // let $footPosition = $('footer').offset();
     // console.log('foot', $footPosition)
@@ -24,18 +24,19 @@
     const $exitButton = $('.exit-button')
 
     $(document).on('scroll', function() {
-        let fromTop = window.pageYOffset
+        let $distFromTop = $(window).scrollTop()
         // console.log('scrollTop', fromTop)
-        let scrollPos = fromTop + $windowHeight
-        // console.log('scroll position', scrollPos)
+        let scrollPosition = $distFromTop + $windowHeight
+        console.log('scroll position', scrollPosition)
         // console.log('doc - foot', ($docHeight - $footHeight))
-        if(scrollPos > $docHeight - $footHeight) {
+        if(scrollPosition > $docHeight - $footHeight - 50) {
             // console.log('condition met');
-            ($exitButton).removeClass('sticky-exit');
-            $exitButton.addClass('freeze-exit')
+            $exitButton.css({'top': $windowHeight - $footHeight - 50,
+                                'position': 'absolute'})
         }
         else {
-            $exitButton.removeClass('freeze-exit').addClass('sticky-exit')
+            $exitButton.css({'top': $windowHeight - 50,
+            'position': 'fixed'})
         }
     })
 
