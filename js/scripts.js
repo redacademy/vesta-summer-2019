@@ -22,25 +22,35 @@
     // console.log('foot', $footPosition)
 
     const $exitButton = $('.exit-button')
-    $exitButton.css('top', $windowHeight + 50)
+    $exitButton.css('top', $windowHeight - 50)
 
 
     $(document).on('scroll', function() {
         const $footPosition = $('footer').offset().top - 50;
-    console.log('foot', $footPosition)
+        console.log('foot', $footPosition)
         let $btnPosition = $exitButton.offset().top
         console.log('btnPos', $btnPosition)
-        if($btnPosition >= $footPosition) {
-            console.log('absolute')
-            $exitButton.css({'position': 'absolute',
-                'top': $footPosition})
+
+        let $scrollPos = $(document).scrollTop() + $windowHeight
+        console.log('scroll pos + win h', $scrollPos)
+
+        if($exitButton.css('position') === 'fixed') {
+            if($btnPosition >= $footPosition) {
+                console.log('absolute')
+                $exitButton.css({'position': 'absolute',
+                    'top': $footPosition})
+            }
         }
-        else {
-            console.log('sticky')
-            $exitButton.css({'top': $windowHeight - 50,
-            'position': 'fixed'})
-        }
-    })
+        else if($exitButton.css('position') === 'absolute') {
+            console.log('its absolute')
+            if($scrollPos - 50 <= $btnPosition) {
+                console.log('sticky')
+                $exitButton.css({'position': 'fixed',
+                'top': $windowHeight - 50})
+            }
+    }
+})
+
 
    
 
