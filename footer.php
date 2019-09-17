@@ -4,7 +4,7 @@
 
 <!-- scripts will load into this wp_footer() -->
 <footer>
-    <a class="exit-button" href="https://www.cp24.com/">Exit Site</a>
+    <!-- <a class="exit-button" href="https://www.cp24.com/">Exit Site</a> -->
     <div class="footer-inner-container">
         <div class="upper-footer">
             <div class="footer-logo"><img class="logo-black" src="<?php echo get_template_directory_uri(). '/images/Icons/Vesta_Horizontal_Black.png';?>">
@@ -13,11 +13,11 @@
         </div>
 
         <div class="footer-subscribe">
-        <form class="subscribe-form">
-            <label> Subscribe to get the latest updates about Vesta</label>
-            <input type="text" class="subscribe-email" placeholder="johndoe@gmail.com">
-            <input type="submit" class="subscribe-button" value=" Subscribe">
-        </form>
+            <form class="subscribe-form-footer">
+                <label> Subscribe to get the latest updates about Vesta</label>
+                <input type="text" class="subscribe-email-footer" placeholder="johndoe@gmail.com">
+                <input type="submit" class="subscribe-button-footer" value=" Subscribe">
+            </form>
         </div>
     </div>
 
