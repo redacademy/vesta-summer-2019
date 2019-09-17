@@ -114,6 +114,12 @@ a {
 .uppercase {
   text-transform: uppercase; }
 
+strong {
+  font-family: 'Century Gothic Bold'; }
+
+em {
+  font-family: 'Century Gothic Italic'; }
+
 .header-line {
   width: 113px;
   height: 2px;
