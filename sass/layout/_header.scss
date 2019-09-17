@@ -43,12 +43,6 @@ header{
         li{
             display: inline;
         }
-        .book-info-session{
-            font-family: 'Century Gothic';
-            font-size: 16px;
-            text-transform: uppercase;
-            @include book-btn; 
-        }
     }
     
 }
