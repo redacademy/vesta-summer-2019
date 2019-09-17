@@ -15,16 +15,18 @@
 .vesta-transforming-workplace{ 
     display: flex;
     flex-direction: column;
-    width: 50%;
-
+    width: 100%;
+    // min-width: 420px;
+    padding-right: 100px;
+    
     img{
         height:auto;
-        width:65%;
-        max-width:100%;
+        width: 80%;
+        min-width: 375px;
         margin-bottom: 30px;     
     }
     h2{
-        margin-bottom: 15px;  
+        margin: 35px 0 15px 0;  
     }
 
 
@@ -42,27 +44,28 @@
 }
 
 .home-the-problem{
+    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    flex:100%;
     margin-top: 90px;
     margin-bottom: 150px;
 }
-    .problem-article{
-        flex:70%;
-        // margin-right: 100px;
-        p{
-            padding-right: 170px;
-        }
+.problem-article{
+    width: 50%;
+    max-height: 160px;
+    p{
+        padding-right: 60px;
+        font-size: 1.1em;
+        max-width: 450px;
     }
-    .problem-widget{
-        img{
-            width: 70%;
-            height:auto;
-            max-width: 100%;
-            // margin-right: 250px;
-        }
+}
+.problem-widget{
+    width: 50%;
+    img{
+        width: 100%;
+        height: auto;
+        min-width: 350px;
     }
+}
     
 .home-strength{
     margin-top: 90px;
@@ -187,7 +190,7 @@
         }
         .subscribe-email{
             height:35px;
-            width:50%;
+            width:100%;
             position: relative;
             margin-top: 20px;
             font-size: 14px;
