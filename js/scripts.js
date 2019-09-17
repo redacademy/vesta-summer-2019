@@ -22,7 +22,7 @@
     // console.log('foot', $footPosition)
 
     const $exitButton = $('.exit-button')
-    $exitButton.css('top', $windowHeight - 50)
+    $exitButton.css('top', $windowHeight + 50)
 
 
     $(document).on('scroll', function() {
@@ -33,7 +33,7 @@
         if($btnPosition >= $footPosition) {
             console.log('absolute')
             $exitButton.css({'position': 'absolute',
-                'top': '$footPosition'})
+                'top': $footPosition})
         }
         else {
             console.log('sticky')
