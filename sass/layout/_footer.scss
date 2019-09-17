@@ -1,13 +1,18 @@
+    footer{ 
+        margin-top: 100px;
+    }
     
     .footer-inner-container{
         display: flex;
         flex: 100%;
         flex-wrap: nowrap;
+        justify-content: space-between;
         background-color:#c3d0f9;
         .upper-footer{
             flex:50%;
+            margin-left:8%;
             .footer-logo{
-                margin: 20px 0 0 130px;
+                margin-top: 20px;
                 .logo-black{
                     height: 70px;
                     width: auto;
@@ -15,11 +20,10 @@
                 .logo-letter{
                     height: 15px;
                     margin-bottom: 25px;
-                    
                 }
             }
             .footer-nav{
-                margin: 10px 0 30px 130px;
+                margin: 10px 0 30px 0;
                 ul a{
                     list-style-type: none;
                     text-transform: capitalize;
@@ -28,26 +32,35 @@
                     font-size: 18px;
                     color: $font-color;
                 }
+                ul{
+                    width:500px;
+                }
                 li{
                     display: inline;
-                    padding-right: 25px;
+                    padding-right: 10px;
                 }
             }
         }
         .footer-subscribe{
-            flex:50%;
-            .subscribe-form{
-                margin-top: 42px;
-                // padding-left: 200px;
-            
+            margin-right:8%;
+            width: 450px;
+            min-width:450px;
+           
+        }
+
+            .subscribe-form-footer{
+                margin-top: 42px; 
+
                 label{
                     font-size: 18px;
                     font-family: 'Century Gothic Bold';
                     color: $font-color; 
+                    width:400px;
                 }
-                .subscribe-email{
+                .subscribe-email-footer{
                     height:35px;
-                    width:80%;
+                    width:280px;
+                    min-width:160px;
                     position: relative;
                     margin-top: 20px;
                     font-size: 14px;
@@ -55,10 +68,9 @@
                     padding-left:20px;
                     color: $font-color;
                 }
-                .subscribe-button{
+                .subscribe-button-footer{
                     position: absolute;
                     margin-top: 20px;
-                    margin-left: -135px;
                     height:40px;
                     width:135px;
                     background-color: $accent-button-color;
@@ -70,36 +82,34 @@
                 }
             }
         }
-}
+
 
     .lower-footer{
         display: flex;
         flex-wrap: nowrap;
-        flex: 100%;
+        justify-content: space-between;
         background-color: $primary-dark;
         .footer-nav-2{
-            margin-left: 130px;
-            flex:60%;
+            margin-left:8%;
+            width: 600px;
             ul a{
+                
                 list-style-type: none;
                 text-transform: capitalize;
                 font-family: 'Century Gothic';
                 font-size: 14px;
                 color: white;
-                
             }
             ul{
                 margin-top: 13px;
             }
             li{
                 display: inline;
-                padding-right: 25px;
+                padding-right: 15px;
             }
         }
         .socials-footer{
-           
-            margin-right: 70px;
-            
+            margin-right:8%;
             i{
                 color:white;
                 font-size: 25px;
