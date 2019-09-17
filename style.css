@@ -1522,3 +1522,28 @@ div.customer-story-box {
   background-color: #d8e1fb;
   top: 0;
   z-index: -100; }
+
+.error-page-shapes .big-shape {
+  bottom: -175px;
+  right: 800px;
+  z-index: -75; }
+
+.error-page-shapes .sm-shape {
+  top: 0;
+  left: -500px;
+  z-index: -50;
+  height: 900px;
+  width: 1100px;
+  background-color: #3965ee;
+  opacity: 0.21; }
+
+.error-page-shapes .section-cover {
+  height: 530px;
+  width: 100%;
+  opacity: 0.51;
+  position: absolute;
+  left: 0;
+  background-color: #d8e1fb;
+  bottom: 0;
+  height: 460px;
+  z-index: -100; }
