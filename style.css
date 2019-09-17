@@ -614,34 +614,28 @@ form.wpcf7-form {
     margin-bottom: 50px; }
 
 .partners-list {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-  .partners-list img {
-    margin-right: 50px; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
   .partners-list .govt-canada {
-    width: 80%;
-    height: auto;
-    max-width: 100%; }
+    width: 100%;
+    height: auto; }
   .partners-list .legal-innovation {
-    width: 60%;
+    width: 90%;
     height: auto;
-    max-width: 100%;
     margin-top: 30px; }
   .partners-list .social-venture {
-    width: 80%;
+    width: 90%;
     height: auto;
-    max-width: 100%;
     margin-top: 40px; }
   .partners-list .unilever {
-    width: 70%;
-    height: auto;
-    max-width: 100%; }
+    width: 90%;
+    height: auto; }
 
 .home-subscribe {
   margin: 50px 0 0 0; }
