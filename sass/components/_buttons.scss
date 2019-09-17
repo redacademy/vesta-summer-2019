@@ -69,10 +69,20 @@
 
 //form submit button  -- contact and info session btn
 
-.contact-us-form, .book-info-session {
-    .wpcf7-submit {
+.book-info-session{
+    .wpcf7-submit{
         @include book-btn;
         @include form-submit-btn;
+        padding: 15px;
+    }
+}
+
+.contact-us-form{
+    .wpcf7-submit{
+        @include book-btn;
+        @include form-submit-btn;
+        width: 175px;
+        margin-left: 325px;
     }
 }
 
