@@ -25,7 +25,7 @@ if( have_posts() ) :
   
     <section class="home-transforming">
         <div class="vesta-transforming-workplace">
-            <img src="<?php echo get_template_directory_uri() . '/images/Homepage/Vesta_LOGO_LETTERS.png';?>" alt="Vesta">
+            <img src="<?php echo get_template_directory_uri() . '/images/Icons/Vesta Name Group.svg';?>" alt="Vesta">
             <h2>Transforming society</h2>
             <p>Eliminating sexual harassment and assault by providing
             a secure reporting platform for individuals.</p> 
