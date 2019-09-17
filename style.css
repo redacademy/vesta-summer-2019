@@ -124,6 +124,10 @@ a {
 .all-page-wrapper {
   margin: 0 13%; }
 
+body {
+  overflow: hidden;
+  max-width: 100vw; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,9 +187,6 @@ header {
     .menu-header-nav-container ul li {
       display: inline; }
 
-footer {
-  position: relative; }
-
 .footer-inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,8 +226,7 @@ footer {
         -ms-flex: 50%;
             flex: 50%; }
     .footer-inner-container .footer-subscribe .subscribe-form {
-      margin-top: 42px;
-      padding-left: 200px; }
+      margin-top: 42px; }
       .footer-inner-container .footer-subscribe .subscribe-form label {
         font-size: 18px;
         font-family: 'Century Gothic Bold';
@@ -1175,6 +1175,28 @@ h1 {
   min-width: 550px;
   margin: 40px auto; }
 
+.exit-button {
+  border-radius: 29px;
+  background-color: #3965ee;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Century Gothic Bold';
+  z-index: 100;
+  background-color: rgba(90, 25, 51, 0.7);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 2.7;
+  display: block;
+  height: 2.5rem;
+  width: 100px;
+  cursor: pointer;
+  position: fixed;
+  right: 5%;
+  bottom: 50px; }
 
 .toggle-answer:hover {
   cursor: pointer;
@@ -1409,3 +1431,32 @@ div.customer-story-box {
 .contact-us-form .wpcf7-mail-sent-ok {
   width: 477px;
   height: 450px; }
+
+.bottom-shapes {
+  overflow: hidden; }
+
+.big-shape {
+  width: 1387px;
+  height: 779px;
+  background-color: #3965ee;
+  opacity: 0.15;
+  border-radius: 102px;
+  background-blend-mode: multiply;
+  position: absolute;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+  bottom: -600px;
+  right: -650px;
+  z-index: -100; }
+
+.sm-shape {
+  width: 837px;
+  height: 529px;
+  background-color: #b6c4f5;
+  opacity: 0.51;
+  border-radius: 78px;
+  position: absolute;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+  bottom: -1050px;
+  right: -650px; }
