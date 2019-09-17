@@ -81,6 +81,7 @@
                                                     <div class="logo-placeholder resource-media">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/images/icons/vest_logo.png" alt="Vesta logo">
                                                     </div>
+                                                    
                                                 <?php endif; ?>
                                                 <div><?php the_excerpt(); ?></div>
                                             </a>

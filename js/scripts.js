@@ -1,5 +1,49 @@
 (function($) {
-//      Front Page FLICKITY
+    //  Exit Site Button
+    // $(window).scroll(function(){
+    //     let num = $(this).scrollTop() - $(window).height() - $('footer').height() + 150
+    //     console.log('num', num)
+    //     $('.exit-button').css("bottom", Math.max(50, num))
+    // });
+
+
+
+
+
+    let $windowHeight = $(window).height()
+    // console.log('win height', $windowHeight)
+    let $docHeight = $(document).height()
+    // console.log('doc height', $docHeight)
+
+    let $footHeight = $('footer').height()
+    // console.log('foot height', $footHeight)
+    
+    // let $footPosition = $('footer').offset();
+    // console.log('foot', $footPosition)
+
+    const $exitButton = $('.exit-button')
+
+    $(document).on('scroll', function() {
+        let fromTop = window.pageYOffset
+        // console.log('scrollTop', fromTop)
+        let scrollPos = fromTop + $windowHeight
+        // console.log('scroll position', scrollPos)
+        // console.log('doc - foot', ($docHeight - $footHeight))
+        if(scrollPos > $docHeight - $footHeight) {
+            // console.log('condition met');
+            ($exitButton).removeClass('sticky-exit');
+            $exitButton.addClass('freeze-exit')
+        }
+        else {
+            $exitButton.removeClass('freeze-exit').addClass('sticky-exit')
+        }
+    })
+
+   
+
+
+
+    //      Front Page FLICKITY
     $('.customer-stories-carousel').flickity({
         // options
         cellAlign: 'center',

@@ -1,3 +1,37 @@
+@mixin exit-btn {
+    @include book-btn;
+    z-index: 100;
+    background-color: $transparent-accent;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 2.7;
+    display: block;
+    height: 2.5rem;
+    width: 100px;
+    cursor: pointer; 
+    @content;
+}
+
+.sticky-exit {
+    @include exit-btn;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    
+}
+
+
+.freeze-exit {
+    @include exit-btn;
+    position: absolute;
+    bottom: 250px;
+    right: 5%;
+}
+
+
 .toggle-answer {
     &:hover {
         cursor: pointer;

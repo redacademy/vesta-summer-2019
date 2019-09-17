@@ -52,20 +52,3 @@ header{
     }
     
 }
-.exit-button{
-    position: fixed;
-    button{
-        @include exit-btn;
-        margin-top: 390px;
-        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border: none;
-        color: white;
-        font-size: 16px;
-        position: absolute;
-        display: block;
-        height:50px;
-        width: 120px;
-        margin-left: 1150px;
-        cursor: pointer;
-    }
-}
