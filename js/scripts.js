@@ -18,8 +18,8 @@
     let $footHeight = $('footer').height()
     console.log('foot height', $footHeight)
     
-    // let $footPosition = $('footer').offset();
-    // console.log('foot', $footPosition)
+    let $footPosition = $('footer').offset();
+    console.log('foot', $footPosition)
 
     const $exitButton = $('.exit-button')
 
@@ -35,7 +35,7 @@
                                 'position': 'absolute'})
         }
         else {
-            $exitButton.css({'top': $windowHeight - 50,
+            $exitButton.css({'bottom': 50,
             'position': 'fixed'})
         }
     })
