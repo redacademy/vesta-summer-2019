@@ -110,6 +110,8 @@ h4 {
 
 a {
   text-decoration: none; }
+  a:hover {
+    cursor: pointer; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -1175,6 +1177,31 @@ h1 {
   min-width: 550px;
   margin: 40px auto; }
 
+button:hover {
+  cursor: pointer; }
+
+.exit-button {
+  border-radius: 29px;
+  background-color: #3965ee;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Century Gothic Bold';
+  z-index: 100;
+  background-color: rgba(90, 25, 51, 0.7);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 2.7;
+  display: block;
+  height: 2.5rem;
+  width: 100px;
+  cursor: pointer;
+  position: fixed;
+  right: 5%;
+  bottom: 50px; }
 
 .toggle-answer:hover {
   cursor: pointer;

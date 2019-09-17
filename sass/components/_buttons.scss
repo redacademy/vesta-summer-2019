@@ -1,3 +1,9 @@
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 @mixin exit-btn {
     @include book-btn;
     z-index: 100;

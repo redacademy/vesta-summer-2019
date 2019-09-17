@@ -80,6 +80,9 @@ h4 {
 
 a {
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .uppercase{
