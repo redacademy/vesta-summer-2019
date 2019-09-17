@@ -120,6 +120,9 @@ strong {
 em {
   font-family: 'Century Gothic Italic'; }
 
+strong em {
+  font-family: 'Century Gothic Bold-Italic'; }
+
 .header-line {
   width: 113px;
   height: 2px;
