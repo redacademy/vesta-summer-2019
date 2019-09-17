@@ -1,4 +1,12 @@
+
+
 <?php get_header(); ?>
+<!-- background shapes -->
+<div class="bottom-shapes">
+    <div class="big-shape"></div>
+    <div class="sm-shape"></div>
+    <div class="section-cover"></div>
+</div>
 
 <?php
 if( have_posts() ) :  
@@ -15,6 +23,8 @@ if( have_posts() ) :
 <?php else : ?>
         <p>No posts found</p>
 <?php endif; ?>
+
+
 
 <?php get_footer(); ?>
                         
