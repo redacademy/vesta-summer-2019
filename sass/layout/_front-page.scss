@@ -175,12 +175,35 @@
         text-align: center;
         margin-top: 100px;
     }
+    .subscribe-email{
+        height:47px;
+        min-width: 400px;
+        margin-top: 20px;
+        font-size: 14px;
+        font-family: 'Century Gothic';
+        padding-left:20px;
+        color: $font-color;
+        border: 1px solid $font-color;
+    }
+    .subscribe-button{
+        margin: 20px 0 0 -10px;
+        padding: 13px 15px 16px 15px;
+        width: 25%;
+        max-width: 175px;
+        background-color: $accent-button-color;
+        border: none;
+        color: white;
+        font-size: 1em;
+        font-family: 'Century Gothic';
+        text-transform: uppercase;
+    
+    }
 
 }
 
 .subscribe-form-container{
     width: 100%;
-
+    margin-bottom: 131px;
 }
 
 .subscribe-form{
@@ -195,26 +218,4 @@
         text-align: left;
     }
 }
-.subscribe-email{
-    height:47px;
-    min-width: 400px;
-    margin-top: 20px;
-    font-size: 14px;
-    font-family: 'Century Gothic';
-    padding-left:20px;
-    color: $font-color;
-    border: 1px solid $font-color;
-}
-.subscribe-button{
-    margin: 20px 0 0 -10px;
-    padding: 13px 15px 16px 15px;
-    width: 25%;
-    max-width: 175px;
-    background-color: $accent-button-color;
-    border: none;
-    color: white;
-    font-size: 1em;
-    font-family: 'Century Gothic';
-    text-transform: uppercase;
 
-}

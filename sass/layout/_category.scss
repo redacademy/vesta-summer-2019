@@ -29,6 +29,7 @@
 }
 .category-content-container{
     width: 100%;
+    height: auto;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -37,7 +38,7 @@
     // margin-bottom: 20px;
 }
 .category-content{
-    width: 100%;
+    width: 90%;
     max-height: 400px;
     a{
         text-decoration: none;
@@ -53,18 +54,18 @@
         padding-bottom: 15px;
         font-size: 1em;
     }
-    iframe, .category-audio-icon{
+    iframe, .category-audio-icon, .single-logo-placeholder{
         width: 100%;
-        height: 275px;
-        object-fit: contain;
+        height: 170px;
+        object-fit: cover;
+        object-position: center;
     }
-
 }
 
 .post-thumbnail{
     width: 100%;
     img{
-    height: 275px;
+    height: 170px;
     width: 100%;
     object-fit: cover;
     object-position: center;

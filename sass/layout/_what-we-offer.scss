@@ -4,64 +4,68 @@ h1{
 }
 .what-we-offer{
     p{
-        margin: 25px 480px 0 480px;
+       margin: 50px auto;
         text-align: center;
         line-height: 20px;
+        width: 60%;
+        min-width: 200px;
     }
 }
 .what-we-offer-inner{
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: auto auto;
+    grid-column-gap: 160px;
     margin: 30px auto 0 auto;
 }
 .what-we-offer-private, .what-we-offer-confidential, .what-we-offer-trustworthy, .what-we-offer-secure{
     display:flex;
     flex-wrap: nowrap;
-    margin-left: 150px;
     margin-top: 20px;
     img{
         margin-right: 30px;
-        width: 150px;
+        width: 25%;
+        max-width: 100%;
     }
-    .secure-icon{
-        min-width: 150px;
-        width: 150px;
-    }
+    
 }
 
 .inner-private, .inner-confidential, .inner-trustworthy, .inner-secure{
     p{
-        margin: 10px 0 0 0;
+        margin: 20px 0;
         text-align: left;
+        width:70%;
+        max-width: 70%;
     }
 }
 
 // How it Work
  
 .how-it-works{
-    width: 1182px;
-    height: 980px;
+    width: 950px;
+    height: 1100px;
     border-radius: 4px;
     background-color: white;
     box-shadow: 0 1px 50px 43px rgba(68, 75, 79, 0.04);
-    margin-top: 150px;
-    margin: 200px auto;
-    margin-bottom: 100px;
-    p{
-        margin: 20px 300px 30px 300px;
+    max-width: 100%;
+    margin: 200px 0 100px 0;
+    .header-style-container{
+        padding-top:60px;
+        text-align: center;
+        width:192px;
+        margin: 0 auto;
     }
 }
 .how-it-works-hr-container{
+    padding-top:60px;
     text-align: center;
     .header-line{
-        margin-left: 485px;
+        margin: 10px auto;
     }
 }
 
 .book-info-session-container{
     @include about-offer-container;
-    // background: rgba(57, 101, 238, 0.44);
     margin: 0 auto;
     width: 750px;
     height: 250px;
@@ -86,32 +90,43 @@ h1{
         
     }
     .tab-1{
-        margin-left:150px;
+        margin-left:100px;
         margin-bottom:30px;
-        
+        img{
+            width:33%;
+            min-width:123px;
+        }
       }
     .tab-2{
-        margin-right:150px;
+        margin-right:100px;
       }
       a {
-        color: #0087cc;
+        color: $font-color;
         display: block;
         padding: 10px 0;
         text-align: center;
         text-decoration: none;
-        
       }
       .tab-active a {
         background: #fff;
         border-bottom-color: transparent;
-        color: #2db34a;
+        color: $font-color;
         cursor: default;
-        .employee-employer-line{
-            width: 355px;
-            height: 10px;
-            border: solid 1px $primary-color;
-            background-color: $primary-color;
-          }
+        
+            .community-line{
+                width: 250px;
+                height: 10px;
+                border: solid 1px $accent-button-color;
+                background-color: $accent-button-color;
+              
+        }
+            .workplace-line{
+                width: 250px;
+                height: 10px;
+                border: solid 1px $primary-color;
+                background-color: $primary-color;
+              }
+        
           h2{
               font-weight: normal;
           }
@@ -120,7 +135,6 @@ h1{
 }
 
   .steps-container {
-
     border-top: 0;
     clear: both;
     padding: 24px 30px;
@@ -145,8 +159,8 @@ h1{
     }
    
   }
-.employee-employer-line{
-  width: 355px;
+.community-line, .workplace-line{
+  width: 250px;
   height: 10px;
   border: solid 1px #cbcbcb;
   background-color: #cbcbcb;

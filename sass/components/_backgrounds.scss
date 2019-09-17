@@ -1,0 +1,18 @@
+.bottom-shapes {
+    overflow: hidden;
+}
+
+.big-shape {
+    @include big-background;
+    transform: rotate(43deg);
+    bottom: -600px;
+    right: -650px;
+    z-index: -100;
+}
+
+.sm-shape {
+    @include small-background;
+    transform: rotate(43deg);
+    bottom: -1050px;
+    right: -650px;
+}
