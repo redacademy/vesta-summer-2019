@@ -6,14 +6,6 @@
     font-family: 'Century Gothic Bold';
     @content;
 }
-@mixin exit-btn {
-    border-radius: 29px;
-    background-color: $accent-button-color;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Century Gothic Bold';
-    @content;
-}
 
 @mixin form-submit-btn {
     padding: 15px 30px;
@@ -45,5 +37,28 @@
 @mixin thick-bar-selected {
     border: solid 1px $primary-color;
     background-color: $primary-color;
+    @content;
+}
+
+
+
+@mixin big-background {
+    width: 1387px;
+    height: 779px;
+    background-color: $primary-color;
+    opacity: 0.15;
+    border-radius: 102px;
+    background-blend-mode: multiply;
+    position: absolute;
+    @content;
+}
+
+@mixin small-background {
+    width: 837px;
+    height: 529px;
+    background-color: $primary-medium;
+    opacity: 0.51;
+    border-radius: 78px;
+    position: absolute;
     @content;
 }
