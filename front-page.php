@@ -121,11 +121,15 @@ if( have_posts() ) :
   
     <section class="home-subscribe">
       <h2> Subscribe to get the latest updates</h2>
-      <form class="subscribe-form">
-            <label>Enter your Email address</p>
-            <input type="text" class="subscribe-email" placeholder="johndoe@gmail.com">
-            <input type="submit" class="subscribe-button" value="Subscribe">
-        </form>
+      
+
+      <div class="subscribe-form-container">
+        <form class="subscribe-form">
+                <h3>Enter your Email address</h3>
+                <input type="text" class="subscribe-email" placeholder="johndoe@gmail.com">
+                <input type="submit" class="subscribe-button" value="Subscribe">
+            </form>
+        </div>
     </section>
 
 </main>

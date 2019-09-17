@@ -643,33 +643,42 @@ form.wpcf7-form {
     font-size: 28px;
     text-align: center;
     margin-top: 100px; }
-  .home-subscribe .subscribe-form {
-    margin: 42px 0 80px 250px;
-    padding-left: 200px; }
-    .home-subscribe .subscribe-form label {
-      font-size: 16px;
-      font-family: 'Century Gothic Bold';
-      color: #284683; }
-    .home-subscribe .subscribe-form .subscribe-email {
-      height: 35px;
-      width: 100%;
-      position: relative;
-      margin-top: 20px;
-      font-size: 14px;
-      font-family: 'Century Gothic';
-      padding-left: 20px;
-      color: #2e3438; }
-    .home-subscribe .subscribe-form .subscribe-button {
-      position: absolute;
-      margin-top: 20px;
-      margin-left: -135px;
-      height: 40px;
-      width: 135px;
-      background-color: #5a1933;
-      color: white;
-      font-size: 14px;
-      font-family: 'Century Gothic';
-      text-transform: uppercase; }
+
+.subscribe-form-container {
+  width: 100%; }
+
+.subscribe-form {
+  width: 75%;
+  max-width: 560px;
+  text-align: left;
+  margin: 30px auto 0 auto; }
+  .subscribe-form h3 {
+    font-size: 1.1em;
+    font-family: 'Century Gothic Bold';
+    color: #284683;
+    text-align: left; }
+
+.subscribe-email {
+  height: 47px;
+  min-width: 400px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: 'Century Gothic';
+  padding-left: 20px;
+  color: #2e3438;
+  border: 1px solid #2e3438; }
+
+.subscribe-button {
+  margin: 20px 0 0 -10px;
+  padding: 13px 15px 16px 15px;
+  width: 25%;
+  max-width: 175px;
+  background-color: #5a1933;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-family: 'Century Gothic';
+  text-transform: uppercase; }
 
 i.fa-minus {
   display: none;
