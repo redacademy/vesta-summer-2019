@@ -2,6 +2,9 @@
     h2, p{
         margin-bottom: 15px;  
     }
+    p{
+        font-size: 1.1em;
+    }
 }
 .home-transforming{
     display: flex;
@@ -15,16 +18,18 @@
 .vesta-transforming-workplace{ 
     display: flex;
     flex-direction: column;
-    width: 50%;
-
+    width: 100%;
+    // min-width: 420px;
+    padding-right: 100px;
+    
     img{
         height:auto;
-        width:65%;
-        max-width:100%;
+        width: 80%;
+        min-width: 375px;
         margin-bottom: 30px;     
     }
     h2{
-        margin-bottom: 15px;  
+        margin: 35px 0 15px 0;  
     }
 
 
@@ -42,27 +47,27 @@
 }
 
 .home-the-problem{
+    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    flex:100%;
     margin-top: 90px;
     margin-bottom: 150px;
 }
-    .problem-article{
-        flex:70%;
-        // margin-right: 100px;
-        p{
-            padding-right: 170px;
-        }
+.problem-article{
+    width: 50%;
+    max-height: 160px;
+    p{
+        padding-right: 60px;
+        max-width: 450px;
     }
-    .problem-widget{
-        img{
-            width: 70%;
-            height:auto;
-            max-width: 100%;
-            // margin-right: 250px;
-        }
+}
+.problem-widget{
+    width: 50%;
+    img{
+        width: 100%;
+        height: auto;
+        min-width: 350px;
     }
+}
     
 .home-strength{
     margin-top: 90px;
@@ -71,14 +76,14 @@
 .strength-numbers{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
     margin-bottom: 100px;
     flex:100%;
     .strength-number-80,.strength-number-85, .strength-number-95{
-        flex:30%;
-        margin-top: 20px;
-        // margin-left: -50px;
+        width: 30%;
+        margin-top: 50px;
         img{
-            width: 35%;
+            width: 45%;
             height:auto;
             max-width: 100%;
             display: block;
@@ -88,49 +93,49 @@
     hr{
         width: 155px;
         border: solid 0.5px $font-color;
-        margin: 20px auto;
-        // margin-left: 10px;
-        
+        margin: 20px auto 5px auto;  
     }
     p{
-        padding-left:100px;
-        padding-right:100px;
         text-align: center;
+        max-width: 250px;
+        margin: 0 auto;
     }
 }
 .home-solution{
     display: flex;
-    flex:100%;
     flex-wrap: nowrap;
-    margin-bottom: 150px;
-    img{
-        width: 53%;
-        height:auto;
-        max-width: 100%;
-    }
-   
+    justify-content: space-between;
+    margin: 0 0 150px -16.5%;
+ 
     .inner-solution{
-        margin-left: 50px;
-        
-        p{
-            padding-right:180px;
-        }
+        min-width: 350px;
+        margin-left: 40px;
+
         button{
             @include book-btn;
-            font-size: 16px;
-            width:30%;
-            height:15%;
+            font-size: 0.95rem;
+            padding: 15px 18px;
             margin-top: 10px;
         }
+        p{
+            font-size: 1em;
+        }
     }
+}
+.solution-image-container{
+    .solution-image{
+        width: 100%;
+        height: auto;
+        min-width: 675px;
+        min-height: 375px;
+    }
+
 }
 .home-customer-stories{
     margin-bottom: 150px;
     .header-style-container{
-        margin-left: 200px;
         margin-bottom: 80px;
     }
-
 }
 .trusted-partners{
     margin: 50px 0 150px 0;
@@ -140,74 +145,76 @@
     
 }
 .partners-list{
+    width: 100%;
     display: flex;
-   justify-content: center;
-   flex-wrap: nowrap;
-    img{
-        margin-right: 50px;
-    }
+    flex-direction: row;
+
     .govt-canada{
-        width: 80%;
+        width: 100%;
         height:auto;
-        max-width: 100%;
     }
     .legal-innovation{
-        width: 60%;
+        width: 90%;
         height:auto;
-        max-width: 100%;
         margin-top: 30px;
     }
     .social-venture{
-        width: 80%;
+        width: 90%;
         height:auto;
-        max-width: 100%;
         margin-top: 40px;
     }
     .unilever{
-        width: 70%;
+        width: 90%;
         height:auto;
-        max-width: 100%;
     }
 }
-   .home-subscribe{
+.home-subscribe{
     margin: 50px 0 0 0;
     h2{
         font-size: 28px;
         text-align: center;
         margin-top: 100px;
     }
-    .subscribe-form{
-        margin: 42px 0 80px 250px;
-        padding-left: 200px;
-    
-        label{
-            font-size: 16px;
-            font-family: 'Century Gothic Bold';
-            color: $nav-color; 
-        }
-        .subscribe-email{
-            height:35px;
-            width:50%;
-            position: relative;
-            margin-top: 20px;
-            font-size: 14px;
-            font-family: 'Century Gothic';
-            padding-left:20px;
-            color: $font-color;
-        }
-        .subscribe-button{
-            position: absolute;
-            margin-top: 20px;
-            margin-left: -135px;
-            height:40px;
-            width:135px;
-            background-color: $accent-button-color;
-            color: white;
-            font-size: 14px;
-            font-family: 'Century Gothic';
-            text-transform: uppercase;
 
-        }
+}
+
+.subscribe-form-container{
+    width: 100%;
+
+}
+
+.subscribe-form{
+    width: 75%;
+    max-width: 560px;
+    text-align: left;
+    margin: 30px auto 0 auto;
+    h3{
+        font-size: 1.1em;
+        font-family: 'Century Gothic Bold';
+        color: $nav-color; 
+        text-align: left;
     }
-   }
+}
+.subscribe-email{
+    height:47px;
+    min-width: 400px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    padding-left:20px;
+    color: $font-color;
+    border: 1px solid $font-color;
+}
+.subscribe-button{
+    margin: 20px 0 0 -10px;
+    padding: 13px 15px 16px 15px;
+    width: 25%;
+    max-width: 175px;
+    background-color: $accent-button-color;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
 
+}
