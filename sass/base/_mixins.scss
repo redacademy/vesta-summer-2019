@@ -6,14 +6,6 @@
     font-family: 'Century Gothic Bold';
     @content;
 }
-@mixin exit-btn {
-    border-radius: 29px;
-    background-color: $accent-button-color;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Century Gothic Bold';
-    @content;
-}
 
 @mixin form-submit-btn {
     padding: 15px 30px;

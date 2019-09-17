@@ -10,7 +10,7 @@
 
 .resources-content-container {
     box-sizing: border-box;
-    width: 78%;
+    width: 100%;
     margin: 0 auto 60px auto;
     background-color: #fff;
     padding: 0 7%;
@@ -97,6 +97,14 @@
     }
 }
 
+.logo-placeholder {
+    img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
 .more-resources-btn {
     background: $primary-dark;
     color: #fff;
@@ -136,6 +144,7 @@
         margin: 0;
         font-size: 1rem;
         text-transform: uppercase;
+        cursor: pointer;
 
     }
 }
