@@ -124,10 +124,6 @@ a {
 .all-page-wrapper {
   margin: 0 13%; }
 
-body {
-  overflow: hidden;
-  max-width: 100vw; }
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1460,3 +1456,7 @@ div.customer-story-box {
           transform: rotate(43deg);
   bottom: -1050px;
   right: -650px; }
+
+.top-shapes .big-shape {
+  bottom: 350px;
+  right: 750px; }
