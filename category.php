@@ -28,12 +28,14 @@
                             echo  '<img src="';
                             echo get_template_directory_uri(); 
                             echo '/images/resources/audio-1293262_1280.png" alt="sound waves" class="category-audio-icon"> ';
-                            
-
-                        }else {
+                        }else if(has_post_thumbnail()) {
                         echo '<div class="post-thumbnail"?>';
                         echo $postThumb = the_post_thumbnail('full'); 
                         echo '</div>';
+                        }else {
+                            echo '<img src="';
+                            echo get_template_directory_uri(); 
+                            echo '/images/icons/vest_logo.png" alt="Vesta logo" class="single-logo-placeholder">';
                         }
                     ?>
                     <h3><?php the_title(); ?></h3>
