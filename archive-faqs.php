@@ -7,7 +7,7 @@ $terms = get_terms('faq_category');
 foreach($terms as $term) : ?>
     <div class="faq-category">
         <h3><?php echo $term->name;?></h3>
-        <hr class="faq-header-line">
+        <hr>
     </div>
     <div class="faq-list">
         <?php
@@ -25,9 +25,11 @@ foreach($terms as $term) : ?>
         while($faqs->have_posts() ) :   
             $faqs->the_post(); ?>
             <div class="faq-single">
-                <p><?php the_title(); ?></p><i class="fas fa-plus toggle-answer"></i>
-                <i class="fas fa-minus toggle-answer"></i>
-                <hr class="faq-single-line">
+                <div class="faq-single-wrap">
+                    <p><?php the_title(); ?></p><i class="fas fa-plus toggle-answer"></i>
+                    <i class="fas fa-minus toggle-answer"></i>
+                </div>
+                <hr>
                 <div class="faq-answer"><?php the_content(); ?></div>
             </div>
             <?php endwhile; ?>
