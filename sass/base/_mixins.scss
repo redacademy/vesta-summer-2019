@@ -42,16 +42,16 @@
 
 
 
-@mixin big-background {
-    width: 1387px;
-    height: 779px;
-    background-color: $primary-color;
-    opacity: 0.15;
-    border-radius: 102px;
-    background-blend-mode: multiply;
-    position: absolute;
-    @content;
-}
+// @mixin big-background {
+//     width: 1387px;
+//     height: 779px;
+//     background-color: $primary-color;
+//     opacity: 0.15;
+//     border-radius: 102px;
+//     background-blend-mode: multiply;
+//     position: absolute;
+//     @content;
+// }
 
 @mixin small-background {
     width: 837px;

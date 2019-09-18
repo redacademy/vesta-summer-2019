@@ -3,9 +3,12 @@
 <?php get_header(); ?>
 <!-- background shapes -->
 <div class="bottom-shapes">
-    <div class="big-shape"></div>
-    <div class="sm-shape"></div>
-    <div class="section-cover"></div>
+    <div class="shape-wrapper">
+        <div class="img-big-shape"></div>
+    </div>
+    
+    <!-- <div class="sm-shape"></div>
+    <div class="section-cover"></div> -->
 </div>
 
 <?php

@@ -2,17 +2,31 @@
     overflow: hidden;
 }
 
-.big-shape {
-    @include big-background;
-    transform: rotate(43deg);
+@mixin big-background {
+    
+    @content;
+}
+
+.shape-wrapper {
+    position: absolute;
     bottom: -600px;
     right: -650px;
     z-index: -100;
 }
 
-.sm-shape {
-    @include small-background;
-    transform: rotate(43deg);
-    bottom: -1050px;
-    right: -650px;
+.img-big-shape {
+    width: 1387px;
+    height: 779px;
+    background-color: $primary-color;
+    opacity: 0.15;
+    border-radius: 102px;
+    // background-blend-mode: multiply;
+    // transform: rotate(43deg);
 }
+
+// .sm-shape {
+//     @include small-background;
+//     transform: rotate(43deg);
+//     bottom: -1050px;
+//     right: -650px;
+// }

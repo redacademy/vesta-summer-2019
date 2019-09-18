@@ -188,6 +188,8 @@ header {
     .menu-header-nav-container ul li {
       display: inline; }
 
+footer {
+  margin-top: 100px; }
 
 .footer-inner-container {
   display: -webkit-box;
@@ -230,36 +232,36 @@ header {
         display: inline;
         padding-right: 10px; }
   .footer-inner-container .footer-subscribe {
-
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%; }
-    .footer-inner-container .footer-subscribe .subscribe-form {
-      margin-top: 42px; }
-      .footer-inner-container .footer-subscribe .subscribe-form label {
-        font-size: 18px;
-        font-family: 'Century Gothic Bold';
-        color: #2e3438; }
-      .footer-inner-container .footer-subscribe .subscribe-form .subscribe-email {
-        height: 35px;
-        width: 80%;
-        position: relative;
-        margin-top: 20px;
-        font-size: 14px;
-        font-family: 'Century Gothic';
-        padding-left: 20px;
-        color: #2e3438; }
-      .footer-inner-container .footer-subscribe .subscribe-form .subscribe-button {
-        position: absolute;
-        margin-top: 20px;
-        margin-left: -135px;
-        height: 40px;
-        width: 135px;
-        background-color: #5a1933;
-        color: white;
-        font-size: 14px;
-        font-family: 'Century Gothic';
-        text-transform: uppercase; }
+    margin-right: 8%;
+    width: 450px;
+    min-width: 450px; }
+  .footer-inner-container .subscribe-form-footer {
+    margin-top: 42px; }
+    .footer-inner-container .subscribe-form-footer label {
+      font-size: 18px;
+      font-family: 'Century Gothic Bold';
+      color: #2e3438;
+      width: 400px; }
+    .footer-inner-container .subscribe-form-footer .subscribe-email-footer {
+      height: 35px;
+      width: 280px;
+      min-width: 160px;
+      position: relative;
+      margin-top: 20px;
+      font-size: 14px;
+      font-family: 'Century Gothic';
+      padding-left: 20px;
+      color: #2e3438; }
+    .footer-inner-container .subscribe-form-footer .subscribe-button-footer {
+      position: absolute;
+      margin-top: 20px;
+      height: 40px;
+      width: 135px;
+      background-color: #5a1933;
+      color: white;
+      font-size: 14px;
+      font-family: 'Century Gothic';
+      text-transform: uppercase; }
 
 .lower-footer {
   display: -webkit-box;
@@ -1192,7 +1194,12 @@ h1 {
        object-fit: contain;
     margin: 30px auto; }
 
+.page-content-title-wrapper {
+  width: 60%;
+  min-width: 550px;
+  margin: 40px auto; }
 
+.exit-button {
   border-radius: 29px;
   background-color: #3965ee;
   color: #fff;
@@ -1471,28 +1478,15 @@ div.customer-story-box {
 .bottom-shapes {
   overflow: hidden; }
 
-.big-shape {
-  width: 1387px;
-  height: 779px;
-  background-color: #3965ee;
-  opacity: 0.15;
-  border-radius: 102px;
-  background-blend-mode: multiply;
+.shape-wrapper {
   position: absolute;
-  -webkit-transform: rotate(43deg);
-          transform: rotate(43deg);
   bottom: -600px;
   right: -650px;
   z-index: -100; }
 
-.sm-shape {
-  width: 837px;
-  height: 529px;
-  background-color: #b6c4f5;
-  opacity: 0.51;
-  border-radius: 78px;
-  position: absolute;
-  -webkit-transform: rotate(43deg);
-          transform: rotate(43deg);
-  bottom: -1050px;
-  right: -650px; }
+.img-big-shape {
+  width: 1387px;
+  height: 779px;
+  background-color: #3965ee;
+  opacity: 0.15;
+  border-radius: 102px; }
