@@ -48,14 +48,24 @@
 
 
 //  SHAPES WRAPPER
-    let $docHeight = $(document).height()
+    let $bodHeight = $('body').height()
+    console.log('doc height', $bodHeight)
     const $shapeWrapper = $('.all-shapes-wrapper')
+    $shapeWrapper.css('minHeight', '100%')
+    console.log('wrap height', $shapeWrapper.height())
+    console.log('initial wrap height', $shapeWrapper.height())
     
-    if($docHeight <= $shapeWrapper.height()) {
+    if($bodHeight <= $shapeWrapper.height()) {
+        console.log('doc is smaller')
         $shapeWrapper.css('maxHeight', '400px')
+        console.log('wrap height', $shapeWrapper.height())
     }
-    else if($docHeight > $shapeWrapper.height()) {
-        $shapeWrapper.css('maxHeight', $docHeight)
+    else if($bodHeight > $shapeWrapper.height()) {
+        console.log('doc is bigger')
+        $shapeWrapper.css('maxHeight', $bodHeight)
+        console.log('wrap height', $shapeWrapper.height())
+        $bodHeight = $(document).height()
+        console.log('new doc height', $bodHeight)
     }
 
 

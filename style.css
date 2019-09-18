@@ -135,7 +135,8 @@ body {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  height: 100%; }
 
 .header-line {
   width: 113px;
@@ -1487,9 +1488,8 @@ div.customer-story-box {
   position: absolute;
   max-width: 100%;
   top: 0;
-  right: 0;
+  left: 0;
   overflow: hidden;
-  max-height: 650px;
   z-index: -100; }
 
 .bottom-right-shapes .big-rec {
@@ -1559,9 +1559,8 @@ div.customer-story-box {
   position: absolute;
   max-width: 100%;
   top: 0;
-  right: 0;
+  left: 0;
   overflow: hidden;
-  max-height: 650px;
   bottom: 0;
   left: 0; }
 
