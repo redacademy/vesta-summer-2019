@@ -7,7 +7,7 @@
     }
     
     .big-rec {
-        
+
         @include big-rec;
         transform: translate(500px, 750px) rotate(43deg);
     }
@@ -21,7 +21,7 @@
         transform: translate(0, -500px);
     }
     .background-cover-bottom {
-        transform: translate(0, 500px);
+        transform: translate(0, 897px);
     }
 }
 
