@@ -125,6 +125,19 @@ em {
 strong em {
   font-family: 'Century Gothic Bold-Italic'; }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%; }
+
 .header-line {
   width: 113px;
   height: 2px;
@@ -685,37 +698,68 @@ i.fa-plus {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-auto-rows: auto;
+  grid-gap: 20px;
   margin-bottom: 50px; }
 
 .faq-category {
-  margin-left: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 70px; }
   .faq-category h3 {
     margin-bottom: 30px; }
-
-.faq-header-line {
-  border-bottom: 3px solid #3965ee;
-  width: 276px;
-  margin-left: 0; }
+  .faq-category hr {
+    border-bottom: 3px solid #3965ee;
+    width: 70%;
+    margin-left: 0; }
 
 .faq-list {
-  margin: 70px 0 0 50px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 70px;
+  max-width: 100%; }
 
 .faq-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 10px; }
+  .faq-single hr {
+    border-bottom: 0.1px solid #3965ee;
+    width: 100%;
+    margin-left: 0px; }
+
+.faq-single-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .fa-plus, .fa-minus {
-  margin-left: 550px; }
-
-.faq-single-line {
-  border-bottom: 0.1px solid #3965ee;
-  width: 575px;
-  margin-left: 0px; }
+  margin-left: 20px; }
 
 .faq-answer {
   margin: 20px 0 40px 0;
-  padding-right: 300px;
-  line-height: 20px; }
+  line-height: 20px;
+  width: 500px; }
 
 .about-us {
   text-align: center;
@@ -943,7 +987,7 @@ h1 {
   .how-it-works .header-style-container {
     padding-top: 60px;
     text-align: center;
-    width: 180px;
+    width: 192px;
     margin: 0 auto; }
 
 .how-it-works-hr-container {
@@ -956,7 +1000,8 @@ h1 {
   background: rgba(57, 101, 238, 0.44);
   margin: 0 auto;
   margin: 0 auto;
-  width: 750px;
+  width: 72%;
+  min-width: 540px;
   height: 250px;
   margin-bottom: 100px;
   padding-top: 60px; }
@@ -972,15 +1017,15 @@ h1 {
   float: left;
   width: 50%; }
 
-.employee-employer-container .tab-1 {
-  margin-left: 100px;
+.employee-employer-container .tab-2 {
+  margin-right: 100px;
   margin-bottom: 30px; }
-  .employee-employer-container .tab-1 img {
+  .employee-employer-container .tab-2 img {
     width: 33%;
     min-width: 123px; }
 
-.employee-employer-container .tab-2 {
-  margin-right: 100px; }
+.employee-employer-container .tab-1 {
+  margin-left: 100px; }
 
 .employee-employer-container a {
   color: #2e3438;
@@ -995,12 +1040,12 @@ h1 {
   color: #2e3438;
   cursor: default; }
   .employee-employer-container .tab-active a .community-line {
-    width: 250px;
+    width: 70%;
     height: 10px;
     border: solid 1px #5a1933;
     background-color: #5a1933; }
   .employee-employer-container .tab-active a .workplace-line {
-    width: 250px;
+    width: 70%;
     height: 10px;
     border: solid 1px #3965ee;
     background-color: #3965ee; }
@@ -1025,7 +1070,7 @@ h1 {
        object-fit: contain; }
 
 .community-line, .workplace-line {
-  width: 250px;
+  width: 70%;
   height: 10px;
   border: solid 1px #cbcbcb;
   background-color: #cbcbcb; }
@@ -1475,7 +1520,7 @@ div.customer-story-box {
   position: absolute;
   max-width: 100%;
   top: 0;
-  right: 0;
+  left: 0;
   overflow: hidden;
   z-index: -100; }
 
@@ -1546,7 +1591,7 @@ div.customer-story-box {
   position: absolute;
   max-width: 100%;
   top: 0;
-  right: 0;
+  left: 0;
   overflow: hidden;
   bottom: 0;
   left: 0; }
