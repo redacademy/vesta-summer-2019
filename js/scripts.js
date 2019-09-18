@@ -1,12 +1,34 @@
 (function($) {
     //  Exit Site Button
-
-    let $windowHeight = $(window).height()
     const $exitButton = $('.exit-button')
-    $exitButton.css('top', $windowHeight - 50)
+    let $windowHeight = $(window).height()
+    let $footerLocation = $('footer').offset().top
+    let $footPosition = $('footer').offset().top - 50
+
+
+    function setButtonLocation() {
+        if($footerLocation < $windowHeight) {
+            $exitButton.css('top', $footPosition)
+        }
+        else {
+            $exitButton.css('top', $windowHeight - 50)
+        }
+    }
+    setButtonLocation()
+    
+    $(window).resize(function() {
+         $windowHeight = $(window).height()
+         if($exitButton.css('position') === 'fixed'){
+            setButtonLocation()
+            }
+         else {
+            $exitButton.css('top', $footPosition)
+         }
+    })
+
 
     $(document).on('scroll', function() {
-        const $footPosition = $('footer').offset().top - 50;
+        $footPosition = $('footer').offset().top - 50
         let $btnPosition = $exitButton.offset().top
         let $scrollPos = $(document).scrollTop() + $windowHeight
 
@@ -22,7 +44,15 @@
                 'top': $windowHeight - 50})
             }
     }
-})
+    })
+
+
+//  SHAPES WRAPPER
+    let $docHeight = $(document).height()
+    const $shapeWrapper = $('.all-shapes-wrapper')
+    $shapeWrapper.css('height', $docHeight)
+
+
 
 
     //      Front Page FLICKITY
