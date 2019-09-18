@@ -110,6 +110,8 @@ h4 {
 
 a {
   text-decoration: none; }
+  a:hover {
+    cursor: pointer; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -1191,6 +1193,9 @@ h1 {
   min-width: 550px;
   margin: 40px auto; }
 
+button:hover {
+  cursor: pointer; }
+
 .exit-button {
   border-radius: 29px;
   background-color: #3965ee;
@@ -1211,8 +1216,7 @@ h1 {
   width: 100px;
   cursor: pointer;
   position: fixed;
-  right: 5%;
-  bottom: 50px; }
+  right: 5%; }
 
 .toggle-answer:hover {
   cursor: pointer;
