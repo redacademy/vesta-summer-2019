@@ -125,6 +125,18 @@ em {
 strong em {
   font-family: 'Century Gothic Bold-Italic'; }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .header-line {
   width: 113px;
   height: 2px;
@@ -1477,6 +1489,7 @@ div.customer-story-box {
   top: 0;
   right: 0;
   overflow: hidden;
+  max-height: 650px;
   z-index: -100; }
 
 .bottom-right-shapes .big-rec {
@@ -1548,6 +1561,7 @@ div.customer-story-box {
   top: 0;
   right: 0;
   overflow: hidden;
+  max-height: 650px;
   bottom: 0;
   left: 0; }
 
