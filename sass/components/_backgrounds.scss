@@ -1,28 +1,24 @@
-.bottom-shapes {
-    overflow: hidden;
-}
-
-@mixin big-background {
+.bottom-right-shapes {
+    .big-rec-wrapper {
+       @include shapes-wrapper;
+    }
     
-    @content;
+    .big-rec {
+        @include big-rec;
+        transform: translate(300px, 350px) rotate(43deg);
+    }
+
+    .sm-rec {
+        @include lil-rec;
+        transform: translate(700px, -75px) rotate(43deg);
+    }
+    .background-cover {
+        bottom: -550px;
+        z-index: -50;
+        @include section-background;
+    }
 }
 
-.shape-wrapper {
-    position: absolute;
-    bottom: -600px;
-    right: -650px;
-    z-index: -100;
-}
-
-.img-big-shape {
-    width: 1387px;
-    height: 779px;
-    background-color: $primary-color;
-    opacity: 0.15;
-    border-radius: 102px;
-    // background-blend-mode: multiply;
-    // transform: rotate(43deg);
-}
 
 // .sm-shape {
 //     @include small-background;

@@ -2,13 +2,12 @@
 
 <?php get_header(); ?>
 <!-- background shapes -->
-<div class="bottom-shapes">
-    <div class="shape-wrapper">
-        <div class="img-big-shape"></div>
+<div class="bottom-right-shapes">
+    <div class="big-rec-wrapper">
+        <div class="big-rec"></div>
+        <div class="sm-rec"></div>
     </div>
-    
-    <!-- <div class="sm-shape"></div>
-    <div class="section-cover"></div> -->
+    <div class="background-cover"></div>
 </div>
 
 <?php

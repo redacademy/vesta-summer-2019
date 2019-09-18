@@ -53,6 +53,35 @@
 //     @content;
 // }
 
+@mixin shapes-wrapper {
+    position: absolute;
+    height: 1000px;
+    max-width: 100%;
+    bottom: -600px;
+    right: 0;
+    z-index: -100;
+    overflow: hidden;
+    @content;
+}
+
+@mixin big-rec {
+    width: 1387px;
+    height: 779px;
+    background-color: $primary-color;
+    opacity: 0.15;
+    border-radius: 102px;
+    @content;
+}
+
+@mixin lil-rec {
+    width: 837px;
+    height: 529px;
+    background-color: $primary-medium;
+    opacity: 0.51;
+    border-radius: 78px;
+    @content;
+}
+
 @mixin small-background {
     width: 837px;
     height: 529px;
@@ -62,3 +91,12 @@
     position: absolute;
     @content;
 }
+
+@mixin section-background {
+    height: 530px;
+    width: 100%;
+    opacity: 0.51;
+    position: absolute;
+    left: 0;
+    background-color: $primary-section;
+ }

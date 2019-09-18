@@ -18,7 +18,6 @@
 
     <div class="header-nav">
         <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
-        <!-- <?php $info_page = get_page_by_path( 'info-session' ); ?> -->
         <a href="<?php get_page_link( get_page_by_path( 'info-session' ) );?>"><button class="book-info-session">Info Session</button></a>
     </div>
 </header>
