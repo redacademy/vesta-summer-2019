@@ -1,12 +1,24 @@
 (function($) {
     //  Exit Site Button
-
-    let $windowHeight = $(window).height()
     const $exitButton = $('.exit-button')
+    let $windowHeight = $(window).height()
+
     $exitButton.css('top', $windowHeight - 50)
 
+    $(window).resize(function() {
+         $windowHeight = $(window).height()
+         if($exitButton.css('position') === 'fixed'){
+             $exitButton.css('top', $windowHeight - 50)
+            }
+         else {
+            const $footPosition = $('footer').offset().top - 50
+            $exitButton.css('top', $footPosition)
+         }
+    })
+
+
     $(document).on('scroll', function() {
-        const $footPosition = $('footer').offset().top - 50;
+        const $footPosition = $('footer').offset().top - 50
         let $btnPosition = $exitButton.offset().top
         let $scrollPos = $(document).scrollTop() + $windowHeight
 
