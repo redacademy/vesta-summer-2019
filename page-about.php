@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<!-- background shapes -->
+<div class="top-shapes">
+    <div class="big-shape"></div>
+    <div class="sm-shape"></div>
+    <div class="section-cover"></div>
+</div>
 
 <section class="about-us">
 
@@ -93,7 +99,7 @@
         <div class="learn-more-about">
             <h3>To learn how vest works, book a free information session</h3>
             <p>Experience VESTA and how it works towards a safer work environment.</p>
-            <button class="book-session-BTN">Info session </button>
+            <a href="<?php echo get_home_url(); ?>/info-session"><button class="book-session-BTN">Info session </button></a>
         </div>
 
 

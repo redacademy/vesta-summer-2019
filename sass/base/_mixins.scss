@@ -62,3 +62,12 @@
     position: absolute;
     @content;
 }
+
+@mixin section-background {
+    height: 530px;
+    width: 100%;
+    opacity: 0.51;
+    position: absolute;
+    left: 0;
+    background-color: $primary-section;
+}
