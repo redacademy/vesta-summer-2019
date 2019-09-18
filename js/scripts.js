@@ -5,6 +5,7 @@
     let $footerLocation = $('footer').offset().top
     let $footPosition = $('footer').offset().top - 50
 
+
     function setButtonLocation() {
         if($footerLocation < $windowHeight) {
             $exitButton.css('top', $footPosition)
@@ -15,7 +16,6 @@
     }
     setButtonLocation()
     
-
     $(window).resize(function() {
          $windowHeight = $(window).height()
          if($exitButton.css('position') === 'fixed'){
