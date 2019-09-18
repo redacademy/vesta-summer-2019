@@ -48,6 +48,7 @@
 
 
 //  SHAPES WRAPPER
+
     let $bodHeight = $('body').height()
     console.log('doc height', $bodHeight)
     const $shapeWrapper = $('.all-shapes-wrapper')
@@ -71,7 +72,6 @@
 
 
 
-
     //      Front Page FLICKITY
     $('.customer-stories-carousel').flickity({
         // options
@@ -90,14 +90,14 @@
 
     $communityCatHeader.on('click', function(e) {
         $workplaceCatHeader.removeClass('resource-header-selected')
-        $communityCatHeader.addClass('resource-header-selected')
+        $communityCatHeader.addClass('resource-header-selected-plum')
         $workplaceResources.hide()
         $communityResources.show()
 
     }) 
     
     $workplaceCatHeader.on('click', function(e) {
-        $communityCatHeader.removeClass('resource-header-selected')
+        $communityCatHeader.removeClass('resource-header-selected-plum')
         $workplaceCatHeader.addClass('resource-header-selected')
         $communityResources.hide()
         $workplaceResources.show()

@@ -61,7 +61,17 @@
         cursor: unset;
     }
 }
-
+.resource-header-selected-plum {
+    h3 {
+        font-family: 'Century Gothic Bold';
+    }
+    .highlight-bar {
+        @include thick-bar-selected-plum;
+    }
+    &:hover {
+        cursor: unset;
+    }
+}
 .parent-cat-container {
     display: flex;
     flex-direction: column;
