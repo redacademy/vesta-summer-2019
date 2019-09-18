@@ -114,7 +114,7 @@
     $faqIcon.on('click', (e) => {
         $(e.target).toggle()
         $(e.target).siblings('.toggle-answer').toggle()
-        $(e.target).siblings('div.faq-answer').slideToggle(); 
+        $(e.target).parent().siblings('div.faq-answer').slideToggle(); 
     })
 
     
