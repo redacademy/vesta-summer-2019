@@ -1532,6 +1532,7 @@ div.customer-story-box {
 .bottom-right-shapes .all-shapes-wrapper {
   position: absolute;
   max-width: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -1573,6 +1574,7 @@ div.customer-story-box {
 .top-left-shapes .all-shapes-wrapper {
   position: absolute;
   max-width: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   overflow: hidden;
