@@ -24,6 +24,7 @@ font-size: 1.5em;
     grid-auto-rows: auto;
     margin-bottom: 50px;
 }
+
 .faq-category{
     margin-top:70px;
     h3{
@@ -33,7 +34,7 @@ font-size: 1.5em;
 .faq-header-line{
     border-bottom: 3px solid $primary-color;
     width:276px;
-    // margin-left: 0;
+    margin-left: 0;
 }
         
 .faq-list{
@@ -44,17 +45,18 @@ font-size: 1.5em;
 }  
 .fa-plus, .fa-minus{
     margin: 0 auto;
-    // margin-left:550px;
+    margin-left:550px;
 }
 .faq-single-line{
     border-bottom: 0.1px solid $primary-color;
-    width:575px;
+    width:450px;
     margin-left: 0px;
 }
 .faq-answer{
     margin:20px 0 40px 0;
-    padding-right: 300px;
+    // padding-right: 300px;
     line-height: 20px;
+    width:500px;
 }
             
 

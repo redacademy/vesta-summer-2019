@@ -702,7 +702,8 @@ i.fa-plus {
 
 .faq-header-line {
   border-bottom: 3px solid #3965ee;
-  width: 276px; }
+  width: 276px;
+  margin-left: 0; }
 
 .faq-list {
   margin: 70px 0 0 50px; }
@@ -711,17 +712,18 @@ i.fa-plus {
   margin-top: 10px; }
 
 .fa-plus, .fa-minus {
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-left: 550px; }
 
 .faq-single-line {
   border-bottom: 0.1px solid #3965ee;
-  width: 575px;
+  width: 450px;
   margin-left: 0px; }
 
 .faq-answer {
   margin: 20px 0 40px 0;
-  padding-right: 300px;
-  line-height: 20px; }
+  line-height: 20px;
+  width: 500px; }
 
 .about-us {
   text-align: center;
