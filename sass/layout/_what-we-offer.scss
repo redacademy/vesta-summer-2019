@@ -145,17 +145,17 @@ h1{
     }
     
   }
-
+ 
   .video-info-container .custom-html-widget{
+      width: 70%;
+      margin: 50px auto; 
     iframe{
-        width:70%;
-        height:450px;
-        max-width: 100%;
+        width: 100%;
         object-fit: contain;
-        position: absolute; 
-        top: 600px; right: 0; 
-        bottom: 0; left: 0;
-        margin: auto;
+        // position: absolute; 
+        // top: 600px; right: 0; 
+        // bottom: 0; left: 0;
+        // margin: 0 auto;
     }
    
   }

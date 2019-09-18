@@ -1013,18 +1013,13 @@ h1 {
   .steps-container h3 {
     text-align: center; }
 
-.video-info-container .custom-html-widget iframe {
+.video-info-container .custom-html-widget {
   width: 70%;
-  height: 450px;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  position: absolute;
-  top: 600px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto; }
+  margin: 50px auto; }
+  .video-info-container .custom-html-widget iframe {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain; }
 
 .community-line, .workplace-line {
   width: 250px;
