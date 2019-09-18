@@ -133,7 +133,7 @@ strong em {
   margin-left: 0; }
 
 .all-page-wrapper {
-  margin: 50px 13% 0 13%; }
+
 
 header {
   display: -webkit-box;
@@ -1471,79 +1471,38 @@ div.customer-story-box {
   width: 477px;
   height: 450px; }
 
-.bottom-shapes {
+.bottom-right-shapes .big-rec-wrapper {
+  position: absolute;
+  height: 1000px;
+  max-width: 100%;
+  bottom: -600px;
+  right: 0;
+  z-index: -100;
   overflow: hidden; }
 
-.big-shape {
+.bottom-right-shapes .big-rec {
   width: 1387px;
   height: 779px;
   background-color: #3965ee;
   opacity: 0.15;
   border-radius: 102px;
-  background-blend-mode: multiply;
-  position: absolute;
-  -webkit-transform: rotate(43deg);
-          transform: rotate(43deg);
-  bottom: -600px;
-  right: -650px;
-  z-index: -100; }
+  -webkit-transform: translate(300px, 350px) rotate(43deg);
+          transform: translate(300px, 350px) rotate(43deg); }
 
-.sm-shape {
+.bottom-right-shapes .sm-rec {
   width: 837px;
   height: 529px;
   background-color: #b6c4f5;
   opacity: 0.51;
   border-radius: 78px;
-  position: absolute;
-  -webkit-transform: rotate(43deg);
-          transform: rotate(43deg);
-  bottom: -1050px;
-  right: -650px; }
+  -webkit-transform: translate(700px, -75px) rotate(43deg);
+          transform: translate(700px, -75px) rotate(43deg); }
 
-.top-shapes .big-shape {
-  bottom: 375px;
-  right: 875px;
-  z-index: -75; }
-
-.top-shapes .sm-shape {
-  bottom: 550px;
-  right: 1000px;
+.bottom-right-shapes .background-cover {
+  bottom: -550px;
   z-index: -50;
-  height: 730px;
-  background-color: #3965ee;
-  opacity: 0.21; }
-
-.top-shapes .section-cover {
   height: 530px;
   width: 100%;
   opacity: 0.51;
   position: absolute;
-  left: 0;
-  background-color: #d8e1fb;
-  top: 0;
-  z-index: -100; }
 
-.error-page-shapes .big-shape {
-  bottom: -175px;
-  right: 800px;
-  z-index: -75; }
-
-.error-page-shapes .sm-shape {
-  top: 0;
-  left: -500px;
-  z-index: -50;
-  height: 900px;
-  width: 1100px;
-  background-color: #3965ee;
-  opacity: 0.21; }
-
-.error-page-shapes .section-cover {
-  height: 530px;
-  width: 100%;
-  opacity: 0.51;
-  position: absolute;
-  left: 0;
-  background-color: #d8e1fb;
-  bottom: 0;
-  height: 460px;
-  z-index: -100; }
