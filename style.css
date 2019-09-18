@@ -1471,14 +1471,13 @@ div.customer-story-box {
   width: 477px;
   height: 450px; }
 
-.bottom-right-shapes .big-rec-wrapper {
+.bottom-right-shapes .all-shapes-wrapper {
   position: absolute;
-  height: 1000px;
   max-width: 100%;
-  bottom: -600px;
+  top: 0;
   right: 0;
-  z-index: -100;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -100; }
 
 .bottom-right-shapes .big-rec {
   width: 1387px;
@@ -1545,11 +1544,9 @@ div.customer-story-box {
 
 .error-shapes .big-rec-wrapper {
   position: absolute;
-  height: 1000px;
   max-width: 100%;
-  bottom: -600px;
+  top: 0;
   right: 0;
-  z-index: -100;
   overflow: hidden;
   bottom: 0;
   left: 0; }
