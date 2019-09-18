@@ -3,7 +3,6 @@
 <div class="single-content-container">
     <div class="single-content-title-wrapper">
         <h2><?php the_title(); ?></h2>
-        <p><?php the_excerpt(); ?></p>
     </div>
 
     <?php

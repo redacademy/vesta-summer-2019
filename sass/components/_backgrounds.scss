@@ -1,0 +1,74 @@
+.bottom-right-shapes {
+    .big-rec-wrapper {
+       @include shapes-wrapper;
+    }
+    
+    .big-rec {
+        @include big-rec;
+        transform: translate(300px, 350px) rotate(43deg);
+    }
+
+    .sm-rec {
+        @include lil-rec;
+        transform: translate(700px, -75px) rotate(43deg);
+    }
+    .background-cover {
+        @include section-background;
+        bottom: -550px;
+        z-index: -75;
+    }
+}
+
+.sm-shape {
+    @include small-background;
+    transform: rotate(43deg);
+    bottom: -1050px;
+    right: -650px;
+}
+
+// top shapes 
+
+.top-shapes{
+    .big-shape{
+        bottom: 375px;
+        right: 875px;
+        z-index: -75;
+    }
+    .sm-shape{
+        bottom: 550px;
+        right: 1000px;
+        z-index: -50;
+        height: 730px;
+        background-color: $primary-color;
+        opacity: 0.21;
+    }
+    .section-cover{
+        @include section-background;
+        top: 0;
+        z-index: -100;
+    }
+}
+
+.error-shapes {
+    .big-rec-wrapper {
+       @include shapes-wrapper;
+       bottom: 0;
+       left: 0;
+    }
+    
+    .big-rec {
+        @include big-rec;
+        transform: translate(-450px, 350px) rotate(43deg);
+    }
+
+    .sm-rec {
+        @include lil-rec;
+        transform: translate(-300px, -750px) rotate(43deg);
+        height: 1000px;
+    }
+    .background-cover {
+        bottom: 0;
+        z-index: -50;
+        @include section-background;
+    }
+}

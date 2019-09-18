@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<!-- background shapes -->
+<div class="top-shapes">
+    <div class="big-shape"></div>
+    <div class="sm-shape"></div>
+    <div class="section-cover"></div>
+</div>
 
 
 <main class="resources">
@@ -67,15 +73,21 @@
                                                             <?php echo $media[0]; ?>
                                                     </div>
 
+                                                <?php elseif(has_post_thumbnail()) : ?>
+                                                    <div class="resource-media">
+                                                        <?php the_post_thumbnail(); ?>
+                                                    </div>
+
                                                 <?php elseif($sub_cat->name === "Audio") : ?>
                                                     <div class="audio resource-media">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/images/resources/audio-1293262_1280.png" alt="sound waves">
                                                     </div>
 
                                                 <?php else : ?>
-                                                    <div class="resource-media">
-                                                        <?php the_post_thumbnail(); ?>
+                                                    <div class="logo-placeholder resource-media">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/vest_logo.png" alt="Vesta logo">
                                                     </div>
+                                                    
                                                 <?php endif; ?>
                                                 <div><?php the_excerpt(); ?></div>
                                             </a>

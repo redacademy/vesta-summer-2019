@@ -1,3 +1,50 @@
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@mixin exit-btn {
+    @include book-btn;
+    z-index: 100;
+    background-color: $transparent-accent;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 2.7;
+    display: block;
+    height: 2.5rem;
+    width: 100px;
+    cursor: pointer; 
+    @content;
+}
+
+.exit-button {
+    @include exit-btn;
+    position: fixed;
+    right: 5%;
+    // bottom: 50px;
+}
+
+// .sticky-exit {
+//     @include exit-btn;
+//     position: fixed;
+//     bottom: 5%;
+//     right: 5%;
+    
+// }
+
+
+// .freeze-exit {
+//     @include exit-btn;
+//     position: absolute;
+//     bottom: 250px;
+//     right: 5%;
+// }
+
+
 .toggle-answer {
     &:hover {
         cursor: pointer;
@@ -6,6 +53,7 @@
 }
 
 .learn-more-about{
+    margin-bottom: 90px;
     .book-session-BTN{
         @include book-btn;
         padding: 19px 38px;
@@ -28,17 +76,29 @@
 
 //form submit button  -- contact and info session btn
 
-.contact-us-form, .book-info-session {
-    .wpcf7-submit {
+.book-info-session{
+    .wpcf7-submit{
         @include book-btn;
         @include form-submit-btn;
+        padding: 15px;
+        width: 280px;
+        margin-left: 218px;
+    }
+}
+
+.contact-us-form{
+    .wpcf7-submit{
+        @include book-btn;
+        @include form-submit-btn;
+        width: 175px;
+        margin-left: 325px;
     }
 }
 
 // Overlay msg BTN
 .vesta-btn{
     @include book-btn;
-    padding: 18px 23px;
+    padding: 15px 23px;
     text-decoration: none;
     width: 150px;
     margin: 50px auto;
@@ -54,7 +114,7 @@
 header{
     .book-info-session{
         font-family: 'Century Gothic';
-        font-size: 1em;
+        font-size: 0.89em;
         text-transform: uppercase;
         @include book-btn; 
         padding: 10px 25px;

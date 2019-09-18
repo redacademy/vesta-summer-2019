@@ -22,6 +22,7 @@ font-size: 1.5em;
     display:grid;
     grid-template-columns: 40% 60%;
     grid-auto-rows: auto;
+    grid-gap:20px;
     margin-bottom: 50px;
 }
 
@@ -34,27 +35,35 @@ font-size: 1.5em;
 .faq-header-line{
     border-bottom: 3px solid $primary-color;
     width:276px;
+    min-width: 30%;
     margin-left: 0;
 }
         
 .faq-list{
-    margin:70px 0 0 50px;
+    margin:70px 0 0 0;
+    width:410px;
 }          
 .faq-single{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 10px;
+    width:130%;
+    min-width: 10%;
 }  
 .fa-plus, .fa-minus{
-    margin: 0 auto;
-    margin-left:550px;
+    
+    // margin-top:-28px;
+    // float: right;
 }
 .faq-single-line{
     border-bottom: 0.1px solid $primary-color;
-    width:450px;
+    width:550px;
+    min-width:70%;
     margin-left: 0px;
 }
 .faq-answer{
     margin:20px 0 40px 0;
-    // padding-right: 300px;
     line-height: 20px;
     width:500px;
 }

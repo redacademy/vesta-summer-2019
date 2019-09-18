@@ -1,5 +1,31 @@
 (function($) {
-//      Front Page FLICKITY
+    //  Exit Site Button
+
+    let $windowHeight = $(window).height()
+    const $exitButton = $('.exit-button')
+    $exitButton.css('top', $windowHeight - 50)
+
+    $(document).on('scroll', function() {
+        const $footPosition = $('footer').offset().top - 50;
+        let $btnPosition = $exitButton.offset().top
+        let $scrollPos = $(document).scrollTop() + $windowHeight
+
+        if($exitButton.css('position') === 'fixed') {
+            if($btnPosition >= $footPosition) {
+                $exitButton.css({'position': 'absolute',
+                    'top': $footPosition})
+            }
+        }
+        else if($exitButton.css('position') === 'absolute') {
+            if($scrollPos - 50 <= $btnPosition) {
+                $exitButton.css({'position': 'fixed',
+                'top': $windowHeight - 50})
+            }
+    }
+})
+
+
+    //      Front Page FLICKITY
     $('.customer-stories-carousel').flickity({
         // options
         cellAlign: 'center',

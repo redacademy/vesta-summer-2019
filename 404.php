@@ -1,5 +1,14 @@
 <?php get_header(); ?>
 
+<!-- background shapes -->
+<div class="error-shapes">
+    <div class="big-rec-wrapper">
+        <div class="big-rec"></div>
+        <div class="sm-rec"></div>
+    </div>
+    <div class="background-cover"></div>
+</div>
+
 <section class="error-page">
     <div class="error-container">
         <img class="error-icon" src="<?php echo get_template_directory_uri() . '/images/Icons/404.png';?>">

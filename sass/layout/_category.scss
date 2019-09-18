@@ -1,5 +1,5 @@
 .category-container{
-    width: 65%;
+    width: 85%;
     min-width: 900px;
     margin: 0 auto;
     text-align: left;
@@ -29,6 +29,7 @@
 }
 .category-content-container{
     width: 100%;
+    height: auto;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -53,18 +54,18 @@
         padding-bottom: 15px;
         font-size: 1em;
     }
-    iframe, .category-audio-icon{
+    iframe, .category-audio-icon, .single-logo-placeholder{
         width: 100%;
-        height: 275px;
+        height: 170px;
         object-fit: contain;
+        object-position: center;
     }
-
 }
 
 .post-thumbnail{
     width: 100%;
     img{
-    height: 275px;
+    height: 170px;
     width: 100%;
     object-fit: cover;
     object-position: center;

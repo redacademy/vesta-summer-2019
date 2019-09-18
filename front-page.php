@@ -25,7 +25,7 @@ if( have_posts() ) :
   
     <section class="home-transforming">
         <div class="vesta-transforming-workplace">
-            <img src="<?php echo get_template_directory_uri() . '/images/Homepage/Vesta_LOGO_LETTERS.png';?>" alt="Vesta">
+            <img src="<?php echo get_template_directory_uri() . '/images/Icons/Vesta Name Group.svg';?>" alt="Vesta">
             <h2>Transforming society</h2>
             <p>Eliminating sexual harassment and assault by providing
             a secure reporting platform for individuals.</p> 
@@ -81,7 +81,9 @@ if( have_posts() ) :
     </section>
   
     <section class="home-solution">
-        <img class="solution-image" src="<?php echo get_template_directory_uri() . '/images/homepage/img_homepage_thesolution.png';?>" alt="Vesta on devices">
+        <div class="solution-image-container">
+            <img class="solution-image" src="<?php echo get_template_directory_uri() . '/images/homepage/img_homepage_thesolution.png';?>" alt="Vesta on devices">
+        </div>
         <div class="inner-solution">
             <div class="header-style-container">
                 <hr class="header-line">
@@ -91,7 +93,7 @@ if( have_posts() ) :
                     to resources, to justice and to reporting while protecting their privacy. 
                     Vesta Community works in partnership with Sexual Assault Centres 
                     and soon Vesta Workplace will help Employers create safe, productive workplaces.</p>
-                <button class="what-we-offer-button">What We Offer</button>
+                    <a href="<?php echo get_home_url(); ?>/what-we-offer"><button class="what-we-offer-button">What We Offer</button></a>
         </div>
     </section>
   
@@ -121,11 +123,15 @@ if( have_posts() ) :
   
     <section class="home-subscribe">
       <h2> Subscribe to get the latest updates</h2>
-      <form class="subscribe-form">
-            <label>Enter your Email address</p>
-            <input type="text" class="subscribe-email" placeholder="johndoe@gmail.com">
-            <input type="submit" class="subscribe-button" value="Subscribe">
-        </form>
+      
+
+      <div class="subscribe-form-container">
+        <form class="subscribe-form">
+                <h3>Enter your Email address</h3>
+                <input type="text" class="subscribe-email" placeholder="johndoe@gmail.com">
+                <input type="submit" class="subscribe-button" value="Subscribe">
+            </form>
+        </div>
     </section>
 
 </main>

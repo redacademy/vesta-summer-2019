@@ -57,16 +57,18 @@ if( have_posts() ) :
                 </div>
             </div>
         </div>
-        <div class="more-resources-button"><button>More Resources</button></div>
+        <div class="more-resources-button">
+        <a href="<?php echo get_home_url(); ?>/resources"><button>More Resources</button></a>
+        </div>
     </section>
     
     <section class="how-it-works">
-            <div class="how-it-works-hr-container">
+            <!-- <div class="how-it-works-hr-container"> -->
                 <div class="header-style-container">
                     <hr class="header-line">
                     <h2>How it works</h2>
                 </div>
-             </div>
+             <!-- </div> -->
 
             <p> Vesta makes it safer for individuals to speak up and 
             easier for organizations to take action and prevent future 
@@ -74,14 +76,14 @@ if( have_posts() ) :
             <div class="employee-employer-container">
                     <ul class="employee-employer-nav">
                         <li><a href="#tab-1" class="tab-1">
-                            <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployee.svg';?>">
+                            <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployee -plum 1.52.00 PM.svg';?>">
                             <h3 class="community">Community</h3>
-                            <hr class="employee-employer-line"></a>
+                            <hr class="community-line"></a>
                         </li>
                         <li><a href="#tab-2"  class="tab-2">
                             <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployer.svg';?>">
                             <h3 class="workplace">Workplace</h3>
-                            <hr class="employee-employer-line"></a>
+                            <hr class="workplace-line"></a>
                         </li>
                     </ul> 
             </div>
