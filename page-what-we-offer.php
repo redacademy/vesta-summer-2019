@@ -57,7 +57,9 @@ if( have_posts() ) :
                 </div>
             </div>
         </div>
-        <div class="more-resources-button"><button>More Resources</button></div>
+        <div class="more-resources-button">
+        <a href="<?php echo get_home_url(); ?>/resources"><button>More Resources</button></a>
+        </div>
     </section>
     
     <section class="how-it-works">

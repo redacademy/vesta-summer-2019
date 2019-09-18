@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+<div class="error-page-shapes">
+    <div class="big-shape"></div>
+    <div class="sm-shape"></div>
+    <div class="section-cover"></div>
+</div>
 
 <section class="error-page">
     <div class="error-container">

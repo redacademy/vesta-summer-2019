@@ -1,4 +1,11 @@
 <?php get_header(); ?>
+<!-- background shapes -->
+<div class="top-shapes">
+    <div class="big-shape"></div>
+    <div class="sm-shape"></div>
+    <div class="section-cover"></div>
+</div>
+
 <h1 class="faq-header"> FAQ </h1>
 <div class="faq-container">
     

@@ -1,47 +1,28 @@
 (function($) {
     //  Exit Site Button
-    // $(window).scroll(function(){
-    //     let num = $(this).scrollTop() - $(window).height() - $('footer').height() + 150
-    //     console.log('num', num)
-    //     $('.exit-button').css("bottom", Math.max(50, num))
-    // });
-
-
-
-
 
     let $windowHeight = $(window).height()
-    // console.log('win height', $windowHeight)
-    let $docHeight = $(document).height()
-    console.log('doc height', $docHeight)
-
-    let $footHeight = $('footer').height()
-    console.log('foot height', $footHeight)
-    
-    let $footPosition = $('footer').offset();
-    console.log('foot', $footPosition)
-
     const $exitButton = $('.exit-button')
+    $exitButton.css('top', $windowHeight - 50)
 
     $(document).on('scroll', function() {
-        let $distFromTop = $(window).scrollTop()
-        // console.log('scrollTop', fromTop)
-        let scrollPosition = $distFromTop + $windowHeight
-        console.log('scroll position', scrollPosition)
-        // console.log('doc - foot', ($docHeight - $footHeight))
-        if(scrollPosition > $docHeight - $footHeight - 50) {
-            // console.log('condition met');
-            $exitButton.css({'top': $windowHeight - $footHeight - 50,
-                                'position': 'absolute'})
-        }
-        else {
-            $exitButton.css({'bottom': 50,
-            'position': 'fixed'})
-        }
-    })
+        const $footPosition = $('footer').offset().top - 50;
+        let $btnPosition = $exitButton.offset().top
+        let $scrollPos = $(document).scrollTop() + $windowHeight
 
-   
-
+        if($exitButton.css('position') === 'fixed') {
+            if($btnPosition >= $footPosition) {
+                $exitButton.css({'position': 'absolute',
+                    'top': $footPosition})
+            }
+        }
+        else if($exitButton.css('position') === 'absolute') {
+            if($scrollPos - 50 <= $btnPosition) {
+                $exitButton.css({'position': 'fixed',
+                'top': $windowHeight - 50})
+            }
+    }
+})
 
 
     //      Front Page FLICKITY
