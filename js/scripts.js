@@ -50,7 +50,14 @@
 //  SHAPES WRAPPER
     let $docHeight = $(document).height()
     const $shapeWrapper = $('.all-shapes-wrapper')
-    $shapeWrapper.css('height', $docHeight)
+    
+    if($docHeight <= $shapeWrapper.height()) {
+        $shapeWrapper.css('maxHeight', '400px')
+    }
+    else if($docHeight > $shapeWrapper.height()) {
+        $shapeWrapper.css('maxHeight', $docHeight)
+    }
+
 
 
 
