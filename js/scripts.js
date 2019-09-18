@@ -2,23 +2,36 @@
     //  Exit Site Button
     const $exitButton = $('.exit-button')
     let $windowHeight = $(window).height()
+    let $footerLocation = $('footer').offset().top
+    let $footPosition = $('footer').offset().top - 50
 
-    $exitButton.css('top', $windowHeight - 50)
+    // set initial button position
+    function setButtonLocation() {
+        if($footerLocation < $windowHeight) {
+            $exitButton.css('top', $footPosition)
+        }
+        else {
+            $exitButton.css('top', $windowHeight - 50)
+        }
+    }
+    setButtonLocation()
+    
+
+    
 
     $(window).resize(function() {
          $windowHeight = $(window).height()
          if($exitButton.css('position') === 'fixed'){
-             $exitButton.css('top', $windowHeight - 50)
+            setButtonLocation()
             }
          else {
-            const $footPosition = $('footer').offset().top - 50
             $exitButton.css('top', $footPosition)
          }
     })
 
 
     $(document).on('scroll', function() {
-        const $footPosition = $('footer').offset().top - 50
+        $footPosition = $('footer').offset().top - 50
         let $btnPosition = $exitButton.offset().top
         let $scrollPos = $(document).scrollTop() + $windowHeight
 
