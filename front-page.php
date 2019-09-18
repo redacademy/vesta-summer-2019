@@ -93,7 +93,7 @@ if( have_posts() ) :
                     to resources, to justice and to reporting while protecting their privacy. 
                     Vesta Community works in partnership with Sexual Assault Centres 
                     and soon Vesta Workplace will help Employers create safe, productive workplaces.</p>
-                <button class="what-we-offer-button">What We Offer</button>
+                    <a href="<?php echo get_home_url(); ?>/what-we-offer"><button class="what-we-offer-button">What We Offer</button></a>
         </div>
     </section>
   
