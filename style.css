@@ -131,7 +131,7 @@ strong em {
   margin-left: 0; }
 
 .all-page-wrapper {
-  margin: 0 13%; }
+  margin: 50px 13% 0 13%; }
 
 header {
   display: -webkit-box;
@@ -296,7 +296,7 @@ footer {
 .resources-title-container {
   width: 30%;
   text-align: center;
-  margin: 50px auto 0 auto; }
+  margin: 0 auto; }
   .resources-title-container p {
     margin: 20px 0; }
 
