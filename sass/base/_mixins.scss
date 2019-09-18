@@ -57,8 +57,9 @@
     position: absolute;
     max-width: 100%;
     top: 0;
-    right: 0;
+    left: 0;
     overflow: hidden;
+    // max-height: 650px;
     @content;
 }
 
