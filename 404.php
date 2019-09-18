@@ -1,8 +1,12 @@
 <?php get_header(); ?>
-<div class="error-page-shapes">
-    <div class="big-shape"></div>
-    <div class="sm-shape"></div>
-    <div class="section-cover"></div>
+
+<!-- background shapes -->
+<div class="error-shapes">
+    <div class="big-rec-wrapper">
+        <div class="big-rec"></div>
+        <div class="sm-rec"></div>
+    </div>
+    <div class="background-cover"></div>
 </div>
 
 <section class="error-page">
