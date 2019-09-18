@@ -8,6 +8,7 @@
     <title><?php bloginfo('title'); ?></title>
 </head>
 <body <?php body_class(); ?>>
+<a class="exit-button" href="https://www.cp24.com/">Exit Site</a>
 
 
 <header>
@@ -18,7 +19,7 @@
 
     <div class="header-nav">
         <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
-        <a href="<?php get_page_link( get_page_by_path( 'info-session' ) );?>"><button class="book-info-session">Info Session</button></a>
+        <a href="<?php echo get_permalink( get_page_by_path( 'info-session' ) );?>"><button class="book-info-session">Info Session</button></a>
     </div>
 </header>
 

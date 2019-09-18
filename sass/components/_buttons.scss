@@ -1,3 +1,9 @@
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 @mixin exit-btn {
     @include book-btn;
     z-index: 100;
@@ -19,7 +25,7 @@
     @include exit-btn;
     position: fixed;
     right: 5%;
-    bottom: 50px;
+    // bottom: 50px;
 }
 
 // .sticky-exit {
