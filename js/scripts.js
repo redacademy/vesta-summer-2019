@@ -49,27 +49,13 @@
 
 //  SHAPES WRAPPER
 
-    let $bodHeight = $('body').height()
-    console.log('doc height', $bodHeight)
-    const $shapeWrapper = $('.all-shapes-wrapper')
-    $shapeWrapper.css('minHeight', '100%')
-    console.log('wrap height', $shapeWrapper.height())
-    console.log('initial wrap height', $shapeWrapper.height())
-    
-    if($bodHeight <= $shapeWrapper.height()) {
-        console.log('doc is smaller')
-        $shapeWrapper.css('maxHeight', '400px')
-        console.log('wrap height', $shapeWrapper.height())
-    }
-    else if($bodHeight > $shapeWrapper.height()) {
-        console.log('doc is bigger')
-        $shapeWrapper.css('maxHeight', $bodHeight)
-        console.log('wrap height', $shapeWrapper.height())
-        $bodHeight = $(document).height()
-        console.log('new doc height', $bodHeight)
-    }
+    let $shapeWindow = $(document).height() - $('footer').height() + 100
+    console.log('shape-win height', $shapeWindow)
 
 
+    $('.all-shapes-wrapper').css('border', '10px solid red')
+    $('.all-shapes-wrapper').height($shapeWindow)
+    console.log('wrap height', $('.all-shapes-wrapper').height())
 
 
     //      Front Page FLICKITY

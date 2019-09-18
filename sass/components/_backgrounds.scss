@@ -6,17 +6,16 @@
     
     .big-rec {
         @include big-rec;
-        transform: translate(300px, 350px) rotate(43deg);
+        transform: translate(500px, 750px) rotate(43deg);
     }
 
     .sm-rec {
         @include lil-rec;
-        transform: translate(700px, -75px) rotate(43deg);
+        transform: translate(850px, 300px) rotate(43deg);
     }
     .background-cover {
         @include section-background;
-        bottom: -550px;
-        z-index: -75;
+        transform: translate(0, -500px);
     }
 }
 
