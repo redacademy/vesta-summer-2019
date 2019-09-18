@@ -5,7 +5,7 @@
     let $footerLocation = $('footer').offset().top
     let $footPosition = $('footer').offset().top - 50
 
-    // set initial button position
+
     function setButtonLocation() {
         if($footerLocation < $windowHeight) {
             $exitButton.css('top', $footPosition)
@@ -16,9 +16,6 @@
     }
     setButtonLocation()
     
-
-    
-
     $(window).resize(function() {
          $windowHeight = $(window).height()
          if($exitButton.css('position') === 'fixed'){
@@ -47,7 +44,15 @@
                 'top': $windowHeight - 50})
             }
     }
-})
+    })
+
+
+//  SHAPES WRAPPER
+    let $docHeight = $(document).height()
+    const $shapeWrapper = $('.all-shapes-wrapper')
+    $shapeWrapper.css('height', $docHeight)
+
+
 
 
     //      Front Page FLICKITY

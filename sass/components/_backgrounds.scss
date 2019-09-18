@@ -1,6 +1,7 @@
 .bottom-right-shapes {
-    .big-rec-wrapper {
+    .all-shapes-wrapper {
        @include shapes-wrapper;
+       z-index: -100;
     }
     
     .big-rec {
