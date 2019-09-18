@@ -1566,6 +1566,10 @@ div.customer-story-box {
   -webkit-transform: translate(0, -500px);
           transform: translate(0, -500px); }
 
+.bottom-right-shapes .background-cover-bottom {
+  -webkit-transform: translate(0, 500px);
+          transform: translate(0, 500px); }
+
 .top-left-shapes .all-shapes-wrapper {
   position: absolute;
   max-width: 100%;

@@ -19,6 +19,9 @@
         @include section-background;
         transform: translate(0, -500px);
     }
+    .background-cover-bottom {
+        transform: translate(0, 500px);
+    }
 }
 
 
