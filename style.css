@@ -1116,7 +1116,8 @@ h1 {
 
 .category-content {
   width: 100%;
-  max-height: 400px; }
+  max-height: 400px;
+  margin-bottom: 25%; }
   .category-content a {
     text-decoration: none; }
   .category-content h3 {
