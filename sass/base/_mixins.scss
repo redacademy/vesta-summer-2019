@@ -39,7 +39,11 @@
     background-color: $primary-color;
     @content;
 }
-
+@mixin thick-bar-selected-plum {
+    border: solid 1px $accent-button-color;
+    background-color: $accent-button-color;
+    @content;
+}
 
 
 // @mixin big-background {

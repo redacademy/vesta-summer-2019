@@ -353,6 +353,16 @@ footer {
 .resource-header-selected:hover {
   cursor: unset; }
 
+.resource-header-selected-plum h3 {
+  font-family: 'Century Gothic Bold'; }
+
+.resource-header-selected-plum .highlight-bar {
+  border: solid 1px #5a1933;
+  background-color: #5a1933; }
+
+.resource-header-selected-plum:hover {
+  cursor: unset; }
+
 .parent-cat-container {
   display: -webkit-box;
   display: -ms-flexbox;

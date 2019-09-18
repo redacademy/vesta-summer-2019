@@ -73,14 +73,14 @@
 
     $communityCatHeader.on('click', function(e) {
         $workplaceCatHeader.removeClass('resource-header-selected')
-        $communityCatHeader.addClass('resource-header-selected')
+        $communityCatHeader.addClass('resource-header-selected-plum')
         $workplaceResources.hide()
         $communityResources.show()
 
     }) 
     
     $workplaceCatHeader.on('click', function(e) {
-        $communityCatHeader.removeClass('resource-header-selected')
+        $communityCatHeader.removeClass('resource-header-selected-plum')
         $workplaceCatHeader.addClass('resource-header-selected')
         $communityResources.hide()
         $workplaceResources.show()

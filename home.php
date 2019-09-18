@@ -24,7 +24,7 @@
             </div>
 
             <div class="resource-header resource-community-header">
-                <img src="<?php echo get_template_directory_uri();?>/images/icons/iconEmployee.svg" alt="community icon">
+                <img src="<?php echo get_template_directory_uri();?>/images/icons/IconEmployee -plum 1.52.00 PM.svg" alt="community icon">
                 <h3>Community</h3>
                 <hr class="highlight-bar">
             </div>
