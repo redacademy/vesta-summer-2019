@@ -47,15 +47,10 @@
     })
 
 
-//  SHAPES WRAPPER
+    //  SHAPES WRAPPER
 
     let $shapeWindow = $(document).height() - $('footer').height() + 100
-    console.log('shape-win height', $shapeWindow)
-
-
-    $('.all-shapes-wrapper').css('border', '10px solid red')
     $('.all-shapes-wrapper').height($shapeWindow)
-    console.log('wrap height', $('.all-shapes-wrapper').height())
 
 
     //      Front Page FLICKITY

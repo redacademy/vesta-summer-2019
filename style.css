@@ -1566,76 +1566,36 @@ div.customer-story-box {
   -webkit-transform: translate(0, -500px);
           transform: translate(0, -500px); }
 
-.sm-shape {
-  width: 837px;
-  height: 529px;
-  background-color: #b6c4f5;
-  opacity: 0.51;
-  border-radius: 78px;
-  position: absolute;
-  -webkit-transform: rotate(43deg);
-          transform: rotate(43deg);
-  bottom: -1050px;
-  right: -650px; }
-
-.top-shapes .big-shape {
-  bottom: 375px;
-  right: 875px;
-  z-index: -75; }
-
-.top-shapes .sm-shape {
-  bottom: 550px;
-  right: 1000px;
-  z-index: -50;
-  height: 730px;
-  background-color: #3965ee;
-  opacity: 0.21; }
-
-.top-shapes .section-cover {
-  height: 530px;
-  width: 100%;
-  opacity: 0.51;
-  position: absolute;
-  left: 0;
-  background-color: #d8e1fb;
-  top: 0;
-  z-index: -100; }
-
-.error-shapes .big-rec-wrapper {
+.top-left-shapes .all-shapes-wrapper {
   position: absolute;
   max-width: 100%;
   top: 0;
   left: 0;
   overflow: hidden;
   height: 650px;
-  bottom: 0;
-  left: 0; }
-
-.error-shapes .big-rec {
-  width: 1387px;
-  height: 779px;
-  background-color: #3965ee;
-  opacity: 0.15;
-  border-radius: 102px;
-  -webkit-transform: translate(-450px, 350px) rotate(43deg);
-          transform: translate(-450px, 350px) rotate(43deg); }
-
-.error-shapes .sm-rec {
-  width: 837px;
-  height: 529px;
-  background-color: #b6c4f5;
-  opacity: 0.51;
-  border-radius: 78px;
-  -webkit-transform: translate(-300px, -750px) rotate(43deg);
-          transform: translate(-300px, -750px) rotate(43deg);
-  height: 1000px; }
-
-.error-shapes .background-cover {
-  bottom: 0;
-  z-index: -50;
-  height: 530px;
-  width: 100%;
-  opacity: 0.51;
-  position: absolute;
-  left: 0;
-  background-color: #d8e1fb; }
+  z-index: -100; }
+  .top-left-shapes .all-shapes-wrapper .big-rec {
+    width: 1387px;
+    height: 779px;
+    background-color: #3965ee;
+    opacity: 0.15;
+    border-radius: 102px;
+    -webkit-transform: translate(-550px, -150px) rotate(43deg);
+            transform: translate(-550px, -150px) rotate(43deg); }
+  .top-left-shapes .all-shapes-wrapper .sm-rec {
+    width: 837px;
+    height: 529px;
+    background-color: #b6c4f5;
+    opacity: 0.51;
+    border-radius: 78px;
+    -webkit-transform: translate(-175px, -1050px) rotate(43deg);
+            transform: translate(-175px, -1050px) rotate(43deg);
+    height: 600px; }
+  .top-left-shapes .all-shapes-wrapper .background-cover {
+    height: 530px;
+    width: 100%;
+    opacity: 0.51;
+    position: absolute;
+    left: 0;
+    background-color: #d8e1fb;
+    top: 0; }

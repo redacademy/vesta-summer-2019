@@ -1,5 +1,3 @@
-
-
 <?php get_header(); ?>
 <!-- background shapes -->
 <div class="bottom-right-shapes">
