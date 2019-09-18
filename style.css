@@ -161,9 +161,10 @@ header {
   margin: 20px 10%; }
 
 .header-logo-container {
-  width: 172px; }
+  width: 130px; }
   .header-logo-container .header-logo {
-    height: 65px;
+    padding-top: 8px;
+    height: 47px;
     width: 100%; }
 
 .header-nav {
@@ -321,6 +322,8 @@ footer {
   width: 100%;
   margin: 0 auto 60px auto;
   background-color: #fff;
+  -webkit-box-shadow: 0 1px 50px 43px rgba(68, 75, 79, 0.04);
+          box-shadow: 0 1px 50px 43px rgba(68, 75, 79, 0.04);
   padding: 0 7%; }
   .resources-content-container .community-resources {
     display: none; }
@@ -364,6 +367,16 @@ footer {
   background-color: #3965ee; }
 
 .resource-header-selected:hover {
+  cursor: unset; }
+
+.resource-header-selected-plum h3 {
+  font-family: 'Century Gothic Bold'; }
+
+.resource-header-selected-plum .highlight-bar {
+  border: solid 1px #5a1933;
+  background-color: #5a1933; }
+
+.resource-header-selected-plum:hover {
   cursor: unset; }
 
 .parent-cat-container {
@@ -791,7 +804,7 @@ i.fa-plus {
   max-width: 620px;
   margin: 0 auto; }
   .our-vision-mission .header-line {
-    margin-left: 145px; }
+    margin-left: 168px; }
   .our-vision-mission h2 {
     letter-spacing: -0.8px;
     margin-bottom: 21px; }
