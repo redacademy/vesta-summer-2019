@@ -1605,3 +1605,6 @@ div.customer-story-box {
     left: 0;
     background-color: #d8e1fb;
     top: 0; }
+  .top-left-shapes .all-shapes-wrapper .background-cover-bottom {
+    -webkit-transform: translate(350px, 2100px) rotate(-34deg);
+            transform: translate(350px, 2100px) rotate(-34deg); }

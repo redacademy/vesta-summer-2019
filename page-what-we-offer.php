@@ -6,8 +6,7 @@
         <div class="sm-rec"></div>
         <div class="background-cover"></div>
         <div class="background-cover background-cover-bottom"></div>
-    </div>
-    
+    </div> 
 </div>
 
 <?php
