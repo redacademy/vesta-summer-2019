@@ -1,5 +1,3 @@
-
-
 <?php get_header(); ?>
 <!-- background shapes -->
 <div class="bottom-right-shapes">
@@ -8,7 +6,6 @@
         <div class="sm-rec"></div>
         <div class="background-cover"></div>
     </div>
-    
 </div>
 
 <?php

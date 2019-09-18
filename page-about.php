@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 <!-- background shapes -->
-<div class="top-shapes">
-    <div class="big-shape"></div>
-    <div class="sm-shape"></div>
-    <div class="section-cover"></div>
+<div class="top-left-shapes">
+    <div class="big-rec-wrapper all-shapes-wrapper">
+        <div class="big-rec"></div>
+        <div class="sm-rec"></div>
+        <div class="background-cover"></div>
+    </div>
 </div>
 
 <section class="about-us">
