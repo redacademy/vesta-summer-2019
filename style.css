@@ -987,7 +987,7 @@ h1 {
   .how-it-works .header-style-container {
     padding-top: 60px;
     text-align: center;
-    width: 180px;
+    width: 192px;
     margin: 0 auto; }
 
 .how-it-works-hr-container {
@@ -1000,7 +1000,8 @@ h1 {
   background: rgba(57, 101, 238, 0.44);
   margin: 0 auto;
   margin: 0 auto;
-  width: 750px;
+  width: 72%;
+  min-width: 540px;
   height: 250px;
   margin-bottom: 100px;
   padding-top: 60px; }
@@ -1016,15 +1017,15 @@ h1 {
   float: left;
   width: 50%; }
 
-.employee-employer-container .tab-1 {
-  margin-left: 100px;
+.employee-employer-container .tab-2 {
+  margin-right: 100px;
   margin-bottom: 30px; }
-  .employee-employer-container .tab-1 img {
+  .employee-employer-container .tab-2 img {
     width: 33%;
     min-width: 123px; }
 
-.employee-employer-container .tab-2 {
-  margin-right: 100px; }
+.employee-employer-container .tab-1 {
+  margin-left: 100px; }
 
 .employee-employer-container a {
   color: #2e3438;
@@ -1039,12 +1040,12 @@ h1 {
   color: #2e3438;
   cursor: default; }
   .employee-employer-container .tab-active a .community-line {
-    width: 250px;
+    width: 70%;
     height: 10px;
     border: solid 1px #5a1933;
     background-color: #5a1933; }
   .employee-employer-container .tab-active a .workplace-line {
-    width: 250px;
+    width: 70%;
     height: 10px;
     border: solid 1px #3965ee;
     background-color: #3965ee; }
@@ -1069,7 +1070,7 @@ h1 {
        object-fit: contain; }
 
 .community-line, .workplace-line {
-  width: 250px;
+  width: 70%;
   height: 10px;
   border: solid 1px #cbcbcb;
   background-color: #cbcbcb; }
