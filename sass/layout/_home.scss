@@ -118,14 +118,19 @@
 
 
 .more-resources-btn {
-    background: $primary-dark;
-    color: #fff;
-    padding: 0.6rem 0.7rem;
+    // background: $primary-dark;
+    color: $primary-color;
+    // font-family: 'Century Gothic Bold';
+    border: 2px solid $primary-color;
+    border-radius: 29px;
+    padding: 0.8rem 1.1rem;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 15px auto;
     &:hover {
-        background: $primary-color;
+        background: $primary-dark;
+        color: #fff;
+        border-color: $primary-dark;
     }
 }
 
