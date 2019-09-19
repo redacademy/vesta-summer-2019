@@ -48,26 +48,43 @@
 
 .home-the-problem{
     width: 100%;
-    display: flex;
+    // display: flex;
+    // flex-direction: column;
     margin-top: 90px;
     margin-bottom: 150px;
    
 }
-.problem-article{
-    width: 50%;
-    max-height: 160px;
-    p{
-        padding-right: 60px;
+// .problem-article{
+//     // width: 50%;
+//     max-height: 160px;
+//     p{
+//         padding-right: 60px;
+//         max-width: 450px;
+//     }
+// }
+.problem-widget{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 13% 90px 13%;
+    // padding: 0 13%;
+
+    .widget_text{
+        .textwidget{
+            width: 100%;
+        }
+    }
+    iframe{
+        max-width: 100%;
+        min-width: 400px;
+    }
+    .textwidget{
         max-width: 450px;
     }
-}
-.problem-widget{
-    width: 50%;
-    img{
-        width: 100%;
-        height: auto;
-        min-width: 350px;
-    }
+    
+    
 }
     
 .home-strength{

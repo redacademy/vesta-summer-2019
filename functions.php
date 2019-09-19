@@ -76,10 +76,10 @@ function vesta_sidebars_widgets() {
         'id' => 'sidebar-the-prob',
         'description' => 'Place content here for "The Problem" section on front page.',
         'class' => 'frontpg-prob',
-        'before_widget' => '<section id="%1$s" class="%2$s">',
+        'before_widget' => '<section id="%1$s" class="%2$s vesta-widget"> ',
         'after_widget' => '</section>',
-        'before_title' => '',
-        'after_title' => ''
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
     ));
     // Front Page - "Customer Stories"
     register_sidebar( array(
