@@ -94,6 +94,8 @@
             transform: translate(368px, -275px) rotate(-18deg);
             width: 1450px;
             height: 900px;
+            background-color: #d9e1f9;
+            opacity: 1.0;
         }
         .sm-rec {
             @include lil-rec;
@@ -126,7 +128,7 @@
 
         }
         .background-rec-bottom-two{
-            transform: translate(-625px ,3100px) rotate(53deg);
+            transform: translate(-550px ,3600px) rotate(53deg);
             height: 590px;
             background: rgba(57, 101, 238, 0.37);
 
