@@ -46,9 +46,12 @@
     font-style: normal;
 }
 
+html {
+    font-size: 18px;
+}
+
 body {
     font-family: 'Century Gothic';
-    font-size: 18px;
     line-height: 1.5em;
     color: $font-color;
     background-color: $background-shade;

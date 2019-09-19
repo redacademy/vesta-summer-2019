@@ -60,7 +60,7 @@ if( have_posts() ) :
                 rarely reported. </p>
         </div>
         <div class="problem-widget">
-        <img src="<?php echo get_template_directory_uri() . '/images/Homepage/Img__homepage__TheProblem__Placeholdervideo.png';?>" alt="Vesta">
+             <?php dynamic_sidebar('sidebar-the-prob'); ?>
         </div>
     </section>
   

@@ -118,20 +118,24 @@
 
 
 .more-resources-btn {
-    background: $primary-dark;
-    color: #fff;
-    padding: 0.6rem 0.7rem;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 29px;
+    padding: 0.8rem 1.1rem;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 15px auto;
     &:hover {
-        background: $primary-color;
+        background: $primary-dark;
+        color: #fff;
+        border-color: $primary-dark;
     }
 }
 
 // Suggestion Form
 .suggest-a-resource {
     margin: 50px 0;
+    text-align: center;
 }
 
 .suggestion-header {
@@ -139,21 +143,27 @@
 }
 
 .resources-suggest {
-    label {
+     label {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
         font-size: 1rem;
         font-family: 'Century Gothic';
+        margin-top: 20px;
     }
     form.wpcf7-form {
-        margin: 0;
+        margin: 0 auto;
     }
     form.wpcf7-form textarea {
         height: 50px;
+        width: 55%;
     }
     .wpcf7-submit {
         @include form-submit-btn;
         color: #fff;
         background: $accent-button-color;
-        margin: 0;
+        margin: 0 auto;
+        display: block;
         font-size: 1rem;
         text-transform: uppercase;
         cursor: pointer;
