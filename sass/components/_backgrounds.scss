@@ -54,6 +54,7 @@
     }
  }
 
+//404 shapes 
 
 .error-left-shapes {
     .all-shapes-wrapper {
@@ -77,7 +78,7 @@
     }
  }
 
-
+// frontpage shapes
 
 .front-page-shapes {
     .all-shapes-wrapper {
@@ -121,3 +122,32 @@
         }
     }
  }
+
+ //what we offer-shapes
+
+ .what-we-offer-shapes {
+    .all-shapes-wrapper {
+       @include shapes-wrapper;
+       z-index: -100;
+    }
+    
+    .big-rec {
+
+        @include big-rec;
+        transform: translate(500px, 750px) rotate(43deg);
+    }
+
+    .sm-rec {
+        @include lil-rec;
+        transform: translate(850px, 300px) rotate(43deg);
+    }
+    .background-cover {
+        @include section-background;
+
+    }
+    .background-cover-bottom {
+        transform: translate(0, 0);
+        bottom: 0;
+        height: 610px;
+    }
+}

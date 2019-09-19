@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<!-- background shapes -->
 <div class="bottom-right-shapes">
     <div class="big-rec-wrapper all-shapes-wrapper">
         <div class="big-rec"></div>

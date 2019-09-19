@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!-- background shapes -->
-<div class="bottom-right-shapes">
+<div class="what-we-offer-shapes">
     <div class="big-rec-wrapper all-shapes-wrapper">
         <div class="big-rec"></div>
         <div class="sm-rec"></div>
@@ -8,6 +8,8 @@
         <div class="background-cover background-cover-bottom"></div>
     </div> 
 </div>
+
+
 
 <?php
 if( have_posts() ) :   
