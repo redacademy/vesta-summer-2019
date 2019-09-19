@@ -578,7 +578,8 @@ form.wpcf7-form {
     width: 100%; }
   .problem-widget iframe {
     max-width: 100%;
-    min-width: 400px; }
+    min-width: 400px;
+    max-height: 250px; }
   .problem-widget .textwidget {
     max-width: 450px; }
 
