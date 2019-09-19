@@ -51,6 +51,15 @@
 
     let $shapeWindow = $(document).height() - $('footer').height() + 100
     $('.all-shapes-wrapper').height($shapeWindow)
+    $('.front-page-shapes .all-shapes-wrapper').height($shapeWindow - 1200)
+
+    // console.log('doc h', $(document).height())
+    // console.log('foot h', $('footer').height())
+    // console.log('shapewindow', $shapeWindow)
+    // console.log('shapewindow - dist', $shapeWindow - 500)
+    // console.log('header pos', $('header').offset().top )
+    // console.log('subs pos', $('.subscribe-form').offset().top)
+    // console.log('foot pos', $('footer').offset().top )
 
 
     //      Front Page FLICKITY

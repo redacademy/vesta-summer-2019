@@ -137,6 +137,17 @@ function vesta_sidebars_widgets() {
         'before_title' => '',
         'after_title' => ''
     ));
+
+     //Front Page - Subscription Form
+     register_sidebar( array(
+        'name' => esc_html('Front Page Subscription Form'),
+        'id' => 'sidebar-frontpg-subscribe',
+        'description' => 'Add a Contact Form 7 for email subscriptions',
+        'before_widget' => '<div class="frontpg-subscribe">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
+    ));
 }
 add_action('widgets_init', 'vesta_sidebars_widgets');
 
