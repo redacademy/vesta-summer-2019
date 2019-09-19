@@ -1,124 +1,126 @@
-    footer{ 
-        margin-top: 100px;
+footer{ 
+    margin-top: 100px;
+}
+
+.footer-inner-container{
+    display: flex;
+    max-width: 100%;
+    padding: 0 9%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color:#c3d0f9;
+}
+
+.upper-footer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    .footer-logo{
+        margin-top: 20px;
+        .logo-black{
+            height: 70px;
+            width: auto;
+        }
+        .logo-letter{
+            height: 15px;
+            margin-bottom: 25px;
+        }
     }
+}
+  
+.footer-nav{
+    margin: 10px 0 30px 0;
+    max-width: 100%;
+    ul {
+        a{
+            text-transform: capitalize;
+            font-family: 'Century Gothic Bold';
+            color: $font-color;
+        };
+    };
+    li{
+        display: inline;
+        padding-right: 10px;
+    }
+}
     
-    .footer-inner-container{
-        display: flex;
-        flex: 100%;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        background-color:#c3d0f9;
-        .upper-footer{
-            flex:50%;
-            margin-left:8%;
-            .footer-logo{
-                margin-top: 20px;
-                .logo-black{
-                    height: 70px;
-                    width: auto;
-                }
-                .logo-letter{
-                    height: 15px;
-                    margin-bottom: 25px;
-                }
-            }
-            .footer-nav{
-                margin: 10px 0 30px 0;
-                ul a{
-                    list-style-type: none;
-                    text-transform: capitalize;
-                    font-family: 'Century Gothic Bold';
-                    text-decoration: none;
-                    font-size: 18px;
-                    color: $font-color;
-                }
-                ul{
-                    width:500px;
-                }
-                li{
-                    display: inline;
-                    padding-right: 10px;
-                }
-            }
-        }
-        .footer-subscribe{
-            margin-right:8%;
-            width: 450px;
-            min-width:450px;
-           
-        }
 
-            .subscribe-form-footer{
-                margin-top: 42px; 
+.footer-subscribe{
+    width: 50%;
+    
+}
 
-                label{
-                    font-size: 18px;
-                    font-family: 'Century Gothic Bold';
-                    color: $font-color; 
-                    width:400px;
-                }
-                .subscribe-email-footer{
-                    height:35px;
-                    width:280px;
-                    min-width:160px;
-                    position: relative;
-                    margin-top: 20px;
-                    font-size: 14px;
-                    font-family: 'Century Gothic';
-                    padding-left:20px;
-                    color: $font-color;
-                }
-                .subscribe-button-footer{
-                    position: absolute;
-                    margin-top: 20px;
-                    height:40px;
-                    width:135px;
-                    background-color: $accent-button-color;
-                    color: white;
-                    font-size: 14px;
-                    font-family: 'Century Gothic';
-                    text-transform: uppercase;
+.subscribe-form-footer{
+    margin-top: 42px;
+    max-width: 100%; 
 
-                }
-            }
-        }
-
-
-    .lower-footer{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        background-color: $primary-dark;
-        .footer-nav-2{
-            margin-left:8%;
-            width: 600px;
-            ul a{
-                
-                list-style-type: none;
-                text-transform: capitalize;
-                font-family: 'Century Gothic';
-                font-size: 14px;
-                color: white;
-            }
-            ul{
-                padding-top: 5px;
-            }
-            li{
-                display: inline;
-                padding-right: 15px;
-            }
-        }
-        .socials-footer{
-            margin-right:8%;
-            i{
-                color:white;
-                font-size: 25px;
-                width:auto;
-                max-width: 100%;
-                margin-right: 10px;
-                margin-top: 10px;
-            }
-        }
-       
-        
+    label{
+        font-size: 1rem;
+        font-family: 'Century Gothic Bold';
+        color: $font-color; 
+        max-width: 100%;
     }
+}
+
+.subscribe-email-footer{
+    height:35px;
+    width: 50%;
+    min-width: 200px;
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    padding-left:20px;
+    color: $font-color;
+}
+
+.subscribe-button-footer{
+    position: absolute;
+    margin-top: 20px;
+    height:40px;
+    max-width: 35%;
+    min-width: 100px;
+    background-color: $accent-button-color;
+    color: white;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+}
+
+
+// Sub-Footer
+.lower-footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: $primary-dark;
+    padding: 0 9%;
+    max-width: 100%;
+}
+
+.footer-nav-2{
+    width: 60%;
+    ul a{
+        text-transform: capitalize;
+        text-decoration: underline;
+        font-family: 'Century Gothic';
+        font-size: 0.78rem;
+        color: white;
+    }
+    ul{
+        padding-top: 5px;
+    }
+    li{
+        display: inline;
+        padding-right: 15px;
+    }
+}
+        
+.socials-footer{
+    i {
+        color:white;
+        font-size: 1.4rem;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}
