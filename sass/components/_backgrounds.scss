@@ -15,6 +15,8 @@
     .sm-rec {
         @include lil-rec;
         transform: translate(850px, 150px) rotate(43deg);
+        background: rgba(57, 101, 238, 0.5);
+
     }
     .background-cover {
         @include section-background;
@@ -42,6 +44,8 @@
             @include lil-rec;
             transform: translate(-175px, -1050px) rotate(43deg);
             height: 600px;
+            background: rgba(57, 101, 238, 0.6);
+
         }
         .background-cover {
             @include section-background;
@@ -116,12 +120,16 @@
         }
         .background-rec-bottom{
             transform: translate(-400px, 2650px) rotate(-34deg);
-            height: 590px;
+            height: 425px;
             width: 2550px;
+            background: rgba(57, 101, 238, 0.44);
+
         }
         .background-rec-bottom-two{
             transform: translate(-625px ,3100px) rotate(53deg);
             height: 590px;
+            background: rgba(57, 101, 238, 0.44);
+
         }
     }
  }
@@ -153,5 +161,32 @@
         transform: translate(0, 0);
         bottom: 0;
         height: 565px;
+    }
+}
+
+// Bottom
+
+.info-session-bottom-right-shapes {
+    .all-shapes-wrapper {
+       @include shapes-wrapper;
+       z-index: -100;
+    }
+    .big-rec {
+        @include big-rec;
+        transform: translate(500px, 950px) rotate(43deg);
+    }
+    .sm-rec {
+        @include lil-rec;
+        transform: translate(850px, 350px) rotate(43deg);
+        background: rgba(57, 101, 238, 0.5);
+
+    }
+    .background-cover {
+        @include section-background;
+        bottom: 0;
+
+    }
+    .background-cover-bottom {
+        transform: translate(0, 697px);
     }
 }
