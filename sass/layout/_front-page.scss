@@ -47,26 +47,44 @@
 
 .home-the-problem{
     width: 100%;
-    display: flex;
+    // display: flex;
+    // flex-direction: column;
     margin-top: 90px;
     margin-bottom: 150px;
    
 }
-.problem-article{
-    width: 50%;
-    max-height: 160px;
-    p{
-        padding-right: 60px;
+// .problem-article{
+//     // width: 50%;
+//     max-height: 160px;
+//     p{
+//         padding-right: 60px;
+//         max-width: 450px;
+//     }
+// }
+.problem-widget{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 74%;
+    margin: 0 13% 90px 13%;
+    // padding: 0 13%;
+
+    .widget_text{
+        .textwidget{
+            width: 100%;
+        }
+    }
+    iframe{
+        max-width: 100%;
+        min-width: 400px;
+        max-height: 250px;
+    }
+    .textwidget{
         max-width: 450px;
     }
-}
-.problem-widget{
-    width: 50%;
-    img{
-        width: 100%;
-        height: auto;
-        min-width: 350px;
-    }
+    
+    
 }
     
 .home-strength{
@@ -108,10 +126,12 @@
     }
 }
 .home-solution{
+    // width: 85%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin: 0 0 150px -16.5%;
+    // margin: 0 0 150px -16.5%;
+    margin: 30px 13% 50px 2%;
  
     .inner-solution{
         min-width: 350px;
@@ -140,14 +160,15 @@
 .home-customer-stories{
     margin-bottom: 150px;
     .header-style-container{
-        margin-bottom: 80px;
+        margin: 0 13% 80px 13%;
     }
 }
 .trusted-partners{
     // margin: 50px 0 150px 0;
     margin: 90px calc(-50vw + 50%);
-    background-color: rgba(216, 225, 251, 0.51);
-    padding: 3% 13%;
+    // background-color: rgba(216, 225, 251, 0.51);
+    background: rgba(57, 101, 238, 0.15);
+    padding: 5% 13%;
     .header-style-container{
         margin-bottom: 50px;
     }
@@ -215,6 +236,7 @@
     margin-bottom: 131px;
 }
 
+
 .subscribe-form{
     width: 75%;
     max-width: 560px;
@@ -229,16 +251,24 @@
 }
 
 .frontpg-subscribe {
-    .wpcf7-email {
-        width: 64%;
+    margin-top: 50px;
+    form.wpcf7-form {
+        width: 100%;
+        padding: 0 15%;
     }
-    .wpcf7-form p br {
-        display: none;
+    .wpcf7-email {
+        width: 45%;
+        &::placeholder {
+            color: #444b4f;
+        }
     }
 
     .wpcf7-submit {
         @include subscribe-btn;
-        width: 30px;
+        border: solid 0.5px $accent-button-color;
+        width: 23%;
+        height: 59px;
+        margin-left: -6px;
     }
     .wpcf7-form p {
         display: inline;

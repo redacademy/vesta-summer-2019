@@ -22,11 +22,14 @@
     color: white;
     font-family: 'Century Gothic';
     text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+    }
     @content;
 }
 
 @mixin about-offer-container{
-    background: rgba(57, 101, 238, 0.44);
+    background: #aabcf3;
     margin: 0 auto;
     position: relative;
 }
