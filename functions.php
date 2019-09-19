@@ -78,8 +78,9 @@ function vesta_sidebars_widgets() {
         'class' => 'frontpg-prob',
         'before_widget' => '<section id="%1$s" class="%2$s vesta-widget"> ',
         'after_widget' => '</section>',
-        'before_title' => '<h2>',
-        'after_title' => '</h2>'
+        'before_title' => '<div class="header-style-container">
+        <hr class="header-line"><h2>',
+        'after_title' => '</h2></div>'
     ));
     // Front Page - "Customer Stories"
     register_sidebar( array(
