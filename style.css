@@ -289,6 +289,8 @@ footer {
   height: 40px;
   width: 35%;
   font-size: 14px; }
+  .subscribe-button-footer:hover {
+    cursor: pointer; }
 
 .lower-footer {
   display: -webkit-box;
@@ -728,23 +730,36 @@ form.wpcf7-form {
     color: #284683;
     text-align: left; }
 
-.frontpg-subscribe .wpcf7-email {
-  width: 64%; }
-
-.frontpg-subscribe .wpcf7-form p br {
-  display: none; }
-
-.frontpg-subscribe .wpcf7-submit {
-  min-width: 100px;
-  background-color: #5a1933;
-  border-color: #5a1933;
-  color: white;
-  font-family: 'Century Gothic';
-  text-transform: uppercase;
-  width: 30px; }
-
-.frontpg-subscribe .wpcf7-form p {
-  display: inline; }
+.frontpg-subscribe {
+  margin-top: 50px; }
+  .frontpg-subscribe form.wpcf7-form {
+    width: 100%;
+    padding: 0 15%; }
+  .frontpg-subscribe .wpcf7-email {
+    width: 45%; }
+    .frontpg-subscribe .wpcf7-email::-webkit-input-placeholder {
+      color: #444b4f; }
+    .frontpg-subscribe .wpcf7-email::-moz-placeholder {
+      color: #444b4f; }
+    .frontpg-subscribe .wpcf7-email::-ms-input-placeholder {
+      color: #444b4f; }
+    .frontpg-subscribe .wpcf7-email::placeholder {
+      color: #444b4f; }
+  .frontpg-subscribe .wpcf7-submit {
+    min-width: 100px;
+    background-color: #5a1933;
+    border-color: #5a1933;
+    color: white;
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+    border: solid 0.5px #5a1933;
+    width: 23%;
+    height: 59px;
+    margin-left: -6px; }
+    .frontpg-subscribe .wpcf7-submit:hover {
+      cursor: pointer; }
+  .frontpg-subscribe .wpcf7-form p {
+    display: inline; }
 
 i.fa-minus {
   display: none;
