@@ -324,7 +324,7 @@ footer {
   margin-top: 10px; }
 
 .resources-title-container {
-  width: 30%;
+  width: 45%;
   text-align: center;
   margin: 0 auto; }
   .resources-title-container p {
@@ -1793,8 +1793,8 @@ div.customer-story-box {
   background-color: #b6c4f5;
   opacity: 0.51;
   border-radius: 78px;
-  -webkit-transform: translate(850px, 300px) rotate(43deg);
-          transform: translate(850px, 300px) rotate(43deg); }
+  -webkit-transform: translate(808px, 300px) rotate(43deg);
+          transform: translate(808px, 300px) rotate(43deg); }
 
 .what-we-offer-shapes .background-cover {
   height: 530px;
