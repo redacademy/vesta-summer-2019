@@ -95,6 +95,7 @@
     text-align: center;
     a {
         text-decoration: none;
+        color: $font-color;
     }
 }
 
@@ -150,6 +151,7 @@
         font-size: 1rem;
         font-family: 'Century Gothic';
         margin-top: 20px;
+        color: $font-color;
     }
     form.wpcf7-form {
         margin: 0 auto;

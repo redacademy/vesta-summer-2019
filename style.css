@@ -416,7 +416,8 @@ footer {
   width: 100%;
   text-align: center; }
   .single-resource a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #2e3438; }
 
 .resource-media {
   width: 100%;
@@ -458,7 +459,8 @@ footer {
   width: 100%;
   font-size: 1rem;
   font-family: 'Century Gothic';
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: #2e3438; }
 
 .resources-suggest form.wpcf7-form {
   margin: 0 auto; }
