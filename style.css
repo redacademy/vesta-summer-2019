@@ -884,7 +884,7 @@ i.fa-plus {
   height: 725px;
   margin: 0 auto; }
   .vm-container .our-approach-container, .vm-container .why-vesta-container {
-    background: rgba(57, 101, 238, 0.44);
+    background: #aabcf3;
     margin: 0 auto;
     position: relative;
     width: 49%;
@@ -1075,7 +1075,7 @@ h1 {
     margin: 10px auto; }
 
 .book-info-session-container {
-  background: rgba(57, 101, 238, 0.44);
+  background: #aabcf3;
   margin: 0 auto;
   position: relative;
   margin: 0 auto;
@@ -1178,7 +1178,8 @@ h1 {
   color: #2e3438; }
   .single-content-container h2 {
     margin-bottom: 30px;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.25; }
   .single-content-container p, .single-content-container li {
     font-family: 'Century Gothic';
     font-size: 1.2em;
