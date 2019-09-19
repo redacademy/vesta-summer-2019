@@ -1540,7 +1540,7 @@ div.customer-story-box {
   z-index: -100; }
 
 .bottom-right-shapes .big-rec {
-  width: 1387px;
+  width: 1787px;
   height: 779px;
   background-color: #3965ee;
   opacity: 0.15;
@@ -1549,7 +1549,7 @@ div.customer-story-box {
           transform: translate(500px, 750px) rotate(43deg); }
 
 .bottom-right-shapes .sm-rec {
-  width: 837px;
+  width: 1237px;
   height: 529px;
   background-color: #b6c4f5;
   opacity: 0.51;
@@ -1581,7 +1581,7 @@ div.customer-story-box {
   height: 650px;
   z-index: -100; }
   .top-left-shapes .all-shapes-wrapper .big-rec {
-    width: 1387px;
+    width: 1787px;
     height: 779px;
     background-color: #3965ee;
     opacity: 0.15;
@@ -1589,7 +1589,7 @@ div.customer-story-box {
     -webkit-transform: translate(-550px, -150px) rotate(43deg);
             transform: translate(-550px, -150px) rotate(43deg); }
   .top-left-shapes .all-shapes-wrapper .sm-rec {
-    width: 837px;
+    width: 1237px;
     height: 529px;
     background-color: #b6c4f5;
     opacity: 0.51;
@@ -1607,4 +1607,5 @@ div.customer-story-box {
     top: 0; }
   .top-left-shapes .all-shapes-wrapper .background-cover-bottom {
     -webkit-transform: translate(350px, 2100px) rotate(-34deg);
-            transform: translate(350px, 2100px) rotate(-34deg); }
+            transform: translate(350px, 2100px) rotate(-34deg);
+    height: 630px; }
