@@ -105,8 +105,12 @@
             height: 450px;
         }
         .background-cover-bottom {
-            transform: translate(350px, 2100px) rotate(-34deg);
-            height: 630px;
+            transform: translate(0, 990px);
+            height: 490px;
+        }
+        .midde-left-rec{
+            transform: translate(-625px, -975px) rotate(-124deg);
+            width: 800px;
         }
     }
  }

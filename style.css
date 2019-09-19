@@ -1687,6 +1687,10 @@ div.customer-story-box {
     top: 299px;
     height: 450px; }
   .front-page-shapes .all-shapes-wrapper .background-cover-bottom {
-    -webkit-transform: translate(350px, 2100px) rotate(-34deg);
-            transform: translate(350px, 2100px) rotate(-34deg);
-    height: 630px; }
+    -webkit-transform: translate(0, 990px);
+            transform: translate(0, 990px);
+    height: 490px; }
+  .front-page-shapes .all-shapes-wrapper .midde-left-rec {
+    -webkit-transform: translate(-625px, -975px) rotate(-124deg);
+            transform: translate(-625px, -975px) rotate(-124deg);
+    width: 800px; }
