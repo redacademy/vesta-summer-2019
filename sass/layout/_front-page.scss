@@ -71,7 +71,10 @@
 }
     
 .home-strength{
-    margin-top: 90px;
+    // margin-top: 90px;
+    margin: 0 calc(-50vw + 50%) 90px calc(-50vw + 50%);
+    background-color: rgba(219, 227, 251, 0.3);
+    padding: 6% 13% 0.1% 13%;
     
 }
 .strength-numbers{
@@ -80,6 +83,9 @@
     justify-content: space-between;
     margin-bottom: 100px;
     flex:100%;
+
+
+
     .strength-number-80,.strength-number-85, .strength-number-95{
         width: 30%;
         margin-top: 50px;
@@ -139,7 +145,10 @@
     }
 }
 .trusted-partners{
-    margin: 50px 0 150px 0;
+    // margin: 50px 0 150px 0;
+    margin: 90px calc(-50vw + 50%);
+    background-color: rgba(216, 225, 251, 0.51);
+    padding: 3% 13%;
     .header-style-container{
         margin-bottom: 50px;
     }
