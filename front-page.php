@@ -2,17 +2,17 @@
 
 <!-- background shapes -->
 <div class="front-page-shapes">
-    <!-- <div class="big-rec-wrapper all-shapes-wrapper"> -->
-        <!-- <div class="big-rec"></div> -->
-        <!-- <div class="sm-rec"></div>
+    <div class="big-rec-wrapper all-shapes-wrapper">
+        <div class="big-rec"></div>
+        <div class="sm-rec"></div>
         <div class="sm-rec top-right-sm-rec"></div>
-        <div class="background-cover"></div> -->
-<!-- 
+        <div class="background-cover"></div> 
+
         <div class="big-rec midde-left-rec"></div>
 
         <div class="background-cover background-rec-bottom"></div>
-        <div class="background-cover background-rec-bottom-two"></div> -->
-    <!-- </div> -->
+        <div class="background-cover background-rec-bottom-two"></div>
+    </div>
 </div>
 
 <?php
