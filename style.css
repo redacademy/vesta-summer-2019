@@ -652,7 +652,7 @@ form.wpcf7-form {
 .home-customer-stories {
   margin-bottom: 150px; }
   .home-customer-stories .header-style-container {
-    margin-bottom: 80px; }
+    margin: 0 13% 80px 13%; }
 
 .trusted-partners {
   margin: 90px calc(-50vw + 50%);
