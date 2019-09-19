@@ -46,17 +46,18 @@ if( have_posts() ) :
     </section>
   
     <section class="home-the-problem">
-        <div class="problem-article">
-            <div class="header-style-container">
-                <hr class="header-line">
-                <h2>The Problem</h2>
-            </div>
-            <p>Sexual assault and harassment are so pervasive that 
+        <!-- <div class="problem-article"> -->
+            <!-- <div class="header-style-container">
+                <hr class="header-line"> -->
+                <!-- <h2>The Problem</h2> -->
+            <!-- </div> -->
+            <!-- <p>Sexual assault and harassment are so pervasive that 
                 they have become commonplace. The personal and professional 
                 consequences of reporting are so high that incidences are 
-                rarely reported. </p>
+                rarely reported. </p> -->
         </div>
         <div class="problem-widget">
+            
              <?php dynamic_sidebar('sidebar-the-prob'); ?>
         </div>
     </section>
