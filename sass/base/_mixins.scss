@@ -18,6 +18,7 @@
 @mixin about-offer-container{
     background: rgba(57, 101, 238, 0.44);
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -61,6 +62,7 @@
 @mixin shapes-wrapper {
     position: absolute;
     max-width: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     overflow: hidden;
