@@ -859,6 +859,7 @@ i.fa-plus {
   .vm-container .our-approach-container, .vm-container .why-vesta-container {
     background: rgba(57, 101, 238, 0.44);
     margin: 0 auto;
+    position: relative;
     width: 49%;
     height: 565px;
     text-align: left; }
@@ -1040,6 +1041,7 @@ h1 {
 .book-info-session-container {
   background: rgba(57, 101, 238, 0.44);
   margin: 0 auto;
+  position: relative;
   margin: 0 auto;
   width: 72%;
   min-width: 540px;
@@ -1778,4 +1780,4 @@ div.customer-story-box {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   bottom: 0;
-  height: 610px; }
+  height: 575px; }

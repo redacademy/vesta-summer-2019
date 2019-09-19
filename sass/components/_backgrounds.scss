@@ -144,10 +144,11 @@
     .background-cover {
         @include section-background;
 
+
     }
     .background-cover-bottom {
         transform: translate(0, 0);
         bottom: 0;
-        height: 610px;
+        height: 575px;
     }
 }
