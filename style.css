@@ -83,9 +83,11 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+html {
+  font-size: 18px; }
+
 body {
   font-family: 'Century Gothic';
-  font-size: 18px;
   line-height: 1.5em;
   color: #2e3438;
   background-color: #fefefe;
@@ -207,73 +209,86 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
+  max-width: 100%;
+  padding: 0 9%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #c3d0f9; }
-  .footer-inner-container .upper-footer {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    margin-left: 8%; }
-    .footer-inner-container .upper-footer .footer-logo {
-      margin-top: 20px; }
-      .footer-inner-container .upper-footer .footer-logo .logo-black {
-        height: 70px;
-        width: auto; }
-      .footer-inner-container .upper-footer .footer-logo .logo-letter {
-        height: 15px;
-        margin-bottom: 25px; }
-    .footer-inner-container .upper-footer .footer-nav {
-      margin: 10px 0 30px 0; }
-      .footer-inner-container .upper-footer .footer-nav ul a {
-        list-style-type: none;
-        text-transform: capitalize;
-        font-family: 'Century Gothic Bold';
-        text-decoration: none;
-        font-size: 18px;
-        color: #2e3438; }
-      .footer-inner-container .upper-footer .footer-nav ul {
-        width: 500px; }
-      .footer-inner-container .upper-footer .footer-nav li {
-        display: inline;
-        padding-right: 10px; }
-  .footer-inner-container .footer-subscribe {
-    margin-right: 8%;
-    width: 450px;
-    min-width: 450px; }
-  .footer-inner-container .subscribe-form-footer {
-    margin-top: 42px; }
-    .footer-inner-container .subscribe-form-footer label {
-      font-size: 18px;
-      font-family: 'Century Gothic Bold';
-      color: #2e3438;
-      width: 400px; }
-    .footer-inner-container .subscribe-form-footer .subscribe-email-footer {
-      height: 35px;
-      width: 280px;
-      min-width: 160px;
-      position: relative;
-      margin-top: 20px;
-      font-size: 14px;
-      font-family: 'Century Gothic';
-      padding-left: 20px;
-      color: #2e3438; }
-    .footer-inner-container .subscribe-form-footer .subscribe-button-footer {
-      position: absolute;
-      margin-top: 20px;
-      height: 40px;
-      width: 135px;
-      background-color: #5a1933;
-      color: white;
-      font-size: 14px;
-      font-family: 'Century Gothic';
-      text-transform: uppercase; }
+
+.upper-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%; }
+  .upper-footer .footer-logo {
+    margin-top: 20px; }
+    .upper-footer .footer-logo .logo-black {
+      height: 70px;
+      width: auto; }
+    .upper-footer .footer-logo .logo-letter {
+      height: 15px;
+      margin-bottom: 25px; }
+
+.footer-nav {
+  margin: 10px 0 30px 0;
+  max-width: 100%; }
+  .footer-nav ul a {
+    text-transform: capitalize;
+    font-family: 'Century Gothic Bold';
+    color: #2e3438; }
+  .footer-nav li {
+    display: inline;
+    padding-right: 10px; }
+
+.footer-subscribe {
+  width: 40%; }
+
+.subscribe-form-footer {
+  margin-top: 42px;
+  max-width: 100%; }
+  .subscribe-form-footer label {
+    font-size: 1rem;
+    font-family: 'Century Gothic Bold';
+    color: #2e3438;
+    max-width: 100%; }
+  .subscribe-form-footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+
+.subscribe-email-footer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 35px;
+  width: 50%;
+  min-width: 200px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: 'Century Gothic';
+  padding-left: 20px;
+  color: #2e3438; }
+
+.subscribe-button-footer {
+  margin-top: 20px;
+  margin-left: -10px;
+  height: 40px;
+  width: 35%;
+  min-width: 100px;
+  background-color: #5a1933;
+  border-color: #5a1933;
+  color: white;
+  font-size: 14px;
+  font-family: 'Century Gothic';
+  text-transform: uppercase; }
 
 .lower-footer {
   display: -webkit-box;
@@ -284,30 +299,29 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #284683; }
-  .lower-footer .footer-nav-2 {
-    margin-left: 8%;
-    width: 600px; }
-    .lower-footer .footer-nav-2 ul a {
-      list-style-type: none;
-      text-transform: capitalize;
-      font-family: 'Century Gothic';
-      font-size: 14px;
-      color: white; }
-    .lower-footer .footer-nav-2 ul {
-      padding-top: 5px; }
-    .lower-footer .footer-nav-2 li {
-      display: inline;
-      padding-right: 15px; }
-  .lower-footer .socials-footer {
-    margin-right: 8%; }
-    .lower-footer .socials-footer i {
-      color: white;
-      font-size: 25px;
-      width: auto;
-      max-width: 100%;
-      margin-right: 10px;
-      margin-top: 10px; }
+  background-color: #284683;
+  padding: 0 9%;
+  max-width: 100%; }
+
+.footer-nav-2 {
+  width: 60%; }
+  .footer-nav-2 ul a {
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-family: 'Century Gothic';
+    font-size: 0.78rem;
+    color: white; }
+  .footer-nav-2 ul {
+    padding-top: 5px; }
+  .footer-nav-2 li {
+    display: inline;
+    padding-right: 15px; }
+
+.socials-footer i {
+  color: white;
+  font-size: 1.4rem;
+  padding-left: 10px;
+  margin-top: 10px; }
 
 .resources-title-container {
   width: 30%;
