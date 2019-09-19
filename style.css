@@ -552,7 +552,9 @@ form.wpcf7-form {
     min-width: 350px; }
 
 .home-strength {
-  margin-top: 90px; }
+  margin: 90px calc(-50vw + 50%);
+  background-color: rgba(219, 227, 251, 0.3);
+  padding: 3% 13%; }
 
 .strength-numbers {
   display: -webkit-box;
@@ -622,7 +624,9 @@ form.wpcf7-form {
     margin-bottom: 80px; }
 
 .trusted-partners {
-  margin: 50px 0 150px 0; }
+  margin: 90px calc(-50vw + 50%);
+  background-color: rgba(216, 225, 251, 0.51);
+  padding: 3% 13%; }
   .trusted-partners .header-style-container {
     margin-bottom: 50px; }
 
@@ -1687,10 +1691,6 @@ div.customer-story-box {
     background-color: #d8e1fb;
     top: 299px;
     height: 450px; }
-  .front-page-shapes .all-shapes-wrapper .background-cover-bottom {
-    -webkit-transform: translate(0, 990px);
-            transform: translate(0, 990px);
-    height: 490px; }
   .front-page-shapes .all-shapes-wrapper .midde-left-rec {
     -webkit-transform: translate(-625px, -975px) rotate(-124deg);
             transform: translate(-625px, -975px) rotate(-124deg);
@@ -1704,7 +1704,3 @@ div.customer-story-box {
     -webkit-transform: translate(-550px, 3000px) rotate(53deg);
             transform: translate(-550px, 3000px) rotate(53deg);
     height: 625px; }
-  .front-page-shapes .all-shapes-wrapper .background-rec-bottom-three {
-    -webkit-transform: translate(0, 2550px);
-            transform: translate(0, 2550px);
-    height: 400px; }
