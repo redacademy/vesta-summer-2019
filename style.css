@@ -831,8 +831,9 @@ i.fa-plus {
   width: 80%;
   max-width: 620px;
   margin: 0 auto; }
-  .our-vision-mission .header-line {
-    margin-left: 168px; }
+  .our-vision-mission .header-style-container {
+    width: 331px;
+    margin: 0 auto; }
   .our-vision-mission h2 {
     letter-spacing: -0.8px;
     margin-bottom: 21px; }
@@ -992,13 +993,21 @@ h1 {
   width: 60%;
   min-width: 200px; }
 
+.what-we-offer-container {
+  width: 100%; }
+
 .what-we-offer-inner {
+  margin: 0 auto;
   display: grid;
   width: 100%;
-  grid-template-columns: 40% 40%;
+  min-width: 80%;
+  height: auto;
+  grid-template-columns: 35% 35%;
   grid-template-rows: auto auto;
-  grid-column-gap: 160px;
-  margin: 0 auto; }
+  grid-column-gap: 130px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .what-we-offer-private, .what-we-offer-confidential, .what-we-offer-trustworthy, .what-we-offer-secure {
   display: -webkit-box;
@@ -1010,15 +1019,16 @@ h1 {
   .what-we-offer-private img, .what-we-offer-confidential img, .what-we-offer-trustworthy img, .what-we-offer-secure img {
     margin-right: 30px;
     width: 25%;
-    max-width: 100%; }
+    min-width: 25%; }
 
-.inner-private p, .inner-confidential p, .inner-trustworthy p, .inner-secure p {
-  margin: 20px 0;
-  text-align: left;
+.inner-private, .inner-confidential, .inner-trustworthy, .inner-secure {
   width: 50%; }
+  .inner-private p, .inner-confidential p, .inner-trustworthy p, .inner-secure p {
+    margin: 20px 0;
+    text-align: left;
+    width: 40%; }
 
 .how-it-works {
-  width: 950px;
   height: 1100px;
   border-radius: 4px;
   background-color: white;
@@ -1029,7 +1039,7 @@ h1 {
   .how-it-works .header-style-container {
     padding-top: 60px;
     text-align: center;
-    width: 192px;
+    width: 217px;
     margin: 0 auto; }
 
 .how-it-works-hr-container {
@@ -1064,7 +1074,7 @@ h1 {
   margin-right: 100px;
   margin-bottom: 30px; }
   .employee-employer-container .tab-2 img {
-    width: 33%;
+    width: 21%;
     min-width: 123px; }
 
 .employee-employer-container .tab-1 {
