@@ -1,3 +1,5 @@
+// Bottom
+
 .bottom-right-shapes {
     .all-shapes-wrapper {
        @include shapes-wrapper;
@@ -6,70 +8,42 @@
     
     .big-rec {
         @include big-rec;
-        transform: translate(300px, 350px) rotate(43deg);
+        transform: translate(500px, 750px) rotate(43deg);
     }
 
     .sm-rec {
         @include lil-rec;
-        transform: translate(700px, -75px) rotate(43deg);
+        transform: translate(850px, 300px) rotate(43deg);
     }
     .background-cover {
         @include section-background;
-        bottom: -550px;
-        z-index: -75;
+        transform: translate(0, -500px);
+    }
+    .background-cover-bottom {
+        transform: translate(0, 500px);
     }
 }
 
-.sm-shape {
-    @include small-background;
-    transform: rotate(43deg);
-    bottom: -1050px;
-    right: -650px;
-}
 
-// top shapes 
+// Top shapes 
 
-.top-shapes{
-    .big-shape{
-        bottom: 375px;
-        right: 875px;
-        z-index: -75;
-    }
-    .sm-shape{
-        bottom: 550px;
-        right: 1000px;
-        z-index: -50;
-        height: 730px;
-        background-color: $primary-color;
-        opacity: 0.21;
-    }
-    .section-cover{
-        @include section-background;
-        top: 0;
+.top-left-shapes {
+    .all-shapes-wrapper {
+        @include shapes-wrapper;
         z-index: -100;
+        
+        .big-rec {
+            @include big-rec;
+            transform: translate(-550px, -150px) rotate(43deg);
+        }
+        .sm-rec {
+            @include lil-rec;
+            transform: translate(-175px, -1050px) rotate(43deg);
+            height: 600px;
+        }
+        .background-cover {
+            @include section-background;
+            top: 0;
+        }
     }
-}
-
-.error-shapes {
-    .big-rec-wrapper {
-       @include shapes-wrapper;
-       bottom: 0;
-       left: 0;
-    }
-    
-    .big-rec {
-        @include big-rec;
-        transform: translate(-450px, 350px) rotate(43deg);
-    }
-
-    .sm-rec {
-        @include lil-rec;
-        transform: translate(-300px, -750px) rotate(43deg);
-        height: 1000px;
-    }
-    .background-cover {
-        bottom: 0;
-        z-index: -50;
-        @include section-background;
-    }
-}
+ }
