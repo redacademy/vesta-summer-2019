@@ -87,7 +87,7 @@
         
         .big-rec {
             @include big-rec;
-            transform: translate(350px, -275px) rotate(-18deg);
+            transform: translate(367px, -275px) rotate(-18deg);
             width: 1450px;
             height: 900px;
         }
@@ -104,7 +104,7 @@
         }
         .background-cover {
             @include section-background;
-            top: 299px;
+            top: 304px;
             height: 450px;
         }
         .midde-left-rec{

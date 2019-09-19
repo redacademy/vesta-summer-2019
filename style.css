@@ -1699,8 +1699,8 @@ div.customer-story-box {
     background-color: #3965ee;
     opacity: 0.15;
     border-radius: 102px;
-    -webkit-transform: translate(350px, -275px) rotate(-18deg);
-            transform: translate(350px, -275px) rotate(-18deg);
+    -webkit-transform: translate(367px, -275px) rotate(-18deg);
+            transform: translate(367px, -275px) rotate(-18deg);
     width: 1450px;
     height: 900px; }
   .front-page-shapes .all-shapes-wrapper .sm-rec {
@@ -1724,7 +1724,7 @@ div.customer-story-box {
     position: absolute;
     left: 0;
     background-color: #d8e1fb;
-    top: 299px;
+    top: 304px;
     height: 450px; }
   .front-page-shapes .all-shapes-wrapper .midde-left-rec {
     -webkit-transform: translate(-625px, -975px) rotate(-124deg);
