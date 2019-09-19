@@ -432,20 +432,26 @@ footer {
     border-color: #284683; }
 
 .suggest-a-resource {
-  margin: 50px 0; }
+  margin: 50px 0;
+  text-align: center; }
 
 .suggestion-header {
   font-size: 1.17rem; }
 
 .resources-suggest label {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
   font-size: 1rem;
-  font-family: 'Century Gothic'; }
+  font-family: 'Century Gothic';
+  margin-top: 20px; }
 
 .resources-suggest form.wpcf7-form {
-  margin: 0; }
+  margin: 0 auto; }
 
 .resources-suggest form.wpcf7-form textarea {
-  height: 50px; }
+  height: 50px;
+  width: 55%; }
 
 .resources-suggest .wpcf7-submit {
   padding: 15px 30px;
@@ -454,7 +460,8 @@ footer {
   width: 250px;
   color: #fff;
   background: #5a1933;
-  margin: 0;
+  margin: 0 auto;
+  display: block;
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer; }
