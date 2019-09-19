@@ -134,7 +134,7 @@ if( have_posts() ) :
         <div class="partners-list">
             <a href="https://cfc-swc.gc.ca/index-en.html" target="_blank"><img class="govt-canada" src="<?php echo get_template_directory_uri() . '/images/Partners/logo-canada.png';?>" alt="Government of Canada"></a>
             <a href="http://www.legalinnovationzone.ca/startup/vesta-social-innovation-technologies/" target="_blank"><img class="legal-innovation" src="<?php echo get_template_directory_uri() . '/images/Partners/legal-innovation-zone-logo.png';?>" alt="Legal Innovation Zone"></a>
-            <a href="https://www.ryerson.ca/svz/projects/vesta/" target="_blank"><img class="social-venture" src="<?php echo get_template_directory_uri() . '/images/Partners/social-venture-zone-logo.jpg';?>" alt="Social Venture Zone"></a>
+            <a href="https://www.ryerson.ca/svz/projects/vesta/" target="_blank"><img class="social-venture" src="<?php echo get_template_directory_uri() . '/images/Partners/social-venture-zone-logo.png';?>" alt="Social Venture Zone"></a>
             <a href="https://www.unilever.ca/sustainable-living/" target="_blank"><img class="unilever" src="<?php echo get_template_directory_uri() . '/images/Partners/unilever_edited.png';?>" alt="Unilever Impact"></a>
         </div>
     </section>
