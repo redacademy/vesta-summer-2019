@@ -76,3 +76,37 @@
         }
     }
  }
+
+
+
+.front-page-shapes {
+    .all-shapes-wrapper {
+        @include shapes-wrapper;
+        z-index: -100;
+        
+        .big-rec {
+            @include big-rec;
+            transform: translate(350px, -275px) rotate(-18deg);
+            width: 1450px;
+            height: 900px;
+        }
+        .sm-rec {
+            @include lil-rec;
+            transform: translate(625px, -1150px) rotate(-18deg);
+            height: 630px;
+        }
+        .top-right-sm-rec{
+            transform: translate(1090px, -1525px) rotate(-18deg);
+            height: 575px;
+        }
+        .background-cover {
+            @include section-background;
+            top: 299px;
+            height: 450px;
+        }
+        .background-cover-bottom {
+            transform: translate(350px, 2100px) rotate(-34deg);
+            height: 630px;
+        }
+    }
+ }

@@ -1644,3 +1644,49 @@ div.customer-story-box {
     left: 0;
     background-color: #d8e1fb;
     bottom: 0; }
+
+.front-page-shapes .all-shapes-wrapper {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 650px;
+  z-index: -100; }
+  .front-page-shapes .all-shapes-wrapper .big-rec {
+    width: 1387px;
+    height: 779px;
+    background-color: #3965ee;
+    opacity: 0.15;
+    border-radius: 102px;
+    -webkit-transform: translate(350px, -275px) rotate(-18deg);
+            transform: translate(350px, -275px) rotate(-18deg);
+    width: 1450px;
+    height: 900px; }
+  .front-page-shapes .all-shapes-wrapper .sm-rec {
+    width: 837px;
+    height: 529px;
+    background-color: #b6c4f5;
+    opacity: 0.51;
+    border-radius: 78px;
+    -webkit-transform: translate(625px, -1150px) rotate(-18deg);
+            transform: translate(625px, -1150px) rotate(-18deg);
+    height: 630px; }
+  .front-page-shapes .all-shapes-wrapper .top-right-sm-rec {
+    -webkit-transform: translate(1090px, -1525px) rotate(-18deg);
+            transform: translate(1090px, -1525px) rotate(-18deg);
+    height: 575px; }
+  .front-page-shapes .all-shapes-wrapper .background-cover {
+    height: 530px;
+    width: 100%;
+    opacity: 0.51;
+    position: absolute;
+    left: 0;
+    background-color: #d8e1fb;
+    top: 299px;
+    height: 450px; }
+  .front-page-shapes .all-shapes-wrapper .background-cover-bottom {
+    -webkit-transform: translate(350px, 2100px) rotate(-34deg);
+            transform: translate(350px, 2100px) rotate(-34deg);
+    height: 630px; }
