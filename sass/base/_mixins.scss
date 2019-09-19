@@ -15,6 +15,16 @@
     @content;
 }
 
+@mixin subscribe-btn {
+    min-width: 100px;
+    background-color: $accent-button-color;
+    border-color: $accent-button-color;
+    color: white;
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+    @content;
+}
+
 @mixin about-offer-container{
     background: rgba(57, 101, 238, 0.44);
     margin: 0 auto;

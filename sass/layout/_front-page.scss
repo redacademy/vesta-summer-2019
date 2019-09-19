@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    // min-width: 420px;
     padding-right: 100px;
     
     img{
@@ -226,6 +225,23 @@
         font-family: 'Century Gothic Bold';
         color: $nav-color; 
         text-align: left;
+    }
+}
+
+.frontpg-subscribe {
+    .wpcf7-email {
+        width: 64%;
+    }
+    .wpcf7-form p br {
+        display: none;
+    }
+
+    .wpcf7-submit {
+        @include subscribe-btn;
+        width: 30px;
+    }
+    .wpcf7-form p {
+        display: inline;
     }
 }
 

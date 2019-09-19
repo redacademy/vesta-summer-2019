@@ -278,17 +278,17 @@ footer {
   color: #2e3438; }
 
 .subscribe-button-footer {
-  margin-top: 20px;
-  margin-left: -10px;
-  height: 40px;
-  width: 35%;
   min-width: 100px;
   background-color: #5a1933;
   border-color: #5a1933;
   color: white;
-  font-size: 14px;
   font-family: 'Century Gothic';
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: -10px;
+  height: 40px;
+  width: 35%;
+  font-size: 14px; }
 
 .lower-footer {
   display: -webkit-box;
@@ -719,6 +719,24 @@ form.wpcf7-form {
     font-family: 'Century Gothic Bold';
     color: #284683;
     text-align: left; }
+
+.frontpg-subscribe .wpcf7-email {
+  width: 64%; }
+
+.frontpg-subscribe .wpcf7-form p br {
+  display: none; }
+
+.frontpg-subscribe .wpcf7-submit {
+  min-width: 100px;
+  background-color: #5a1933;
+  border-color: #5a1933;
+  color: white;
+  font-family: 'Century Gothic';
+  text-transform: uppercase;
+  width: 30px; }
+
+.frontpg-subscribe .wpcf7-form p {
+  display: inline; }
 
 i.fa-minus {
   display: none;
