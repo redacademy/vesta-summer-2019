@@ -576,9 +576,9 @@ form.wpcf7-form {
     min-width: 350px; }
 
 .home-strength {
-  margin: 90px calc(-50vw + 50%);
+  margin: 0 calc(-50vw + 50%) 90px calc(-50vw + 50%);
   background-color: rgba(219, 227, 251, 0.3);
-  padding: 3% 13%; }
+  padding: 6% 13% 0.1% 13%; }
 
 .strength-numbers {
   display: -webkit-box;
