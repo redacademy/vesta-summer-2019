@@ -215,6 +215,7 @@
     margin-bottom: 131px;
 }
 
+
 .subscribe-form{
     width: 75%;
     max-width: 560px;
@@ -229,16 +230,24 @@
 }
 
 .frontpg-subscribe {
-    .wpcf7-email {
-        width: 64%;
+    margin-top: 50px;
+    form.wpcf7-form {
+        width: 100%;
+        padding: 0 15%;
     }
-    .wpcf7-form p br {
-        display: none;
+    .wpcf7-email {
+        width: 45%;
+        &::placeholder {
+            color: #444b4f;
+        }
     }
 
     .wpcf7-submit {
         @include subscribe-btn;
-        width: 30px;
+        border: solid 0.5px $accent-button-color;
+        width: 23%;
+        height: 59px;
+        margin-left: -6px;
     }
     .wpcf7-form p {
         display: inline;

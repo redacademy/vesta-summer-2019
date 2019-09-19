@@ -58,7 +58,6 @@
     // console.log('shapewindow', $shapeWindow)
     // console.log('shapewindow - dist', $shapeWindow - 500)
     // console.log('header pos', $('header').offset().top )
-    // console.log('subs pos', $('.subscribe-form').offset().top)
     // console.log('foot pos', $('footer').offset().top )
 
 

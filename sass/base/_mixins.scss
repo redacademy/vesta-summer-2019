@@ -22,6 +22,9 @@
     color: white;
     font-family: 'Century Gothic';
     text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+    }
     @content;
 }
 
