@@ -14,8 +14,10 @@
         <div class="footer-subscribe">
             <form class="subscribe-form-footer">
                 <label> Subscribe to get the latest updates about Vesta</label>
-                <input type="text" class="subscribe-email-footer" placeholder="johndoe@gmail.com">
-                <input type="submit" class="subscribe-button-footer" value=" Subscribe">
+                <div>
+                    <input type="text" class="subscribe-email-footer" placeholder="johndoe@gmail.com">
+                    <input type="submit" class="subscribe-button-footer" value=" Subscribe">
+                </div>
             </form>
         </div>
     </div>
