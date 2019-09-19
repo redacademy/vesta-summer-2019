@@ -827,8 +827,9 @@ i.fa-plus {
   width: 80%;
   max-width: 620px;
   margin: 0 auto; }
-  .our-vision-mission .header-line {
-    margin-left: 168px; }
+  .our-vision-mission .header-style-container {
+    width: 331px;
+    margin: 0 auto; }
   .our-vision-mission h2 {
     letter-spacing: -0.8px;
     margin-bottom: 21px; }
