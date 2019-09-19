@@ -859,6 +859,7 @@ i.fa-plus {
   .vm-container .our-approach-container, .vm-container .why-vesta-container {
     background: rgba(57, 101, 238, 0.44);
     margin: 0 auto;
+    position: relative;
     width: 49%;
     height: 565px;
     text-align: left; }
@@ -1040,6 +1041,7 @@ h1 {
 .book-info-session-container {
   background: rgba(57, 101, 238, 0.44);
   margin: 0 auto;
+  position: relative;
   margin: 0 auto;
   width: 72%;
   min-width: 540px;
@@ -1729,11 +1731,53 @@ div.customer-story-box {
             transform: translate(-625px, -975px) rotate(-124deg);
     width: 800px; }
   .front-page-shapes .all-shapes-wrapper .background-rec-bottom {
-    -webkit-transform: translate(-300px, 2200px) rotate(-34deg);
-            transform: translate(-300px, 2200px) rotate(-34deg);
+    -webkit-transform: translate(-400px, 2650px) rotate(-34deg);
+            transform: translate(-400px, 2650px) rotate(-34deg);
     height: 590px;
     width: 2550px; }
   .front-page-shapes .all-shapes-wrapper .background-rec-bottom-two {
-    -webkit-transform: translate(-550px, 3000px) rotate(53deg);
-            transform: translate(-550px, 3000px) rotate(53deg);
+    -webkit-transform: translate(-850px, 3000px) rotate(53deg);
+            transform: translate(-850px, 3000px) rotate(53deg);
     height: 625px; }
+
+.what-we-offer-shapes .all-shapes-wrapper {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 650px;
+  z-index: -100; }
+
+.what-we-offer-shapes .big-rec {
+  width: 1387px;
+  height: 779px;
+  background-color: #3965ee;
+  opacity: 0.15;
+  border-radius: 102px;
+  -webkit-transform: translate(500px, 750px) rotate(43deg);
+          transform: translate(500px, 750px) rotate(43deg); }
+
+.what-we-offer-shapes .sm-rec {
+  width: 837px;
+  height: 529px;
+  background-color: #b6c4f5;
+  opacity: 0.51;
+  border-radius: 78px;
+  -webkit-transform: translate(850px, 300px) rotate(43deg);
+          transform: translate(850px, 300px) rotate(43deg); }
+
+.what-we-offer-shapes .background-cover {
+  height: 530px;
+  width: 100%;
+  opacity: 0.51;
+  position: absolute;
+  left: 0;
+  background-color: #d8e1fb; }
+
+.what-we-offer-shapes .background-cover-bottom {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  bottom: 0;
+  height: 565px; }
