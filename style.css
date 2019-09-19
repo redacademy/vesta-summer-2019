@@ -555,25 +555,33 @@ form.wpcf7-form {
 
 .home-the-problem {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 90px;
   margin-bottom: 150px; }
 
-.problem-article {
-  width: 50%;
-  max-height: 160px; }
-  .problem-article p {
-    padding-right: 60px;
-    max-width: 450px; }
-
 .problem-widget {
-  width: 50%; }
-  .problem-widget img {
-    width: 100%;
-    height: auto;
-    min-width: 350px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 74%;
+  margin: 0 13% 90px 13%; }
+  .problem-widget .widget_text .textwidget {
+    width: 100%; }
+  .problem-widget iframe {
+    max-width: 100%;
+    min-width: 400px;
+    max-height: 250px; }
+  .problem-widget .textwidget {
+    max-width: 450px; }
 
 .home-strength {
   margin: 0 calc(-50vw + 50%) 90px calc(-50vw + 50%);
@@ -620,7 +628,7 @@ form.wpcf7-form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 150px -16.5%; }
+  margin: 30px 13% 50px 2%; }
   .home-solution .inner-solution {
     min-width: 350px;
     margin-left: 40px; }
@@ -645,7 +653,7 @@ form.wpcf7-form {
 .home-customer-stories {
   margin-bottom: 150px; }
   .home-customer-stories .header-style-container {
-    margin-bottom: 80px; }
+    margin: 0 13% 80px 13%; }
 
 .trusted-partners {
   margin: 90px calc(-50vw + 50%);
@@ -1727,8 +1735,8 @@ div.customer-story-box {
     background-color: #3965ee;
     opacity: 0.15;
     border-radius: 102px;
-    -webkit-transform: translate(350px, -275px) rotate(-18deg);
-            transform: translate(350px, -275px) rotate(-18deg);
+    -webkit-transform: translate(367px, -275px) rotate(-18deg);
+            transform: translate(367px, -275px) rotate(-18deg);
     width: 1450px;
     height: 900px; }
   .front-page-shapes .all-shapes-wrapper .sm-rec {
@@ -1752,7 +1760,7 @@ div.customer-story-box {
     position: absolute;
     left: 0;
     background-color: #d8e1fb;
-    top: 299px;
+    top: 304px;
     height: 450px; }
   .front-page-shapes .all-shapes-wrapper .midde-left-rec {
     -webkit-transform: translate(-625px, -975px) rotate(-124deg);
