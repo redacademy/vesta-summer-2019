@@ -94,6 +94,8 @@
             @include lil-rec;
             transform: translate(625px, -1150px) rotate(-18deg);
             height: 630px;
+        width: 1100px;
+
         }
         .top-right-sm-rec{
             transform: translate(1090px, -1525px) rotate(-18deg);
@@ -111,6 +113,18 @@
         .midde-left-rec{
             transform: translate(-625px, -975px) rotate(-124deg);
             width: 800px;
+        }
+        .background-rec-bottom{
+            transform: translate(-300px, 2500px) rotate(-34deg);
+            height: 590px;
+            width: 2550px;
+        }
+        .background-rec-bottom-two{
+            transform: translate(-550px ,3000px) rotate(53deg);
+            height: 725px;
+        }
+        .background-rec-bottom-three{
+            transform: translate(0,2700px);
         }
     }
  }

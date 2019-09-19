@@ -11,6 +11,12 @@
         <div class="background-cover background-cover-bottom"></div>
         <div class="big-rec midde-left-rec"></div>
 
+        <div class="background-cover background-rec-bottom"></div>
+        <div class="background-cover background-rec-bottom-two"></div>
+        <div class="background-cover background-rec-bottom-three"></div>
+
+
+
     </div>
 </div>
 
