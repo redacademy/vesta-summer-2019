@@ -1696,14 +1696,15 @@ div.customer-story-box {
             transform: translate(-625px, -975px) rotate(-124deg);
     width: 800px; }
   .front-page-shapes .all-shapes-wrapper .background-rec-bottom {
-    -webkit-transform: translate(-300px, 2500px) rotate(-34deg);
-            transform: translate(-300px, 2500px) rotate(-34deg);
+    -webkit-transform: translate(-300px, 2200px) rotate(-34deg);
+            transform: translate(-300px, 2200px) rotate(-34deg);
     height: 590px;
     width: 2550px; }
   .front-page-shapes .all-shapes-wrapper .background-rec-bottom-two {
     -webkit-transform: translate(-550px, 3000px) rotate(53deg);
             transform: translate(-550px, 3000px) rotate(53deg);
-    height: 725px; }
+    height: 625px; }
   .front-page-shapes .all-shapes-wrapper .background-rec-bottom-three {
-    -webkit-transform: translate(0, 2700px);
-            transform: translate(0, 2700px); }
+    -webkit-transform: translate(0, 2550px);
+            transform: translate(0, 2550px);
+    height: 400px; }
