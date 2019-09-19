@@ -16,15 +16,12 @@
 </div>
 
 <?php
-if( have_posts() ) :   
-    // Start WP Loop
+if( have_posts() ) :  
     while( have_posts() ) :   
     the_post(); ?>         
 
-<!-- <h2><?php the_title(); ?></h2> -->
 <?php the_content(); ?>
 
-    <!-- end of wp loop -->
     <?php endwhile; ?>
 
 <?php the_posts_navigation(); ?> 
@@ -139,11 +136,12 @@ if( have_posts() ) :
       
 
       <div class="subscribe-form-container">
-        <form class="subscribe-form">
+          <?php dynamic_sidebar('sidebar-frontpg-subscribe'); ?>
+        <!-- <form class="subscribe-form">
                 <h3>Enter your Email address</h3>
                 <input type="text" class="subscribe-email" placeholder="johndoe@gmail.com">
                 <input type="submit" class="subscribe-button" value="Subscribe">
-            </form>
+            </form> -->
         </div>
     </section>
 

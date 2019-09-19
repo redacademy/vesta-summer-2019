@@ -79,17 +79,12 @@ footer{
 }
 
 .subscribe-button-footer{
+    @include subscribe-btn;
     margin-top: 20px;
     margin-left: -10px;
     height: 40px;
     width: 35%;
-    min-width: 100px;
-    background-color: $accent-button-color;
-    border-color: $accent-button-color;
-    color: white;
     font-size: 14px;
-    font-family: 'Century Gothic';
-    text-transform: uppercase;
 }
 
 
