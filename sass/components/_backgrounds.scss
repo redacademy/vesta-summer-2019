@@ -87,7 +87,7 @@
         
         .big-rec {
             @include big-rec;
-            transform: translate(350px, -275px) rotate(-18deg);
+            transform: translate(365px, -275px) rotate(-18deg);
             width: 1450px;
             height: 900px;
         }
@@ -95,7 +95,7 @@
             @include lil-rec;
             transform: translate(625px, -1150px) rotate(-18deg);
             height: 630px;
-        width: 1100px;
+            width: 1100px;
 
         }
         .top-right-sm-rec{
@@ -105,10 +105,10 @@
         .background-cover {
             @include section-background;
             top: 299px;
-            height: 450px;
+            height: 455px;
         }
         .midde-left-rec{
-            transform: translate(-625px, -975px) rotate(-124deg);
+            transform: translate(-665px, -685px) rotate(-124deg);
             width: 800px;
         }
         .background-rec-bottom{
@@ -117,8 +117,8 @@
             width: 2550px;
         }
         .background-rec-bottom-two{
-            transform: translate(-850px ,3000px) rotate(53deg);
-            height: 625px;
+            transform: translate(-625px ,3100px) rotate(53deg);
+            height: 590px;
         }
     }
  }

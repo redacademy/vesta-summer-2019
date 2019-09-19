@@ -1727,8 +1727,8 @@ div.customer-story-box {
     background-color: #3965ee;
     opacity: 0.15;
     border-radius: 102px;
-    -webkit-transform: translate(350px, -275px) rotate(-18deg);
-            transform: translate(350px, -275px) rotate(-18deg);
+    -webkit-transform: translate(365px, -275px) rotate(-18deg);
+            transform: translate(365px, -275px) rotate(-18deg);
     width: 1450px;
     height: 900px; }
   .front-page-shapes .all-shapes-wrapper .sm-rec {
@@ -1753,10 +1753,10 @@ div.customer-story-box {
     left: 0;
     background-color: #d8e1fb;
     top: 299px;
-    height: 450px; }
+    height: 455px; }
   .front-page-shapes .all-shapes-wrapper .midde-left-rec {
-    -webkit-transform: translate(-625px, -975px) rotate(-124deg);
-            transform: translate(-625px, -975px) rotate(-124deg);
+    -webkit-transform: translate(-665px, -685px) rotate(-124deg);
+            transform: translate(-665px, -685px) rotate(-124deg);
     width: 800px; }
   .front-page-shapes .all-shapes-wrapper .background-rec-bottom {
     -webkit-transform: translate(-400px, 2650px) rotate(-34deg);
@@ -1764,9 +1764,9 @@ div.customer-story-box {
     height: 590px;
     width: 2550px; }
   .front-page-shapes .all-shapes-wrapper .background-rec-bottom-two {
-    -webkit-transform: translate(-850px, 3000px) rotate(53deg);
-            transform: translate(-850px, 3000px) rotate(53deg);
-    height: 625px; }
+    -webkit-transform: translate(-625px, 3100px) rotate(53deg);
+            transform: translate(-625px, 3100px) rotate(53deg);
+    height: 590px; }
 
 .what-we-offer-shapes .all-shapes-wrapper {
   position: absolute;
