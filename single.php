@@ -1,4 +1,12 @@
 <?php get_header(); ?>
+<!-- background shapes -->
+<div class="bottom-right-shapes">
+    <div class="big-rec-wrapper all-shapes-wrapper">
+        <div class="big-rec"></div>
+        <div class="sm-rec"></div>
+        <div class="background-cover"></div>
+    </div>
+</div>
 
 <div class="single-content-container">
     <div class="single-content-title-wrapper">

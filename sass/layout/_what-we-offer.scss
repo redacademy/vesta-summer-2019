@@ -53,7 +53,7 @@ h1{
     .header-style-container{
         padding-top:60px;
         text-align: center;
-        width:180px;
+        width:192px;
         margin: 0 auto;
     }
 }
@@ -68,7 +68,8 @@ h1{
 .book-info-session-container{
     @include about-offer-container;
     margin: 0 auto;
-    width: 750px;
+    width: 72%;
+    min-width:540px;
     height: 250px;
     margin-bottom: 100px;
     padding-top:60px;
@@ -90,16 +91,17 @@ h1{
         width: 50%;
         
     }
-    .tab-1{
-        margin-left:100px;
+    .tab-2{
+        margin-right:100px;
         margin-bottom:30px;
         img{
             width:33%;
             min-width:123px;
         }
       }
-    .tab-2{
-        margin-right:100px;
+    .tab-1{
+        margin-left:100px;
+        
       }
       a {
         color: $font-color;
@@ -115,14 +117,14 @@ h1{
         cursor: default;
         
             .community-line{
-                width: 250px;
+                width: 70%;
                 height: 10px;
                 border: solid 1px $accent-button-color;
                 background-color: $accent-button-color;
               
         }
             .workplace-line{
-                width: 250px;
+                width: 70%;
                 height: 10px;
                 border: solid 1px $primary-color;
                 background-color: $primary-color;
@@ -157,7 +159,7 @@ h1{
    
   }
 .community-line, .workplace-line{
-  width: 250px;
+  width:70%;
   height: 10px;
   border: solid 1px #cbcbcb;
   background-color: #cbcbcb;

@@ -1,4 +1,14 @@
 <?php get_header(); ?>
+<!-- background shapes -->
+<div class="bottom-right-shapes">
+    <div class="big-rec-wrapper all-shapes-wrapper">
+        <div class="big-rec"></div>
+        <div class="sm-rec"></div>
+        <div class="background-cover"></div>
+        <div class="background-cover background-cover-bottom"></div>
+    </div>
+    
+</div>
 
 <?php
 if( have_posts() ) :   
@@ -76,31 +86,29 @@ if( have_posts() ) :
             <div class="employee-employer-container">
                     <ul class="employee-employer-nav">
                         <li><a href="#tab-1" class="tab-1">
-                            <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployee -plum 1.52.00 PM.svg';?>">
-                            <h3 class="community">Community</h3>
-                            <hr class="community-line"></a>
-                        </li>
-                        <li><a href="#tab-2"  class="tab-2">
                             <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployer.svg';?>">
                             <h3 class="workplace">Workplace</h3>
                             <hr class="workplace-line"></a>
+                        </li>
+                        <li><a href="#tab-2"  class="tab-2">
+                        <img src="<?php echo get_template_directory_uri() . '/images/Icons/IconEmployee -plum 1.52.00 PM.svg';?>">
+                            <h3 class="community">Community</h3>
+                            <hr class="community-line"></a>
+
+
+                            
                         </li>
                     </ul> 
             </div>
             <div class="steps-container">  
                 <ul id="tab-1">
                     <li class="step1">
-                        
-                        <!-- <p>Community Text Placeholder</p> -->
-                        <?php dynamic_sidebar('sidebar-community'); ?>
-                        <!-- <iframe width="700" height="400" src="https://www.youtube.com/embed/pOmu0LtcI6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <?php dynamic_sidebar('sidebar-workplace'); ?>
                     </li>
                 </ul>
                 <ul id="tab-2">
                     <li class="step1">
-                        <!-- Insert number 1 Icon -->
-                        <?php dynamic_sidebar('sidebar-workplace'); ?>
-                        <!-- <iframe width="700" height="400" src="https://www.youtube.com/embed/YuwxJB-TOyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <?php dynamic_sidebar('sidebar-community'); ?>
                     </li>
                 </ul>
             </div>
@@ -112,7 +120,7 @@ if( have_posts() ) :
             In this free session, you will discuss if Vesta is a good 
             fit for your organization.
         </p>
-        <div class="book-info-session-button"><button>Info Session</button></div>
+        <div class="book-info-session-button"><a href="<?php echo get_permalink( get_page_by_path( 'info-session' ) );?>"><button>Info Session</button></a></div>
         
     </div>
 </main>

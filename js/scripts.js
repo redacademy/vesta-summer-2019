@@ -47,12 +47,10 @@
     })
 
 
-//  SHAPES WRAPPER
-    let $docHeight = $(document).height()
-    const $shapeWrapper = $('.all-shapes-wrapper')
-    $shapeWrapper.css('height', $docHeight)
+    //  SHAPES WRAPPER
 
-
+    let $shapeWindow = $(document).height() - $('footer').height() + 100
+    $('.all-shapes-wrapper').height($shapeWindow)
 
 
     //      Front Page FLICKITY
@@ -73,14 +71,14 @@
 
     $communityCatHeader.on('click', function(e) {
         $workplaceCatHeader.removeClass('resource-header-selected')
-        $communityCatHeader.addClass('resource-header-selected')
+        $communityCatHeader.addClass('resource-header-selected-plum')
         $workplaceResources.hide()
         $communityResources.show()
 
     }) 
     
     $workplaceCatHeader.on('click', function(e) {
-        $communityCatHeader.removeClass('resource-header-selected')
+        $communityCatHeader.removeClass('resource-header-selected-plum')
         $workplaceCatHeader.addClass('resource-header-selected')
         $communityResources.hide()
         $workplaceResources.show()
@@ -97,7 +95,7 @@
     $faqIcon.on('click', (e) => {
         $(e.target).toggle()
         $(e.target).siblings('.toggle-answer').toggle()
-        $(e.target).siblings('div.faq-answer').slideToggle(); 
+        $(e.target).parent().siblings('div.faq-answer').slideToggle(); 
     })
 
     
