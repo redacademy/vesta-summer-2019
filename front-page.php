@@ -34,6 +34,7 @@ if( have_posts() ) :
 <main class="home">
   
     <section class="home-transforming">
+        
         <div class="vesta-transforming-workplace">
             <img src="<?php echo get_template_directory_uri() . '/images/Icons/Vesta Name Group.svg';?>" alt="Vesta">
             <h2>Transforming society</h2>

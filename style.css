@@ -1727,8 +1727,8 @@ div.customer-story-box {
     background-color: #3965ee;
     opacity: 0.15;
     border-radius: 102px;
-    -webkit-transform: translate(365px, -275px) rotate(-18deg);
-            transform: translate(365px, -275px) rotate(-18deg);
+    -webkit-transform: translate(368px, -275px) rotate(-18deg);
+            transform: translate(368px, -275px) rotate(-18deg);
     width: 1450px;
     height: 900px; }
   .front-page-shapes .all-shapes-wrapper .sm-rec {
@@ -1744,7 +1744,8 @@ div.customer-story-box {
   .front-page-shapes .all-shapes-wrapper .top-right-sm-rec {
     -webkit-transform: translate(1090px, -1525px) rotate(-18deg);
             transform: translate(1090px, -1525px) rotate(-18deg);
-    height: 575px; }
+    height: 575px;
+    background: rgba(57, 101, 238, 0.44); }
   .front-page-shapes .all-shapes-wrapper .background-cover {
     height: 530px;
     width: 100%;

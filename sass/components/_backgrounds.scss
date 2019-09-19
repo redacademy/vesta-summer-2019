@@ -87,7 +87,7 @@
         
         .big-rec {
             @include big-rec;
-            transform: translate(365px, -275px) rotate(-18deg);
+            transform: translate(368px, -275px) rotate(-18deg);
             width: 1450px;
             height: 900px;
         }
@@ -101,12 +101,15 @@
         .top-right-sm-rec{
             transform: translate(1090px, -1525px) rotate(-18deg);
             height: 575px;
+            background: rgba(57, 101, 238, 0.44);
+
         }
         .background-cover {
             @include section-background;
             top: 299px;
             height: 455px;
         }
+
         .midde-left-rec{
             transform: translate(-665px, -685px) rotate(-124deg);
             width: 800px;
