@@ -127,10 +127,12 @@
     }
 }
 .home-solution{
+    // width: 85%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin: 0 0 150px -16.5%;
+    // margin: 0 0 150px -16.5%;
+    margin: 30px 13% 50px 2%;
  
     .inner-solution{
         min-width: 350px;
